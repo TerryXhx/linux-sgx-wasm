@@ -1,0 +1,41 @@
+Format: 1.8
+Date: Mon, 29 Jul 2019 15:23:51 +0800
+Source: libsgx-enclave-common
+Binary: libsgx-enclave-common libsgx-enclave-common-dev
+Architecture: source amd64
+Version: 2.16.100.4-focal1
+Distribution: unstable
+Urgency: low
+Maintainer: <xiangquan.liu@intel.com>
+Changed-By: Xiangquan Liu <xiangquan.liu@intel.com>
+Description:
+ libsgx-enclave-common - Intel(R) Software Guard Extensions Enclave Common Loader
+ libsgx-enclave-common-dev - Intel(R) Software Guard Extensions Enclave Common Loader for Deve
+Changes:
+ libsgx-enclave-common (2.16.100.4-focal1) unstable; urgency=low
+ .
+   * Initial Release
+Checksums-Sha1:
+ 5ec84b53c2e0fb333f01ef2931f8d8733762ac18 1079 libsgx-enclave-common_2.16.100.4-focal1.dsc
+ 0e96a5e958a3413b6e7e8de1345bab729f708786 42161 libsgx-enclave-common_2.16.100.4.orig.tar.gz
+ 00d31ada70259e41ab5aee5e6e63f573b42137ca 21140 libsgx-enclave-common_2.16.100.4-focal1.debian.tar.xz
+ dd16cf298e3c44357bae0b50a33349d2ac354838 3804 libsgx-enclave-common-dbgsym_2.16.100.4-focal1_amd64.ddeb
+ b61689be531396ced92f824d966ed43df5398e5b 23584 libsgx-enclave-common-dev_2.16.100.4-focal1_amd64.deb
+ 7cafb6dbd0c29009063ab9d48679ecd0ba2d4d41 6421 libsgx-enclave-common_2.16.100.4-focal1_amd64.buildinfo
+ 236e413dba91c7c2257af6020337ffc29d702e3c 32772 libsgx-enclave-common_2.16.100.4-focal1_amd64.deb
+Checksums-Sha256:
+ 04af0f221b70d3f871b94def05e5cfb2d0830c26e9154a6310042cde20f2eb0c 1079 libsgx-enclave-common_2.16.100.4-focal1.dsc
+ 696517ffa72a79df74479dcdfcc85a7611d63fb3fd6d1a5fdf303f0097def193 42161 libsgx-enclave-common_2.16.100.4.orig.tar.gz
+ 097111b13a446e6911a1e430460d03ea0b09683fbfe58c4603832e90586d7085 21140 libsgx-enclave-common_2.16.100.4-focal1.debian.tar.xz
+ b2c50a12593c28a0f1945c12afd7db0c2d7c768d39f329242f198b21a37e6876 3804 libsgx-enclave-common-dbgsym_2.16.100.4-focal1_amd64.ddeb
+ 97add004fb8675696a86429ef47f0712d1d2d813c1dce467787c670a7a45eb9f 23584 libsgx-enclave-common-dev_2.16.100.4-focal1_amd64.deb
+ f3bb115f6f03901737074ef60a0cd8ace0131d0660f0ad2419689f8814cde470 6421 libsgx-enclave-common_2.16.100.4-focal1_amd64.buildinfo
+ 2d5a409e12f7f05188cde00e11993f56feb92d36426ca9c4733d64353eb1243e 32772 libsgx-enclave-common_2.16.100.4-focal1_amd64.deb
+Files:
+ 72e6fe58cb83284da3c1594a47573e29 1079 libs optional libsgx-enclave-common_2.16.100.4-focal1.dsc
+ 0f613aea04c8b7b4ad161c46a5cdacc6 42161 libs optional libsgx-enclave-common_2.16.100.4.orig.tar.gz
+ be8d551b38eec0a6ccb8d4dfc7491d1b 21140 libs optional libsgx-enclave-common_2.16.100.4-focal1.debian.tar.xz
+ ae33b54af18cffbb3ca121b18e3b62a6 3804 debug optional libsgx-enclave-common-dbgsym_2.16.100.4-focal1_amd64.ddeb
+ a53eb54a75be76d7ab336c22504bfea2 23584 devel optional libsgx-enclave-common-dev_2.16.100.4-focal1_amd64.deb
+ 8cd84d311dd712e84f81a72e8a40fdd1 6421 libs optional libsgx-enclave-common_2.16.100.4-focal1_amd64.buildinfo
+ 60691e1706de1c862c53984b80ce5315 32772 libs optional libsgx-enclave-common_2.16.100.4-focal1_amd64.deb

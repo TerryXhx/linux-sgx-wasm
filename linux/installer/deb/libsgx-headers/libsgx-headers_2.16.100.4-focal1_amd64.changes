@@ -1,0 +1,34 @@
+Format: 1.8
+Date: Sun, 23 Aug 2020 15:23:51 +0800
+Source: libsgx-headers
+Binary: libsgx-headers
+Architecture: source amd64
+Version: 2.16.100.4-focal1
+Distribution: unstable
+Urgency: low
+Maintainer: <xiangquan.liu@intel.com>
+Changed-By: Xiangquan Liu <xiangquan.liu@intel.com>
+Description:
+ libsgx-headers - Intel(R) Software Guard Extensions Basic Headers for Developers
+Changes:
+ libsgx-headers (2.16.100.4-focal1) unstable; urgency=low
+ .
+   * Initial Release
+Checksums-Sha1:
+ 162657a6c0467670123b431bbf273d677b6d206c 933 libsgx-headers_2.16.100.4-focal1.dsc
+ d1b39f8eefa1aa4e419464f4e81ff7c5a969e096 37509 libsgx-headers_2.16.100.4.orig.tar.gz
+ f432bc01e90da82d19cae2399193ef8620875c2f 20420 libsgx-headers_2.16.100.4-focal1.debian.tar.xz
+ 42ad4a1b4c46d4a4c6139c2350592b38b884505e 5683 libsgx-headers_2.16.100.4-focal1_amd64.buildinfo
+ dfd46c970acc3e202aa828f0588160aa42d37f1c 33420 libsgx-headers_2.16.100.4-focal1_amd64.deb
+Checksums-Sha256:
+ a88e4d64dbea2b2d65896910060dedee63a22319758c4eff9bba8661137ab5d9 933 libsgx-headers_2.16.100.4-focal1.dsc
+ 657382b08f7db8e5df43457d0b35a08dd03ea6a2cec4d4a4340122e6d3aa39f4 37509 libsgx-headers_2.16.100.4.orig.tar.gz
+ 3808dd01da1813a5a08e1f938798a6e93cf875f2d0a648455385838c22c4329c 20420 libsgx-headers_2.16.100.4-focal1.debian.tar.xz
+ bf810d0916ebb32eb398c6e87f4d5937077cba492710714ae64676ee7fffaea1 5683 libsgx-headers_2.16.100.4-focal1_amd64.buildinfo
+ e04470a0e653765441275460e1e6c2127392594ecd9daf19983a3e5d83327914 33420 libsgx-headers_2.16.100.4-focal1_amd64.deb
+Files:
+ 1d5a26492aba593345de996b464f8efa 933 devel optional libsgx-headers_2.16.100.4-focal1.dsc
+ 9e463beffe7b7949a740b7ce68556c86 37509 devel optional libsgx-headers_2.16.100.4.orig.tar.gz
+ 440caf351bec241508dc692a5f6c977f 20420 devel optional libsgx-headers_2.16.100.4-focal1.debian.tar.xz
+ 8ca538943670dcd7a568785843571a5f 5683 devel optional libsgx-headers_2.16.100.4-focal1_amd64.buildinfo
+ 512764fb7f0f6330dc66417320ea47ae 33420 devel optional libsgx-headers_2.16.100.4-focal1_amd64.deb

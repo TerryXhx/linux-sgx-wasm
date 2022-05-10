@@ -1,0 +1,41 @@
+Format: 1.8
+Date: Mon, 29 Jul 2019 15:23:51 +0800
+Source: libsgx-epid
+Binary: libsgx-epid libsgx-epid-dev
+Architecture: source amd64
+Version: 2.16.100.4-focal1
+Distribution: unstable
+Urgency: low
+Maintainer: <xiangquan.liu@intel.com>
+Changed-By: Xiangquan Liu <xiangquan.liu@intel.com>
+Description:
+ libsgx-epid - Intel(R) Software Guard Extensions EPID Quote Service
+ libsgx-epid-dev - Intel(R) Software Guard Extensions EPID Quote Service for Develop
+Changes:
+ libsgx-epid (2.16.100.4-focal1) unstable; urgency=low
+ .
+   * Initial Release
+Checksums-Sha1:
+ e75ec8472b80e8cdc52fbb0871b5fe7e124e35c2 972 libsgx-epid_2.16.100.4-focal1.dsc
+ 05f93dc13e5b649f7c5f8a756a66fedd6cb483f3 127351 libsgx-epid_2.16.100.4.orig.tar.gz
+ 2d9d7a259e93725cdc22cf41e2e956a1825621c8 20528 libsgx-epid_2.16.100.4-focal1.debian.tar.xz
+ 78f222c0008d7f3a8c2a01741c4210764cd3e544 22668 libsgx-epid-dbgsym_2.16.100.4-focal1_amd64.ddeb
+ 5ab1f15a2b0e5120866fa99da217a270147869ee 22628 libsgx-epid-dev_2.16.100.4-focal1_amd64.deb
+ 101173a3d758f2305fb4087a2e330b307de643b6 6271 libsgx-epid_2.16.100.4-focal1_amd64.buildinfo
+ 721d19d7958a9dc4d312061bf049a3108cd6cfeb 74404 libsgx-epid_2.16.100.4-focal1_amd64.deb
+Checksums-Sha256:
+ fbb2a20d2c1ba18f77fe9569c068bb0cc7d171ea9be05fd8bc44282dd422b1fa 972 libsgx-epid_2.16.100.4-focal1.dsc
+ 9754a55b63e537363d9198f28e417327f512b7396368a01560e462a21445460b 127351 libsgx-epid_2.16.100.4.orig.tar.gz
+ 69896d6b966ea92b9d60cee985a01cbf3a8ee7433f7280099e37d93126427619 20528 libsgx-epid_2.16.100.4-focal1.debian.tar.xz
+ c035584ec8945aa89082f05bd5fad342f5c984fca00daf8e3a3f448c15882eb8 22668 libsgx-epid-dbgsym_2.16.100.4-focal1_amd64.ddeb
+ 98a84a4a41da92e80d7069cf60ad839c7aefb441a22176a047db65fd1a74079b 22628 libsgx-epid-dev_2.16.100.4-focal1_amd64.deb
+ 64913a6906774f8386c7a12f638cd92f74e82a58405d20a93a56271bb4d9ce3f 6271 libsgx-epid_2.16.100.4-focal1_amd64.buildinfo
+ 66aed5052bf50afacc570cca8a0c7d65312fdb23d3154403a72ad343b8f34973 74404 libsgx-epid_2.16.100.4-focal1_amd64.deb
+Files:
+ 67f71b5d4711d70ddd9aa7cc5dfba9ba 972 libs optional libsgx-epid_2.16.100.4-focal1.dsc
+ c08ef2034ef7c1e129e65b2af353be64 127351 libs optional libsgx-epid_2.16.100.4.orig.tar.gz
+ 71dc888a04c304b5debf4c6e735d902d 20528 libs optional libsgx-epid_2.16.100.4-focal1.debian.tar.xz
+ 7965499223358f6bd239ecf5ce32ac04 22668 debug optional libsgx-epid-dbgsym_2.16.100.4-focal1_amd64.ddeb
+ 6f4a1415d2fd3f198f8a32613ee55d11 22628 devel optional libsgx-epid-dev_2.16.100.4-focal1_amd64.deb
+ 5c11d1be7509e59ae2eb2c4c39a5cd02 6271 libs optional libsgx-epid_2.16.100.4-focal1_amd64.buildinfo
+ 8b7ec3f2bcad72a8333661f0d217d9a2 74404 libs optional libsgx-epid_2.16.100.4-focal1_amd64.deb

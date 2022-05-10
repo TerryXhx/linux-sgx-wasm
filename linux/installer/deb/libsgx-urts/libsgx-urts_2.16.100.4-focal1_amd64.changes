@@ -1,0 +1,37 @@
+Format: 1.8
+Date: Mon, 29 Jul 2019 15:23:51 +0800
+Source: libsgx-urts
+Binary: libsgx-urts
+Architecture: source amd64
+Version: 2.16.100.4-focal1
+Distribution: unstable
+Urgency: low
+Maintainer: <xiangquan.liu@intel.com>
+Changed-By: Xiangquan Liu <xiangquan.liu@intel.com>
+Description:
+ libsgx-urts - Intel(R) Software Guard Extensions uRTS
+Changes:
+ libsgx-urts (2.16.100.4-focal1) unstable; urgency=low
+ .
+   * Initial Release
+Checksums-Sha1:
+ 4efc2583af382be9cda8b9292787caa8c32596f3 905 libsgx-urts_2.16.100.4-focal1.dsc
+ be2315b2fc2c9e647470d12dc7f8b1b9f75a13c7 90700 libsgx-urts_2.16.100.4.orig.tar.gz
+ 6e33140381a72d2f89479ec2bd182b226a67d6b8 20516 libsgx-urts_2.16.100.4-focal1.debian.tar.xz
+ 3743c5ec0600b1059fb6331a3cf29046ce714044 11832 libsgx-urts-dbgsym_2.16.100.4-focal1_amd64.ddeb
+ 7f36f3e328b5189d852309e9d7d06e73b9f79645 5963 libsgx-urts_2.16.100.4-focal1_amd64.buildinfo
+ 474a5eadc8abdd7897deb6a7427d18fa22dc3e8b 65636 libsgx-urts_2.16.100.4-focal1_amd64.deb
+Checksums-Sha256:
+ c3ab56203e9be0dd512900878069d86be6bca03b2a1544e5dfb3b67eb7755424 905 libsgx-urts_2.16.100.4-focal1.dsc
+ ec3b228e0a6855be7af83e9ebc5316d9686747368f1d9a7802561bbd05f17aaa 90700 libsgx-urts_2.16.100.4.orig.tar.gz
+ 01dcf6c73259a0b687cd8f6291bb453219cf74aad5fab05fba19a1e3c79dc684 20516 libsgx-urts_2.16.100.4-focal1.debian.tar.xz
+ eb4576706fe94445264c6e31dd638c5feb3a33724852f840864748bced8f4448 11832 libsgx-urts-dbgsym_2.16.100.4-focal1_amd64.ddeb
+ 79f3c49516ef0bf9c5d7819f8424070ff65c6d2ef21ea3000a515d2a50da5464 5963 libsgx-urts_2.16.100.4-focal1_amd64.buildinfo
+ b5b6d43b08560b80259c995f66ed820500ce5385fff10eee5a609b153f171cfe 65636 libsgx-urts_2.16.100.4-focal1_amd64.deb
+Files:
+ 502e4fc29fb75e35f5d47da98e6e99bd 905 libs optional libsgx-urts_2.16.100.4-focal1.dsc
+ 3cd8528bb8ad36c8e6b134de97c47837 90700 libs optional libsgx-urts_2.16.100.4.orig.tar.gz
+ 4f7a2b97ffd29a7e86006cc477ef89bb 20516 libs optional libsgx-urts_2.16.100.4-focal1.debian.tar.xz
+ 09644e3237c292e2acb530fa460438b4 11832 debug optional libsgx-urts-dbgsym_2.16.100.4-focal1_amd64.ddeb
+ e5ac5100fff793316ffe2f3df0898cc2 5963 libs optional libsgx-urts_2.16.100.4-focal1_amd64.buildinfo
+ c125c1f949bae968e44ac3b28aa5ee00 65636 libs optional libsgx-urts_2.16.100.4-focal1_amd64.deb

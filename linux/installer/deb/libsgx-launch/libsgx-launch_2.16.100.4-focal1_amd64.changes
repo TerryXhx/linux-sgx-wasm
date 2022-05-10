@@ -1,0 +1,41 @@
+Format: 1.8
+Date: Mon, 29 Jul 2019 15:23:51 +0800
+Source: libsgx-launch
+Binary: libsgx-launch libsgx-launch-dev
+Architecture: source amd64
+Version: 2.16.100.4-focal1
+Distribution: unstable
+Urgency: low
+Maintainer: <xiangquan.liu@intel.com>
+Changed-By: Xiangquan Liu <xiangquan.liu@intel.com>
+Description:
+ libsgx-launch - Intel(R) Software Guard Extensions Launch Service
+ libsgx-launch-dev - Intel(R) Software Guard Extensions Launch Service for Developers
+Changes:
+ libsgx-launch (2.16.100.4-focal1) unstable; urgency=low
+ .
+   * Initial Release
+Checksums-Sha1:
+ 0e5b58e1e0f19b4065d8a88c56ee03675894dc38 994 libsgx-launch_2.16.100.4-focal1.dsc
+ 1c0867caafa5503101fe8dd5a0b55a0b43cf9a4a 125344 libsgx-launch_2.16.100.4.orig.tar.gz
+ 99191addbb122c00508c43e18d4ab43fb6eb06b2 20560 libsgx-launch_2.16.100.4-focal1.debian.tar.xz
+ 98ee7617715cdada51e04b0cf29429ca1b33b128 22584 libsgx-launch-dbgsym_2.16.100.4-focal1_amd64.ddeb
+ 0a2ac1fd08a7fe9fd75e11403e9b53e914951569 21536 libsgx-launch-dev_2.16.100.4-focal1_amd64.deb
+ df325a7e3484b079afaa0d3d27af32e4779136c2 6301 libsgx-launch_2.16.100.4-focal1_amd64.buildinfo
+ d59497ebfb49c51a64376833a6fa6979d5097856 73488 libsgx-launch_2.16.100.4-focal1_amd64.deb
+Checksums-Sha256:
+ eb3893c27b3781c7a68503507c908ed2c78ee861b5b45b1314f2f85fdbfdf93a 994 libsgx-launch_2.16.100.4-focal1.dsc
+ aec9854cfbb211f8f0e0a2827d097211649645edebf7c651679f5f1df0e77ac8 125344 libsgx-launch_2.16.100.4.orig.tar.gz
+ 90e2aba36558f22275d082100fb7bdf12f038e008952a5c542fa916005d18615 20560 libsgx-launch_2.16.100.4-focal1.debian.tar.xz
+ d9a94a11139cc5cbb3c0f09e8a1186b8dea89feaf822518d880f6254ff504fb8 22584 libsgx-launch-dbgsym_2.16.100.4-focal1_amd64.ddeb
+ a92603568eba8c8c800469a32026250c2bad0e5175b4d130cad4046e1f0b133d 21536 libsgx-launch-dev_2.16.100.4-focal1_amd64.deb
+ 9c2ce3c98d8e70b0bea2095ce8d15672cb5c259d0ff2545db37f3e1f508567fe 6301 libsgx-launch_2.16.100.4-focal1_amd64.buildinfo
+ 089e08d92ca2b57c1b1b09541f376dac7d57abfbbbca22f6995f4097c2e24580 73488 libsgx-launch_2.16.100.4-focal1_amd64.deb
+Files:
+ 09bf2a08a65cfb70e99e1e7f5f1d4ef6 994 libs optional libsgx-launch_2.16.100.4-focal1.dsc
+ 753730cb35246b32aea1a42cde748499 125344 libs optional libsgx-launch_2.16.100.4.orig.tar.gz
+ cd8d22161536543656818ecdf01c60fc 20560 libs optional libsgx-launch_2.16.100.4-focal1.debian.tar.xz
+ 39ac176c17cbf6adaf69db11fc6b438b 22584 debug optional libsgx-launch-dbgsym_2.16.100.4-focal1_amd64.ddeb
+ 658737b1cc402a84023962413f379e68 21536 devel optional libsgx-launch-dev_2.16.100.4-focal1_amd64.deb
+ 2e1e87c02ccefc0638dfad7d0e6a1d95 6301 libs optional libsgx-launch_2.16.100.4-focal1_amd64.buildinfo
+ e130d80ce3a0134596579bb55eb6672f 73488 libs optional libsgx-launch_2.16.100.4-focal1_amd64.deb
