@@ -45,6 +45,7 @@
     "   catsig                  Generate the signed enclave with the input signature file, the\n"\
     "                           public key and the enclave signing material\n"\
     "   dump                    Dump metadata information for a signed enclave file\n"\
+    "   signwasm                Sign the enclave and load the wasm file\n"\
     "Options:\n"\
     "   -enclave                Specify the enclave file to be signed or already signed\n"\
     "                           It is a required option for the four commands\n"\
@@ -60,6 +61,7 @@
     "   -dumpfile               Specify a file to dump metadata information (text format)\n" \
     "                           It is a required option for \"dump\"\n" \
     "   -cssfile                Specify a file to dump the enclave SIGSTRUCT information (binary format)\n" \
+    "   -wasmfile               Specify a file to be loaded into the wasm section\n" \
     "   -ignore-rel-error       By default, sgx_sign provides an error for enclaves with\n" \
     "                           text relocations. You can ignore the error and continue signing\n" \
     "                           by providing this option. But it is recommended you eliminate the\n" \
@@ -180,7 +182,8 @@ typedef enum _command_mode_t
     SIGN = 0,
     GENDATA,
     CATSIG,
-    DUMP
+    DUMP,
+    SIGNWASM
 } command_mode_t;
 
 
@@ -189,7 +192,7 @@ extern "C" {
 #endif
 
 size_t get_file_size(const char *filename);
-bool read_file_to_buf(const char *filename, uint8_t *buffer, size_t bsize);
+bool read_file_to_buf(const char *filename, uint8_t *buffer, size_t bsize, long offset = 0);
 bool write_data_to_file(const char *filename, std::ios_base::openmode mode, uint8_t *buf, size_t bsize, long offset = 0);
 bool copy_file(const char *source_path, const char *dest_path);
 

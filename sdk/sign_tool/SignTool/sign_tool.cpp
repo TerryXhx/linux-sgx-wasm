@@ -64,6 +64,7 @@
 #include "parserfactory.h"
 #include "elf_helper.h"
 #include "crypto_wrapper.h"
+#include "sgx_wasm.h"
 
 #include <unistd.h>
 
@@ -93,7 +94,8 @@ typedef enum _file_path_t
     SIG,
     UNSIGNED,
     DUMPFILE,
-    CSSFILE
+    CSSFILE,
+    WASMFILE
 } file_path_t;
 
 
@@ -141,7 +143,7 @@ static bool get_enclave_info(BinParser *parser, bin_fmt_t *bf, uint64_t * meta_o
 // measure_enclave():
 //    1. Get the enclave hash by loading enclave
 //    2. Get the enclave info - metadata offset and enclave file format
-static bool measure_enclave(uint8_t *hash, const char *dllpath, const xml_parameter_t *parameter, uint32_t option_flag_bits, metadata_t *metadata, uint64_t *meta_offset)
+static bool measure_enclave(uint8_t *hash, const char *dllpath, const xml_parameter_t *parameter, uint32_t option_flag_bits, metadata_t *metadata, uint64_t *meta_offset, uint64_t &wasm_offset)
 {
     assert(hash && dllpath && metadata && meta_offset);
     bool res = false;
@@ -174,6 +176,13 @@ static bool measure_enclave(uint8_t *hash, const char *dllpath, const xml_parame
         close_handle(fh);
         return false;
     }
+
+    const Section* wasm_section = parser->get_wasm_section();
+    if (wasm_section != NULL)
+    {
+        wasm_offset = wasm_section->get_offset();
+    }
+
     if(parser->has_init_section() && IGNORE_INIT_SEC_ERROR(option_flag_bits) == false)
     {
         se_trace(SE_TRACE_ERROR, INIT_SEC_ERROR);
@@ -583,7 +592,8 @@ static bool cmdline_parse(unsigned int argc, char *argv[], int *mode, const char
         {"-sig", NULL, PAR_INVALID},
         {"-unsigned", NULL, PAR_INVALID},
         {"-dumpfile", NULL, PAR_OPTIONAL},
-        {"-cssfile", NULL, PAR_OPTIONAL}};
+        {"-cssfile", NULL, PAR_OPTIONAL},
+        {"-wasmfile", NULL, PAR_INVALID}};
     param_struct_t params_gendata[] = {
         {"-enclave", NULL, PAR_REQUIRED},
         {"-config", NULL, PAR_OPTIONAL},
@@ -592,7 +602,8 @@ static bool cmdline_parse(unsigned int argc, char *argv[], int *mode, const char
         {"-sig", NULL, PAR_INVALID},
         {"-unsigned", NULL, PAR_INVALID},
         {"-dumpfile", NULL, PAR_INVALID},
-        {"-cssfile", NULL, PAR_INVALID}};
+        {"-cssfile", NULL, PAR_INVALID},
+        {"-wasmfile", NULL, PAR_INVALID}};
     param_struct_t params_catsig[] = {
         {"-enclave", NULL, PAR_REQUIRED},
         {"-config", NULL, PAR_OPTIONAL},
@@ -601,7 +612,8 @@ static bool cmdline_parse(unsigned int argc, char *argv[], int *mode, const char
         {"-sig", NULL, PAR_REQUIRED},
         {"-unsigned", NULL, PAR_REQUIRED},
         {"-dumpfile", NULL, PAR_OPTIONAL},
-        {"-cssfile", NULL, PAR_OPTIONAL}};
+        {"-cssfile", NULL, PAR_OPTIONAL},
+        {"-wasmfile", NULL, PAR_INVALID}};
     param_struct_t params_dump[] = {
         {"-enclave", NULL, PAR_REQUIRED},
         {"-config", NULL, PAR_INVALID},
@@ -610,11 +622,22 @@ static bool cmdline_parse(unsigned int argc, char *argv[], int *mode, const char
         {"-sig", NULL, PAR_INVALID},
         {"-unsigned", NULL, PAR_INVALID},
         {"-dumpfile", NULL, PAR_REQUIRED},
-        {"-cssfile", NULL, PAR_OPTIONAL}};
+        {"-cssfile", NULL, PAR_OPTIONAL},
+        {"-wasmfile", NULL, PAR_INVALID}};
+    param_struct_t params_signwasm[] = {
+        {"-enclave", NULL, PAR_REQUIRED},
+        {"-config", NULL, PAR_OPTIONAL},
+        {"-key", NULL, PAR_REQUIRED},
+        {"-out", NULL, PAR_REQUIRED},
+        {"-sig", NULL, PAR_INVALID},
+        {"-unsigned", NULL, PAR_INVALID},
+        {"-dumpfile", NULL, PAR_OPTIONAL},
+        {"-cssfile", NULL, PAR_OPTIONAL},
+        {"-wasmfile", NULL, PAR_REQUIRED}};
 
 
-    const char *mode_m[] ={"sign", "gendata","catsig", "dump"};
-    param_struct_t *params[] = {params_sign, params_gendata, params_catsig, params_dump};
+    const char *mode_m[] ={"sign", "gendata","catsig", "dump", "signwasm"};
+    param_struct_t *params[] = {params_sign, params_gendata, params_catsig, params_dump, params_signwasm};
     unsigned int tempidx=0;
     for(; tempidx<sizeof(mode_m)/sizeof(mode_m[0]); tempidx++)
     {
@@ -761,6 +784,7 @@ static bool generate_output(int mode, int ktype, const uint8_t *enclave_hash, co
     switch(mode)
     {
     case SIGN:
+    case SIGNWASM:
         {
             if(ktype != PRIVATE_KEY || !rsa)
             {
@@ -1307,7 +1331,7 @@ int main(int argc, char* argv[])
                                    {"ELRangeStartAddress",  0xFFFFFFFFFFFFFFFF,    0,              0,                   0},
                                    {"ELRangeSize",          0xFFFFFFFFFFFFFFFF,    0x1000,         0,                   0},
 				   {"PKRU",                 FEATURE_LOADER_SELECTS,                     FEATURE_MUST_BE_DISABLED,              FEATURE_MUST_BE_DISABLED,                   0}};
-    const char *path[8] = {NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL};
+    const char *path[9] = {NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL};
     uint8_t enclave_hash[SGX_HASH_SIZE] = {0};
     uint8_t metadata_raw[METADATA_SIZE];
     metadata_t *metadata = (metadata_t*)metadata_raw;
@@ -1315,6 +1339,7 @@ int main(int argc, char* argv[])
     int key_type = UNIDENTIFIABLE_KEY; //indicate the type of the input key file
     size_t parameter_count = sizeof(parameter)/sizeof(parameter[0]);
     uint64_t meta_offset = 0;
+    uint64_t wasm_offset = 0;
     uint32_t option_flag_bits = 0;
     RSA *rsa = NULL;
     memset(&metadata_raw, 0, sizeof(metadata_raw));
@@ -1369,7 +1394,54 @@ int main(int argc, char* argv[])
         goto clear_return;
     }
 
-    if(measure_enclave(enclave_hash, path[OUTPUT], parameter, option_flag_bits, metadata, &meta_offset) == false)
+    if (mode == SIGNWASM) {
+        printf("\n Reading size from file %s . \n", path[WASMFILE]);
+        uint64_t wasm_file_size = get_file_size(path[WASMFILE]);
+        uint64_t wasm_sec_size = sizeof(uint64_t) + wasm_file_size;
+        if (wasm_sec_size > SGX_WASM_SEC_SIZE) {
+            se_trace(SE_TRACE_ERROR, OVERALL_ERROR);
+            goto clear_return;
+        }
+
+        printf("\n Reading %lu bytes from file %s . \n", wasm_file_size, path[WASMFILE]);
+        sgx_wasm_t *wasm_sec = (sgx_wasm_t *)malloc(wasm_sec_size);
+        if (wasm_sec == NULL) {
+            se_trace(SE_TRACE_ERROR, OVERALL_ERROR);
+            goto clear_return;
+        }
+        wasm_sec->size = wasm_file_size;
+        if (read_file_to_buf(path[WASMFILE], (uint8_t*)wasm_sec->wasm_blob, wasm_file_size) == false) {
+            se_trace(SE_TRACE_ERROR, READ_FILE_ERROR, path[UNSIGNED]);
+            delete []wasm_sec;
+            goto clear_return;   
+        }
+        for (uint64_t i = 0; i < 10; i++) printf("%02x ", wasm_sec->wasm_blob[i]);
+
+        // Get the offset of wasm section by measure_enclave
+        if (measure_enclave(enclave_hash, path[OUTPUT], parameter, option_flag_bits, metadata, &meta_offset, wasm_offset) == false) {
+            se_trace(SE_TRACE_ERROR, OVERALL_ERROR);
+            goto clear_return;
+        }
+
+        printf("\n Writing %lu to %s @ %lx . \n", wasm_sec_size, path[OUTPUT], wasm_offset);
+        if (write_data_to_file(path[OUTPUT], std::ios::in | std::ios::binary | std::ios::out, reinterpret_cast<uint8_t*>(wasm_sec), wasm_sec_size, wasm_offset) == false) {
+            se_trace(SE_TRACE_ERROR, OVERALL_ERROR);
+            goto clear_return;
+        }
+
+        // Verify the written wasm section
+        printf("\n Begin verification. \n");
+        uint8_t *wasm_sec_verify = (uint8_t *)malloc(wasm_sec_size);
+        if (read_file_to_buf(path[OUTPUT], wasm_sec_verify, wasm_sec_size, wasm_offset) == false) {
+            se_trace(SE_TRACE_ERROR, READ_FILE_ERROR, path[UNSIGNED]);
+            delete []wasm_sec_verify;
+            goto clear_return;
+        }
+        for (uint64_t i = 0; i < 10; i++) printf("%02x ", wasm_sec_verify[i]);
+        printf("\n Reading %d from %s @ %lx .\n", 10, path[OUTPUT], wasm_offset);    
+    }
+
+    if(measure_enclave(enclave_hash, path[OUTPUT], parameter, option_flag_bits, metadata, &meta_offset, wasm_offset) == false)
     {
         se_trace(SE_TRACE_ERROR, OVERALL_ERROR);
         goto clear_return;
@@ -1381,7 +1453,7 @@ int main(int argc, char* argv[])
     }
 
     //to verify
-    if(mode == SIGN || mode == CATSIG)
+    if(mode == SIGN || mode == CATSIG || mode == SIGNWASM)
     {
         if(verify_signature(rsa, &(metadata->enclave_css)) == false)
         {
