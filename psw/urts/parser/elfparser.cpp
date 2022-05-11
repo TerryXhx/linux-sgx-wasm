@@ -37,6 +37,7 @@
 #include <sys/mman.h>
 #include <vector>
 #include <tuple>
+#include "sgx_wasm.h"
 
 namespace {
 /** the callback function to filter a section.
@@ -515,12 +516,12 @@ si_flags_t page_attr_to_si_flags(uint32_t page_attr)
 }
 
 Section* build_section(const uint8_t* raw_data, uint64_t size, uint64_t virtual_size,
-                       uint64_t rva, uint32_t page_attr)
+                       uint64_t rva, uint64_t offset, uint32_t page_attr)
 {
     si_flags_t sf = page_attr_to_si_flags(page_attr);
 
     if (sf != SI_FLAG_REG)
-        return new Section(raw_data, size, virtual_size, rva, sf);
+        return new Section(raw_data, size, virtual_size, rva, offset, sf);
 
     return NULL;
 }
@@ -550,7 +551,8 @@ bool build_regular_sections(const uint8_t* start_addr,
         case PT_LOAD:
             sec = build_section(GET_PTR(uint8_t, start_addr, prg_hdr->p_offset),
                                 (uint64_t)prg_hdr->p_filesz, (uint64_t)prg_hdr->p_memsz,
-                                (uint64_t)prg_hdr->p_vaddr, (uint32_t) prg_hdr->p_flags);
+                                (uint64_t)prg_hdr->p_vaddr, (uint64_t)prg_hdr->p_offset,
+                                (uint32_t) prg_hdr->p_flags);
             se_trace(SE_TRACE_DEBUG, "LOAD Section: %d\n", section_count++);
             se_trace(SE_TRACE_DEBUG, "Flags = 0x%016lX\n", (uint64_t)prg_hdr->p_flags);
             se_trace(SE_TRACE_DEBUG, "VAddr = 0x%016lX\n", (uint64_t)prg_hdr->p_vaddr);
@@ -569,7 +571,8 @@ bool build_regular_sections(const uint8_t* start_addr,
 
             sec = build_section(GET_PTR(uint8_t, start_addr, prg_hdr->p_offset),
                                 (uint64_t)prg_hdr->p_filesz, aligned_virtual_size,
-                                (uint64_t)prg_hdr->p_vaddr, (uint32_t) prg_hdr->p_flags);
+                                (uint64_t)prg_hdr->p_vaddr, (uint64_t)prg_hdr->p_offset,
+                                (uint32_t) prg_hdr->p_flags);
             se_trace(SE_TRACE_DEBUG, "TLS Section: %d\n", section_count++);
             se_trace(SE_TRACE_DEBUG, "Flags = 0x%016lX\n", (uint64_t)prg_hdr->p_flags);
             se_trace(SE_TRACE_DEBUG, "VAddr = 0x%016lX\n", (uint64_t)prg_hdr->p_vaddr);
