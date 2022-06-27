@@ -320,9 +320,9 @@ google/protobuf/repeated_field.h
 google/protobuf/extension_set.h
 -
 
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/core/ipc/messages.pb.cc
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/core/ipc/messages.pb.cc
 messages.pb.h
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/core/ipc/messages.pb.h
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/core/ipc/messages.pb.h
 algorithm
 -
 google/protobuf/stubs/common.h
@@ -336,9 +336,9 @@ google/protobuf/wire_format_lite_inl.h
 google/protobuf/io/zero_copy_stream_impl_lite.h
 -
 third_party/protobuf/version.h
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/core/ipc/third_party/protobuf/version.h
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/core/ipc/third_party/protobuf/version.h
 
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/core/ipc/messages.pb.h
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/core/ipc/messages.pb.h
 string
 -
 google/protobuf/stubs/common.h
@@ -364,7 +364,7 @@ google/protobuf/repeated_field.h
 google/protobuf/extension_set.h
 -
 
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AECheckUpdateStatusRequest.cpp
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AECheckUpdateStatusRequest.cpp
 AECheckUpdateStatusRequest.h
 -
 AECheckUpdateStatusResponse.h
@@ -380,7 +380,7 @@ limits.h
 IAEMessage.h
 -
 
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AECheckUpdateStatusResponse.cpp
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AECheckUpdateStatusResponse.cpp
 AECheckUpdateStatusResponse.h
 -
 string.h
@@ -392,7 +392,7 @@ limits.h
 IAEMessage.h
 -
 
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AEGetLaunchTokenRequest.cpp
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AEGetLaunchTokenRequest.cpp
 AEGetLaunchTokenRequest.h
 -
 AEGetLaunchTokenResponse.h
@@ -406,7 +406,7 @@ limits.h
 IAEMessage.h
 -
 
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AEGetLaunchTokenResponse.cpp
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AEGetLaunchTokenResponse.cpp
 AEGetLaunchTokenResponse.h
 -
 string.h
@@ -418,13 +418,13 @@ limits.h
 IAEMessage.h
 -
 
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AEGetQuoteExRequest.cpp
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AEGetQuoteExRequest.cpp
 AEGetQuoteExRequest.h
 -
 AEGetQuoteExResponse.h
 -
 IAESMLogic.h
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/IAESMLogic.h
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/IAESMLogic.h
 stdlib.h
 -
 limits.h
@@ -432,7 +432,7 @@ limits.h
 IAEMessage.h
 -
 
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AEGetQuoteExResponse.cpp
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AEGetQuoteExResponse.cpp
 AEGetQuoteExResponse.h
 -
 stdlib.h
@@ -444,13 +444,13 @@ limits.h
 IAEMessage.h
 -
 
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AEGetQuoteRequest.cpp
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AEGetQuoteRequest.cpp
 AEGetQuoteRequest.h
 -
 AEGetQuoteResponse.h
 -
 IAESMLogic.h
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/IAESMLogic.h
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/IAESMLogic.h
 stdlib.h
 -
 limits.h
@@ -458,7 +458,7 @@ limits.h
 IAEMessage.h
 -
 
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AEGetQuoteResponse.cpp
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AEGetQuoteResponse.cpp
 AEGetQuoteResponse.h
 -
 stdlib.h
@@ -470,7 +470,7 @@ limits.h
 IAEMessage.h
 -
 
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AEGetQuoteSizeExRequest.cpp
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AEGetQuoteSizeExRequest.cpp
 AEGetQuoteSizeExRequest.h
 -
 AEGetQuoteSizeExResponse.h
@@ -484,7 +484,7 @@ limits.h
 IAEMessage.h
 -
 
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AEGetQuoteSizeExResponse.cpp
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AEGetQuoteSizeExResponse.cpp
 AEGetQuoteSizeExResponse.h
 -
 stdlib.h
@@ -496,7 +496,7 @@ limits.h
 IAEMessage.h
 -
 
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AEGetSupportedAttKeyIDNumRequest.cpp
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AEGetSupportedAttKeyIDNumRequest.cpp
 AEGetSupportedAttKeyIDNumRequest.h
 -
 AEGetSupportedAttKeyIDNumResponse.h
@@ -510,7 +510,7 @@ limits.h
 IAEMessage.h
 -
 
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AEGetSupportedAttKeyIDNumResponse.cpp
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AEGetSupportedAttKeyIDNumResponse.cpp
 AEGetSupportedAttKeyIDNumResponse.h
 -
 stdlib.h
@@ -522,7 +522,7 @@ limits.h
 IAEMessage.h
 -
 
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AEGetSupportedAttKeyIDsRequest.cpp
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AEGetSupportedAttKeyIDsRequest.cpp
 AEGetSupportedAttKeyIDsRequest.h
 -
 AEGetSupportedAttKeyIDsResponse.h
@@ -538,7 +538,7 @@ limits.h
 IAEMessage.h
 -
 
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AEGetSupportedAttKeyIDsResponse.cpp
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AEGetSupportedAttKeyIDsResponse.cpp
 AEGetSupportedAttKeyIDsResponse.h
 -
 stdlib.h
@@ -550,7 +550,7 @@ limits.h
 IAEMessage.h
 -
 
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AEGetWhiteListRequest.cpp
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AEGetWhiteListRequest.cpp
 AEGetWhiteListRequest.h
 -
 AEGetWhiteListResponse.h
@@ -566,7 +566,7 @@ limits.h
 IAEMessage.h
 -
 
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AEGetWhiteListResponse.cpp
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AEGetWhiteListResponse.cpp
 AEGetWhiteListResponse.h
 -
 stdlib.h
@@ -578,7 +578,7 @@ limits.h
 IAEMessage.h
 -
 
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AEGetWhiteListSizeRequest.cpp
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AEGetWhiteListSizeRequest.cpp
 AEGetWhiteListSizeRequest.h
 -
 AEGetWhiteListSizeResponse.h
@@ -592,7 +592,7 @@ limits.h
 IAEMessage.h
 -
 
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AEGetWhiteListSizeResponse.cpp
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AEGetWhiteListSizeResponse.cpp
 AEGetWhiteListSizeResponse.h
 -
 stdlib.h
@@ -604,7 +604,7 @@ limits.h
 IAEMessage.h
 -
 
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AEInitQuoteExRequest.cpp
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AEInitQuoteExRequest.cpp
 AEInitQuoteExRequest.h
 -
 AEInitQuoteExResponse.h
@@ -618,7 +618,7 @@ limits.h
 IAEMessage.h
 -
 
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AEInitQuoteExResponse.cpp
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AEInitQuoteExResponse.cpp
 AEInitQuoteExResponse.h
 -
 stdlib.h
@@ -630,7 +630,7 @@ limits.h
 IAEMessage.h
 -
 
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AEInitQuoteRequest.cpp
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AEInitQuoteRequest.cpp
 AEInitQuoteRequest.h
 -
 AEInitQuoteResponse.h
@@ -644,7 +644,7 @@ limits.h
 IAEMessage.h
 -
 
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AEInitQuoteResponse.cpp
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AEInitQuoteResponse.cpp
 AEInitQuoteResponse.h
 -
 stdlib.h
@@ -656,7 +656,7 @@ limits.h
 IAEMessage.h
 -
 
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AEReportAttestationRequest.cpp
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AEReportAttestationRequest.cpp
 AEReportAttestationRequest.h
 -
 AEReportAttestationResponse.h
@@ -672,7 +672,7 @@ limits.h
 IAEMessage.h
 -
 
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AEReportAttestationResponse.cpp
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AEReportAttestationResponse.cpp
 AEReportAttestationResponse.h
 -
 string.h
@@ -684,7 +684,7 @@ limits.h
 IAEMessage.h
 -
 
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AESGXGetExtendedEpidGroupIdRequest.cpp
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AESGXGetExtendedEpidGroupIdRequest.cpp
 AESGXGetExtendedEpidGroupIdRequest.h
 -
 AESGXGetExtendedEpidGroupIdResponse.h
@@ -698,7 +698,7 @@ limits.h
 IAEMessage.h
 -
 
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AESGXGetExtendedEpidGroupIdResponse.cpp
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AESGXGetExtendedEpidGroupIdResponse.cpp
 AESGXGetExtendedEpidGroupIdResponse.h
 -
 string.h
@@ -710,7 +710,7 @@ limits.h
 IAEMessage.h
 -
 
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AESGXRegisterRequest.cpp
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AESGXRegisterRequest.cpp
 AESGXRegisterRequest.h
 -
 AESGXRegisterResponse.h
@@ -724,7 +724,7 @@ limits.h
 IAEMessage.h
 -
 
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AESGXRegisterResponse.cpp
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AESGXRegisterResponse.cpp
 AESGXRegisterResponse.h
 -
 stdlib.h
@@ -736,7 +736,7 @@ limits.h
 IAEMessage.h
 -
 
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AESGXSwitchExtendedEpidGroupRequest.cpp
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AESGXSwitchExtendedEpidGroupRequest.cpp
 AESGXSwitchExtendedEpidGroupRequest.h
 -
 AESGXSwitchExtendedEpidGroupResponse.h
@@ -752,7 +752,7 @@ limits.h
 IAEMessage.h
 -
 
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AESGXSwitchExtendedEpidGroupResponse.cpp
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AESGXSwitchExtendedEpidGroupResponse.cpp
 AESGXSwitchExtendedEpidGroupResponse.h
 -
 string.h
@@ -764,7 +764,7 @@ limits.h
 IAEMessage.h
 -
 
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AESelectAttKeyIDRequest.cpp
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AESelectAttKeyIDRequest.cpp
 AESelectAttKeyIDRequest.h
 -
 AESelectAttKeyIDResponse.h
@@ -778,7 +778,7 @@ limits.h
 IAEMessage.h
 -
 
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AESelectAttKeyIDResponse.cpp
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AESelectAttKeyIDResponse.cpp
 AESelectAttKeyIDResponse.h
 -
 stdlib.h
@@ -790,7 +790,7 @@ limits.h
 IAEMessage.h
 -
 
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/IAESMLogic.h
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/IAESMLogic.h
 stdint.h
 -
 aeerror.h
@@ -798,7 +798,7 @@ aeerror.h
 aesm_error.h
 -
 
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/NonBlockingUnixCommunicationSocket.cpp
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/NonBlockingUnixCommunicationSocket.cpp
 stdint.h
 -
 NonBlockingUnixCommunicationSocket.h
@@ -824,13 +824,13 @@ string.h
 se_trace.h
 -
 
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/NonBlockingUnixSocketFactory.cpp
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/NonBlockingUnixSocketFactory.cpp
 NonBlockingUnixCommunicationSocket.h
 -
 NonBlockingUnixSocketFactory.h
 -
 
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/ProtobufSerializer.cpp
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/ProtobufSerializer.cpp
 ProtobufSerializer.h
 -
 IAEMessage.h
@@ -870,7 +870,7 @@ AEGetSupportedAttKeyIDNumRequest.h
 AEGetSupportedAttKeyIDsRequest.h
 -
 
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/SocketTransporter.cpp
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/SocketTransporter.cpp
 SocketTransporter.h
 -
 IAERequest.h
@@ -888,7 +888,7 @@ string.h
 stdlib.h
 -
 
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/UnixCommunicationSocket.cpp
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/UnixCommunicationSocket.cpp
 unistd.h
 -
 string.h
@@ -910,9 +910,9 @@ IAEResponse.h
 UnixCommunicationSocket.h
 -
 se_trace.h
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/se_trace.h
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/se_trace.h
 
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/UnixSocketFactory.cpp
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/UnixSocketFactory.cpp
 UnixSocketFactory.h
 -
 UnixCommunicationSocket.h
@@ -922,67 +922,67 @@ stdlib.h
 string.h
 -
 
-/root/SGXENV/sgxsdk/include/sgx.h
+/home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx.h
 sgx_error.h
-/root/SGXENV/sgxsdk/include/sgx_error.h
+/home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_error.h
 sgx_attributes.h
-/root/SGXENV/sgxsdk/include/sgx_attributes.h
+/home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_attributes.h
 sgx_key.h
-/root/SGXENV/sgxsdk/include/sgx_key.h
+/home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_key.h
 sgx_report.h
-/root/SGXENV/sgxsdk/include/sgx_report.h
+/home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report.h
 
-/root/SGXENV/sgxsdk/include/sgx_attributes.h
+/home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_attributes.h
 stdint.h
 -
 
-/root/SGXENV/sgxsdk/include/sgx_defs.h
+/home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_defs.h
 
-/root/SGXENV/sgxsdk/include/sgx_eid.h
+/home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_eid.h
 stdint.h
 -
 
-/root/SGXENV/sgxsdk/include/sgx_error.h
+/home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_error.h
 
-/root/SGXENV/sgxsdk/include/sgx_key.h
+/home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_key.h
 stdint.h
 -
 sgx_attributes.h
-/root/SGXENV/sgxsdk/include/sgx_attributes.h
+/home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_attributes.h
 
-/root/SGXENV/sgxsdk/include/sgx_quote.h
+/home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_quote.h
 sgx_report.h
-/root/SGXENV/sgxsdk/include/sgx_report.h
+/home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report.h
 
-/root/SGXENV/sgxsdk/include/sgx_report.h
+/home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report.h
 sgx_attributes.h
-/root/SGXENV/sgxsdk/include/sgx_attributes.h
+/home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_attributes.h
 sgx_key.h
-/root/SGXENV/sgxsdk/include/sgx_key.h
+/home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_key.h
 
-/root/SGXENV/sgxsdk/include/sgx_report2.h
+/home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report2.h
 
-/root/SGXENV/sgxsdk/include/sgx_tcrypto.h
+/home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_tcrypto.h
 sgx.h
-/root/SGXENV/sgxsdk/include/sgx.h
+/home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx.h
 sgx_defs.h
-/root/SGXENV/sgxsdk/include/sgx_defs.h
+/home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_defs.h
 stdlib.h
-/root/SGXENV/sgxsdk/include/stdlib.h
+/home/nsec-sgx/SGXENVWASM/sgxsdk/include/stdlib.h
 
-/root/SGXENV/sgxsdk/include/sgx_urts.h
+/home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_urts.h
 sgx_attributes.h
-/root/SGXENV/sgxsdk/include/sgx_attributes.h
+/home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_attributes.h
 sgx_error.h
-/root/SGXENV/sgxsdk/include/sgx_error.h
+/home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_error.h
 sgx_eid.h
-/root/SGXENV/sgxsdk/include/sgx_eid.h
+/home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_eid.h
 sgx_defs.h
-/root/SGXENV/sgxsdk/include/sgx_defs.h
+/home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_defs.h
 sgx_key.h
-/root/SGXENV/sgxsdk/include/sgx_key.h
+/home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_key.h
 sgx_report.h
-/root/SGXENV/sgxsdk/include/sgx_report.h
+/home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report.h
 stddef.h
 -
 

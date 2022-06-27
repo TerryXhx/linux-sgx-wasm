@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/SGXENV/linux-sgx/psw/ae/aesm_service/source
+CMAKE_SOURCE_DIR = /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build
+CMAKE_BINARY_DIR = /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -E cmake_progress_start /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/CMakeFiles /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/epid_quote_service_bundle/CMakeFiles/progress.marks
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 bundles/epid_quote_service_bundle/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/CMakeFiles 0
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/CMakeFiles /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/epid_quote_service_bundle/CMakeFiles/progress.marks
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 bundles/epid_quote_service_bundle/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 bundles/epid_quote_service_bundle/clean
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 bundles/epid_quote_service_bundle/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 bundles/epid_quote_service_bundle/preinstall
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 bundles/epid_quote_service_bundle/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 bundles/epid_quote_service_bundle/preinstall
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 bundles/epid_quote_service_bundle/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/rule:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/rule
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/rule
 .PHONY : bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ epid_quote_service_bundle: bundles/epid_quote_service_bundle/CMakeFiles/epid_quo
 
 # fast build rule for target.
 epid_quote_service_bundle/fast:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build
 .PHONY : epid_quote_service_bundle/fast
 
 PVEClass.o: PVEClass.cpp.o
@@ -131,7 +131,7 @@ PVEClass.o: PVEClass.cpp.o
 
 # target to build an object file
 PVEClass.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/PVEClass.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/PVEClass.cpp.o
 .PHONY : PVEClass.cpp.o
 
 PVEClass.i: PVEClass.cpp.i
@@ -140,7 +140,7 @@ PVEClass.i: PVEClass.cpp.i
 
 # target to preprocess a source file
 PVEClass.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/PVEClass.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/PVEClass.cpp.i
 .PHONY : PVEClass.cpp.i
 
 PVEClass.s: PVEClass.cpp.s
@@ -149,7 +149,7 @@ PVEClass.s: PVEClass.cpp.s
 
 # target to generate assembly for a file
 PVEClass.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/PVEClass.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/PVEClass.cpp.s
 .PHONY : PVEClass.cpp.s
 
 QEClass.o: QEClass.cpp.o
@@ -158,7 +158,7 @@ QEClass.o: QEClass.cpp.o
 
 # target to build an object file
 QEClass.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/QEClass.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/QEClass.cpp.o
 .PHONY : QEClass.cpp.o
 
 QEClass.i: QEClass.cpp.i
@@ -167,7 +167,7 @@ QEClass.i: QEClass.cpp.i
 
 # target to preprocess a source file
 QEClass.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/QEClass.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/QEClass.cpp.i
 .PHONY : QEClass.cpp.i
 
 QEClass.s: QEClass.cpp.s
@@ -176,7 +176,7 @@ QEClass.s: QEClass.cpp.s
 
 # target to generate assembly for a file
 QEClass.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/QEClass.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/QEClass.cpp.s
 .PHONY : QEClass.cpp.s
 
 aesm_ecdsa.o: aesm_ecdsa.cpp.o
@@ -185,7 +185,7 @@ aesm_ecdsa.o: aesm_ecdsa.cpp.o
 
 # target to build an object file
 aesm_ecdsa.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/aesm_ecdsa.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/aesm_ecdsa.cpp.o
 .PHONY : aesm_ecdsa.cpp.o
 
 aesm_ecdsa.i: aesm_ecdsa.cpp.i
@@ -194,7 +194,7 @@ aesm_ecdsa.i: aesm_ecdsa.cpp.i
 
 # target to preprocess a source file
 aesm_ecdsa.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/aesm_ecdsa.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/aesm_ecdsa.cpp.i
 .PHONY : aesm_ecdsa.cpp.i
 
 aesm_ecdsa.s: aesm_ecdsa.cpp.s
@@ -203,7 +203,7 @@ aesm_ecdsa.s: aesm_ecdsa.cpp.s
 
 # target to generate assembly for a file
 aesm_ecdsa.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/aesm_ecdsa.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/aesm_ecdsa.cpp.s
 .PHONY : aesm_ecdsa.cpp.s
 
 aesm_epid_blob.o: aesm_epid_blob.cpp.o
@@ -212,7 +212,7 @@ aesm_epid_blob.o: aesm_epid_blob.cpp.o
 
 # target to build an object file
 aesm_epid_blob.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/aesm_epid_blob.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/aesm_epid_blob.cpp.o
 .PHONY : aesm_epid_blob.cpp.o
 
 aesm_epid_blob.i: aesm_epid_blob.cpp.i
@@ -221,7 +221,7 @@ aesm_epid_blob.i: aesm_epid_blob.cpp.i
 
 # target to preprocess a source file
 aesm_epid_blob.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/aesm_epid_blob.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/aesm_epid_blob.cpp.i
 .PHONY : aesm_epid_blob.cpp.i
 
 aesm_epid_blob.s: aesm_epid_blob.cpp.s
@@ -230,7 +230,7 @@ aesm_epid_blob.s: aesm_epid_blob.cpp.s
 
 # target to generate assembly for a file
 aesm_epid_blob.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/aesm_epid_blob.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/aesm_epid_blob.cpp.s
 .PHONY : aesm_epid_blob.cpp.s
 
 aesm_xegd_blob.o: aesm_xegd_blob.cpp.o
@@ -239,7 +239,7 @@ aesm_xegd_blob.o: aesm_xegd_blob.cpp.o
 
 # target to build an object file
 aesm_xegd_blob.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/aesm_xegd_blob.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/aesm_xegd_blob.cpp.o
 .PHONY : aesm_xegd_blob.cpp.o
 
 aesm_xegd_blob.i: aesm_xegd_blob.cpp.i
@@ -248,7 +248,7 @@ aesm_xegd_blob.i: aesm_xegd_blob.cpp.i
 
 # target to preprocess a source file
 aesm_xegd_blob.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/aesm_xegd_blob.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/aesm_xegd_blob.cpp.i
 .PHONY : aesm_xegd_blob.cpp.i
 
 aesm_xegd_blob.s: aesm_xegd_blob.cpp.s
@@ -257,7 +257,7 @@ aesm_xegd_blob.s: aesm_xegd_blob.cpp.s
 
 # target to generate assembly for a file
 aesm_xegd_blob.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/aesm_xegd_blob.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/aesm_xegd_blob.cpp.s
 .PHONY : aesm_xegd_blob.cpp.s
 
 endpoint_select_info.o: endpoint_select_info.cpp.o
@@ -266,7 +266,7 @@ endpoint_select_info.o: endpoint_select_info.cpp.o
 
 # target to build an object file
 endpoint_select_info.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/endpoint_select_info.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/endpoint_select_info.cpp.o
 .PHONY : endpoint_select_info.cpp.o
 
 endpoint_select_info.i: endpoint_select_info.cpp.i
@@ -275,7 +275,7 @@ endpoint_select_info.i: endpoint_select_info.cpp.i
 
 # target to preprocess a source file
 endpoint_select_info.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/endpoint_select_info.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/endpoint_select_info.cpp.i
 .PHONY : endpoint_select_info.cpp.i
 
 endpoint_select_info.s: endpoint_select_info.cpp.s
@@ -284,7 +284,7 @@ endpoint_select_info.s: endpoint_select_info.cpp.s
 
 # target to generate assembly for a file
 endpoint_select_info.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/endpoint_select_info.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/endpoint_select_info.cpp.s
 .PHONY : endpoint_select_info.cpp.s
 
 epid_endpoint_selection.o: epid_endpoint_selection.cpp.o
@@ -293,7 +293,7 @@ epid_endpoint_selection.o: epid_endpoint_selection.cpp.o
 
 # target to build an object file
 epid_endpoint_selection.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_endpoint_selection.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_endpoint_selection.cpp.o
 .PHONY : epid_endpoint_selection.cpp.o
 
 epid_endpoint_selection.i: epid_endpoint_selection.cpp.i
@@ -302,7 +302,7 @@ epid_endpoint_selection.i: epid_endpoint_selection.cpp.i
 
 # target to preprocess a source file
 epid_endpoint_selection.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_endpoint_selection.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_endpoint_selection.cpp.i
 .PHONY : epid_endpoint_selection.cpp.i
 
 epid_endpoint_selection.s: epid_endpoint_selection.cpp.s
@@ -311,7 +311,7 @@ epid_endpoint_selection.s: epid_endpoint_selection.cpp.s
 
 # target to generate assembly for a file
 epid_endpoint_selection.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_endpoint_selection.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_endpoint_selection.cpp.s
 .PHONY : epid_endpoint_selection.cpp.s
 
 epid_provision_msg1.o: epid_provision_msg1.cpp.o
@@ -320,7 +320,7 @@ epid_provision_msg1.o: epid_provision_msg1.cpp.o
 
 # target to build an object file
 epid_provision_msg1.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_provision_msg1.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_provision_msg1.cpp.o
 .PHONY : epid_provision_msg1.cpp.o
 
 epid_provision_msg1.i: epid_provision_msg1.cpp.i
@@ -329,7 +329,7 @@ epid_provision_msg1.i: epid_provision_msg1.cpp.i
 
 # target to preprocess a source file
 epid_provision_msg1.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_provision_msg1.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_provision_msg1.cpp.i
 .PHONY : epid_provision_msg1.cpp.i
 
 epid_provision_msg1.s: epid_provision_msg1.cpp.s
@@ -338,7 +338,7 @@ epid_provision_msg1.s: epid_provision_msg1.cpp.s
 
 # target to generate assembly for a file
 epid_provision_msg1.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_provision_msg1.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_provision_msg1.cpp.s
 .PHONY : epid_provision_msg1.cpp.s
 
 epid_provision_msg2.o: epid_provision_msg2.cpp.o
@@ -347,7 +347,7 @@ epid_provision_msg2.o: epid_provision_msg2.cpp.o
 
 # target to build an object file
 epid_provision_msg2.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_provision_msg2.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_provision_msg2.cpp.o
 .PHONY : epid_provision_msg2.cpp.o
 
 epid_provision_msg2.i: epid_provision_msg2.cpp.i
@@ -356,7 +356,7 @@ epid_provision_msg2.i: epid_provision_msg2.cpp.i
 
 # target to preprocess a source file
 epid_provision_msg2.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_provision_msg2.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_provision_msg2.cpp.i
 .PHONY : epid_provision_msg2.cpp.i
 
 epid_provision_msg2.s: epid_provision_msg2.cpp.s
@@ -365,7 +365,7 @@ epid_provision_msg2.s: epid_provision_msg2.cpp.s
 
 # target to generate assembly for a file
 epid_provision_msg2.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_provision_msg2.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_provision_msg2.cpp.s
 .PHONY : epid_provision_msg2.cpp.s
 
 epid_provision_msg4.o: epid_provision_msg4.cpp.o
@@ -374,7 +374,7 @@ epid_provision_msg4.o: epid_provision_msg4.cpp.o
 
 # target to build an object file
 epid_provision_msg4.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_provision_msg4.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_provision_msg4.cpp.o
 .PHONY : epid_provision_msg4.cpp.o
 
 epid_provision_msg4.i: epid_provision_msg4.cpp.i
@@ -383,7 +383,7 @@ epid_provision_msg4.i: epid_provision_msg4.cpp.i
 
 # target to preprocess a source file
 epid_provision_msg4.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_provision_msg4.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_provision_msg4.cpp.i
 .PHONY : epid_provision_msg4.cpp.i
 
 epid_provision_msg4.s: epid_provision_msg4.cpp.s
@@ -392,7 +392,7 @@ epid_provision_msg4.s: epid_provision_msg4.cpp.s
 
 # target to generate assembly for a file
 epid_provision_msg4.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_provision_msg4.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_provision_msg4.cpp.s
 .PHONY : epid_provision_msg4.cpp.s
 
 epid_quote_service_bundle.o: epid_quote_service_bundle.cpp.o
@@ -401,7 +401,7 @@ epid_quote_service_bundle.o: epid_quote_service_bundle.cpp.o
 
 # target to build an object file
 epid_quote_service_bundle.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_quote_service_bundle.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_quote_service_bundle.cpp.o
 .PHONY : epid_quote_service_bundle.cpp.o
 
 epid_quote_service_bundle.i: epid_quote_service_bundle.cpp.i
@@ -410,7 +410,7 @@ epid_quote_service_bundle.i: epid_quote_service_bundle.cpp.i
 
 # target to preprocess a source file
 epid_quote_service_bundle.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_quote_service_bundle.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_quote_service_bundle.cpp.i
 .PHONY : epid_quote_service_bundle.cpp.i
 
 epid_quote_service_bundle.s: epid_quote_service_bundle.cpp.s
@@ -419,7 +419,7 @@ epid_quote_service_bundle.s: epid_quote_service_bundle.cpp.s
 
 # target to generate assembly for a file
 epid_quote_service_bundle.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_quote_service_bundle.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_quote_service_bundle.cpp.s
 .PHONY : epid_quote_service_bundle.cpp.s
 
 epid_quote_service_bundle/cppmicroservices_init.o: epid_quote_service_bundle/cppmicroservices_init.cpp.o
@@ -428,7 +428,7 @@ epid_quote_service_bundle/cppmicroservices_init.o: epid_quote_service_bundle/cpp
 
 # target to build an object file
 epid_quote_service_bundle/cppmicroservices_init.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_quote_service_bundle/cppmicroservices_init.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_quote_service_bundle/cppmicroservices_init.cpp.o
 .PHONY : epid_quote_service_bundle/cppmicroservices_init.cpp.o
 
 epid_quote_service_bundle/cppmicroservices_init.i: epid_quote_service_bundle/cppmicroservices_init.cpp.i
@@ -437,7 +437,7 @@ epid_quote_service_bundle/cppmicroservices_init.i: epid_quote_service_bundle/cpp
 
 # target to preprocess a source file
 epid_quote_service_bundle/cppmicroservices_init.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_quote_service_bundle/cppmicroservices_init.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_quote_service_bundle/cppmicroservices_init.cpp.i
 .PHONY : epid_quote_service_bundle/cppmicroservices_init.cpp.i
 
 epid_quote_service_bundle/cppmicroservices_init.s: epid_quote_service_bundle/cppmicroservices_init.cpp.s
@@ -446,7 +446,7 @@ epid_quote_service_bundle/cppmicroservices_init.s: epid_quote_service_bundle/cpp
 
 # target to generate assembly for a file
 epid_quote_service_bundle/cppmicroservices_init.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_quote_service_bundle/cppmicroservices_init.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_quote_service_bundle/cppmicroservices_init.cpp.s
 .PHONY : epid_quote_service_bundle/cppmicroservices_init.cpp.s
 
 epid_quote_service_bundle/cppmicroservices_resources.o: epid_quote_service_bundle/cppmicroservices_resources.cpp.o
@@ -455,7 +455,7 @@ epid_quote_service_bundle/cppmicroservices_resources.o: epid_quote_service_bundl
 
 # target to build an object file
 epid_quote_service_bundle/cppmicroservices_resources.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_quote_service_bundle/cppmicroservices_resources.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_quote_service_bundle/cppmicroservices_resources.cpp.o
 .PHONY : epid_quote_service_bundle/cppmicroservices_resources.cpp.o
 
 epid_quote_service_bundle/cppmicroservices_resources.i: epid_quote_service_bundle/cppmicroservices_resources.cpp.i
@@ -464,7 +464,7 @@ epid_quote_service_bundle/cppmicroservices_resources.i: epid_quote_service_bundl
 
 # target to preprocess a source file
 epid_quote_service_bundle/cppmicroservices_resources.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_quote_service_bundle/cppmicroservices_resources.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_quote_service_bundle/cppmicroservices_resources.cpp.i
 .PHONY : epid_quote_service_bundle/cppmicroservices_resources.cpp.i
 
 epid_quote_service_bundle/cppmicroservices_resources.s: epid_quote_service_bundle/cppmicroservices_resources.cpp.s
@@ -473,7 +473,7 @@ epid_quote_service_bundle/cppmicroservices_resources.s: epid_quote_service_bundl
 
 # target to generate assembly for a file
 epid_quote_service_bundle/cppmicroservices_resources.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_quote_service_bundle/cppmicroservices_resources.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_quote_service_bundle/cppmicroservices_resources.cpp.s
 .PHONY : epid_quote_service_bundle/cppmicroservices_resources.cpp.s
 
 epid_utility.o: epid_utility.cpp.o
@@ -482,7 +482,7 @@ epid_utility.o: epid_utility.cpp.o
 
 # target to build an object file
 epid_utility.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_utility.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_utility.cpp.o
 .PHONY : epid_utility.cpp.o
 
 epid_utility.i: epid_utility.cpp.i
@@ -491,7 +491,7 @@ epid_utility.i: epid_utility.cpp.i
 
 # target to preprocess a source file
 epid_utility.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_utility.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_utility.cpp.i
 .PHONY : epid_utility.cpp.i
 
 epid_utility.s: epid_utility.cpp.s
@@ -500,8 +500,62 @@ epid_utility.s: epid_utility.cpp.s
 
 # target to generate assembly for a file
 epid_utility.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_utility.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_utility.cpp.s
 .PHONY : epid_utility.cpp.s
+
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/common/pek_pub_key.o: home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/common/pek_pub_key.cpp.o
+
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/common/pek_pub_key.o
+
+# target to build an object file
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/common/pek_pub_key.cpp.o:
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/common/pek_pub_key.cpp.o
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/common/pek_pub_key.cpp.o
+
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/common/pek_pub_key.i: home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/common/pek_pub_key.cpp.i
+
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/common/pek_pub_key.i
+
+# target to preprocess a source file
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/common/pek_pub_key.cpp.i:
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/common/pek_pub_key.cpp.i
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/common/pek_pub_key.cpp.i
+
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/common/pek_pub_key.s: home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/common/pek_pub_key.cpp.s
+
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/common/pek_pub_key.s
+
+# target to generate assembly for a file
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/common/pek_pub_key.cpp.s:
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/common/pek_pub_key.cpp.s
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/common/pek_pub_key.cpp.s
+
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/common/se_sig_rl.o: home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/common/se_sig_rl.cpp.o
+
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/common/se_sig_rl.o
+
+# target to build an object file
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/common/se_sig_rl.cpp.o:
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/common/se_sig_rl.cpp.o
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/common/se_sig_rl.cpp.o
+
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/common/se_sig_rl.i: home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/common/se_sig_rl.cpp.i
+
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/common/se_sig_rl.i
+
+# target to preprocess a source file
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/common/se_sig_rl.cpp.i:
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/common/se_sig_rl.cpp.i
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/common/se_sig_rl.cpp.i
+
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/common/se_sig_rl.s: home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/common/se_sig_rl.cpp.s
+
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/common/se_sig_rl.s
+
+# target to generate assembly for a file
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/common/se_sig_rl.cpp.s:
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/common/se_sig_rl.cpp.s
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/common/se_sig_rl.cpp.s
 
 platform_info_facility.o: platform_info_facility.cpp.o
 
@@ -509,7 +563,7 @@ platform_info_facility.o: platform_info_facility.cpp.o
 
 # target to build an object file
 platform_info_facility.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/platform_info_facility.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/platform_info_facility.cpp.o
 .PHONY : platform_info_facility.cpp.o
 
 platform_info_facility.i: platform_info_facility.cpp.i
@@ -518,7 +572,7 @@ platform_info_facility.i: platform_info_facility.cpp.i
 
 # target to preprocess a source file
 platform_info_facility.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/platform_info_facility.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/platform_info_facility.cpp.i
 .PHONY : platform_info_facility.cpp.i
 
 platform_info_facility.s: platform_info_facility.cpp.s
@@ -527,7 +581,7 @@ platform_info_facility.s: platform_info_facility.cpp.s
 
 # target to generate assembly for a file
 platform_info_facility.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/platform_info_facility.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/platform_info_facility.cpp.s
 .PHONY : platform_info_facility.cpp.s
 
 platform_info_logic.o: platform_info_logic.cpp.o
@@ -536,7 +590,7 @@ platform_info_logic.o: platform_info_logic.cpp.o
 
 # target to build an object file
 platform_info_logic.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/platform_info_logic.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/platform_info_logic.cpp.o
 .PHONY : platform_info_logic.cpp.o
 
 platform_info_logic.i: platform_info_logic.cpp.i
@@ -545,7 +599,7 @@ platform_info_logic.i: platform_info_logic.cpp.i
 
 # target to preprocess a source file
 platform_info_logic.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/platform_info_logic.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/platform_info_logic.cpp.i
 .PHONY : platform_info_logic.cpp.i
 
 platform_info_logic.s: platform_info_logic.cpp.s
@@ -554,7 +608,7 @@ platform_info_logic.s: platform_info_logic.cpp.s
 
 # target to generate assembly for a file
 platform_info_logic.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/platform_info_logic.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/platform_info_logic.cpp.s
 .PHONY : platform_info_logic.cpp.s
 
 provision_enclave_u.o: provision_enclave_u.c.o
@@ -563,7 +617,7 @@ provision_enclave_u.o: provision_enclave_u.c.o
 
 # target to build an object file
 provision_enclave_u.c.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/provision_enclave_u.c.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/provision_enclave_u.c.o
 .PHONY : provision_enclave_u.c.o
 
 provision_enclave_u.i: provision_enclave_u.c.i
@@ -572,7 +626,7 @@ provision_enclave_u.i: provision_enclave_u.c.i
 
 # target to preprocess a source file
 provision_enclave_u.c.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/provision_enclave_u.c.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/provision_enclave_u.c.i
 .PHONY : provision_enclave_u.c.i
 
 provision_enclave_u.s: provision_enclave_u.c.s
@@ -581,7 +635,7 @@ provision_enclave_u.s: provision_enclave_u.c.s
 
 # target to generate assembly for a file
 provision_enclave_u.c.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/provision_enclave_u.c.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/provision_enclave_u.c.s
 .PHONY : provision_enclave_u.c.s
 
 pve_logic.o: pve_logic.cpp.o
@@ -590,7 +644,7 @@ pve_logic.o: pve_logic.cpp.o
 
 # target to build an object file
 pve_logic.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/pve_logic.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/pve_logic.cpp.o
 .PHONY : pve_logic.cpp.o
 
 pve_logic.i: pve_logic.cpp.i
@@ -599,7 +653,7 @@ pve_logic.i: pve_logic.cpp.i
 
 # target to preprocess a source file
 pve_logic.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/pve_logic.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/pve_logic.cpp.i
 .PHONY : pve_logic.cpp.i
 
 pve_logic.s: pve_logic.cpp.s
@@ -608,7 +662,7 @@ pve_logic.s: pve_logic.cpp.s
 
 # target to generate assembly for a file
 pve_logic.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/pve_logic.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/pve_logic.cpp.s
 .PHONY : pve_logic.cpp.s
 
 pve_pub_key.o: pve_pub_key.cpp.o
@@ -617,7 +671,7 @@ pve_pub_key.o: pve_pub_key.cpp.o
 
 # target to build an object file
 pve_pub_key.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/pve_pub_key.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/pve_pub_key.cpp.o
 .PHONY : pve_pub_key.cpp.o
 
 pve_pub_key.i: pve_pub_key.cpp.i
@@ -626,7 +680,7 @@ pve_pub_key.i: pve_pub_key.cpp.i
 
 # target to preprocess a source file
 pve_pub_key.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/pve_pub_key.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/pve_pub_key.cpp.i
 .PHONY : pve_pub_key.cpp.i
 
 pve_pub_key.s: pve_pub_key.cpp.s
@@ -635,7 +689,7 @@ pve_pub_key.s: pve_pub_key.cpp.s
 
 # target to generate assembly for a file
 pve_pub_key.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/pve_pub_key.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/pve_pub_key.cpp.s
 .PHONY : pve_pub_key.cpp.s
 
 qe_logic.o: qe_logic.cpp.o
@@ -644,7 +698,7 @@ qe_logic.o: qe_logic.cpp.o
 
 # target to build an object file
 qe_logic.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/qe_logic.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/qe_logic.cpp.o
 .PHONY : qe_logic.cpp.o
 
 qe_logic.i: qe_logic.cpp.i
@@ -653,7 +707,7 @@ qe_logic.i: qe_logic.cpp.i
 
 # target to preprocess a source file
 qe_logic.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/qe_logic.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/qe_logic.cpp.i
 .PHONY : qe_logic.cpp.i
 
 qe_logic.s: qe_logic.cpp.s
@@ -662,7 +716,7 @@ qe_logic.s: qe_logic.cpp.s
 
 # target to generate assembly for a file
 qe_logic.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/qe_logic.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/qe_logic.cpp.s
 .PHONY : qe_logic.cpp.s
 
 quoting_enclave_u.o: quoting_enclave_u.c.o
@@ -671,7 +725,7 @@ quoting_enclave_u.o: quoting_enclave_u.c.o
 
 # target to build an object file
 quoting_enclave_u.c.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/quoting_enclave_u.c.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/quoting_enclave_u.c.o
 .PHONY : quoting_enclave_u.c.o
 
 quoting_enclave_u.i: quoting_enclave_u.c.i
@@ -680,7 +734,7 @@ quoting_enclave_u.i: quoting_enclave_u.c.i
 
 # target to preprocess a source file
 quoting_enclave_u.c.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/quoting_enclave_u.c.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/quoting_enclave_u.c.i
 .PHONY : quoting_enclave_u.c.i
 
 quoting_enclave_u.s: quoting_enclave_u.c.s
@@ -689,62 +743,8 @@ quoting_enclave_u.s: quoting_enclave_u.c.s
 
 # target to generate assembly for a file
 quoting_enclave_u.c.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/quoting_enclave_u.c.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/quoting_enclave_u.c.s
 .PHONY : quoting_enclave_u.c.s
-
-root/SGXENV/linux-sgx/psw/ae/common/pek_pub_key.o: root/SGXENV/linux-sgx/psw/ae/common/pek_pub_key.cpp.o
-
-.PHONY : root/SGXENV/linux-sgx/psw/ae/common/pek_pub_key.o
-
-# target to build an object file
-root/SGXENV/linux-sgx/psw/ae/common/pek_pub_key.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/root/SGXENV/linux-sgx/psw/ae/common/pek_pub_key.cpp.o
-.PHONY : root/SGXENV/linux-sgx/psw/ae/common/pek_pub_key.cpp.o
-
-root/SGXENV/linux-sgx/psw/ae/common/pek_pub_key.i: root/SGXENV/linux-sgx/psw/ae/common/pek_pub_key.cpp.i
-
-.PHONY : root/SGXENV/linux-sgx/psw/ae/common/pek_pub_key.i
-
-# target to preprocess a source file
-root/SGXENV/linux-sgx/psw/ae/common/pek_pub_key.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/root/SGXENV/linux-sgx/psw/ae/common/pek_pub_key.cpp.i
-.PHONY : root/SGXENV/linux-sgx/psw/ae/common/pek_pub_key.cpp.i
-
-root/SGXENV/linux-sgx/psw/ae/common/pek_pub_key.s: root/SGXENV/linux-sgx/psw/ae/common/pek_pub_key.cpp.s
-
-.PHONY : root/SGXENV/linux-sgx/psw/ae/common/pek_pub_key.s
-
-# target to generate assembly for a file
-root/SGXENV/linux-sgx/psw/ae/common/pek_pub_key.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/root/SGXENV/linux-sgx/psw/ae/common/pek_pub_key.cpp.s
-.PHONY : root/SGXENV/linux-sgx/psw/ae/common/pek_pub_key.cpp.s
-
-root/SGXENV/linux-sgx/psw/ae/common/se_sig_rl.o: root/SGXENV/linux-sgx/psw/ae/common/se_sig_rl.cpp.o
-
-.PHONY : root/SGXENV/linux-sgx/psw/ae/common/se_sig_rl.o
-
-# target to build an object file
-root/SGXENV/linux-sgx/psw/ae/common/se_sig_rl.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/root/SGXENV/linux-sgx/psw/ae/common/se_sig_rl.cpp.o
-.PHONY : root/SGXENV/linux-sgx/psw/ae/common/se_sig_rl.cpp.o
-
-root/SGXENV/linux-sgx/psw/ae/common/se_sig_rl.i: root/SGXENV/linux-sgx/psw/ae/common/se_sig_rl.cpp.i
-
-.PHONY : root/SGXENV/linux-sgx/psw/ae/common/se_sig_rl.i
-
-# target to preprocess a source file
-root/SGXENV/linux-sgx/psw/ae/common/se_sig_rl.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/root/SGXENV/linux-sgx/psw/ae/common/se_sig_rl.cpp.i
-.PHONY : root/SGXENV/linux-sgx/psw/ae/common/se_sig_rl.cpp.i
-
-root/SGXENV/linux-sgx/psw/ae/common/se_sig_rl.s: root/SGXENV/linux-sgx/psw/ae/common/se_sig_rl.cpp.s
-
-.PHONY : root/SGXENV/linux-sgx/psw/ae/common/se_sig_rl.s
-
-# target to generate assembly for a file
-root/SGXENV/linux-sgx/psw/ae/common/se_sig_rl.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/build.make bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/root/SGXENV/linux-sgx/psw/ae/common/se_sig_rl.cpp.s
-.PHONY : root/SGXENV/linux-sgx/psw/ae/common/se_sig_rl.cpp.s
 
 # Help Target
 help:
@@ -797,6 +797,12 @@ help:
 	@echo "... epid_utility.o"
 	@echo "... epid_utility.i"
 	@echo "... epid_utility.s"
+	@echo "... home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/common/pek_pub_key.o"
+	@echo "... home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/common/pek_pub_key.i"
+	@echo "... home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/common/pek_pub_key.s"
+	@echo "... home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/common/se_sig_rl.o"
+	@echo "... home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/common/se_sig_rl.i"
+	@echo "... home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/common/se_sig_rl.s"
 	@echo "... platform_info_facility.o"
 	@echo "... platform_info_facility.i"
 	@echo "... platform_info_facility.s"
@@ -818,12 +824,6 @@ help:
 	@echo "... quoting_enclave_u.o"
 	@echo "... quoting_enclave_u.i"
 	@echo "... quoting_enclave_u.s"
-	@echo "... root/SGXENV/linux-sgx/psw/ae/common/pek_pub_key.o"
-	@echo "... root/SGXENV/linux-sgx/psw/ae/common/pek_pub_key.i"
-	@echo "... root/SGXENV/linux-sgx/psw/ae/common/pek_pub_key.s"
-	@echo "... root/SGXENV/linux-sgx/psw/ae/common/se_sig_rl.o"
-	@echo "... root/SGXENV/linux-sgx/psw/ae/common/se_sig_rl.i"
-	@echo "... root/SGXENV/linux-sgx/psw/ae/common/se_sig_rl.s"
 .PHONY : help
 
 
@@ -835,6 +835,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,23 +1,23 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
-Change Dir: /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/CMakeFiles/CMakeTmp
+Change Dir: /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_56009/fast && make[4]: Entering directory '/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTC_56009.dir/build.make CMakeFiles/cmTC_56009.dir/build
-make[5]: Entering directory '/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_56009.dir/src.c.o
-/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_56009.dir/src.c.o   -c /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_56009
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_56009.dir/link.txt --verbose=1
-/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_56009.dir/src.c.o  -o cmTC_56009 
-/usr/local/bin/ld: CMakeFiles/cmTC_56009.dir/src.c.o: in function `main':
+Run Build Command(s):/usr/bin/make cmTC_2ab11/fast && make[4]: Entering directory '/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_2ab11.dir/build.make CMakeFiles/cmTC_2ab11.dir/build
+make[5]: Entering directory '/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2ab11.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_2ab11.dir/src.c.o   -c /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_2ab11
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2ab11.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_2ab11.dir/src.c.o  -o cmTC_2ab11 
+/usr/local/bin/ld: CMakeFiles/cmTC_2ab11.dir/src.c.o: in function `main':
 src.c:(.text+0x46): undefined reference to `pthread_create'
 /usr/local/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
 /usr/local/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
 collect2: error: ld returned 1 exit status
-make[5]: *** [CMakeFiles/cmTC_56009.dir/build.make:87: cmTC_56009] Error 1
-make[5]: Leaving directory '/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/CMakeFiles/CMakeTmp'
-make[4]: *** [Makefile:121: cmTC_56009/fast] Error 2
-make[4]: Leaving directory '/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/CMakeFiles/CMakeTmp'
+make[5]: *** [CMakeFiles/cmTC_2ab11.dir/build.make:87: cmTC_2ab11] Error 1
+make[5]: Leaving directory '/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/CMakeFiles/CMakeTmp'
+make[4]: *** [Makefile:121: cmTC_2ab11/fast] Error 2
+make[4]: Leaving directory '/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/CMakeFiles/CMakeTmp'
 
 
 Source file was:
@@ -41,22 +41,22 @@ int main(void)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/CMakeFiles/CMakeTmp
+Change Dir: /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_08ac7/fast && make[4]: Entering directory '/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTC_08ac7.dir/build.make CMakeFiles/cmTC_08ac7.dir/build
-make[5]: Entering directory '/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_08ac7.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_08ac7.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_08ac7
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_08ac7.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_08ac7.dir/CheckFunctionExists.c.o  -o cmTC_08ac7  -lpthreads 
+Run Build Command(s):/usr/bin/make cmTC_edba1/fast && make[4]: Entering directory '/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_edba1.dir/build.make CMakeFiles/cmTC_edba1.dir/build
+make[5]: Entering directory '/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_edba1.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_edba1.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_edba1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_edba1.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_edba1.dir/CheckFunctionExists.c.o  -o cmTC_edba1  -lpthreads 
 /usr/local/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-make[5]: *** [CMakeFiles/cmTC_08ac7.dir/build.make:87: cmTC_08ac7] Error 1
-make[5]: Leaving directory '/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/CMakeFiles/CMakeTmp'
-make[4]: *** [Makefile:121: cmTC_08ac7/fast] Error 2
-make[4]: Leaving directory '/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/CMakeFiles/CMakeTmp'
+make[5]: *** [CMakeFiles/cmTC_edba1.dir/build.make:87: cmTC_edba1] Error 1
+make[5]: Leaving directory '/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/CMakeFiles/CMakeTmp'
+make[4]: *** [Makefile:121: cmTC_edba1/fast] Error 2
+make[4]: Leaving directory '/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/CMakeFiles/CMakeTmp'
 
 
 

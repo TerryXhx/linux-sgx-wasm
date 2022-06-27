@@ -11,29 +11,29 @@ bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/provi
  ../../../../../external/epid-sdk/epid/member/api.h
  ../../../inc/internal/epid_pve_type.h
  ../../../pve/provision_msg.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/epid_quote_service_bundle/provision_enclave_u.c
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/epid_quote_service_bundle/provision_enclave_u.h
- /root/SGXENV/sgxsdk/include/sgx.h
- /root/SGXENV/sgxsdk/include/sgx_attributes.h
- /root/SGXENV/sgxsdk/include/sgx_defs.h
- /root/SGXENV/sgxsdk/include/sgx_edger8r.h
- /root/SGXENV/sgxsdk/include/sgx_eid.h
- /root/SGXENV/sgxsdk/include/sgx_error.h
- /root/SGXENV/sgxsdk/include/sgx_key.h
- /root/SGXENV/sgxsdk/include/sgx_report.h
- /root/SGXENV/sgxsdk/include/sgx_tcrypto.h
- /root/SGXENV/sgxsdk/include/sgx_tseal.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/epid_quote_service_bundle/provision_enclave_u.c
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/epid_quote_service_bundle/provision_enclave_u.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_attributes.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_defs.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_edger8r.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_eid.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_error.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_key.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_tcrypto.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_tseal.h
 bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/quoting_enclave_u.c.o
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/epid_quote_service_bundle/quoting_enclave_u.c
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/epid_quote_service_bundle/quoting_enclave_u.h
- /root/SGXENV/sgxsdk/include/sgx_attributes.h
- /root/SGXENV/sgxsdk/include/sgx_defs.h
- /root/SGXENV/sgxsdk/include/sgx_edger8r.h
- /root/SGXENV/sgxsdk/include/sgx_eid.h
- /root/SGXENV/sgxsdk/include/sgx_error.h
- /root/SGXENV/sgxsdk/include/sgx_key.h
- /root/SGXENV/sgxsdk/include/sgx_quote.h
- /root/SGXENV/sgxsdk/include/sgx_report.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/epid_quote_service_bundle/quoting_enclave_u.c
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/epid_quote_service_bundle/quoting_enclave_u.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_attributes.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_defs.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_edger8r.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_eid.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_error.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_key.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_quote.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report.h
 bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/PVEClass.cpp.o
  ../../../../../common/inc/internal/arch.h
  ../../../../../common/inc/internal/inst.h
@@ -72,24 +72,24 @@ bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/PVECl
  ../common/oal/oal.h
  ../common/oal/power.h
  ../common/prof_fun.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/PVEClass.cpp
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/PVEClass.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/QEClass.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/aesm_xegd_blob.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/pve_logic.h
- /root/SGXENV/sgxsdk/include/sgx.h
- /root/SGXENV/sgxsdk/include/sgx_attributes.h
- /root/SGXENV/sgxsdk/include/sgx_defs.h
- /root/SGXENV/sgxsdk/include/sgx_edger8r.h
- /root/SGXENV/sgxsdk/include/sgx_eid.h
- /root/SGXENV/sgxsdk/include/sgx_error.h
- /root/SGXENV/sgxsdk/include/sgx_key.h
- /root/SGXENV/sgxsdk/include/sgx_quote.h
- /root/SGXENV/sgxsdk/include/sgx_report.h
- /root/SGXENV/sgxsdk/include/sgx_report2.h
- /root/SGXENV/sgxsdk/include/sgx_tcrypto.h
- /root/SGXENV/sgxsdk/include/sgx_tseal.h
- /root/SGXENV/sgxsdk/include/sgx_urts.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/PVEClass.cpp
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/PVEClass.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/QEClass.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/aesm_xegd_blob.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/pve_logic.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_attributes.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_defs.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_edger8r.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_eid.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_error.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_key.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_quote.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report2.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_tcrypto.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_tseal.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_urts.h
  bundles/epid_quote_service_bundle/provision_enclave_u.h
 bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/QEClass.cpp.o
  ../../../../../common/inc/internal/arch.h
@@ -130,23 +130,23 @@ bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/QECla
  ../common/oal/oal.h
  ../common/oal/power.h
  ../common/prof_fun.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/PVEClass.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/QEClass.cpp
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/QEClass.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/pve_logic.h
- /root/SGXENV/sgxsdk/include/sgx.h
- /root/SGXENV/sgxsdk/include/sgx_attributes.h
- /root/SGXENV/sgxsdk/include/sgx_defs.h
- /root/SGXENV/sgxsdk/include/sgx_edger8r.h
- /root/SGXENV/sgxsdk/include/sgx_eid.h
- /root/SGXENV/sgxsdk/include/sgx_error.h
- /root/SGXENV/sgxsdk/include/sgx_key.h
- /root/SGXENV/sgxsdk/include/sgx_quote.h
- /root/SGXENV/sgxsdk/include/sgx_report.h
- /root/SGXENV/sgxsdk/include/sgx_report2.h
- /root/SGXENV/sgxsdk/include/sgx_tcrypto.h
- /root/SGXENV/sgxsdk/include/sgx_tseal.h
- /root/SGXENV/sgxsdk/include/sgx_urts.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/PVEClass.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/QEClass.cpp
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/QEClass.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/pve_logic.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_attributes.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_defs.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_edger8r.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_eid.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_error.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_key.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_quote.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report2.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_tcrypto.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_tseal.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_urts.h
  bundles/epid_quote_service_bundle/quoting_enclave_u.h
 bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/aesm_ecdsa.cpp.o
  ../../../../../common/inc/internal/se_cdefs.h
@@ -163,14 +163,14 @@ bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/aesm_
  ../../../inc/internal/epid_pve_type.h
  ../../../inc/internal/pek_pub_key.h
  ../../../inc/internal/tlv_common.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/aesm_ecdsa.cpp
- /root/SGXENV/sgxsdk/include/sgx.h
- /root/SGXENV/sgxsdk/include/sgx_attributes.h
- /root/SGXENV/sgxsdk/include/sgx_defs.h
- /root/SGXENV/sgxsdk/include/sgx_error.h
- /root/SGXENV/sgxsdk/include/sgx_key.h
- /root/SGXENV/sgxsdk/include/sgx_report.h
- /root/SGXENV/sgxsdk/include/sgx_tcrypto.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/aesm_ecdsa.cpp
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_attributes.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_defs.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_error.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_key.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_tcrypto.h
 bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/aesm_epid_blob.cpp.o
  ../../../../../common/inc/internal/se_cdefs.h
  ../../../../../common/inc/internal/se_memcpy.h
@@ -195,18 +195,18 @@ bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/aesm_
  ../common/oal/internal_log.h
  ../common/oal/oal.h
  ../common/oal/power.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/aesm_epid_blob.cpp
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/aesm_epid_blob.h
- /root/SGXENV/sgxsdk/include/sgx.h
- /root/SGXENV/sgxsdk/include/sgx_attributes.h
- /root/SGXENV/sgxsdk/include/sgx_defs.h
- /root/SGXENV/sgxsdk/include/sgx_eid.h
- /root/SGXENV/sgxsdk/include/sgx_error.h
- /root/SGXENV/sgxsdk/include/sgx_key.h
- /root/SGXENV/sgxsdk/include/sgx_report.h
- /root/SGXENV/sgxsdk/include/sgx_tcrypto.h
- /root/SGXENV/sgxsdk/include/sgx_tseal.h
- /root/SGXENV/sgxsdk/include/sgx_urts.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/aesm_epid_blob.cpp
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/aesm_epid_blob.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_attributes.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_defs.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_eid.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_error.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_key.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_tcrypto.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_tseal.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_urts.h
 bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/aesm_xegd_blob.cpp.o
  ../../../../../common/inc/internal/arch.h
  ../../../../../common/inc/internal/inst.h
@@ -247,21 +247,21 @@ bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/aesm_
  ../common/oal/oal.h
  ../common/oal/power.h
  ../common/platform_info_blob.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/aesm_epid_blob.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/aesm_xegd_blob.cpp
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/aesm_xegd_blob.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/endpoint_select_info.h
- /root/SGXENV/sgxsdk/include/sgx.h
- /root/SGXENV/sgxsdk/include/sgx_attributes.h
- /root/SGXENV/sgxsdk/include/sgx_defs.h
- /root/SGXENV/sgxsdk/include/sgx_eid.h
- /root/SGXENV/sgxsdk/include/sgx_error.h
- /root/SGXENV/sgxsdk/include/sgx_key.h
- /root/SGXENV/sgxsdk/include/sgx_report.h
- /root/SGXENV/sgxsdk/include/sgx_report2.h
- /root/SGXENV/sgxsdk/include/sgx_tcrypto.h
- /root/SGXENV/sgxsdk/include/sgx_tseal.h
- /root/SGXENV/sgxsdk/include/sgx_urts.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/aesm_epid_blob.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/aesm_xegd_blob.cpp
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/aesm_xegd_blob.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/endpoint_select_info.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_attributes.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_defs.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_eid.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_error.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_key.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report2.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_tcrypto.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_tseal.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_urts.h
 bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/endpoint_select_info.cpp.o
  ../../../../../common/inc/internal/arch.h
  ../../../../../common/inc/internal/inst.h
@@ -312,23 +312,23 @@ bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/endpo
  ../common/type_length_value.h
  ../interfaces/network_service.h
  ../interfaces/service.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/PVEClass.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/aesm_xegd_blob.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/endpoint_select_info.cpp
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/endpoint_select_info.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/prov_msg_size.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/pve_logic.h
- /root/SGXENV/sgxsdk/include/sgx.h
- /root/SGXENV/sgxsdk/include/sgx_attributes.h
- /root/SGXENV/sgxsdk/include/sgx_defs.h
- /root/SGXENV/sgxsdk/include/sgx_eid.h
- /root/SGXENV/sgxsdk/include/sgx_error.h
- /root/SGXENV/sgxsdk/include/sgx_key.h
- /root/SGXENV/sgxsdk/include/sgx_report.h
- /root/SGXENV/sgxsdk/include/sgx_report2.h
- /root/SGXENV/sgxsdk/include/sgx_tcrypto.h
- /root/SGXENV/sgxsdk/include/sgx_tseal.h
- /root/SGXENV/sgxsdk/include/sgx_urts.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/PVEClass.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/aesm_xegd_blob.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/endpoint_select_info.cpp
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/endpoint_select_info.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/prov_msg_size.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/pve_logic.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_attributes.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_defs.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_eid.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_error.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_key.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report2.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_tcrypto.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_tseal.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_urts.h
 bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_endpoint_selection.cpp.o
  ../../../../../common/inc/internal/arch.h
  ../../../../../common/inc/internal/inst.h
@@ -370,22 +370,22 @@ bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_
  ../common/oal/power.h
  ../common/prof_fun.h
  ../common/type_length_value.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/PVEClass.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/epid_endpoint_selection.cpp
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/epid_utility.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/pve_logic.h
- /root/SGXENV/sgxsdk/include/sgx.h
- /root/SGXENV/sgxsdk/include/sgx_attributes.h
- /root/SGXENV/sgxsdk/include/sgx_defs.h
- /root/SGXENV/sgxsdk/include/sgx_eid.h
- /root/SGXENV/sgxsdk/include/sgx_error.h
- /root/SGXENV/sgxsdk/include/sgx_key.h
- /root/SGXENV/sgxsdk/include/sgx_report.h
- /root/SGXENV/sgxsdk/include/sgx_report2.h
- /root/SGXENV/sgxsdk/include/sgx_tcrypto.h
- /root/SGXENV/sgxsdk/include/sgx_trts.h
- /root/SGXENV/sgxsdk/include/sgx_tseal.h
- /root/SGXENV/sgxsdk/include/sgx_urts.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/PVEClass.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/epid_endpoint_selection.cpp
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/epid_utility.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/pve_logic.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_attributes.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_defs.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_eid.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_error.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_key.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report2.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_tcrypto.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_trts.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_tseal.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_urts.h
 bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_provision_msg1.cpp.o
  ../../../../../common/inc/internal/arch.h
  ../../../../../common/inc/internal/crypto_wrapper.h
@@ -428,21 +428,21 @@ bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_
  ../common/type_length_value.h
  ../interfaces/pce_service.h
  ../interfaces/service.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/PVEClass.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/epid_provision_msg1.cpp
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/epid_utility.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/pve_logic.h
- /root/SGXENV/sgxsdk/include/sgx.h
- /root/SGXENV/sgxsdk/include/sgx_attributes.h
- /root/SGXENV/sgxsdk/include/sgx_defs.h
- /root/SGXENV/sgxsdk/include/sgx_eid.h
- /root/SGXENV/sgxsdk/include/sgx_error.h
- /root/SGXENV/sgxsdk/include/sgx_key.h
- /root/SGXENV/sgxsdk/include/sgx_report.h
- /root/SGXENV/sgxsdk/include/sgx_report2.h
- /root/SGXENV/sgxsdk/include/sgx_tcrypto.h
- /root/SGXENV/sgxsdk/include/sgx_tseal.h
- /root/SGXENV/sgxsdk/include/sgx_urts.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/PVEClass.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/epid_provision_msg1.cpp
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/epid_utility.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/pve_logic.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_attributes.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_defs.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_eid.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_error.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_key.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report2.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_tcrypto.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_tseal.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_urts.h
 bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_provision_msg2.cpp.o
  ../../../../../common/inc/internal/arch.h
  ../../../../../common/inc/internal/inst.h
@@ -484,22 +484,22 @@ bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_
  ../common/type_length_value.h
  ../interfaces/pce_service.h
  ../interfaces/service.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/PVEClass.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/aesm_xegd_blob.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/epid_provision_msg2.cpp
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/epid_utility.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/pve_logic.h
- /root/SGXENV/sgxsdk/include/sgx.h
- /root/SGXENV/sgxsdk/include/sgx_attributes.h
- /root/SGXENV/sgxsdk/include/sgx_defs.h
- /root/SGXENV/sgxsdk/include/sgx_eid.h
- /root/SGXENV/sgxsdk/include/sgx_error.h
- /root/SGXENV/sgxsdk/include/sgx_key.h
- /root/SGXENV/sgxsdk/include/sgx_report.h
- /root/SGXENV/sgxsdk/include/sgx_report2.h
- /root/SGXENV/sgxsdk/include/sgx_tcrypto.h
- /root/SGXENV/sgxsdk/include/sgx_tseal.h
- /root/SGXENV/sgxsdk/include/sgx_urts.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/PVEClass.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/aesm_xegd_blob.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/epid_provision_msg2.cpp
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/epid_utility.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/pve_logic.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_attributes.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_defs.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_eid.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_error.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_key.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report2.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_tcrypto.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_tseal.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_urts.h
 bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_provision_msg4.cpp.o
  ../../../../../common/inc/internal/arch.h
  ../../../../../common/inc/internal/inst.h
@@ -538,23 +538,23 @@ bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_
  ../common/oal/oal.h
  ../common/oal/power.h
  ../common/type_length_value.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/PVEClass.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/aesm_xegd_blob.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/epid_provision_msg4.cpp
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/epid_utility.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/pve_logic.h
- /root/SGXENV/sgxsdk/include/sgx.h
- /root/SGXENV/sgxsdk/include/sgx_attributes.h
- /root/SGXENV/sgxsdk/include/sgx_defs.h
- /root/SGXENV/sgxsdk/include/sgx_eid.h
- /root/SGXENV/sgxsdk/include/sgx_error.h
- /root/SGXENV/sgxsdk/include/sgx_key.h
- /root/SGXENV/sgxsdk/include/sgx_report.h
- /root/SGXENV/sgxsdk/include/sgx_report2.h
- /root/SGXENV/sgxsdk/include/sgx_tcrypto.h
- /root/SGXENV/sgxsdk/include/sgx_trts.h
- /root/SGXENV/sgxsdk/include/sgx_tseal.h
- /root/SGXENV/sgxsdk/include/sgx_urts.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/PVEClass.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/aesm_xegd_blob.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/epid_provision_msg4.cpp
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/epid_utility.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/pve_logic.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_attributes.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_defs.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_eid.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_error.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_key.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report2.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_tcrypto.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_trts.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_tseal.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_urts.h
 bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_quote_service_bundle.cpp.o
  ../../../../../common/inc/internal/arch.h
  ../../../../../common/inc/internal/inst.h
@@ -609,57 +609,57 @@ bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_
  ../interfaces/quote_provider_service.h
  ../interfaces/quote_service.h
  ../interfaces/service.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/Any.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/AnyMap.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/Bundle.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/BundleActivator.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/BundleContext.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/BundleInitialization.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/BundleVersion.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/FrameworkConfig.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/FrameworkExport.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/GetBundleContext.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/GlobalConfig.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ListenerFunctors.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ListenerToken.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ServiceException.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ServiceInterface.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ServiceProperties.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ServiceReference.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ServiceReferenceBase.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ServiceRegistration.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ServiceRegistrationBase.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/PVEClass.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/QEClass.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/aesm_epid_blob.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/aesm_xegd_blob.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/endpoint_select_info.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/epid_quote_service_bundle.cpp
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/platform_info_logic.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/pve_logic.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/qe_logic.h
- /root/SGXENV/sgxsdk/include/sgx.h
- /root/SGXENV/sgxsdk/include/sgx_attributes.h
- /root/SGXENV/sgxsdk/include/sgx_defs.h
- /root/SGXENV/sgxsdk/include/sgx_eid.h
- /root/SGXENV/sgxsdk/include/sgx_error.h
- /root/SGXENV/sgxsdk/include/sgx_key.h
- /root/SGXENV/sgxsdk/include/sgx_pce.h
- /root/SGXENV/sgxsdk/include/sgx_ql_lib_common.h
- /root/SGXENV/sgxsdk/include/sgx_ql_quote.h
- /root/SGXENV/sgxsdk/include/sgx_quote.h
- /root/SGXENV/sgxsdk/include/sgx_quote_3.h
- /root/SGXENV/sgxsdk/include/sgx_report.h
- /root/SGXENV/sgxsdk/include/sgx_report2.h
- /root/SGXENV/sgxsdk/include/sgx_tcrypto.h
- /root/SGXENV/sgxsdk/include/sgx_tseal.h
- /root/SGXENV/sgxsdk/include/sgx_urts.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/Any.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/AnyMap.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/Bundle.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/BundleActivator.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/BundleContext.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/BundleInitialization.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/BundleVersion.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/FrameworkConfig.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/FrameworkExport.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/GetBundleContext.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/GlobalConfig.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ListenerFunctors.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ListenerToken.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ServiceException.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ServiceInterface.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ServiceProperties.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ServiceReference.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ServiceReferenceBase.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ServiceRegistration.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ServiceRegistrationBase.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/PVEClass.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/QEClass.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/aesm_epid_blob.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/aesm_xegd_blob.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/endpoint_select_info.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/epid_quote_service_bundle.cpp
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/platform_info_logic.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/pve_logic.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/qe_logic.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_attributes.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_defs.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_eid.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_error.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_key.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_pce.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_ql_lib_common.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_ql_quote.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_quote.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_quote_3.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report2.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_tcrypto.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_tseal.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_urts.h
 bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_quote_service_bundle/cppmicroservices_init.cpp.o
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/BundleInitialization.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/GlobalConfig.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/epid_quote_service_bundle/epid_quote_service_bundle/cppmicroservices_init.cpp
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/BundleInitialization.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/GlobalConfig.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/epid_quote_service_bundle/epid_quote_service_bundle/cppmicroservices_init.cpp
 bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_quote_service_bundle/cppmicroservices_resources.cpp.o
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/epid_quote_service_bundle/epid_quote_service_bundle/cppmicroservices_resources.cpp
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/epid_quote_service_bundle/epid_quote_service_bundle/cppmicroservices_resources.cpp
 bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_utility.cpp.o
  ../../../../../common/inc/internal/arch.h
  ../../../../../common/inc/internal/inst.h
@@ -685,18 +685,58 @@ bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/epid_
  ../common/oal/oal.h
  ../common/oal/power.h
  ../common/type_length_value.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/epid_utility.cpp
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/epid_utility.h
- /root/SGXENV/sgxsdk/include/sgx.h
- /root/SGXENV/sgxsdk/include/sgx_attributes.h
- /root/SGXENV/sgxsdk/include/sgx_defs.h
- /root/SGXENV/sgxsdk/include/sgx_eid.h
- /root/SGXENV/sgxsdk/include/sgx_error.h
- /root/SGXENV/sgxsdk/include/sgx_key.h
- /root/SGXENV/sgxsdk/include/sgx_report.h
- /root/SGXENV/sgxsdk/include/sgx_report2.h
- /root/SGXENV/sgxsdk/include/sgx_tcrypto.h
- /root/SGXENV/sgxsdk/include/sgx_urts.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/epid_utility.cpp
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/epid_utility.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_attributes.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_defs.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_eid.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_error.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_key.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report2.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_tcrypto.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_urts.h
+bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/common/pek_pub_key.cpp.o
+ ../../../../../common/inc/internal/arch.h
+ ../../../../../common/inc/internal/inst.h
+ ../../../../../common/inc/internal/se_cdefs.h
+ ../../../../../common/inc/internal/se_types.h
+ ../../../../../external/epid-sdk/epid/common/bitsupplier.h
+ ../../../../../external/epid-sdk/epid/common/epiddefs.h
+ ../../../../../external/epid-sdk/epid/common/errors.h
+ ../../../../../external/epid-sdk/epid/common/types.h
+ ../../../../../external/epid-sdk/epid/member/api.h
+ ../../../data/constants/linux/isk_pub.hh
+ ../../../data/constants/linux/peksk_pub.hh
+ ../../../data/constants/linux/qsdk_pub.hh
+ ../../../data/constants/linux/xegdsk_pub.hh
+ ../../../inc/byte_order.h
+ ../../../inc/internal/epid_pve_type.h
+ ../../../inc/internal/pek_pub_key.h
+ ../../../inc/internal/pve_qe_common.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/common/pek_pub_key.cpp
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_attributes.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_defs.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_error.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_key.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report2.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_tcrypto.h
+bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/common/se_sig_rl.cpp.o
+ ../../../../../common/inc/internal/se_cdefs.h
+ ../../../../../common/inc/internal/se_quote_internal.h
+ ../../../../../common/inc/internal/se_types.h
+ ../../../../../external/epid-sdk/epid/common/types.h
+ ../../../inc/byte_order.h
+ ../../../inc/se_sig_rl.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/common/se_sig_rl.cpp
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_attributes.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_error.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_key.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_quote.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report.h
 bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/platform_info_facility.cpp.o
  ../../../../../common/inc/internal/se_cdefs.h
  ../../../../../common/inc/internal/se_types.h
@@ -718,33 +758,33 @@ bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/platf
  ../common/oal/oal.h
  ../common/oal/power.h
  ../common/platform_info_blob.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/Any.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/BundleContext.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/BundleInitialization.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/FrameworkConfig.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/FrameworkExport.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/GetBundleContext.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/GlobalConfig.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ListenerFunctors.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ListenerToken.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ServiceException.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ServiceInterface.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ServiceProperties.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ServiceReference.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ServiceReferenceBase.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ServiceRegistration.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ServiceRegistrationBase.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/platform_info_facility.cpp
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/platform_info_logic.h
- /root/SGXENV/sgxsdk/include/sgx.h
- /root/SGXENV/sgxsdk/include/sgx_attributes.h
- /root/SGXENV/sgxsdk/include/sgx_defs.h
- /root/SGXENV/sgxsdk/include/sgx_eid.h
- /root/SGXENV/sgxsdk/include/sgx_error.h
- /root/SGXENV/sgxsdk/include/sgx_key.h
- /root/SGXENV/sgxsdk/include/sgx_report.h
- /root/SGXENV/sgxsdk/include/sgx_tcrypto.h
- /root/SGXENV/sgxsdk/include/sgx_urts.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/Any.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/BundleContext.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/BundleInitialization.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/FrameworkConfig.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/FrameworkExport.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/GetBundleContext.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/GlobalConfig.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ListenerFunctors.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ListenerToken.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ServiceException.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ServiceInterface.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ServiceProperties.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ServiceReference.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ServiceReferenceBase.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ServiceRegistration.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ServiceRegistrationBase.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/platform_info_facility.cpp
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/platform_info_logic.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_attributes.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_defs.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_eid.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_error.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_key.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_tcrypto.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_urts.h
 bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/platform_info_logic.cpp.o
  ../../../../../common/inc/internal/arch.h
  ../../../../../common/inc/internal/inst.h
@@ -791,23 +831,23 @@ bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/platf
  ../common/oal/oal.h
  ../common/oal/power.h
  ../common/platform_info_blob.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/aesm_epid_blob.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/platform_info_logic.cpp
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/platform_info_logic.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/pve_logic.h
- /root/SGXENV/sgxsdk/include/sgx.h
- /root/SGXENV/sgxsdk/include/sgx_attributes.h
- /root/SGXENV/sgxsdk/include/sgx_defs.h
- /root/SGXENV/sgxsdk/include/sgx_eid.h
- /root/SGXENV/sgxsdk/include/sgx_error.h
- /root/SGXENV/sgxsdk/include/sgx_key.h
- /root/SGXENV/sgxsdk/include/sgx_quote.h
- /root/SGXENV/sgxsdk/include/sgx_report.h
- /root/SGXENV/sgxsdk/include/sgx_report2.h
- /root/SGXENV/sgxsdk/include/sgx_tcrypto.h
- /root/SGXENV/sgxsdk/include/sgx_tseal.h
- /root/SGXENV/sgxsdk/include/sgx_urts.h
- /root/SGXENV/sgxsdk/include/sgx_utils.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/aesm_epid_blob.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/platform_info_logic.cpp
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/platform_info_logic.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/pve_logic.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_attributes.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_defs.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_eid.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_error.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_key.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_quote.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report2.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_tcrypto.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_tseal.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_urts.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_utils.h
 bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/pve_logic.cpp.o
  ../../../../../common/inc/internal/arch.h
  ../../../../../common/inc/internal/inst.h
@@ -857,25 +897,25 @@ bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/pve_l
  ../common/type_length_value.h
  ../interfaces/network_service.h
  ../interfaces/service.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/PVEClass.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/QEClass.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/aesm_epid_blob.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/endpoint_select_info.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/prov_msg_size.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/pve_logic.cpp
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/pve_logic.h
- /root/SGXENV/sgxsdk/include/sgx.h
- /root/SGXENV/sgxsdk/include/sgx_attributes.h
- /root/SGXENV/sgxsdk/include/sgx_defs.h
- /root/SGXENV/sgxsdk/include/sgx_eid.h
- /root/SGXENV/sgxsdk/include/sgx_error.h
- /root/SGXENV/sgxsdk/include/sgx_key.h
- /root/SGXENV/sgxsdk/include/sgx_quote.h
- /root/SGXENV/sgxsdk/include/sgx_report.h
- /root/SGXENV/sgxsdk/include/sgx_report2.h
- /root/SGXENV/sgxsdk/include/sgx_tcrypto.h
- /root/SGXENV/sgxsdk/include/sgx_tseal.h
- /root/SGXENV/sgxsdk/include/sgx_urts.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/PVEClass.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/QEClass.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/aesm_epid_blob.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/endpoint_select_info.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/prov_msg_size.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/pve_logic.cpp
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/pve_logic.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_attributes.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_defs.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_eid.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_error.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_key.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_quote.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report2.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_tcrypto.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_tseal.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_urts.h
 bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/pve_pub_key.cpp.o
  ../../../../../common/inc/internal/se_cdefs.h
  ../../../../../common/inc/internal/se_types.h
@@ -887,14 +927,14 @@ bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/pve_p
  ../../../../../external/epid-sdk/epid/member/api.h
  ../../../inc/internal/epid_pve_type.h
  ../common/ssl_crypto.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/pve_pub_key.cpp
- /root/SGXENV/sgxsdk/include/sgx.h
- /root/SGXENV/sgxsdk/include/sgx_attributes.h
- /root/SGXENV/sgxsdk/include/sgx_defs.h
- /root/SGXENV/sgxsdk/include/sgx_error.h
- /root/SGXENV/sgxsdk/include/sgx_key.h
- /root/SGXENV/sgxsdk/include/sgx_report.h
- /root/SGXENV/sgxsdk/include/sgx_tcrypto.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/pve_pub_key.cpp
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_attributes.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_defs.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_error.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_key.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_tcrypto.h
 bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/qe_logic.cpp.o
  ../../../../../common/inc/internal/arch.h
  ../../../../../common/inc/internal/inst.h
@@ -939,62 +979,22 @@ bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/qe_lo
  ../common/oal/power.h
  ../common/platform_info_blob.h
  ../common/prof_fun.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/PVEClass.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/QEClass.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/aesm_epid_blob.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/aesm_xegd_blob.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/pve_logic.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/qe_logic.cpp
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/qe_logic.h
- /root/SGXENV/sgxsdk/include/sgx.h
- /root/SGXENV/sgxsdk/include/sgx_attributes.h
- /root/SGXENV/sgxsdk/include/sgx_defs.h
- /root/SGXENV/sgxsdk/include/sgx_eid.h
- /root/SGXENV/sgxsdk/include/sgx_error.h
- /root/SGXENV/sgxsdk/include/sgx_key.h
- /root/SGXENV/sgxsdk/include/sgx_quote.h
- /root/SGXENV/sgxsdk/include/sgx_report.h
- /root/SGXENV/sgxsdk/include/sgx_report2.h
- /root/SGXENV/sgxsdk/include/sgx_tcrypto.h
- /root/SGXENV/sgxsdk/include/sgx_tseal.h
- /root/SGXENV/sgxsdk/include/sgx_urts.h
-bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/root/SGXENV/linux-sgx/psw/ae/common/pek_pub_key.cpp.o
- ../../../../../common/inc/internal/arch.h
- ../../../../../common/inc/internal/inst.h
- ../../../../../common/inc/internal/se_cdefs.h
- ../../../../../common/inc/internal/se_types.h
- ../../../../../external/epid-sdk/epid/common/bitsupplier.h
- ../../../../../external/epid-sdk/epid/common/epiddefs.h
- ../../../../../external/epid-sdk/epid/common/errors.h
- ../../../../../external/epid-sdk/epid/common/types.h
- ../../../../../external/epid-sdk/epid/member/api.h
- ../../../data/constants/linux/isk_pub.hh
- ../../../data/constants/linux/peksk_pub.hh
- ../../../data/constants/linux/qsdk_pub.hh
- ../../../data/constants/linux/xegdsk_pub.hh
- ../../../inc/byte_order.h
- ../../../inc/internal/epid_pve_type.h
- ../../../inc/internal/pek_pub_key.h
- ../../../inc/internal/pve_qe_common.h
- /root/SGXENV/linux-sgx/psw/ae/common/pek_pub_key.cpp
- /root/SGXENV/sgxsdk/include/sgx.h
- /root/SGXENV/sgxsdk/include/sgx_attributes.h
- /root/SGXENV/sgxsdk/include/sgx_defs.h
- /root/SGXENV/sgxsdk/include/sgx_error.h
- /root/SGXENV/sgxsdk/include/sgx_key.h
- /root/SGXENV/sgxsdk/include/sgx_report.h
- /root/SGXENV/sgxsdk/include/sgx_report2.h
- /root/SGXENV/sgxsdk/include/sgx_tcrypto.h
-bundles/epid_quote_service_bundle/CMakeFiles/epid_quote_service_bundle.dir/root/SGXENV/linux-sgx/psw/ae/common/se_sig_rl.cpp.o
- ../../../../../common/inc/internal/se_cdefs.h
- ../../../../../common/inc/internal/se_quote_internal.h
- ../../../../../common/inc/internal/se_types.h
- ../../../../../external/epid-sdk/epid/common/types.h
- ../../../inc/byte_order.h
- ../../../inc/se_sig_rl.h
- /root/SGXENV/linux-sgx/psw/ae/common/se_sig_rl.cpp
- /root/SGXENV/sgxsdk/include/sgx_attributes.h
- /root/SGXENV/sgxsdk/include/sgx_error.h
- /root/SGXENV/sgxsdk/include/sgx_key.h
- /root/SGXENV/sgxsdk/include/sgx_quote.h
- /root/SGXENV/sgxsdk/include/sgx_report.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/PVEClass.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/QEClass.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/aesm_epid_blob.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/aesm_xegd_blob.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/pve_logic.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/qe_logic.cpp
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/epid_quote_service_bundle/qe_logic.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_attributes.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_defs.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_eid.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_error.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_key.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_quote.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report2.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_tcrypto.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_tseal.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_urts.h

@@ -388,9 +388,9 @@ se_memcpy.h
 aeerror.h
 ../common/aeerror.h
 
-/root/SGXENV/linux-sgx/common/src/sgx_memset_s.cpp
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/common/src/sgx_memset_s.cpp
 sgx_memset_s.h
-/root/SGXENV/linux-sgx/common/src/sgx_memset_s.h
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/common/src/sgx_memset_s.h
 errno.h
 -
 string
@@ -398,7 +398,7 @@ string
 string.h
 -
 
-/root/SGXENV/linux-sgx/common/src/sgx_read_rand.cpp
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/common/src/sgx_read_rand.cpp
 stdint.h
 -
 memory.h
@@ -406,29 +406,29 @@ memory.h
 stdlib.h
 -
 sgx.h
-/root/SGXENV/linux-sgx/common/src/sgx.h
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/common/src/sgx.h
 sgx_defs.h
-/root/SGXENV/linux-sgx/common/src/sgx_defs.h
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/common/src/sgx_defs.h
 se_wrapper.h
-/root/SGXENV/linux-sgx/common/src/se_wrapper.h
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/common/src/se_wrapper.h
 rdrand.h
-/root/SGXENV/linux-sgx/common/src/rdrand.h
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/common/src/rdrand.h
 cpuid.h
-/root/SGXENV/linux-sgx/common/src/cpuid.h
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/common/src/cpuid.h
 stdio.h
 -
 
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/utils/aesm_config.cpp
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/utils/aesm_config.cpp
 aesm_config.h
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/utils/aesm_config.h
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/utils/aesm_config.h
 aesm_proxy_type.h
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/utils/aesm_proxy_type.h
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/utils/aesm_proxy_type.h
 aesm_quoting_type.h
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/utils/aesm_quoting_type.h
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/utils/aesm_quoting_type.h
 oal/oal.h
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/utils/oal/oal.h
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/utils/oal/oal.h
 default_url_info.hh
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/utils/default_url_info.hh
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/utils/default_url_info.hh
 sys/types.h
 -
 regex.h
@@ -436,21 +436,21 @@ regex.h
 stdio.h
 -
 
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/utils/aesm_long_lived_thread.cpp
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/utils/aesm_long_lived_thread.cpp
 aesm_long_lived_thread.h
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/utils/aesm_long_lived_thread.h
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/utils/aesm_long_lived_thread.h
 oal/internal_log.h
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/utils/oal/internal_log.h
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/utils/oal/internal_log.h
 se_time.h
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/utils/se_time.h
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/utils/se_time.h
 se_wrapper.h
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/utils/se_wrapper.h
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/utils/se_wrapper.h
 time.h
 -
 assert.h
 -
 
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/utils/aesm_rand.cpp
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/utils/aesm_rand.cpp
 stdint.h
 -
 memory.h
@@ -458,43 +458,43 @@ memory.h
 stdlib.h
 -
 sgx_read_rand.h
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/utils/sgx_read_rand.h
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/utils/sgx_read_rand.h
 se_wrapper.h
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/utils/se_wrapper.h
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/utils/se_wrapper.h
 aesm_rand.h
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/utils/aesm_rand.h
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/utils/aesm_rand.h
 AEClass.h
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/utils/AEClass.h
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/utils/AEClass.h
 
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/utils/crypto_aes_gcm.cpp
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/utils/crypto_aes_gcm.cpp
 stdlib.h
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/utils/stdlib.h
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/utils/stdlib.h
 string.h
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/utils/string.h
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/utils/string.h
 ssl_crypto.h
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/utils/ssl_crypto.h
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/utils/ssl_crypto.h
 sgx_memset_s.h
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/utils/sgx_memset_s.h
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/utils/sgx_memset_s.h
 openssl/aes.h
 -
 openssl/evp.h
 -
 
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/utils/crypto_cmac128.cpp
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/utils/crypto_cmac128.cpp
 stdlib.h
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/utils/stdlib.h
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/utils/stdlib.h
 string.h
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/utils/string.h
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/utils/string.h
 ssl_crypto.h
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/utils/ssl_crypto.h
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/utils/ssl_crypto.h
 openssl/cmac.h
 -
 
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/utils/crypto_ecc.cpp
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/utils/crypto_ecc.cpp
 ssl_crypto.h
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/utils/ssl_crypto.h
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/utils/ssl_crypto.h
 ssl_compat_wrapper.h
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/utils/ssl_compat_wrapper.h
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/utils/ssl_compat_wrapper.h
 openssl/sha.h
 -
 openssl/evp.h
@@ -506,11 +506,11 @@ openssl/ecdsa.h
 openssl/bn.h
 -
 
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/utils/crypto_rsa.cpp
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/utils/crypto_rsa.cpp
 ssl_crypto.h
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/utils/ssl_crypto.h
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/utils/ssl_crypto.h
 ssl_compat_wrapper.h
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/utils/ssl_compat_wrapper.h
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/utils/ssl_compat_wrapper.h
 openssl/rsa.h
 -
 openssl/evp.h
@@ -522,15 +522,15 @@ assert.h
 se_memcpy.h
 -
 
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/utils/crypto_sha256_msg.cpp
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/utils/crypto_sha256_msg.cpp
 openssl/sha.h
 -
 ssl_crypto.h
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/utils/ssl_crypto.h
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/utils/ssl_crypto.h
 
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/utils/ssl_compat_wrapper.cpp
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/utils/ssl_compat_wrapper.cpp
 ssl_compat_wrapper.h
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/utils/ssl_compat_wrapper.h
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/utils/ssl_compat_wrapper.h
 openssl/crypto.h
 -
 openssl/err.h
@@ -540,75 +540,75 @@ stdlib.h
 string.h
 -
 
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/utils/type_length_value.cpp
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/utils/type_length_value.cpp
 type_length_value.h
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/utils/type_length_value.h
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/utils/type_length_value.h
 sgx.h
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/utils/sgx.h
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/utils/sgx.h
 se_wrapper.h
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/utils/se_wrapper.h
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/utils/se_wrapper.h
 oal/oal.h
-/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/utils/oal/oal.h
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/utils/oal/oal.h
 assert.h
 -
 
-/root/SGXENV/sgxsdk/include/sgx.h
+/home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx.h
 sgx_error.h
-/root/SGXENV/sgxsdk/include/sgx_error.h
+/home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_error.h
 sgx_attributes.h
-/root/SGXENV/sgxsdk/include/sgx_attributes.h
+/home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_attributes.h
 sgx_key.h
-/root/SGXENV/sgxsdk/include/sgx_key.h
+/home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_key.h
 sgx_report.h
-/root/SGXENV/sgxsdk/include/sgx_report.h
+/home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report.h
 
-/root/SGXENV/sgxsdk/include/sgx_attributes.h
+/home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_attributes.h
 stdint.h
 -
 
-/root/SGXENV/sgxsdk/include/sgx_defs.h
+/home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_defs.h
 
-/root/SGXENV/sgxsdk/include/sgx_eid.h
+/home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_eid.h
 stdint.h
 -
 
-/root/SGXENV/sgxsdk/include/sgx_error.h
+/home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_error.h
 
-/root/SGXENV/sgxsdk/include/sgx_key.h
+/home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_key.h
 stdint.h
 -
 sgx_attributes.h
-/root/SGXENV/sgxsdk/include/sgx_attributes.h
+/home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_attributes.h
 
-/root/SGXENV/sgxsdk/include/sgx_report.h
+/home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report.h
 sgx_attributes.h
-/root/SGXENV/sgxsdk/include/sgx_attributes.h
+/home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_attributes.h
 sgx_key.h
-/root/SGXENV/sgxsdk/include/sgx_key.h
+/home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_key.h
 
-/root/SGXENV/sgxsdk/include/sgx_report2.h
+/home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report2.h
 
-/root/SGXENV/sgxsdk/include/sgx_tcrypto.h
+/home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_tcrypto.h
 sgx.h
-/root/SGXENV/sgxsdk/include/sgx.h
+/home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx.h
 sgx_defs.h
-/root/SGXENV/sgxsdk/include/sgx_defs.h
+/home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_defs.h
 stdlib.h
-/root/SGXENV/sgxsdk/include/stdlib.h
+/home/nsec-sgx/SGXENVWASM/sgxsdk/include/stdlib.h
 
-/root/SGXENV/sgxsdk/include/sgx_urts.h
+/home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_urts.h
 sgx_attributes.h
-/root/SGXENV/sgxsdk/include/sgx_attributes.h
+/home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_attributes.h
 sgx_error.h
-/root/SGXENV/sgxsdk/include/sgx_error.h
+/home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_error.h
 sgx_eid.h
-/root/SGXENV/sgxsdk/include/sgx_eid.h
+/home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_eid.h
 sgx_defs.h
-/root/SGXENV/sgxsdk/include/sgx_defs.h
+/home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_defs.h
 sgx_key.h
-/root/SGXENV/sgxsdk/include/sgx_key.h
+/home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_key.h
 sgx_report.h
-/root/SGXENV/sgxsdk/include/sgx_report.h
+/home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report.h
 stddef.h
 -
 

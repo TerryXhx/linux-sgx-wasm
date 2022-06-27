@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/ecdsa_quote_service_bundle/ecdsa_quote_service_bundle.cpp" "/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/ecdsa_quote_service_bundle/CMakeFiles/ecdsa_quote_service_bundle.dir/ecdsa_quote_service_bundle.cpp.o"
-  "/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/ecdsa_quote_service_bundle/ecdsa_quote_service_bundle/cppmicroservices_init.cpp" "/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/ecdsa_quote_service_bundle/CMakeFiles/ecdsa_quote_service_bundle.dir/ecdsa_quote_service_bundle/cppmicroservices_init.cpp.o"
-  "/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/ecdsa_quote_service_bundle/ecdsa_quote_service_bundle/cppmicroservices_resources.cpp" "/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/ecdsa_quote_service_bundle/CMakeFiles/ecdsa_quote_service_bundle.dir/ecdsa_quote_service_bundle/cppmicroservices_resources.cpp.o"
+  "/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/ecdsa_quote_service_bundle/ecdsa_quote_service_bundle.cpp" "/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/ecdsa_quote_service_bundle/CMakeFiles/ecdsa_quote_service_bundle.dir/ecdsa_quote_service_bundle.cpp.o"
+  "/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/ecdsa_quote_service_bundle/ecdsa_quote_service_bundle/cppmicroservices_init.cpp" "/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/ecdsa_quote_service_bundle/CMakeFiles/ecdsa_quote_service_bundle.dir/ecdsa_quote_service_bundle/cppmicroservices_init.cpp.o"
+  "/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/ecdsa_quote_service_bundle/ecdsa_quote_service_bundle/cppmicroservices_resources.cpp" "/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/ecdsa_quote_service_bundle/CMakeFiles/ecdsa_quote_service_bundle.dir/ecdsa_quote_service_bundle/cppmicroservices_resources.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -23,7 +23,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "bundles/ecdsa_quote_service_bundle"
   "../../../data/constants/linux"
   "../common"
-  "/root/SGXENV/sgxsdk/include"
+  "/home/nsec-sgx/SGXENVWASM/sgxsdk/include"
   "../../../../../common/inc/internal"
   "../../../inc"
   "../../../inc/internal"
@@ -35,13 +35,13 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../../../../../external/dcap_source/QuoteGeneration/pce_wrapper/inc"
   "../../../../../external/dcap_source/QuoteGeneration/common/inc/internal"
   "../../../../../external/dcap_source/QuoteGeneration/common/inc/internal/linux"
-  "/root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4"
+  "/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/utils/CMakeFiles/utils.dir/DependInfo.cmake"
-  "/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/oal/CMakeFiles/oal.dir/DependInfo.cmake"
+  "/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/utils/CMakeFiles/utils.dir/DependInfo.cmake"
+  "/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/oal/CMakeFiles/oal.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

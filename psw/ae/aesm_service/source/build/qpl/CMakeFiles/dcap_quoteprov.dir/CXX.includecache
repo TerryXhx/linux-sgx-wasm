@@ -424,7 +424,7 @@ openssl/x509v3err.h
 openssl/symhacks.h
 -
 
-/root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qpl/linux/x509.cpp
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qpl/linux/x509.cpp
 iostream
 -
 map
@@ -444,7 +444,7 @@ string
 vector
 -
 
-/root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qpl/sgx_base64.cpp
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qpl/sgx_base64.cpp
 iostream
 -
 stdlib.h
@@ -456,19 +456,19 @@ Windows.h
 wincrypt.h
 -
 sgx_base64.h
-/root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qpl/sgx_base64.h
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qpl/sgx_base64.h
 
-/root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qpl/sgx_default_quote_provider.cpp
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qpl/sgx_default_quote_provider.cpp
 sgx_default_quote_provider.h
-/root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qpl/sgx_default_quote_provider.h
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qpl/sgx_default_quote_provider.h
 se_memcpy.h
-/root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qpl/se_memcpy.h
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qpl/se_memcpy.h
 sgx_base64.h
-/root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qpl/sgx_base64.h
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qpl/sgx_base64.h
 sgx_default_qcnl_wrapper.h
-/root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qpl/sgx_default_qcnl_wrapper.h
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qpl/sgx_default_qcnl_wrapper.h
 x509.h
-/root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qpl/x509.h
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qpl/x509.h
 cstdarg
 -
 limits.h
@@ -478,17 +478,17 @@ stdio.h
 stdlib.h
 -
 
-/root/SGXENV/sgxsdk/include/sgx_attributes.h
+/home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_attributes.h
 stdint.h
 -
 
-/root/SGXENV/sgxsdk/include/sgx_key.h
+/home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_key.h
 stdint.h
 -
 sgx_attributes.h
-/root/SGXENV/sgxsdk/include/sgx_attributes.h
+/home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_attributes.h
 
-/root/SGXENV/sgxsdk/include/sgx_ql_lib_common.h
+/home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_ql_lib_common.h
 sgx_key.h
-/root/SGXENV/sgxsdk/include/sgx_key.h
+/home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_key.h
 

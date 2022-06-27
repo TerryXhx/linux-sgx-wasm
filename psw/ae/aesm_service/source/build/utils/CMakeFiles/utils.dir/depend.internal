@@ -40,17 +40,17 @@ utils/CMakeFiles/utils.dir/aesm_config.cpp.o
  ../common/oal/oal.h
  ../common/oal/power.h
  ../common/platform_info_blob.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/utils/aesm_config.cpp
- /root/SGXENV/sgxsdk/include/sgx.h
- /root/SGXENV/sgxsdk/include/sgx_attributes.h
- /root/SGXENV/sgxsdk/include/sgx_defs.h
- /root/SGXENV/sgxsdk/include/sgx_eid.h
- /root/SGXENV/sgxsdk/include/sgx_error.h
- /root/SGXENV/sgxsdk/include/sgx_key.h
- /root/SGXENV/sgxsdk/include/sgx_report.h
- /root/SGXENV/sgxsdk/include/sgx_report2.h
- /root/SGXENV/sgxsdk/include/sgx_tcrypto.h
- /root/SGXENV/sgxsdk/include/sgx_urts.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/utils/aesm_config.cpp
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_attributes.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_defs.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_eid.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_error.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_key.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report2.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_tcrypto.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_urts.h
 utils/CMakeFiles/utils.dir/aesm_long_lived_thread.cpp.o
  ../../../../../common/inc/internal/arch.h
  ../../../../../common/inc/internal/inst.h
@@ -88,17 +88,17 @@ utils/CMakeFiles/utils.dir/aesm_long_lived_thread.cpp.o
  ../common/oal/oal.h
  ../common/oal/power.h
  ../common/platform_info_blob.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/utils/aesm_long_lived_thread.cpp
- /root/SGXENV/sgxsdk/include/sgx.h
- /root/SGXENV/sgxsdk/include/sgx_attributes.h
- /root/SGXENV/sgxsdk/include/sgx_defs.h
- /root/SGXENV/sgxsdk/include/sgx_eid.h
- /root/SGXENV/sgxsdk/include/sgx_error.h
- /root/SGXENV/sgxsdk/include/sgx_key.h
- /root/SGXENV/sgxsdk/include/sgx_report.h
- /root/SGXENV/sgxsdk/include/sgx_report2.h
- /root/SGXENV/sgxsdk/include/sgx_tcrypto.h
- /root/SGXENV/sgxsdk/include/sgx_urts.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/utils/aesm_long_lived_thread.cpp
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_attributes.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_defs.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_eid.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_error.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_key.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report2.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_tcrypto.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_urts.h
 utils/CMakeFiles/utils.dir/aesm_rand.cpp.o
  ../../../../../common/inc/internal/se_atomic.h
  ../../../../../common/inc/internal/se_cdefs.h
@@ -123,78 +123,78 @@ utils/CMakeFiles/utils.dir/aesm_rand.cpp.o
  ../common/oal/internal_log.h
  ../common/oal/oal.h
  ../common/oal/power.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/utils/aesm_rand.cpp
- /root/SGXENV/sgxsdk/include/sgx.h
- /root/SGXENV/sgxsdk/include/sgx_attributes.h
- /root/SGXENV/sgxsdk/include/sgx_defs.h
- /root/SGXENV/sgxsdk/include/sgx_eid.h
- /root/SGXENV/sgxsdk/include/sgx_error.h
- /root/SGXENV/sgxsdk/include/sgx_key.h
- /root/SGXENV/sgxsdk/include/sgx_report.h
- /root/SGXENV/sgxsdk/include/sgx_urts.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/utils/aesm_rand.cpp
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_attributes.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_defs.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_eid.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_error.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_key.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_urts.h
 utils/CMakeFiles/utils.dir/crypto_aes_gcm.cpp.o
  ../../../../../common/inc/internal/sgx_memset_s.h
  ../../../../../common/inc/internal/ssl_wrapper.h
  ../common/ssl_crypto.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/utils/crypto_aes_gcm.cpp
- /root/SGXENV/sgxsdk/include/sgx.h
- /root/SGXENV/sgxsdk/include/sgx_attributes.h
- /root/SGXENV/sgxsdk/include/sgx_defs.h
- /root/SGXENV/sgxsdk/include/sgx_error.h
- /root/SGXENV/sgxsdk/include/sgx_key.h
- /root/SGXENV/sgxsdk/include/sgx_report.h
- /root/SGXENV/sgxsdk/include/sgx_tcrypto.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/utils/crypto_aes_gcm.cpp
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_attributes.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_defs.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_error.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_key.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_tcrypto.h
 utils/CMakeFiles/utils.dir/crypto_cmac128.cpp.o
  ../../../../../common/inc/internal/ssl_wrapper.h
  ../common/ssl_crypto.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/utils/crypto_cmac128.cpp
- /root/SGXENV/sgxsdk/include/sgx.h
- /root/SGXENV/sgxsdk/include/sgx_attributes.h
- /root/SGXENV/sgxsdk/include/sgx_defs.h
- /root/SGXENV/sgxsdk/include/sgx_error.h
- /root/SGXENV/sgxsdk/include/sgx_key.h
- /root/SGXENV/sgxsdk/include/sgx_report.h
- /root/SGXENV/sgxsdk/include/sgx_tcrypto.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/utils/crypto_cmac128.cpp
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_attributes.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_defs.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_error.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_key.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_tcrypto.h
 utils/CMakeFiles/utils.dir/crypto_ecc.cpp.o
  ../../../../../common/inc/internal/ssl_wrapper.h
  ../common/ssl_compat_wrapper.h
  ../common/ssl_crypto.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/utils/crypto_ecc.cpp
- /root/SGXENV/sgxsdk/include/sgx.h
- /root/SGXENV/sgxsdk/include/sgx_attributes.h
- /root/SGXENV/sgxsdk/include/sgx_defs.h
- /root/SGXENV/sgxsdk/include/sgx_error.h
- /root/SGXENV/sgxsdk/include/sgx_key.h
- /root/SGXENV/sgxsdk/include/sgx_report.h
- /root/SGXENV/sgxsdk/include/sgx_tcrypto.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/utils/crypto_ecc.cpp
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_attributes.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_defs.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_error.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_key.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_tcrypto.h
 utils/CMakeFiles/utils.dir/crypto_rsa.cpp.o
  ../../../../../common/inc/internal/se_memcpy.h
  ../../../../../common/inc/internal/ssl_wrapper.h
  ../common/ssl_compat_wrapper.h
  ../common/ssl_crypto.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/utils/crypto_rsa.cpp
- /root/SGXENV/sgxsdk/include/sgx.h
- /root/SGXENV/sgxsdk/include/sgx_attributes.h
- /root/SGXENV/sgxsdk/include/sgx_defs.h
- /root/SGXENV/sgxsdk/include/sgx_error.h
- /root/SGXENV/sgxsdk/include/sgx_key.h
- /root/SGXENV/sgxsdk/include/sgx_report.h
- /root/SGXENV/sgxsdk/include/sgx_tcrypto.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/utils/crypto_rsa.cpp
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_attributes.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_defs.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_error.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_key.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_tcrypto.h
 utils/CMakeFiles/utils.dir/crypto_sha256_msg.cpp.o
  ../../../../../common/inc/internal/ssl_wrapper.h
  ../common/ssl_crypto.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/utils/crypto_sha256_msg.cpp
- /root/SGXENV/sgxsdk/include/sgx.h
- /root/SGXENV/sgxsdk/include/sgx_attributes.h
- /root/SGXENV/sgxsdk/include/sgx_defs.h
- /root/SGXENV/sgxsdk/include/sgx_error.h
- /root/SGXENV/sgxsdk/include/sgx_key.h
- /root/SGXENV/sgxsdk/include/sgx_report.h
- /root/SGXENV/sgxsdk/include/sgx_tcrypto.h
-utils/CMakeFiles/utils.dir/root/SGXENV/linux-sgx/common/src/sgx_memset_s.cpp.o
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/utils/crypto_sha256_msg.cpp
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_attributes.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_defs.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_error.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_key.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_tcrypto.h
+utils/CMakeFiles/utils.dir/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/common/src/sgx_memset_s.cpp.o
  ../../../../../common/inc/internal/sgx_memset_s.h
- /root/SGXENV/linux-sgx/common/src/sgx_memset_s.cpp
-utils/CMakeFiles/utils.dir/root/SGXENV/linux-sgx/common/src/sgx_read_rand.cpp.o
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/common/src/sgx_memset_s.cpp
+utils/CMakeFiles/utils.dir/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/common/src/sgx_read_rand.cpp.o
  ../../../../../common/inc/internal/cpuid.h
  ../../../../../common/inc/internal/linux/cpuid_gnu.h
  ../../../../../common/inc/internal/se_atomic.h
@@ -210,16 +210,16 @@ utils/CMakeFiles/utils.dir/root/SGXENV/linux-sgx/common/src/sgx_read_rand.cpp.o
  ../../../../../common/inc/internal/se_types.h
  ../../../../../common/inc/internal/se_wrapper.h
  ../../../../../external/rdrand/rdrand.h
- /root/SGXENV/linux-sgx/common/src/sgx_read_rand.cpp
- /root/SGXENV/sgxsdk/include/sgx.h
- /root/SGXENV/sgxsdk/include/sgx_attributes.h
- /root/SGXENV/sgxsdk/include/sgx_defs.h
- /root/SGXENV/sgxsdk/include/sgx_error.h
- /root/SGXENV/sgxsdk/include/sgx_key.h
- /root/SGXENV/sgxsdk/include/sgx_report.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/common/src/sgx_read_rand.cpp
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_attributes.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_defs.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_error.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_key.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report.h
 utils/CMakeFiles/utils.dir/ssl_compat_wrapper.cpp.o
  ../common/ssl_compat_wrapper.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/utils/ssl_compat_wrapper.cpp
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/utils/ssl_compat_wrapper.cpp
 utils/CMakeFiles/utils.dir/type_length_value.cpp.o
  ../../../../../common/inc/internal/se_atomic.h
  ../../../../../common/inc/internal/se_cdefs.h
@@ -252,13 +252,13 @@ utils/CMakeFiles/utils.dir/type_length_value.cpp.o
  ../common/oal/oal.h
  ../common/oal/power.h
  ../common/type_length_value.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/utils/type_length_value.cpp
- /root/SGXENV/sgxsdk/include/sgx.h
- /root/SGXENV/sgxsdk/include/sgx_attributes.h
- /root/SGXENV/sgxsdk/include/sgx_defs.h
- /root/SGXENV/sgxsdk/include/sgx_eid.h
- /root/SGXENV/sgxsdk/include/sgx_error.h
- /root/SGXENV/sgxsdk/include/sgx_key.h
- /root/SGXENV/sgxsdk/include/sgx_report.h
- /root/SGXENV/sgxsdk/include/sgx_tcrypto.h
- /root/SGXENV/sgxsdk/include/sgx_urts.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/utils/type_length_value.cpp
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_attributes.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_defs.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_eid.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_error.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_key.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_tcrypto.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_urts.h

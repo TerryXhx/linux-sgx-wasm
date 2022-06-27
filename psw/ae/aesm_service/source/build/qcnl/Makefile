@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/SGXENV/linux-sgx/psw/ae/aesm_service/source
+CMAKE_SOURCE_DIR = /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build
+CMAKE_BINARY_DIR = /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -E cmake_progress_start /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/CMakeFiles /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/qcnl/CMakeFiles/progress.marks
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 qcnl/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/CMakeFiles 0
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/CMakeFiles /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/qcnl/CMakeFiles/progress.marks
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 qcnl/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 qcnl/clean
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 qcnl/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 qcnl/preinstall
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 qcnl/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 qcnl/preinstall
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 qcnl/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/rule:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/rule
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/rule
 .PHONY : qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/rule
 
 # Convenience name for target.
@@ -122,224 +122,224 @@ sgx_default_qcnl_wrapper: qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/rule
 
 # fast build rule for target.
 sgx_default_qcnl_wrapper/fast:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/build.make qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/build
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/build.make qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/build
 .PHONY : sgx_default_qcnl_wrapper/fast
 
-root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/linux/network_wrapper.o: root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/linux/network_wrapper.cpp.o
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/linux/network_wrapper.o: home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/linux/network_wrapper.cpp.o
 
-.PHONY : root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/linux/network_wrapper.o
-
-# target to build an object file
-root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/linux/network_wrapper.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/build.make qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/linux/network_wrapper.cpp.o
-.PHONY : root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/linux/network_wrapper.cpp.o
-
-root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/linux/network_wrapper.i: root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/linux/network_wrapper.cpp.i
-
-.PHONY : root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/linux/network_wrapper.i
-
-# target to preprocess a source file
-root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/linux/network_wrapper.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/build.make qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/linux/network_wrapper.cpp.i
-.PHONY : root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/linux/network_wrapper.cpp.i
-
-root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/linux/network_wrapper.s: root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/linux/network_wrapper.cpp.s
-
-.PHONY : root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/linux/network_wrapper.s
-
-# target to generate assembly for a file
-root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/linux/network_wrapper.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/build.make qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/linux/network_wrapper.cpp.s
-.PHONY : root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/linux/network_wrapper.cpp.s
-
-root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/linux/qcnl_config_impl.o: root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/linux/qcnl_config_impl.cpp.o
-
-.PHONY : root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/linux/qcnl_config_impl.o
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/linux/network_wrapper.o
 
 # target to build an object file
-root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/linux/qcnl_config_impl.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/build.make qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/linux/qcnl_config_impl.cpp.o
-.PHONY : root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/linux/qcnl_config_impl.cpp.o
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/linux/network_wrapper.cpp.o:
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/build.make qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/linux/network_wrapper.cpp.o
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/linux/network_wrapper.cpp.o
 
-root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/linux/qcnl_config_impl.i: root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/linux/qcnl_config_impl.cpp.i
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/linux/network_wrapper.i: home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/linux/network_wrapper.cpp.i
 
-.PHONY : root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/linux/qcnl_config_impl.i
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/linux/network_wrapper.i
 
 # target to preprocess a source file
-root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/linux/qcnl_config_impl.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/build.make qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/linux/qcnl_config_impl.cpp.i
-.PHONY : root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/linux/qcnl_config_impl.cpp.i
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/linux/network_wrapper.cpp.i:
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/build.make qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/linux/network_wrapper.cpp.i
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/linux/network_wrapper.cpp.i
 
-root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/linux/qcnl_config_impl.s: root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/linux/qcnl_config_impl.cpp.s
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/linux/network_wrapper.s: home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/linux/network_wrapper.cpp.s
 
-.PHONY : root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/linux/qcnl_config_impl.s
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/linux/network_wrapper.s
 
 # target to generate assembly for a file
-root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/linux/qcnl_config_impl.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/build.make qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/linux/qcnl_config_impl.cpp.s
-.PHONY : root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/linux/qcnl_config_impl.cpp.s
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/linux/network_wrapper.cpp.s:
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/build.make qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/linux/network_wrapper.cpp.s
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/linux/network_wrapper.cpp.s
 
-root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/pccs_response_object.o: root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/pccs_response_object.cpp.o
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/linux/qcnl_config_impl.o: home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/linux/qcnl_config_impl.cpp.o
 
-.PHONY : root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/pccs_response_object.o
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/linux/qcnl_config_impl.o
 
 # target to build an object file
-root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/pccs_response_object.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/build.make qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/pccs_response_object.cpp.o
-.PHONY : root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/pccs_response_object.cpp.o
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/linux/qcnl_config_impl.cpp.o:
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/build.make qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/linux/qcnl_config_impl.cpp.o
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/linux/qcnl_config_impl.cpp.o
 
-root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/pccs_response_object.i: root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/pccs_response_object.cpp.i
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/linux/qcnl_config_impl.i: home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/linux/qcnl_config_impl.cpp.i
 
-.PHONY : root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/pccs_response_object.i
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/linux/qcnl_config_impl.i
 
 # target to preprocess a source file
-root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/pccs_response_object.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/build.make qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/pccs_response_object.cpp.i
-.PHONY : root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/pccs_response_object.cpp.i
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/linux/qcnl_config_impl.cpp.i:
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/build.make qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/linux/qcnl_config_impl.cpp.i
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/linux/qcnl_config_impl.cpp.i
 
-root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/pccs_response_object.s: root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/pccs_response_object.cpp.s
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/linux/qcnl_config_impl.s: home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/linux/qcnl_config_impl.cpp.s
 
-.PHONY : root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/pccs_response_object.s
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/linux/qcnl_config_impl.s
 
 # target to generate assembly for a file
-root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/pccs_response_object.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/build.make qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/pccs_response_object.cpp.s
-.PHONY : root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/pccs_response_object.cpp.s
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/linux/qcnl_config_impl.cpp.s:
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/build.make qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/linux/qcnl_config_impl.cpp.s
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/linux/qcnl_config_impl.cpp.s
 
-root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/pckcert_provider.o: root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/pckcert_provider.cpp.o
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/pccs_response_object.o: home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/pccs_response_object.cpp.o
 
-.PHONY : root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/pckcert_provider.o
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/pccs_response_object.o
 
 # target to build an object file
-root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/pckcert_provider.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/build.make qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/pckcert_provider.cpp.o
-.PHONY : root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/pckcert_provider.cpp.o
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/pccs_response_object.cpp.o:
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/build.make qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/pccs_response_object.cpp.o
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/pccs_response_object.cpp.o
 
-root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/pckcert_provider.i: root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/pckcert_provider.cpp.i
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/pccs_response_object.i: home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/pccs_response_object.cpp.i
 
-.PHONY : root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/pckcert_provider.i
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/pccs_response_object.i
 
 # target to preprocess a source file
-root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/pckcert_provider.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/build.make qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/pckcert_provider.cpp.i
-.PHONY : root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/pckcert_provider.cpp.i
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/pccs_response_object.cpp.i:
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/build.make qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/pccs_response_object.cpp.i
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/pccs_response_object.cpp.i
 
-root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/pckcert_provider.s: root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/pckcert_provider.cpp.s
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/pccs_response_object.s: home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/pccs_response_object.cpp.s
 
-.PHONY : root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/pckcert_provider.s
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/pccs_response_object.s
 
 # target to generate assembly for a file
-root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/pckcert_provider.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/build.make qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/pckcert_provider.cpp.s
-.PHONY : root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/pckcert_provider.cpp.s
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/pccs_response_object.cpp.s:
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/build.make qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/pccs_response_object.cpp.s
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/pccs_response_object.cpp.s
 
-root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qcnl_config.o: root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qcnl_config.cpp.o
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/pckcert_provider.o: home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/pckcert_provider.cpp.o
 
-.PHONY : root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qcnl_config.o
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/pckcert_provider.o
 
 # target to build an object file
-root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qcnl_config.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/build.make qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qcnl_config.cpp.o
-.PHONY : root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qcnl_config.cpp.o
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/pckcert_provider.cpp.o:
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/build.make qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/pckcert_provider.cpp.o
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/pckcert_provider.cpp.o
 
-root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qcnl_config.i: root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qcnl_config.cpp.i
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/pckcert_provider.i: home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/pckcert_provider.cpp.i
 
-.PHONY : root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qcnl_config.i
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/pckcert_provider.i
 
 # target to preprocess a source file
-root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qcnl_config.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/build.make qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qcnl_config.cpp.i
-.PHONY : root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qcnl_config.cpp.i
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/pckcert_provider.cpp.i:
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/build.make qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/pckcert_provider.cpp.i
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/pckcert_provider.cpp.i
 
-root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qcnl_config.s: root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qcnl_config.cpp.s
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/pckcert_provider.s: home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/pckcert_provider.cpp.s
 
-.PHONY : root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qcnl_config.s
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/pckcert_provider.s
 
 # target to generate assembly for a file
-root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qcnl_config.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/build.make qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qcnl_config.cpp.s
-.PHONY : root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qcnl_config.cpp.s
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/pckcert_provider.cpp.s:
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/build.make qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/pckcert_provider.cpp.s
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/pckcert_provider.cpp.s
 
-root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qcnl_util.o: root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qcnl_util.cpp.o
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qcnl_config.o: home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qcnl_config.cpp.o
 
-.PHONY : root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qcnl_util.o
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qcnl_config.o
 
 # target to build an object file
-root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qcnl_util.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/build.make qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qcnl_util.cpp.o
-.PHONY : root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qcnl_util.cpp.o
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qcnl_config.cpp.o:
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/build.make qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qcnl_config.cpp.o
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qcnl_config.cpp.o
 
-root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qcnl_util.i: root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qcnl_util.cpp.i
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qcnl_config.i: home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qcnl_config.cpp.i
 
-.PHONY : root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qcnl_util.i
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qcnl_config.i
 
 # target to preprocess a source file
-root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qcnl_util.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/build.make qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qcnl_util.cpp.i
-.PHONY : root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qcnl_util.cpp.i
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qcnl_config.cpp.i:
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/build.make qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qcnl_config.cpp.i
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qcnl_config.cpp.i
 
-root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qcnl_util.s: root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qcnl_util.cpp.s
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qcnl_config.s: home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qcnl_config.cpp.s
 
-.PHONY : root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qcnl_util.s
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qcnl_config.s
 
 # target to generate assembly for a file
-root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qcnl_util.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/build.make qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qcnl_util.cpp.s
-.PHONY : root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qcnl_util.cpp.s
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qcnl_config.cpp.s:
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/build.make qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qcnl_config.cpp.s
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qcnl_config.cpp.s
 
-root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qv_collateral_provider.o: root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qv_collateral_provider.cpp.o
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qcnl_util.o: home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qcnl_util.cpp.o
 
-.PHONY : root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qv_collateral_provider.o
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qcnl_util.o
 
 # target to build an object file
-root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qv_collateral_provider.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/build.make qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qv_collateral_provider.cpp.o
-.PHONY : root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qv_collateral_provider.cpp.o
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qcnl_util.cpp.o:
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/build.make qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qcnl_util.cpp.o
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qcnl_util.cpp.o
 
-root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qv_collateral_provider.i: root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qv_collateral_provider.cpp.i
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qcnl_util.i: home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qcnl_util.cpp.i
 
-.PHONY : root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qv_collateral_provider.i
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qcnl_util.i
 
 # target to preprocess a source file
-root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qv_collateral_provider.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/build.make qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qv_collateral_provider.cpp.i
-.PHONY : root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qv_collateral_provider.cpp.i
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qcnl_util.cpp.i:
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/build.make qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qcnl_util.cpp.i
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qcnl_util.cpp.i
 
-root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qv_collateral_provider.s: root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qv_collateral_provider.cpp.s
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qcnl_util.s: home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qcnl_util.cpp.s
 
-.PHONY : root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qv_collateral_provider.s
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qcnl_util.s
 
 # target to generate assembly for a file
-root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qv_collateral_provider.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/build.make qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qv_collateral_provider.cpp.s
-.PHONY : root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qv_collateral_provider.cpp.s
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qcnl_util.cpp.s:
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/build.make qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qcnl_util.cpp.s
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qcnl_util.cpp.s
 
-root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/sgx_default_qcnl_wrapper.o: root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/sgx_default_qcnl_wrapper.cpp.o
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qv_collateral_provider.o: home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qv_collateral_provider.cpp.o
 
-.PHONY : root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/sgx_default_qcnl_wrapper.o
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qv_collateral_provider.o
 
 # target to build an object file
-root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/sgx_default_qcnl_wrapper.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/build.make qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/sgx_default_qcnl_wrapper.cpp.o
-.PHONY : root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/sgx_default_qcnl_wrapper.cpp.o
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qv_collateral_provider.cpp.o:
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/build.make qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qv_collateral_provider.cpp.o
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qv_collateral_provider.cpp.o
 
-root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/sgx_default_qcnl_wrapper.i: root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/sgx_default_qcnl_wrapper.cpp.i
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qv_collateral_provider.i: home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qv_collateral_provider.cpp.i
 
-.PHONY : root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/sgx_default_qcnl_wrapper.i
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qv_collateral_provider.i
 
 # target to preprocess a source file
-root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/sgx_default_qcnl_wrapper.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/build.make qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/sgx_default_qcnl_wrapper.cpp.i
-.PHONY : root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/sgx_default_qcnl_wrapper.cpp.i
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qv_collateral_provider.cpp.i:
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/build.make qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qv_collateral_provider.cpp.i
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qv_collateral_provider.cpp.i
 
-root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/sgx_default_qcnl_wrapper.s: root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/sgx_default_qcnl_wrapper.cpp.s
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qv_collateral_provider.s: home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qv_collateral_provider.cpp.s
 
-.PHONY : root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/sgx_default_qcnl_wrapper.s
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qv_collateral_provider.s
 
 # target to generate assembly for a file
-root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/sgx_default_qcnl_wrapper.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/build.make qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/sgx_default_qcnl_wrapper.cpp.s
-.PHONY : root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/sgx_default_qcnl_wrapper.cpp.s
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qv_collateral_provider.cpp.s:
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/build.make qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qv_collateral_provider.cpp.s
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qv_collateral_provider.cpp.s
+
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/sgx_default_qcnl_wrapper.o: home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/sgx_default_qcnl_wrapper.cpp.o
+
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/sgx_default_qcnl_wrapper.o
+
+# target to build an object file
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/sgx_default_qcnl_wrapper.cpp.o:
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/build.make qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/sgx_default_qcnl_wrapper.cpp.o
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/sgx_default_qcnl_wrapper.cpp.o
+
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/sgx_default_qcnl_wrapper.i: home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/sgx_default_qcnl_wrapper.cpp.i
+
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/sgx_default_qcnl_wrapper.i
+
+# target to preprocess a source file
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/sgx_default_qcnl_wrapper.cpp.i:
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/build.make qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/sgx_default_qcnl_wrapper.cpp.i
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/sgx_default_qcnl_wrapper.cpp.i
+
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/sgx_default_qcnl_wrapper.s: home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/sgx_default_qcnl_wrapper.cpp.s
+
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/sgx_default_qcnl_wrapper.s
+
+# target to generate assembly for a file
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/sgx_default_qcnl_wrapper.cpp.s:
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/build.make qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/sgx_default_qcnl_wrapper.cpp.s
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/sgx_default_qcnl_wrapper.cpp.s
 
 # Help Target
 help:
@@ -350,30 +350,30 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... sgx_default_qcnl_wrapper"
-	@echo "... root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/linux/network_wrapper.o"
-	@echo "... root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/linux/network_wrapper.i"
-	@echo "... root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/linux/network_wrapper.s"
-	@echo "... root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/linux/qcnl_config_impl.o"
-	@echo "... root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/linux/qcnl_config_impl.i"
-	@echo "... root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/linux/qcnl_config_impl.s"
-	@echo "... root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/pccs_response_object.o"
-	@echo "... root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/pccs_response_object.i"
-	@echo "... root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/pccs_response_object.s"
-	@echo "... root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/pckcert_provider.o"
-	@echo "... root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/pckcert_provider.i"
-	@echo "... root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/pckcert_provider.s"
-	@echo "... root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qcnl_config.o"
-	@echo "... root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qcnl_config.i"
-	@echo "... root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qcnl_config.s"
-	@echo "... root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qcnl_util.o"
-	@echo "... root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qcnl_util.i"
-	@echo "... root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qcnl_util.s"
-	@echo "... root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qv_collateral_provider.o"
-	@echo "... root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qv_collateral_provider.i"
-	@echo "... root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qv_collateral_provider.s"
-	@echo "... root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/sgx_default_qcnl_wrapper.o"
-	@echo "... root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/sgx_default_qcnl_wrapper.i"
-	@echo "... root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/sgx_default_qcnl_wrapper.s"
+	@echo "... home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/linux/network_wrapper.o"
+	@echo "... home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/linux/network_wrapper.i"
+	@echo "... home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/linux/network_wrapper.s"
+	@echo "... home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/linux/qcnl_config_impl.o"
+	@echo "... home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/linux/qcnl_config_impl.i"
+	@echo "... home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/linux/qcnl_config_impl.s"
+	@echo "... home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/pccs_response_object.o"
+	@echo "... home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/pccs_response_object.i"
+	@echo "... home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/pccs_response_object.s"
+	@echo "... home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/pckcert_provider.o"
+	@echo "... home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/pckcert_provider.i"
+	@echo "... home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/pckcert_provider.s"
+	@echo "... home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qcnl_config.o"
+	@echo "... home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qcnl_config.i"
+	@echo "... home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qcnl_config.s"
+	@echo "... home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qcnl_util.o"
+	@echo "... home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qcnl_util.i"
+	@echo "... home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qcnl_util.s"
+	@echo "... home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qv_collateral_provider.o"
+	@echo "... home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qv_collateral_provider.i"
+	@echo "... home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qv_collateral_provider.s"
+	@echo "... home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/sgx_default_qcnl_wrapper.o"
+	@echo "... home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/sgx_default_qcnl_wrapper.i"
+	@echo "... home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/sgx_default_qcnl_wrapper.s"
 .PHONY : help
 
 
@@ -385,6 +385,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

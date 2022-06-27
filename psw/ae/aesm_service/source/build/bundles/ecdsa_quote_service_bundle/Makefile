@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/SGXENV/linux-sgx/psw/ae/aesm_service/source
+CMAKE_SOURCE_DIR = /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build
+CMAKE_BINARY_DIR = /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -E cmake_progress_start /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/CMakeFiles /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/ecdsa_quote_service_bundle/CMakeFiles/progress.marks
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 bundles/ecdsa_quote_service_bundle/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/CMakeFiles 0
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/CMakeFiles /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/ecdsa_quote_service_bundle/CMakeFiles/progress.marks
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 bundles/ecdsa_quote_service_bundle/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 bundles/ecdsa_quote_service_bundle/clean
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 bundles/ecdsa_quote_service_bundle/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 bundles/ecdsa_quote_service_bundle/preinstall
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 bundles/ecdsa_quote_service_bundle/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 bundles/ecdsa_quote_service_bundle/preinstall
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 bundles/ecdsa_quote_service_bundle/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 bundles/ecdsa_quote_service_bundle/CMakeFiles/qe3_logic_lib.dir/rule:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 bundles/ecdsa_quote_service_bundle/CMakeFiles/qe3_logic_lib.dir/rule
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 bundles/ecdsa_quote_service_bundle/CMakeFiles/qe3_logic_lib.dir/rule
 .PHONY : bundles/ecdsa_quote_service_bundle/CMakeFiles/qe3_logic_lib.dir/rule
 
 # Convenience name for target.
@@ -122,12 +122,12 @@ qe3_logic_lib: bundles/ecdsa_quote_service_bundle/CMakeFiles/qe3_logic_lib.dir/r
 
 # fast build rule for target.
 qe3_logic_lib/fast:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/ecdsa_quote_service_bundle/CMakeFiles/qe3_logic_lib.dir/build.make bundles/ecdsa_quote_service_bundle/CMakeFiles/qe3_logic_lib.dir/build
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/ecdsa_quote_service_bundle/CMakeFiles/qe3_logic_lib.dir/build.make bundles/ecdsa_quote_service_bundle/CMakeFiles/qe3_logic_lib.dir/build
 .PHONY : qe3_logic_lib/fast
 
 # Convenience name for target.
 bundles/ecdsa_quote_service_bundle/CMakeFiles/ecdsa_quote_service_bundle.dir/rule:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 bundles/ecdsa_quote_service_bundle/CMakeFiles/ecdsa_quote_service_bundle.dir/rule
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 bundles/ecdsa_quote_service_bundle/CMakeFiles/ecdsa_quote_service_bundle.dir/rule
 .PHONY : bundles/ecdsa_quote_service_bundle/CMakeFiles/ecdsa_quote_service_bundle.dir/rule
 
 # Convenience name for target.
@@ -137,7 +137,7 @@ ecdsa_quote_service_bundle: bundles/ecdsa_quote_service_bundle/CMakeFiles/ecdsa_
 
 # fast build rule for target.
 ecdsa_quote_service_bundle/fast:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/ecdsa_quote_service_bundle/CMakeFiles/ecdsa_quote_service_bundle.dir/build.make bundles/ecdsa_quote_service_bundle/CMakeFiles/ecdsa_quote_service_bundle.dir/build
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/ecdsa_quote_service_bundle/CMakeFiles/ecdsa_quote_service_bundle.dir/build.make bundles/ecdsa_quote_service_bundle/CMakeFiles/ecdsa_quote_service_bundle.dir/build
 .PHONY : ecdsa_quote_service_bundle/fast
 
 ecdsa_quote_service_bundle.o: ecdsa_quote_service_bundle.cpp.o
@@ -146,7 +146,7 @@ ecdsa_quote_service_bundle.o: ecdsa_quote_service_bundle.cpp.o
 
 # target to build an object file
 ecdsa_quote_service_bundle.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/ecdsa_quote_service_bundle/CMakeFiles/ecdsa_quote_service_bundle.dir/build.make bundles/ecdsa_quote_service_bundle/CMakeFiles/ecdsa_quote_service_bundle.dir/ecdsa_quote_service_bundle.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/ecdsa_quote_service_bundle/CMakeFiles/ecdsa_quote_service_bundle.dir/build.make bundles/ecdsa_quote_service_bundle/CMakeFiles/ecdsa_quote_service_bundle.dir/ecdsa_quote_service_bundle.cpp.o
 .PHONY : ecdsa_quote_service_bundle.cpp.o
 
 ecdsa_quote_service_bundle.i: ecdsa_quote_service_bundle.cpp.i
@@ -155,7 +155,7 @@ ecdsa_quote_service_bundle.i: ecdsa_quote_service_bundle.cpp.i
 
 # target to preprocess a source file
 ecdsa_quote_service_bundle.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/ecdsa_quote_service_bundle/CMakeFiles/ecdsa_quote_service_bundle.dir/build.make bundles/ecdsa_quote_service_bundle/CMakeFiles/ecdsa_quote_service_bundle.dir/ecdsa_quote_service_bundle.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/ecdsa_quote_service_bundle/CMakeFiles/ecdsa_quote_service_bundle.dir/build.make bundles/ecdsa_quote_service_bundle/CMakeFiles/ecdsa_quote_service_bundle.dir/ecdsa_quote_service_bundle.cpp.i
 .PHONY : ecdsa_quote_service_bundle.cpp.i
 
 ecdsa_quote_service_bundle.s: ecdsa_quote_service_bundle.cpp.s
@@ -164,7 +164,7 @@ ecdsa_quote_service_bundle.s: ecdsa_quote_service_bundle.cpp.s
 
 # target to generate assembly for a file
 ecdsa_quote_service_bundle.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/ecdsa_quote_service_bundle/CMakeFiles/ecdsa_quote_service_bundle.dir/build.make bundles/ecdsa_quote_service_bundle/CMakeFiles/ecdsa_quote_service_bundle.dir/ecdsa_quote_service_bundle.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/ecdsa_quote_service_bundle/CMakeFiles/ecdsa_quote_service_bundle.dir/build.make bundles/ecdsa_quote_service_bundle/CMakeFiles/ecdsa_quote_service_bundle.dir/ecdsa_quote_service_bundle.cpp.s
 .PHONY : ecdsa_quote_service_bundle.cpp.s
 
 ecdsa_quote_service_bundle/cppmicroservices_init.o: ecdsa_quote_service_bundle/cppmicroservices_init.cpp.o
@@ -173,7 +173,7 @@ ecdsa_quote_service_bundle/cppmicroservices_init.o: ecdsa_quote_service_bundle/c
 
 # target to build an object file
 ecdsa_quote_service_bundle/cppmicroservices_init.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/ecdsa_quote_service_bundle/CMakeFiles/ecdsa_quote_service_bundle.dir/build.make bundles/ecdsa_quote_service_bundle/CMakeFiles/ecdsa_quote_service_bundle.dir/ecdsa_quote_service_bundle/cppmicroservices_init.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/ecdsa_quote_service_bundle/CMakeFiles/ecdsa_quote_service_bundle.dir/build.make bundles/ecdsa_quote_service_bundle/CMakeFiles/ecdsa_quote_service_bundle.dir/ecdsa_quote_service_bundle/cppmicroservices_init.cpp.o
 .PHONY : ecdsa_quote_service_bundle/cppmicroservices_init.cpp.o
 
 ecdsa_quote_service_bundle/cppmicroservices_init.i: ecdsa_quote_service_bundle/cppmicroservices_init.cpp.i
@@ -182,7 +182,7 @@ ecdsa_quote_service_bundle/cppmicroservices_init.i: ecdsa_quote_service_bundle/c
 
 # target to preprocess a source file
 ecdsa_quote_service_bundle/cppmicroservices_init.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/ecdsa_quote_service_bundle/CMakeFiles/ecdsa_quote_service_bundle.dir/build.make bundles/ecdsa_quote_service_bundle/CMakeFiles/ecdsa_quote_service_bundle.dir/ecdsa_quote_service_bundle/cppmicroservices_init.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/ecdsa_quote_service_bundle/CMakeFiles/ecdsa_quote_service_bundle.dir/build.make bundles/ecdsa_quote_service_bundle/CMakeFiles/ecdsa_quote_service_bundle.dir/ecdsa_quote_service_bundle/cppmicroservices_init.cpp.i
 .PHONY : ecdsa_quote_service_bundle/cppmicroservices_init.cpp.i
 
 ecdsa_quote_service_bundle/cppmicroservices_init.s: ecdsa_quote_service_bundle/cppmicroservices_init.cpp.s
@@ -191,7 +191,7 @@ ecdsa_quote_service_bundle/cppmicroservices_init.s: ecdsa_quote_service_bundle/c
 
 # target to generate assembly for a file
 ecdsa_quote_service_bundle/cppmicroservices_init.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/ecdsa_quote_service_bundle/CMakeFiles/ecdsa_quote_service_bundle.dir/build.make bundles/ecdsa_quote_service_bundle/CMakeFiles/ecdsa_quote_service_bundle.dir/ecdsa_quote_service_bundle/cppmicroservices_init.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/ecdsa_quote_service_bundle/CMakeFiles/ecdsa_quote_service_bundle.dir/build.make bundles/ecdsa_quote_service_bundle/CMakeFiles/ecdsa_quote_service_bundle.dir/ecdsa_quote_service_bundle/cppmicroservices_init.cpp.s
 .PHONY : ecdsa_quote_service_bundle/cppmicroservices_init.cpp.s
 
 ecdsa_quote_service_bundle/cppmicroservices_resources.o: ecdsa_quote_service_bundle/cppmicroservices_resources.cpp.o
@@ -200,7 +200,7 @@ ecdsa_quote_service_bundle/cppmicroservices_resources.o: ecdsa_quote_service_bun
 
 # target to build an object file
 ecdsa_quote_service_bundle/cppmicroservices_resources.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/ecdsa_quote_service_bundle/CMakeFiles/ecdsa_quote_service_bundle.dir/build.make bundles/ecdsa_quote_service_bundle/CMakeFiles/ecdsa_quote_service_bundle.dir/ecdsa_quote_service_bundle/cppmicroservices_resources.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/ecdsa_quote_service_bundle/CMakeFiles/ecdsa_quote_service_bundle.dir/build.make bundles/ecdsa_quote_service_bundle/CMakeFiles/ecdsa_quote_service_bundle.dir/ecdsa_quote_service_bundle/cppmicroservices_resources.cpp.o
 .PHONY : ecdsa_quote_service_bundle/cppmicroservices_resources.cpp.o
 
 ecdsa_quote_service_bundle/cppmicroservices_resources.i: ecdsa_quote_service_bundle/cppmicroservices_resources.cpp.i
@@ -209,7 +209,7 @@ ecdsa_quote_service_bundle/cppmicroservices_resources.i: ecdsa_quote_service_bun
 
 # target to preprocess a source file
 ecdsa_quote_service_bundle/cppmicroservices_resources.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/ecdsa_quote_service_bundle/CMakeFiles/ecdsa_quote_service_bundle.dir/build.make bundles/ecdsa_quote_service_bundle/CMakeFiles/ecdsa_quote_service_bundle.dir/ecdsa_quote_service_bundle/cppmicroservices_resources.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/ecdsa_quote_service_bundle/CMakeFiles/ecdsa_quote_service_bundle.dir/build.make bundles/ecdsa_quote_service_bundle/CMakeFiles/ecdsa_quote_service_bundle.dir/ecdsa_quote_service_bundle/cppmicroservices_resources.cpp.i
 .PHONY : ecdsa_quote_service_bundle/cppmicroservices_resources.cpp.i
 
 ecdsa_quote_service_bundle/cppmicroservices_resources.s: ecdsa_quote_service_bundle/cppmicroservices_resources.cpp.s
@@ -218,7 +218,7 @@ ecdsa_quote_service_bundle/cppmicroservices_resources.s: ecdsa_quote_service_bun
 
 # target to generate assembly for a file
 ecdsa_quote_service_bundle/cppmicroservices_resources.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/ecdsa_quote_service_bundle/CMakeFiles/ecdsa_quote_service_bundle.dir/build.make bundles/ecdsa_quote_service_bundle/CMakeFiles/ecdsa_quote_service_bundle.dir/ecdsa_quote_service_bundle/cppmicroservices_resources.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/ecdsa_quote_service_bundle/CMakeFiles/ecdsa_quote_service_bundle.dir/build.make bundles/ecdsa_quote_service_bundle/CMakeFiles/ecdsa_quote_service_bundle.dir/ecdsa_quote_service_bundle/cppmicroservices_resources.cpp.s
 .PHONY : ecdsa_quote_service_bundle/cppmicroservices_resources.cpp.s
 
 # Help Target
@@ -251,6 +251,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,4 +1,4 @@
-# Install script for directory: /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles
+# Install script for directory: /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,12 +39,12 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/ecdsa_quote_service_bundle/cmake_install.cmake")
-  include("/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/epid_quote_service_bundle/cmake_install.cmake")
-  include("/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/le_launch_service_bundle/cmake_install.cmake")
-  include("/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/linux_network_service_bundle/cmake_install.cmake")
-  include("/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/pce_service_bundle/cmake_install.cmake")
-  include("/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/quote_ex_service_bundle/cmake_install.cmake")
+  include("/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/ecdsa_quote_service_bundle/cmake_install.cmake")
+  include("/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/epid_quote_service_bundle/cmake_install.cmake")
+  include("/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/le_launch_service_bundle/cmake_install.cmake")
+  include("/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/linux_network_service_bundle/cmake_install.cmake")
+  include("/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/pce_service_bundle/cmake_install.cmake")
+  include("/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/quote_ex_service_bundle/cmake_install.cmake")
 
 endif()
 

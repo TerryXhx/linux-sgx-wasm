@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/SGXENV/linux-sgx/psw/ae/aesm_service/source
+CMAKE_SOURCE_DIR = /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build
+CMAKE_BINARY_DIR = /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build
 
 # Include any dependencies generated for this target.
 include bundles/pce_service_bundle/CMakeFiles/pce_service_bundle.dir/depend.make
@@ -58,53 +58,53 @@ include bundles/pce_service_bundle/CMakeFiles/pce_service_bundle.dir/progress.ma
 include bundles/pce_service_bundle/CMakeFiles/pce_service_bundle.dir/flags.make
 
 bundles/pce_service_bundle/pce_service_bundle/cppmicroservices_resources.cpp: bundles/pce_service_bundle/pce_service_bundle/res_0.zip
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Checking resource dependencies for pce_service_bundle"
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/pce_service_bundle && /usr/bin/cmake -E copy /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/share/cppmicroservices4/cmake/CMakeResourceDependencies.cpp /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/pce_service_bundle/pce_service_bundle/cppmicroservices_resources.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Checking resource dependencies for pce_service_bundle"
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/pce_service_bundle && /usr/bin/cmake -E copy /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/share/cppmicroservices4/cmake/CMakeResourceDependencies.cpp /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/pce_service_bundle/pce_service_bundle/cppmicroservices_resources.cpp
 
 bundles/pce_service_bundle/pce_service_bundle/res_0.zip: ../bundles/pce_service_bundle/manifest.json
-bundles/pce_service_bundle/pce_service_bundle/res_0.zip: /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/bin/usResourceCompiler4
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Checking resource dependencies for pce_service_bundle"
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/pce_service_bundle && /usr/bin/cmake -E make_directory /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/pce_service_bundle/pce_service_bundle
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/pce_service_bundle && /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/bin/usResourceCompiler4 -o /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/pce_service_bundle/pce_service_bundle/res_0.zip -n pce_service_bundle_name -r manifest.json
+bundles/pce_service_bundle/pce_service_bundle/res_0.zip: /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/bin/usResourceCompiler4
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Checking resource dependencies for pce_service_bundle"
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/pce_service_bundle && /usr/bin/cmake -E make_directory /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/pce_service_bundle/pce_service_bundle
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/pce_service_bundle && /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/bin/usResourceCompiler4 -o /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/pce_service_bundle/pce_service_bundle/res_0.zip -n pce_service_bundle_name -r manifest.json
 
 bundles/pce_service_bundle/CMakeFiles/pce_service_bundle.dir/pce_service_bundle.cpp.o: bundles/pce_service_bundle/CMakeFiles/pce_service_bundle.dir/flags.make
 bundles/pce_service_bundle/CMakeFiles/pce_service_bundle.dir/pce_service_bundle.cpp.o: ../bundles/pce_service_bundle/pce_service_bundle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object bundles/pce_service_bundle/CMakeFiles/pce_service_bundle.dir/pce_service_bundle.cpp.o"
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/pce_service_bundle && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pce_service_bundle.dir/pce_service_bundle.cpp.o -c /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/pce_service_bundle/pce_service_bundle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object bundles/pce_service_bundle/CMakeFiles/pce_service_bundle.dir/pce_service_bundle.cpp.o"
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/pce_service_bundle && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pce_service_bundle.dir/pce_service_bundle.cpp.o -c /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/pce_service_bundle/pce_service_bundle.cpp
 
 bundles/pce_service_bundle/CMakeFiles/pce_service_bundle.dir/pce_service_bundle.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pce_service_bundle.dir/pce_service_bundle.cpp.i"
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/pce_service_bundle && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/pce_service_bundle/pce_service_bundle.cpp > CMakeFiles/pce_service_bundle.dir/pce_service_bundle.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/pce_service_bundle && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/pce_service_bundle/pce_service_bundle.cpp > CMakeFiles/pce_service_bundle.dir/pce_service_bundle.cpp.i
 
 bundles/pce_service_bundle/CMakeFiles/pce_service_bundle.dir/pce_service_bundle.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pce_service_bundle.dir/pce_service_bundle.cpp.s"
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/pce_service_bundle && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/pce_service_bundle/pce_service_bundle.cpp -o CMakeFiles/pce_service_bundle.dir/pce_service_bundle.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/pce_service_bundle && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/pce_service_bundle/pce_service_bundle.cpp -o CMakeFiles/pce_service_bundle.dir/pce_service_bundle.cpp.s
 
 bundles/pce_service_bundle/CMakeFiles/pce_service_bundle.dir/pce_service_bundle/cppmicroservices_resources.cpp.o: bundles/pce_service_bundle/CMakeFiles/pce_service_bundle.dir/flags.make
 bundles/pce_service_bundle/CMakeFiles/pce_service_bundle.dir/pce_service_bundle/cppmicroservices_resources.cpp.o: bundles/pce_service_bundle/pce_service_bundle/cppmicroservices_resources.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object bundles/pce_service_bundle/CMakeFiles/pce_service_bundle.dir/pce_service_bundle/cppmicroservices_resources.cpp.o"
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/pce_service_bundle && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pce_service_bundle.dir/pce_service_bundle/cppmicroservices_resources.cpp.o -c /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/pce_service_bundle/pce_service_bundle/cppmicroservices_resources.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object bundles/pce_service_bundle/CMakeFiles/pce_service_bundle.dir/pce_service_bundle/cppmicroservices_resources.cpp.o"
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/pce_service_bundle && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pce_service_bundle.dir/pce_service_bundle/cppmicroservices_resources.cpp.o -c /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/pce_service_bundle/pce_service_bundle/cppmicroservices_resources.cpp
 
 bundles/pce_service_bundle/CMakeFiles/pce_service_bundle.dir/pce_service_bundle/cppmicroservices_resources.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pce_service_bundle.dir/pce_service_bundle/cppmicroservices_resources.cpp.i"
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/pce_service_bundle && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/pce_service_bundle/pce_service_bundle/cppmicroservices_resources.cpp > CMakeFiles/pce_service_bundle.dir/pce_service_bundle/cppmicroservices_resources.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/pce_service_bundle && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/pce_service_bundle/pce_service_bundle/cppmicroservices_resources.cpp > CMakeFiles/pce_service_bundle.dir/pce_service_bundle/cppmicroservices_resources.cpp.i
 
 bundles/pce_service_bundle/CMakeFiles/pce_service_bundle.dir/pce_service_bundle/cppmicroservices_resources.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pce_service_bundle.dir/pce_service_bundle/cppmicroservices_resources.cpp.s"
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/pce_service_bundle && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/pce_service_bundle/pce_service_bundle/cppmicroservices_resources.cpp -o CMakeFiles/pce_service_bundle.dir/pce_service_bundle/cppmicroservices_resources.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/pce_service_bundle && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/pce_service_bundle/pce_service_bundle/cppmicroservices_resources.cpp -o CMakeFiles/pce_service_bundle.dir/pce_service_bundle/cppmicroservices_resources.cpp.s
 
 bundles/pce_service_bundle/CMakeFiles/pce_service_bundle.dir/pce_service_bundle/cppmicroservices_init.cpp.o: bundles/pce_service_bundle/CMakeFiles/pce_service_bundle.dir/flags.make
 bundles/pce_service_bundle/CMakeFiles/pce_service_bundle.dir/pce_service_bundle/cppmicroservices_init.cpp.o: bundles/pce_service_bundle/pce_service_bundle/cppmicroservices_init.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object bundles/pce_service_bundle/CMakeFiles/pce_service_bundle.dir/pce_service_bundle/cppmicroservices_init.cpp.o"
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/pce_service_bundle && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pce_service_bundle.dir/pce_service_bundle/cppmicroservices_init.cpp.o -c /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/pce_service_bundle/pce_service_bundle/cppmicroservices_init.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object bundles/pce_service_bundle/CMakeFiles/pce_service_bundle.dir/pce_service_bundle/cppmicroservices_init.cpp.o"
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/pce_service_bundle && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pce_service_bundle.dir/pce_service_bundle/cppmicroservices_init.cpp.o -c /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/pce_service_bundle/pce_service_bundle/cppmicroservices_init.cpp
 
 bundles/pce_service_bundle/CMakeFiles/pce_service_bundle.dir/pce_service_bundle/cppmicroservices_init.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pce_service_bundle.dir/pce_service_bundle/cppmicroservices_init.cpp.i"
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/pce_service_bundle && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/pce_service_bundle/pce_service_bundle/cppmicroservices_init.cpp > CMakeFiles/pce_service_bundle.dir/pce_service_bundle/cppmicroservices_init.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/pce_service_bundle && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/pce_service_bundle/pce_service_bundle/cppmicroservices_init.cpp > CMakeFiles/pce_service_bundle.dir/pce_service_bundle/cppmicroservices_init.cpp.i
 
 bundles/pce_service_bundle/CMakeFiles/pce_service_bundle.dir/pce_service_bundle/cppmicroservices_init.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pce_service_bundle.dir/pce_service_bundle/cppmicroservices_init.cpp.s"
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/pce_service_bundle && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/pce_service_bundle/pce_service_bundle/cppmicroservices_init.cpp -o CMakeFiles/pce_service_bundle.dir/pce_service_bundle/cppmicroservices_init.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/pce_service_bundle && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/pce_service_bundle/pce_service_bundle/cppmicroservices_init.cpp -o CMakeFiles/pce_service_bundle.dir/pce_service_bundle/cppmicroservices_init.cpp.s
 
 # Object files for target pce_service_bundle
 pce_service_bundle_OBJECTS = \
@@ -119,14 +119,14 @@ bin/bundles/libpce_service_bundle.so: bundles/pce_service_bundle/CMakeFiles/pce_
 bin/bundles/libpce_service_bundle.so: bundles/pce_service_bundle/CMakeFiles/pce_service_bundle.dir/pce_service_bundle/cppmicroservices_resources.cpp.o
 bin/bundles/libpce_service_bundle.so: bundles/pce_service_bundle/CMakeFiles/pce_service_bundle.dir/pce_service_bundle/cppmicroservices_init.cpp.o
 bin/bundles/libpce_service_bundle.so: bundles/pce_service_bundle/CMakeFiles/pce_service_bundle.dir/build.make
-bin/bundles/libpce_service_bundle.so: /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/lib/libCppMicroServices.so.4.0.0
+bin/bundles/libpce_service_bundle.so: /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/lib/libCppMicroServices.so.4.0.0
 bin/bundles/libpce_service_bundle.so: bin/liboal.so
 bin/bundles/libpce_service_bundle.so: ../../../../../external/dcap_source/QuoteGeneration/build/linux/libsgx_pce_logic.so
 bin/bundles/libpce_service_bundle.so: bundles/pce_service_bundle/CMakeFiles/pce_service_bundle.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX shared library ../../bin/bundles/libpce_service_bundle.so"
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/pce_service_bundle && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pce_service_bundle.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX shared library ../../bin/bundles/libpce_service_bundle.so"
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/pce_service_bundle && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pce_service_bundle.dir/link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Appending zipped resources to pce_service_bundle"
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/pce_service_bundle && objcopy --add-section .note.sgx.aesm_resource=/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/pce_service_bundle/pce_service_bundle/res_0.zip /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bin/bundles/libpce_service_bundle.so
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/pce_service_bundle && objcopy --add-section .note.sgx.aesm_resource=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/pce_service_bundle/pce_service_bundle/res_0.zip /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bin/bundles/libpce_service_bundle.so
 
 # Rule to build all files generated by this target.
 bundles/pce_service_bundle/CMakeFiles/pce_service_bundle.dir/build: bin/bundles/libpce_service_bundle.so
@@ -134,11 +134,11 @@ bundles/pce_service_bundle/CMakeFiles/pce_service_bundle.dir/build: bin/bundles/
 .PHONY : bundles/pce_service_bundle/CMakeFiles/pce_service_bundle.dir/build
 
 bundles/pce_service_bundle/CMakeFiles/pce_service_bundle.dir/clean:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/pce_service_bundle && $(CMAKE_COMMAND) -P CMakeFiles/pce_service_bundle.dir/cmake_clean.cmake
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/pce_service_bundle && $(CMAKE_COMMAND) -P CMakeFiles/pce_service_bundle.dir/cmake_clean.cmake
 .PHONY : bundles/pce_service_bundle/CMakeFiles/pce_service_bundle.dir/clean
 
 bundles/pce_service_bundle/CMakeFiles/pce_service_bundle.dir/depend: bundles/pce_service_bundle/pce_service_bundle/cppmicroservices_resources.cpp
 bundles/pce_service_bundle/CMakeFiles/pce_service_bundle.dir/depend: bundles/pce_service_bundle/pce_service_bundle/res_0.zip
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/SGXENV/linux-sgx/psw/ae/aesm_service/source /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/pce_service_bundle /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/pce_service_bundle /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/pce_service_bundle/CMakeFiles/pce_service_bundle.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/pce_service_bundle /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/pce_service_bundle /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/pce_service_bundle/CMakeFiles/pce_service_bundle.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : bundles/pce_service_bundle/CMakeFiles/pce_service_bundle.dir/depend
 

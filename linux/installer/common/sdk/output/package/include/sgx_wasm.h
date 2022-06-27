@@ -17,8 +17,6 @@ typedef struct _sgx_wasm_t {
     uint8_t wasm_blob[];
 } sgx_wasm_t;
 
-uint64_t sgx_wasm_get_size();
-
 uint8_t* sgx_get_wasm_sec_buf_addr();
 
 #ifdef __cplusplus

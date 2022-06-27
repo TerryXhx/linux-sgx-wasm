@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/SGXENV/linux-sgx/psw/ae/aesm_service/source
+CMAKE_SOURCE_DIR = /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build
+CMAKE_BINARY_DIR = /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -E cmake_progress_start /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/CMakeFiles /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/core/CMakeFiles/progress.marks
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 core/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/CMakeFiles 0
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/CMakeFiles /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/core/CMakeFiles/progress.marks
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 core/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 core/clean
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 core/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 core/preinstall
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 core/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 core/preinstall
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 core/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 core/CMakeFiles/aesm_service.dir/rule:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 core/CMakeFiles/aesm_service.dir/rule
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 core/CMakeFiles/aesm_service.dir/rule
 .PHONY : core/CMakeFiles/aesm_service.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ aesm_service: core/CMakeFiles/aesm_service.dir/rule
 
 # fast build rule for target.
 aesm_service/fast:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/CMakeFiles/aesm_service.dir/build.make core/CMakeFiles/aesm_service.dir/build
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/CMakeFiles/aesm_service.dir/build.make core/CMakeFiles/aesm_service.dir/build
 .PHONY : aesm_service/fast
 
 AESMLogicWrapper.o: AESMLogicWrapper.cpp.o
@@ -131,7 +131,7 @@ AESMLogicWrapper.o: AESMLogicWrapper.cpp.o
 
 # target to build an object file
 AESMLogicWrapper.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/CMakeFiles/aesm_service.dir/build.make core/CMakeFiles/aesm_service.dir/AESMLogicWrapper.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/CMakeFiles/aesm_service.dir/build.make core/CMakeFiles/aesm_service.dir/AESMLogicWrapper.cpp.o
 .PHONY : AESMLogicWrapper.cpp.o
 
 AESMLogicWrapper.i: AESMLogicWrapper.cpp.i
@@ -140,7 +140,7 @@ AESMLogicWrapper.i: AESMLogicWrapper.cpp.i
 
 # target to preprocess a source file
 AESMLogicWrapper.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/CMakeFiles/aesm_service.dir/build.make core/CMakeFiles/aesm_service.dir/AESMLogicWrapper.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/CMakeFiles/aesm_service.dir/build.make core/CMakeFiles/aesm_service.dir/AESMLogicWrapper.cpp.i
 .PHONY : AESMLogicWrapper.cpp.i
 
 AESMLogicWrapper.s: AESMLogicWrapper.cpp.s
@@ -149,7 +149,7 @@ AESMLogicWrapper.s: AESMLogicWrapper.cpp.s
 
 # target to generate assembly for a file
 AESMLogicWrapper.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/CMakeFiles/aesm_service.dir/build.make core/CMakeFiles/aesm_service.dir/AESMLogicWrapper.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/CMakeFiles/aesm_service.dir/build.make core/CMakeFiles/aesm_service.dir/AESMLogicWrapper.cpp.s
 .PHONY : AESMLogicWrapper.cpp.s
 
 AESMQueueManager.o: AESMQueueManager.cpp.o
@@ -158,7 +158,7 @@ AESMQueueManager.o: AESMQueueManager.cpp.o
 
 # target to build an object file
 AESMQueueManager.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/CMakeFiles/aesm_service.dir/build.make core/CMakeFiles/aesm_service.dir/AESMQueueManager.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/CMakeFiles/aesm_service.dir/build.make core/CMakeFiles/aesm_service.dir/AESMQueueManager.cpp.o
 .PHONY : AESMQueueManager.cpp.o
 
 AESMQueueManager.i: AESMQueueManager.cpp.i
@@ -167,7 +167,7 @@ AESMQueueManager.i: AESMQueueManager.cpp.i
 
 # target to preprocess a source file
 AESMQueueManager.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/CMakeFiles/aesm_service.dir/build.make core/CMakeFiles/aesm_service.dir/AESMQueueManager.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/CMakeFiles/aesm_service.dir/build.make core/CMakeFiles/aesm_service.dir/AESMQueueManager.cpp.i
 .PHONY : AESMQueueManager.cpp.i
 
 AESMQueueManager.s: AESMQueueManager.cpp.s
@@ -176,7 +176,7 @@ AESMQueueManager.s: AESMQueueManager.cpp.s
 
 # target to generate assembly for a file
 AESMQueueManager.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/CMakeFiles/aesm_service.dir/build.make core/CMakeFiles/aesm_service.dir/AESMQueueManager.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/CMakeFiles/aesm_service.dir/build.make core/CMakeFiles/aesm_service.dir/AESMQueueManager.cpp.s
 .PHONY : AESMQueueManager.cpp.s
 
 AESMWorkerThread.o: AESMWorkerThread.cpp.o
@@ -185,7 +185,7 @@ AESMWorkerThread.o: AESMWorkerThread.cpp.o
 
 # target to build an object file
 AESMWorkerThread.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/CMakeFiles/aesm_service.dir/build.make core/CMakeFiles/aesm_service.dir/AESMWorkerThread.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/CMakeFiles/aesm_service.dir/build.make core/CMakeFiles/aesm_service.dir/AESMWorkerThread.cpp.o
 .PHONY : AESMWorkerThread.cpp.o
 
 AESMWorkerThread.i: AESMWorkerThread.cpp.i
@@ -194,7 +194,7 @@ AESMWorkerThread.i: AESMWorkerThread.cpp.i
 
 # target to preprocess a source file
 AESMWorkerThread.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/CMakeFiles/aesm_service.dir/build.make core/CMakeFiles/aesm_service.dir/AESMWorkerThread.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/CMakeFiles/aesm_service.dir/build.make core/CMakeFiles/aesm_service.dir/AESMWorkerThread.cpp.i
 .PHONY : AESMWorkerThread.cpp.i
 
 AESMWorkerThread.s: AESMWorkerThread.cpp.s
@@ -203,7 +203,7 @@ AESMWorkerThread.s: AESMWorkerThread.cpp.s
 
 # target to generate assembly for a file
 AESMWorkerThread.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/CMakeFiles/aesm_service.dir/build.make core/CMakeFiles/aesm_service.dir/AESMWorkerThread.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/CMakeFiles/aesm_service.dir/build.make core/CMakeFiles/aesm_service.dir/AESMWorkerThread.cpp.s
 .PHONY : AESMWorkerThread.cpp.s
 
 CAESMServer.o: CAESMServer.cpp.o
@@ -212,7 +212,7 @@ CAESMServer.o: CAESMServer.cpp.o
 
 # target to build an object file
 CAESMServer.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/CMakeFiles/aesm_service.dir/build.make core/CMakeFiles/aesm_service.dir/CAESMServer.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/CMakeFiles/aesm_service.dir/build.make core/CMakeFiles/aesm_service.dir/CAESMServer.cpp.o
 .PHONY : CAESMServer.cpp.o
 
 CAESMServer.i: CAESMServer.cpp.i
@@ -221,7 +221,7 @@ CAESMServer.i: CAESMServer.cpp.i
 
 # target to preprocess a source file
 CAESMServer.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/CMakeFiles/aesm_service.dir/build.make core/CMakeFiles/aesm_service.dir/CAESMServer.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/CMakeFiles/aesm_service.dir/build.make core/CMakeFiles/aesm_service.dir/CAESMServer.cpp.i
 .PHONY : CAESMServer.cpp.i
 
 CAESMServer.s: CAESMServer.cpp.s
@@ -230,7 +230,7 @@ CAESMServer.s: CAESMServer.cpp.s
 
 # target to generate assembly for a file
 CAESMServer.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/CMakeFiles/aesm_service.dir/build.make core/CMakeFiles/aesm_service.dir/CAESMServer.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/CMakeFiles/aesm_service.dir/build.make core/CMakeFiles/aesm_service.dir/CAESMServer.cpp.s
 .PHONY : CAESMServer.cpp.s
 
 CSelector.o: CSelector.cpp.o
@@ -239,7 +239,7 @@ CSelector.o: CSelector.cpp.o
 
 # target to build an object file
 CSelector.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/CMakeFiles/aesm_service.dir/build.make core/CMakeFiles/aesm_service.dir/CSelector.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/CMakeFiles/aesm_service.dir/build.make core/CMakeFiles/aesm_service.dir/CSelector.cpp.o
 .PHONY : CSelector.cpp.o
 
 CSelector.i: CSelector.cpp.i
@@ -248,7 +248,7 @@ CSelector.i: CSelector.cpp.i
 
 # target to preprocess a source file
 CSelector.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/CMakeFiles/aesm_service.dir/build.make core/CMakeFiles/aesm_service.dir/CSelector.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/CMakeFiles/aesm_service.dir/build.make core/CMakeFiles/aesm_service.dir/CSelector.cpp.i
 .PHONY : CSelector.cpp.i
 
 CSelector.s: CSelector.cpp.s
@@ -257,7 +257,7 @@ CSelector.s: CSelector.cpp.s
 
 # target to generate assembly for a file
 CSelector.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/CMakeFiles/aesm_service.dir/build.make core/CMakeFiles/aesm_service.dir/CSelector.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/CMakeFiles/aesm_service.dir/build.make core/CMakeFiles/aesm_service.dir/CSelector.cpp.s
 .PHONY : CSelector.cpp.s
 
 Thread.o: Thread.cpp.o
@@ -266,7 +266,7 @@ Thread.o: Thread.cpp.o
 
 # target to build an object file
 Thread.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/CMakeFiles/aesm_service.dir/build.make core/CMakeFiles/aesm_service.dir/Thread.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/CMakeFiles/aesm_service.dir/build.make core/CMakeFiles/aesm_service.dir/Thread.cpp.o
 .PHONY : Thread.cpp.o
 
 Thread.i: Thread.cpp.i
@@ -275,7 +275,7 @@ Thread.i: Thread.cpp.i
 
 # target to preprocess a source file
 Thread.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/CMakeFiles/aesm_service.dir/build.make core/CMakeFiles/aesm_service.dir/Thread.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/CMakeFiles/aesm_service.dir/build.make core/CMakeFiles/aesm_service.dir/Thread.cpp.i
 .PHONY : Thread.cpp.i
 
 Thread.s: Thread.cpp.s
@@ -284,7 +284,7 @@ Thread.s: Thread.cpp.s
 
 # target to generate assembly for a file
 Thread.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/CMakeFiles/aesm_service.dir/build.make core/CMakeFiles/aesm_service.dir/Thread.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/CMakeFiles/aesm_service.dir/build.make core/CMakeFiles/aesm_service.dir/Thread.cpp.s
 .PHONY : Thread.cpp.s
 
 UnixServerSocket.o: UnixServerSocket.cpp.o
@@ -293,7 +293,7 @@ UnixServerSocket.o: UnixServerSocket.cpp.o
 
 # target to build an object file
 UnixServerSocket.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/CMakeFiles/aesm_service.dir/build.make core/CMakeFiles/aesm_service.dir/UnixServerSocket.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/CMakeFiles/aesm_service.dir/build.make core/CMakeFiles/aesm_service.dir/UnixServerSocket.cpp.o
 .PHONY : UnixServerSocket.cpp.o
 
 UnixServerSocket.i: UnixServerSocket.cpp.i
@@ -302,7 +302,7 @@ UnixServerSocket.i: UnixServerSocket.cpp.i
 
 # target to preprocess a source file
 UnixServerSocket.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/CMakeFiles/aesm_service.dir/build.make core/CMakeFiles/aesm_service.dir/UnixServerSocket.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/CMakeFiles/aesm_service.dir/build.make core/CMakeFiles/aesm_service.dir/UnixServerSocket.cpp.i
 .PHONY : UnixServerSocket.cpp.i
 
 UnixServerSocket.s: UnixServerSocket.cpp.s
@@ -311,7 +311,7 @@ UnixServerSocket.s: UnixServerSocket.cpp.s
 
 # target to generate assembly for a file
 UnixServerSocket.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/CMakeFiles/aesm_service.dir/build.make core/CMakeFiles/aesm_service.dir/UnixServerSocket.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/CMakeFiles/aesm_service.dir/build.make core/CMakeFiles/aesm_service.dir/UnixServerSocket.cpp.s
 .PHONY : UnixServerSocket.cpp.s
 
 main.o: main.cpp.o
@@ -320,7 +320,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/CMakeFiles/aesm_service.dir/build.make core/CMakeFiles/aesm_service.dir/main.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/CMakeFiles/aesm_service.dir/build.make core/CMakeFiles/aesm_service.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -329,7 +329,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/CMakeFiles/aesm_service.dir/build.make core/CMakeFiles/aesm_service.dir/main.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/CMakeFiles/aesm_service.dir/build.make core/CMakeFiles/aesm_service.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -338,7 +338,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/CMakeFiles/aesm_service.dir/build.make core/CMakeFiles/aesm_service.dir/main.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/CMakeFiles/aesm_service.dir/build.make core/CMakeFiles/aesm_service.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -385,6 +385,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

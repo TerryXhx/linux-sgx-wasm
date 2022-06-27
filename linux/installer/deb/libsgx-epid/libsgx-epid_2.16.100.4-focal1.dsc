@@ -11,11 +11,11 @@ Package-List:
  libsgx-epid deb libs optional arch=amd64
  libsgx-epid-dev deb devel optional arch=amd64
 Checksums-Sha1:
- 05f93dc13e5b649f7c5f8a756a66fedd6cb483f3 127351 libsgx-epid_2.16.100.4.orig.tar.gz
- 2d9d7a259e93725cdc22cf41e2e956a1825621c8 20528 libsgx-epid_2.16.100.4-focal1.debian.tar.xz
+ 80ce2817782a6fa967f552a3d84a18a0846ec34a 126332 libsgx-epid_2.16.100.4.orig.tar.gz
+ 838de74ee6e333c594c0031cfbe4d86a5a849211 20536 libsgx-epid_2.16.100.4-focal1.debian.tar.xz
 Checksums-Sha256:
- 9754a55b63e537363d9198f28e417327f512b7396368a01560e462a21445460b 127351 libsgx-epid_2.16.100.4.orig.tar.gz
- 69896d6b966ea92b9d60cee985a01cbf3a8ee7433f7280099e37d93126427619 20528 libsgx-epid_2.16.100.4-focal1.debian.tar.xz
+ e4f2f7c5637507ad0ed503e975790518f0b2e8b1a9e6371f47735a7e927d2e83 126332 libsgx-epid_2.16.100.4.orig.tar.gz
+ b740102268ec37aff201ac5226b8e9519e681409fff4cc2b0c4daad6da9b317d 20536 libsgx-epid_2.16.100.4-focal1.debian.tar.xz
 Files:
- c08ef2034ef7c1e129e65b2af353be64 127351 libsgx-epid_2.16.100.4.orig.tar.gz
- 71dc888a04c304b5debf4c6e735d902d 20528 libsgx-epid_2.16.100.4-focal1.debian.tar.xz
+ afd730b16d84494b1de852a7ac1efe8b 126332 libsgx-epid_2.16.100.4.orig.tar.gz
+ 19b5a5d0dfc6ab7b6f830483a72b2017 20536 libsgx-epid_2.16.100.4-focal1.debian.tar.xz

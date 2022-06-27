@@ -1,4 +1,4 @@
-# Install script for directory: /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc
+# Install script for directory: /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

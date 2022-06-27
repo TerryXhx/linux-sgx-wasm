@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/SGXENV/linux-sgx/psw/ae/aesm_service/source
+CMAKE_SOURCE_DIR = /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build
+CMAKE_BINARY_DIR = /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -E cmake_progress_start /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/CMakeFiles /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/utils/CMakeFiles/progress.marks
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 utils/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/CMakeFiles 0
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/CMakeFiles /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/utils/CMakeFiles/progress.marks
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 utils/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 utils/clean
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 utils/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 utils/preinstall
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 utils/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 utils/preinstall
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 utils/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 utils/CMakeFiles/utils.dir/rule:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 utils/CMakeFiles/utils.dir/rule
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 utils/CMakeFiles/utils.dir/rule
 .PHONY : utils/CMakeFiles/utils.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ utils: utils/CMakeFiles/utils.dir/rule
 
 # fast build rule for target.
 utils/fast:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/build
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/build
 .PHONY : utils/fast
 
 aesm_config.o: aesm_config.cpp.o
@@ -131,7 +131,7 @@ aesm_config.o: aesm_config.cpp.o
 
 # target to build an object file
 aesm_config.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/aesm_config.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/aesm_config.cpp.o
 .PHONY : aesm_config.cpp.o
 
 aesm_config.i: aesm_config.cpp.i
@@ -140,7 +140,7 @@ aesm_config.i: aesm_config.cpp.i
 
 # target to preprocess a source file
 aesm_config.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/aesm_config.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/aesm_config.cpp.i
 .PHONY : aesm_config.cpp.i
 
 aesm_config.s: aesm_config.cpp.s
@@ -149,7 +149,7 @@ aesm_config.s: aesm_config.cpp.s
 
 # target to generate assembly for a file
 aesm_config.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/aesm_config.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/aesm_config.cpp.s
 .PHONY : aesm_config.cpp.s
 
 aesm_long_lived_thread.o: aesm_long_lived_thread.cpp.o
@@ -158,7 +158,7 @@ aesm_long_lived_thread.o: aesm_long_lived_thread.cpp.o
 
 # target to build an object file
 aesm_long_lived_thread.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/aesm_long_lived_thread.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/aesm_long_lived_thread.cpp.o
 .PHONY : aesm_long_lived_thread.cpp.o
 
 aesm_long_lived_thread.i: aesm_long_lived_thread.cpp.i
@@ -167,7 +167,7 @@ aesm_long_lived_thread.i: aesm_long_lived_thread.cpp.i
 
 # target to preprocess a source file
 aesm_long_lived_thread.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/aesm_long_lived_thread.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/aesm_long_lived_thread.cpp.i
 .PHONY : aesm_long_lived_thread.cpp.i
 
 aesm_long_lived_thread.s: aesm_long_lived_thread.cpp.s
@@ -176,7 +176,7 @@ aesm_long_lived_thread.s: aesm_long_lived_thread.cpp.s
 
 # target to generate assembly for a file
 aesm_long_lived_thread.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/aesm_long_lived_thread.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/aesm_long_lived_thread.cpp.s
 .PHONY : aesm_long_lived_thread.cpp.s
 
 aesm_rand.o: aesm_rand.cpp.o
@@ -185,7 +185,7 @@ aesm_rand.o: aesm_rand.cpp.o
 
 # target to build an object file
 aesm_rand.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/aesm_rand.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/aesm_rand.cpp.o
 .PHONY : aesm_rand.cpp.o
 
 aesm_rand.i: aesm_rand.cpp.i
@@ -194,7 +194,7 @@ aesm_rand.i: aesm_rand.cpp.i
 
 # target to preprocess a source file
 aesm_rand.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/aesm_rand.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/aesm_rand.cpp.i
 .PHONY : aesm_rand.cpp.i
 
 aesm_rand.s: aesm_rand.cpp.s
@@ -203,7 +203,7 @@ aesm_rand.s: aesm_rand.cpp.s
 
 # target to generate assembly for a file
 aesm_rand.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/aesm_rand.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/aesm_rand.cpp.s
 .PHONY : aesm_rand.cpp.s
 
 crypto_aes_gcm.o: crypto_aes_gcm.cpp.o
@@ -212,7 +212,7 @@ crypto_aes_gcm.o: crypto_aes_gcm.cpp.o
 
 # target to build an object file
 crypto_aes_gcm.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/crypto_aes_gcm.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/crypto_aes_gcm.cpp.o
 .PHONY : crypto_aes_gcm.cpp.o
 
 crypto_aes_gcm.i: crypto_aes_gcm.cpp.i
@@ -221,7 +221,7 @@ crypto_aes_gcm.i: crypto_aes_gcm.cpp.i
 
 # target to preprocess a source file
 crypto_aes_gcm.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/crypto_aes_gcm.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/crypto_aes_gcm.cpp.i
 .PHONY : crypto_aes_gcm.cpp.i
 
 crypto_aes_gcm.s: crypto_aes_gcm.cpp.s
@@ -230,7 +230,7 @@ crypto_aes_gcm.s: crypto_aes_gcm.cpp.s
 
 # target to generate assembly for a file
 crypto_aes_gcm.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/crypto_aes_gcm.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/crypto_aes_gcm.cpp.s
 .PHONY : crypto_aes_gcm.cpp.s
 
 crypto_cmac128.o: crypto_cmac128.cpp.o
@@ -239,7 +239,7 @@ crypto_cmac128.o: crypto_cmac128.cpp.o
 
 # target to build an object file
 crypto_cmac128.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/crypto_cmac128.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/crypto_cmac128.cpp.o
 .PHONY : crypto_cmac128.cpp.o
 
 crypto_cmac128.i: crypto_cmac128.cpp.i
@@ -248,7 +248,7 @@ crypto_cmac128.i: crypto_cmac128.cpp.i
 
 # target to preprocess a source file
 crypto_cmac128.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/crypto_cmac128.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/crypto_cmac128.cpp.i
 .PHONY : crypto_cmac128.cpp.i
 
 crypto_cmac128.s: crypto_cmac128.cpp.s
@@ -257,7 +257,7 @@ crypto_cmac128.s: crypto_cmac128.cpp.s
 
 # target to generate assembly for a file
 crypto_cmac128.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/crypto_cmac128.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/crypto_cmac128.cpp.s
 .PHONY : crypto_cmac128.cpp.s
 
 crypto_ecc.o: crypto_ecc.cpp.o
@@ -266,7 +266,7 @@ crypto_ecc.o: crypto_ecc.cpp.o
 
 # target to build an object file
 crypto_ecc.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/crypto_ecc.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/crypto_ecc.cpp.o
 .PHONY : crypto_ecc.cpp.o
 
 crypto_ecc.i: crypto_ecc.cpp.i
@@ -275,7 +275,7 @@ crypto_ecc.i: crypto_ecc.cpp.i
 
 # target to preprocess a source file
 crypto_ecc.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/crypto_ecc.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/crypto_ecc.cpp.i
 .PHONY : crypto_ecc.cpp.i
 
 crypto_ecc.s: crypto_ecc.cpp.s
@@ -284,7 +284,7 @@ crypto_ecc.s: crypto_ecc.cpp.s
 
 # target to generate assembly for a file
 crypto_ecc.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/crypto_ecc.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/crypto_ecc.cpp.s
 .PHONY : crypto_ecc.cpp.s
 
 crypto_rsa.o: crypto_rsa.cpp.o
@@ -293,7 +293,7 @@ crypto_rsa.o: crypto_rsa.cpp.o
 
 # target to build an object file
 crypto_rsa.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/crypto_rsa.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/crypto_rsa.cpp.o
 .PHONY : crypto_rsa.cpp.o
 
 crypto_rsa.i: crypto_rsa.cpp.i
@@ -302,7 +302,7 @@ crypto_rsa.i: crypto_rsa.cpp.i
 
 # target to preprocess a source file
 crypto_rsa.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/crypto_rsa.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/crypto_rsa.cpp.i
 .PHONY : crypto_rsa.cpp.i
 
 crypto_rsa.s: crypto_rsa.cpp.s
@@ -311,7 +311,7 @@ crypto_rsa.s: crypto_rsa.cpp.s
 
 # target to generate assembly for a file
 crypto_rsa.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/crypto_rsa.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/crypto_rsa.cpp.s
 .PHONY : crypto_rsa.cpp.s
 
 crypto_sha256_msg.o: crypto_sha256_msg.cpp.o
@@ -320,7 +320,7 @@ crypto_sha256_msg.o: crypto_sha256_msg.cpp.o
 
 # target to build an object file
 crypto_sha256_msg.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/crypto_sha256_msg.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/crypto_sha256_msg.cpp.o
 .PHONY : crypto_sha256_msg.cpp.o
 
 crypto_sha256_msg.i: crypto_sha256_msg.cpp.i
@@ -329,7 +329,7 @@ crypto_sha256_msg.i: crypto_sha256_msg.cpp.i
 
 # target to preprocess a source file
 crypto_sha256_msg.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/crypto_sha256_msg.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/crypto_sha256_msg.cpp.i
 .PHONY : crypto_sha256_msg.cpp.i
 
 crypto_sha256_msg.s: crypto_sha256_msg.cpp.s
@@ -338,62 +338,62 @@ crypto_sha256_msg.s: crypto_sha256_msg.cpp.s
 
 # target to generate assembly for a file
 crypto_sha256_msg.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/crypto_sha256_msg.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/crypto_sha256_msg.cpp.s
 .PHONY : crypto_sha256_msg.cpp.s
 
-root/SGXENV/linux-sgx/common/src/sgx_memset_s.o: root/SGXENV/linux-sgx/common/src/sgx_memset_s.cpp.o
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/common/src/sgx_memset_s.o: home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/common/src/sgx_memset_s.cpp.o
 
-.PHONY : root/SGXENV/linux-sgx/common/src/sgx_memset_s.o
-
-# target to build an object file
-root/SGXENV/linux-sgx/common/src/sgx_memset_s.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/root/SGXENV/linux-sgx/common/src/sgx_memset_s.cpp.o
-.PHONY : root/SGXENV/linux-sgx/common/src/sgx_memset_s.cpp.o
-
-root/SGXENV/linux-sgx/common/src/sgx_memset_s.i: root/SGXENV/linux-sgx/common/src/sgx_memset_s.cpp.i
-
-.PHONY : root/SGXENV/linux-sgx/common/src/sgx_memset_s.i
-
-# target to preprocess a source file
-root/SGXENV/linux-sgx/common/src/sgx_memset_s.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/root/SGXENV/linux-sgx/common/src/sgx_memset_s.cpp.i
-.PHONY : root/SGXENV/linux-sgx/common/src/sgx_memset_s.cpp.i
-
-root/SGXENV/linux-sgx/common/src/sgx_memset_s.s: root/SGXENV/linux-sgx/common/src/sgx_memset_s.cpp.s
-
-.PHONY : root/SGXENV/linux-sgx/common/src/sgx_memset_s.s
-
-# target to generate assembly for a file
-root/SGXENV/linux-sgx/common/src/sgx_memset_s.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/root/SGXENV/linux-sgx/common/src/sgx_memset_s.cpp.s
-.PHONY : root/SGXENV/linux-sgx/common/src/sgx_memset_s.cpp.s
-
-root/SGXENV/linux-sgx/common/src/sgx_read_rand.o: root/SGXENV/linux-sgx/common/src/sgx_read_rand.cpp.o
-
-.PHONY : root/SGXENV/linux-sgx/common/src/sgx_read_rand.o
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/common/src/sgx_memset_s.o
 
 # target to build an object file
-root/SGXENV/linux-sgx/common/src/sgx_read_rand.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/root/SGXENV/linux-sgx/common/src/sgx_read_rand.cpp.o
-.PHONY : root/SGXENV/linux-sgx/common/src/sgx_read_rand.cpp.o
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/common/src/sgx_memset_s.cpp.o:
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/common/src/sgx_memset_s.cpp.o
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/common/src/sgx_memset_s.cpp.o
 
-root/SGXENV/linux-sgx/common/src/sgx_read_rand.i: root/SGXENV/linux-sgx/common/src/sgx_read_rand.cpp.i
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/common/src/sgx_memset_s.i: home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/common/src/sgx_memset_s.cpp.i
 
-.PHONY : root/SGXENV/linux-sgx/common/src/sgx_read_rand.i
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/common/src/sgx_memset_s.i
 
 # target to preprocess a source file
-root/SGXENV/linux-sgx/common/src/sgx_read_rand.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/root/SGXENV/linux-sgx/common/src/sgx_read_rand.cpp.i
-.PHONY : root/SGXENV/linux-sgx/common/src/sgx_read_rand.cpp.i
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/common/src/sgx_memset_s.cpp.i:
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/common/src/sgx_memset_s.cpp.i
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/common/src/sgx_memset_s.cpp.i
 
-root/SGXENV/linux-sgx/common/src/sgx_read_rand.s: root/SGXENV/linux-sgx/common/src/sgx_read_rand.cpp.s
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/common/src/sgx_memset_s.s: home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/common/src/sgx_memset_s.cpp.s
 
-.PHONY : root/SGXENV/linux-sgx/common/src/sgx_read_rand.s
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/common/src/sgx_memset_s.s
 
 # target to generate assembly for a file
-root/SGXENV/linux-sgx/common/src/sgx_read_rand.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/root/SGXENV/linux-sgx/common/src/sgx_read_rand.cpp.s
-.PHONY : root/SGXENV/linux-sgx/common/src/sgx_read_rand.cpp.s
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/common/src/sgx_memset_s.cpp.s:
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/common/src/sgx_memset_s.cpp.s
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/common/src/sgx_memset_s.cpp.s
+
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/common/src/sgx_read_rand.o: home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/common/src/sgx_read_rand.cpp.o
+
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/common/src/sgx_read_rand.o
+
+# target to build an object file
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/common/src/sgx_read_rand.cpp.o:
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/common/src/sgx_read_rand.cpp.o
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/common/src/sgx_read_rand.cpp.o
+
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/common/src/sgx_read_rand.i: home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/common/src/sgx_read_rand.cpp.i
+
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/common/src/sgx_read_rand.i
+
+# target to preprocess a source file
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/common/src/sgx_read_rand.cpp.i:
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/common/src/sgx_read_rand.cpp.i
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/common/src/sgx_read_rand.cpp.i
+
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/common/src/sgx_read_rand.s: home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/common/src/sgx_read_rand.cpp.s
+
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/common/src/sgx_read_rand.s
+
+# target to generate assembly for a file
+home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/common/src/sgx_read_rand.cpp.s:
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/common/src/sgx_read_rand.cpp.s
+.PHONY : home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/common/src/sgx_read_rand.cpp.s
 
 ssl_compat_wrapper.o: ssl_compat_wrapper.cpp.o
 
@@ -401,7 +401,7 @@ ssl_compat_wrapper.o: ssl_compat_wrapper.cpp.o
 
 # target to build an object file
 ssl_compat_wrapper.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/ssl_compat_wrapper.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/ssl_compat_wrapper.cpp.o
 .PHONY : ssl_compat_wrapper.cpp.o
 
 ssl_compat_wrapper.i: ssl_compat_wrapper.cpp.i
@@ -410,7 +410,7 @@ ssl_compat_wrapper.i: ssl_compat_wrapper.cpp.i
 
 # target to preprocess a source file
 ssl_compat_wrapper.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/ssl_compat_wrapper.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/ssl_compat_wrapper.cpp.i
 .PHONY : ssl_compat_wrapper.cpp.i
 
 ssl_compat_wrapper.s: ssl_compat_wrapper.cpp.s
@@ -419,7 +419,7 @@ ssl_compat_wrapper.s: ssl_compat_wrapper.cpp.s
 
 # target to generate assembly for a file
 ssl_compat_wrapper.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/ssl_compat_wrapper.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/ssl_compat_wrapper.cpp.s
 .PHONY : ssl_compat_wrapper.cpp.s
 
 type_length_value.o: type_length_value.cpp.o
@@ -428,7 +428,7 @@ type_length_value.o: type_length_value.cpp.o
 
 # target to build an object file
 type_length_value.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/type_length_value.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/type_length_value.cpp.o
 .PHONY : type_length_value.cpp.o
 
 type_length_value.i: type_length_value.cpp.i
@@ -437,7 +437,7 @@ type_length_value.i: type_length_value.cpp.i
 
 # target to preprocess a source file
 type_length_value.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/type_length_value.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/type_length_value.cpp.i
 .PHONY : type_length_value.cpp.i
 
 type_length_value.s: type_length_value.cpp.s
@@ -446,7 +446,7 @@ type_length_value.s: type_length_value.cpp.s
 
 # target to generate assembly for a file
 type_length_value.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/type_length_value.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/type_length_value.cpp.s
 .PHONY : type_length_value.cpp.s
 
 # Help Target
@@ -482,12 +482,12 @@ help:
 	@echo "... crypto_sha256_msg.o"
 	@echo "... crypto_sha256_msg.i"
 	@echo "... crypto_sha256_msg.s"
-	@echo "... root/SGXENV/linux-sgx/common/src/sgx_memset_s.o"
-	@echo "... root/SGXENV/linux-sgx/common/src/sgx_memset_s.i"
-	@echo "... root/SGXENV/linux-sgx/common/src/sgx_memset_s.s"
-	@echo "... root/SGXENV/linux-sgx/common/src/sgx_read_rand.o"
-	@echo "... root/SGXENV/linux-sgx/common/src/sgx_read_rand.i"
-	@echo "... root/SGXENV/linux-sgx/common/src/sgx_read_rand.s"
+	@echo "... home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/common/src/sgx_memset_s.o"
+	@echo "... home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/common/src/sgx_memset_s.i"
+	@echo "... home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/common/src/sgx_memset_s.s"
+	@echo "... home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/common/src/sgx_read_rand.o"
+	@echo "... home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/common/src/sgx_read_rand.i"
+	@echo "... home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/common/src/sgx_read_rand.s"
 	@echo "... ssl_compat_wrapper.o"
 	@echo "... ssl_compat_wrapper.i"
 	@echo "... ssl_compat_wrapper.s"
@@ -505,6 +505,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

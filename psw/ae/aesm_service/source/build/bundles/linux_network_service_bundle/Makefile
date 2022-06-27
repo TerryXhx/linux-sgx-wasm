@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/SGXENV/linux-sgx/psw/ae/aesm_service/source
+CMAKE_SOURCE_DIR = /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build
+CMAKE_BINARY_DIR = /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -E cmake_progress_start /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/CMakeFiles /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/linux_network_service_bundle/CMakeFiles/progress.marks
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 bundles/linux_network_service_bundle/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/CMakeFiles 0
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/CMakeFiles /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/linux_network_service_bundle/CMakeFiles/progress.marks
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 bundles/linux_network_service_bundle/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 bundles/linux_network_service_bundle/clean
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 bundles/linux_network_service_bundle/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 bundles/linux_network_service_bundle/preinstall
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 bundles/linux_network_service_bundle/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 bundles/linux_network_service_bundle/preinstall
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 bundles/linux_network_service_bundle/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/rule:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/rule
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/rule
 .PHONY : bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ linux_network_service_bundle: bundles/linux_network_service_bundle/CMakeFiles/li
 
 # fast build rule for target.
 linux_network_service_bundle/fast:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/build.make bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/build
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/build.make bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/build
 .PHONY : linux_network_service_bundle/fast
 
 aesm_encode.o: aesm_encode.cpp.o
@@ -131,7 +131,7 @@ aesm_encode.o: aesm_encode.cpp.o
 
 # target to build an object file
 aesm_encode.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/build.make bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/aesm_encode.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/build.make bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/aesm_encode.cpp.o
 .PHONY : aesm_encode.cpp.o
 
 aesm_encode.i: aesm_encode.cpp.i
@@ -140,7 +140,7 @@ aesm_encode.i: aesm_encode.cpp.i
 
 # target to preprocess a source file
 aesm_encode.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/build.make bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/aesm_encode.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/build.make bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/aesm_encode.cpp.i
 .PHONY : aesm_encode.cpp.i
 
 aesm_encode.s: aesm_encode.cpp.s
@@ -149,7 +149,7 @@ aesm_encode.s: aesm_encode.cpp.s
 
 # target to generate assembly for a file
 aesm_encode.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/build.make bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/aesm_encode.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/build.make bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/aesm_encode.cpp.s
 .PHONY : aesm_encode.cpp.s
 
 aesm_http_msg.o: aesm_http_msg.cpp.o
@@ -158,7 +158,7 @@ aesm_http_msg.o: aesm_http_msg.cpp.o
 
 # target to build an object file
 aesm_http_msg.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/build.make bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/aesm_http_msg.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/build.make bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/aesm_http_msg.cpp.o
 .PHONY : aesm_http_msg.cpp.o
 
 aesm_http_msg.i: aesm_http_msg.cpp.i
@@ -167,7 +167,7 @@ aesm_http_msg.i: aesm_http_msg.cpp.i
 
 # target to preprocess a source file
 aesm_http_msg.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/build.make bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/aesm_http_msg.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/build.make bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/aesm_http_msg.cpp.i
 .PHONY : aesm_http_msg.cpp.i
 
 aesm_http_msg.s: aesm_http_msg.cpp.s
@@ -176,7 +176,7 @@ aesm_http_msg.s: aesm_http_msg.cpp.s
 
 # target to generate assembly for a file
 aesm_http_msg.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/build.make bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/aesm_http_msg.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/build.make bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/aesm_http_msg.cpp.s
 .PHONY : aesm_http_msg.cpp.s
 
 linux_network_service_bundle.o: linux_network_service_bundle.cpp.o
@@ -185,7 +185,7 @@ linux_network_service_bundle.o: linux_network_service_bundle.cpp.o
 
 # target to build an object file
 linux_network_service_bundle.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/build.make bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/linux_network_service_bundle.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/build.make bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/linux_network_service_bundle.cpp.o
 .PHONY : linux_network_service_bundle.cpp.o
 
 linux_network_service_bundle.i: linux_network_service_bundle.cpp.i
@@ -194,7 +194,7 @@ linux_network_service_bundle.i: linux_network_service_bundle.cpp.i
 
 # target to preprocess a source file
 linux_network_service_bundle.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/build.make bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/linux_network_service_bundle.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/build.make bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/linux_network_service_bundle.cpp.i
 .PHONY : linux_network_service_bundle.cpp.i
 
 linux_network_service_bundle.s: linux_network_service_bundle.cpp.s
@@ -203,7 +203,7 @@ linux_network_service_bundle.s: linux_network_service_bundle.cpp.s
 
 # target to generate assembly for a file
 linux_network_service_bundle.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/build.make bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/linux_network_service_bundle.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/build.make bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/linux_network_service_bundle.cpp.s
 .PHONY : linux_network_service_bundle.cpp.s
 
 linux_network_service_bundle/cppmicroservices_init.o: linux_network_service_bundle/cppmicroservices_init.cpp.o
@@ -212,7 +212,7 @@ linux_network_service_bundle/cppmicroservices_init.o: linux_network_service_bund
 
 # target to build an object file
 linux_network_service_bundle/cppmicroservices_init.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/build.make bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/linux_network_service_bundle/cppmicroservices_init.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/build.make bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/linux_network_service_bundle/cppmicroservices_init.cpp.o
 .PHONY : linux_network_service_bundle/cppmicroservices_init.cpp.o
 
 linux_network_service_bundle/cppmicroservices_init.i: linux_network_service_bundle/cppmicroservices_init.cpp.i
@@ -221,7 +221,7 @@ linux_network_service_bundle/cppmicroservices_init.i: linux_network_service_bund
 
 # target to preprocess a source file
 linux_network_service_bundle/cppmicroservices_init.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/build.make bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/linux_network_service_bundle/cppmicroservices_init.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/build.make bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/linux_network_service_bundle/cppmicroservices_init.cpp.i
 .PHONY : linux_network_service_bundle/cppmicroservices_init.cpp.i
 
 linux_network_service_bundle/cppmicroservices_init.s: linux_network_service_bundle/cppmicroservices_init.cpp.s
@@ -230,7 +230,7 @@ linux_network_service_bundle/cppmicroservices_init.s: linux_network_service_bund
 
 # target to generate assembly for a file
 linux_network_service_bundle/cppmicroservices_init.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/build.make bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/linux_network_service_bundle/cppmicroservices_init.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/build.make bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/linux_network_service_bundle/cppmicroservices_init.cpp.s
 .PHONY : linux_network_service_bundle/cppmicroservices_init.cpp.s
 
 linux_network_service_bundle/cppmicroservices_resources.o: linux_network_service_bundle/cppmicroservices_resources.cpp.o
@@ -239,7 +239,7 @@ linux_network_service_bundle/cppmicroservices_resources.o: linux_network_service
 
 # target to build an object file
 linux_network_service_bundle/cppmicroservices_resources.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/build.make bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/linux_network_service_bundle/cppmicroservices_resources.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/build.make bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/linux_network_service_bundle/cppmicroservices_resources.cpp.o
 .PHONY : linux_network_service_bundle/cppmicroservices_resources.cpp.o
 
 linux_network_service_bundle/cppmicroservices_resources.i: linux_network_service_bundle/cppmicroservices_resources.cpp.i
@@ -248,7 +248,7 @@ linux_network_service_bundle/cppmicroservices_resources.i: linux_network_service
 
 # target to preprocess a source file
 linux_network_service_bundle/cppmicroservices_resources.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/build.make bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/linux_network_service_bundle/cppmicroservices_resources.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/build.make bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/linux_network_service_bundle/cppmicroservices_resources.cpp.i
 .PHONY : linux_network_service_bundle/cppmicroservices_resources.cpp.i
 
 linux_network_service_bundle/cppmicroservices_resources.s: linux_network_service_bundle/cppmicroservices_resources.cpp.s
@@ -257,7 +257,7 @@ linux_network_service_bundle/cppmicroservices_resources.s: linux_network_service
 
 # target to generate assembly for a file
 linux_network_service_bundle/cppmicroservices_resources.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/build.make bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/linux_network_service_bundle/cppmicroservices_resources.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/build.make bundles/linux_network_service_bundle/CMakeFiles/linux_network_service_bundle.dir/linux_network_service_bundle/cppmicroservices_resources.cpp.s
 .PHONY : linux_network_service_bundle/cppmicroservices_resources.cpp.s
 
 # Help Target
@@ -295,6 +295,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

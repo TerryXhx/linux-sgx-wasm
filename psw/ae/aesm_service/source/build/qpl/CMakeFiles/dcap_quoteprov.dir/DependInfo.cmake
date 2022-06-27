@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qpl/linux/x509.cpp" "/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/qpl/CMakeFiles/dcap_quoteprov.dir/root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qpl/linux/x509.cpp.o"
-  "/root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qpl/sgx_base64.cpp" "/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/qpl/CMakeFiles/dcap_quoteprov.dir/root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qpl/sgx_base64.cpp.o"
-  "/root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qpl/sgx_default_quote_provider.cpp" "/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/qpl/CMakeFiles/dcap_quoteprov.dir/root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qpl/sgx_default_quote_provider.cpp.o"
+  "/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qpl/linux/x509.cpp" "/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/qpl/CMakeFiles/dcap_quoteprov.dir/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qpl/linux/x509.cpp.o"
+  "/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qpl/sgx_base64.cpp" "/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/qpl/CMakeFiles/dcap_quoteprov.dir/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qpl/sgx_base64.cpp.o"
+  "/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qpl/sgx_default_quote_provider.cpp" "/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/qpl/CMakeFiles/dcap_quoteprov.dir/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qpl/sgx_default_quote_provider.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -18,7 +18,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/root/SGXENV/sgxsdk/include"
+  "/home/nsec-sgx/SGXENVWASM/sgxsdk/include"
   "../../../../../external/dcap_source/QuoteGeneration/qcnl/inc"
   "../../../../../external/dcap_source/QuoteGeneration/qpl/inc"
   "../../../../../external/dcap_source/QuoteGeneration/pce_wrapper/inc"
@@ -29,7 +29,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/DependInfo.cmake"
+  "/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

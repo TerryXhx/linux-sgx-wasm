@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/pce_service_bundle/pce_service_bundle.cpp" "/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/pce_service_bundle/CMakeFiles/pce_service_bundle.dir/pce_service_bundle.cpp.o"
-  "/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/pce_service_bundle/pce_service_bundle/cppmicroservices_init.cpp" "/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/pce_service_bundle/CMakeFiles/pce_service_bundle.dir/pce_service_bundle/cppmicroservices_init.cpp.o"
-  "/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/pce_service_bundle/pce_service_bundle/cppmicroservices_resources.cpp" "/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/pce_service_bundle/CMakeFiles/pce_service_bundle.dir/pce_service_bundle/cppmicroservices_resources.cpp.o"
+  "/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/pce_service_bundle/pce_service_bundle.cpp" "/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/pce_service_bundle/CMakeFiles/pce_service_bundle.dir/pce_service_bundle.cpp.o"
+  "/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/pce_service_bundle/pce_service_bundle/cppmicroservices_init.cpp" "/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/pce_service_bundle/CMakeFiles/pce_service_bundle.dir/pce_service_bundle/cppmicroservices_init.cpp.o"
+  "/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/pce_service_bundle/pce_service_bundle/cppmicroservices_resources.cpp" "/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/pce_service_bundle/CMakeFiles/pce_service_bundle.dir/pce_service_bundle/cppmicroservices_resources.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -24,18 +24,18 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../../../data/constants/linux"
   "../common"
   "../../../../../common/inc/internal"
-  "/root/SGXENV/sgxsdk/include"
+  "/home/nsec-sgx/SGXENVWASM/sgxsdk/include"
   "../../../inc"
   "../../../inc/internal"
   "../../../pve"
   "../../../../../external/epid-sdk"
   "../../../../../external/dcap_source/QuoteGeneration/pce_wrapper/inc"
-  "/root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4"
+  "/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/oal/CMakeFiles/oal.dir/DependInfo.cmake"
+  "/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/oal/CMakeFiles/oal.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

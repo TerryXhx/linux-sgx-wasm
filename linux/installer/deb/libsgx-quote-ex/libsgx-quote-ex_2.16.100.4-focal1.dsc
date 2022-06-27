@@ -11,11 +11,11 @@ Package-List:
  libsgx-quote-ex deb libs optional arch=amd64
  libsgx-quote-ex-dev deb devel optional arch=amd64
 Checksums-Sha1:
- 226330961b32891b79d2522cf2d42f9120b3f7ca 129277 libsgx-quote-ex_2.16.100.4.orig.tar.gz
- 01abb9ec3fc3a8992e94728b7d4c8471b6eacd14 20552 libsgx-quote-ex_2.16.100.4-focal1.debian.tar.xz
+ b7fd3523678ade2888f32407686d84811db4784f 128873 libsgx-quote-ex_2.16.100.4.orig.tar.gz
+ 6307ff8a55d3adf5c2250a279278cf72a70eaf70 20556 libsgx-quote-ex_2.16.100.4-focal1.debian.tar.xz
 Checksums-Sha256:
- 59db6de18683c3123cc0815093acf834f608b3379f6b81cba5a8b7db8ba87370 129277 libsgx-quote-ex_2.16.100.4.orig.tar.gz
- 18186d6c5a42887d5da0d1237d395a32105f9aa99880e05ba62e530d1ddd2fa2 20552 libsgx-quote-ex_2.16.100.4-focal1.debian.tar.xz
+ c22b402089e66bdaa175eb751b061d412478bee1f6ed136097c84ddb7100167d 128873 libsgx-quote-ex_2.16.100.4.orig.tar.gz
+ cfad5b7717d9d8a55ede3798f62d51a3b9242478778a5e04fffaa22260dae7a5 20556 libsgx-quote-ex_2.16.100.4-focal1.debian.tar.xz
 Files:
- d4486c3d78a3394d43e432d7abb60481 129277 libsgx-quote-ex_2.16.100.4.orig.tar.gz
- de661c5e96e87bbcd60fc591271b1de9 20552 libsgx-quote-ex_2.16.100.4-focal1.debian.tar.xz
+ 4c04af9d55820676989a70732f017bea 128873 libsgx-quote-ex_2.16.100.4.orig.tar.gz
+ 24d5b6272972ec0e3abbde166aad51ad 20556 libsgx-quote-ex_2.16.100.4-focal1.debian.tar.xz

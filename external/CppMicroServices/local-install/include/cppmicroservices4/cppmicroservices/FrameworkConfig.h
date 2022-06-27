@@ -23,6 +23,6 @@
 // Macros used by the unit tests
 //-------------------------------------------------------------------
 
-#define US_FRAMEWORK_SOURCE_DIR "/root/SGXENV/linux-sgx/external/CppMicroServices/framework"
+#define US_FRAMEWORK_SOURCE_DIR "/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/framework"
 
 #endif // CPPMICROSERVICES_FRAMEWORKCONFIG_H

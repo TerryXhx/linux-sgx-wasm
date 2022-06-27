@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/build/linux/libsgx_qe3_logic.so"
+  "/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/build/linux/libsgx_qe3_logic.so"
   "CMakeFiles/qe3_logic_lib"
 )
 

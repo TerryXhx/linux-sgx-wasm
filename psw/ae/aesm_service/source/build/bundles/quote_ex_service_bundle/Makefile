@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/SGXENV/linux-sgx/psw/ae/aesm_service/source
+CMAKE_SOURCE_DIR = /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build
+CMAKE_BINARY_DIR = /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -E cmake_progress_start /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/CMakeFiles /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/quote_ex_service_bundle/CMakeFiles/progress.marks
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 bundles/quote_ex_service_bundle/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/CMakeFiles 0
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/CMakeFiles /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/quote_ex_service_bundle/CMakeFiles/progress.marks
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 bundles/quote_ex_service_bundle/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 bundles/quote_ex_service_bundle/clean
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 bundles/quote_ex_service_bundle/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 bundles/quote_ex_service_bundle/preinstall
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 bundles/quote_ex_service_bundle/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 bundles/quote_ex_service_bundle/preinstall
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 bundles/quote_ex_service_bundle/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/rule:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/rule
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/rule
 .PHONY : bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ quote_ex_service_bundle: bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_ser
 
 # fast build rule for target.
 quote_ex_service_bundle/fast:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/build.make bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/build
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/build.make bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/build
 .PHONY : quote_ex_service_bundle/fast
 
 quote_ex_service_bundle.o: quote_ex_service_bundle.cpp.o
@@ -131,7 +131,7 @@ quote_ex_service_bundle.o: quote_ex_service_bundle.cpp.o
 
 # target to build an object file
 quote_ex_service_bundle.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/build.make bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/build.make bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle.cpp.o
 .PHONY : quote_ex_service_bundle.cpp.o
 
 quote_ex_service_bundle.i: quote_ex_service_bundle.cpp.i
@@ -140,7 +140,7 @@ quote_ex_service_bundle.i: quote_ex_service_bundle.cpp.i
 
 # target to preprocess a source file
 quote_ex_service_bundle.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/build.make bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/build.make bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle.cpp.i
 .PHONY : quote_ex_service_bundle.cpp.i
 
 quote_ex_service_bundle.s: quote_ex_service_bundle.cpp.s
@@ -149,7 +149,7 @@ quote_ex_service_bundle.s: quote_ex_service_bundle.cpp.s
 
 # target to generate assembly for a file
 quote_ex_service_bundle.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/build.make bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/build.make bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle.cpp.s
 .PHONY : quote_ex_service_bundle.cpp.s
 
 quote_ex_service_bundle/cppmicroservices_init.o: quote_ex_service_bundle/cppmicroservices_init.cpp.o
@@ -158,7 +158,7 @@ quote_ex_service_bundle/cppmicroservices_init.o: quote_ex_service_bundle/cppmicr
 
 # target to build an object file
 quote_ex_service_bundle/cppmicroservices_init.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/build.make bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle/cppmicroservices_init.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/build.make bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle/cppmicroservices_init.cpp.o
 .PHONY : quote_ex_service_bundle/cppmicroservices_init.cpp.o
 
 quote_ex_service_bundle/cppmicroservices_init.i: quote_ex_service_bundle/cppmicroservices_init.cpp.i
@@ -167,7 +167,7 @@ quote_ex_service_bundle/cppmicroservices_init.i: quote_ex_service_bundle/cppmicr
 
 # target to preprocess a source file
 quote_ex_service_bundle/cppmicroservices_init.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/build.make bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle/cppmicroservices_init.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/build.make bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle/cppmicroservices_init.cpp.i
 .PHONY : quote_ex_service_bundle/cppmicroservices_init.cpp.i
 
 quote_ex_service_bundle/cppmicroservices_init.s: quote_ex_service_bundle/cppmicroservices_init.cpp.s
@@ -176,7 +176,7 @@ quote_ex_service_bundle/cppmicroservices_init.s: quote_ex_service_bundle/cppmicr
 
 # target to generate assembly for a file
 quote_ex_service_bundle/cppmicroservices_init.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/build.make bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle/cppmicroservices_init.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/build.make bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle/cppmicroservices_init.cpp.s
 .PHONY : quote_ex_service_bundle/cppmicroservices_init.cpp.s
 
 quote_ex_service_bundle/cppmicroservices_resources.o: quote_ex_service_bundle/cppmicroservices_resources.cpp.o
@@ -185,7 +185,7 @@ quote_ex_service_bundle/cppmicroservices_resources.o: quote_ex_service_bundle/cp
 
 # target to build an object file
 quote_ex_service_bundle/cppmicroservices_resources.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/build.make bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle/cppmicroservices_resources.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/build.make bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle/cppmicroservices_resources.cpp.o
 .PHONY : quote_ex_service_bundle/cppmicroservices_resources.cpp.o
 
 quote_ex_service_bundle/cppmicroservices_resources.i: quote_ex_service_bundle/cppmicroservices_resources.cpp.i
@@ -194,7 +194,7 @@ quote_ex_service_bundle/cppmicroservices_resources.i: quote_ex_service_bundle/cp
 
 # target to preprocess a source file
 quote_ex_service_bundle/cppmicroservices_resources.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/build.make bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle/cppmicroservices_resources.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/build.make bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle/cppmicroservices_resources.cpp.i
 .PHONY : quote_ex_service_bundle/cppmicroservices_resources.cpp.i
 
 quote_ex_service_bundle/cppmicroservices_resources.s: quote_ex_service_bundle/cppmicroservices_resources.cpp.s
@@ -203,7 +203,7 @@ quote_ex_service_bundle/cppmicroservices_resources.s: quote_ex_service_bundle/cp
 
 # target to generate assembly for a file
 quote_ex_service_bundle/cppmicroservices_resources.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/build.make bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle/cppmicroservices_resources.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/build.make bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle/cppmicroservices_resources.cpp.s
 .PHONY : quote_ex_service_bundle/cppmicroservices_resources.cpp.s
 
 # Help Target
@@ -235,6 +235,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

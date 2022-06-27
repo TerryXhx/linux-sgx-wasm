@@ -43,25 +43,25 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/SGXENV/linux-sgx/psw/ae/aesm_service/source
+CMAKE_SOURCE_DIR = /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build
+CMAKE_BINARY_DIR = /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build
 
 # Utility rule file for pce_logic_lib.
 
 # Include the progress variables for this target.
 include bundles/pce_service_bundle/CMakeFiles/pce_logic_lib.dir/progress.make
 
-bundles/pce_service_bundle/CMakeFiles/pce_logic_lib: /root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/build/linux/libsgx_pce_logic.so
+bundles/pce_service_bundle/CMakeFiles/pce_logic_lib: /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/build/linux/libsgx_pce_logic.so
 
 
-/root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/build/linux/libsgx_pce_logic.so:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating /root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/build/linux/libsgx_pce_logic.so"
-	cd /root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/pce_wrapper/linux && make all
+/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/build/linux/libsgx_pce_logic.so:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/build/linux/libsgx_pce_logic.so"
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/pce_wrapper/linux && make all
 
 pce_logic_lib: bundles/pce_service_bundle/CMakeFiles/pce_logic_lib
-pce_logic_lib: /root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/build/linux/libsgx_pce_logic.so
+pce_logic_lib: /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/build/linux/libsgx_pce_logic.so
 pce_logic_lib: bundles/pce_service_bundle/CMakeFiles/pce_logic_lib.dir/build.make
 
 .PHONY : pce_logic_lib
@@ -72,10 +72,10 @@ bundles/pce_service_bundle/CMakeFiles/pce_logic_lib.dir/build: pce_logic_lib
 .PHONY : bundles/pce_service_bundle/CMakeFiles/pce_logic_lib.dir/build
 
 bundles/pce_service_bundle/CMakeFiles/pce_logic_lib.dir/clean:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/pce_service_bundle && $(CMAKE_COMMAND) -P CMakeFiles/pce_logic_lib.dir/cmake_clean.cmake
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/pce_service_bundle && $(CMAKE_COMMAND) -P CMakeFiles/pce_logic_lib.dir/cmake_clean.cmake
 .PHONY : bundles/pce_service_bundle/CMakeFiles/pce_logic_lib.dir/clean
 
 bundles/pce_service_bundle/CMakeFiles/pce_logic_lib.dir/depend:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/SGXENV/linux-sgx/psw/ae/aesm_service/source /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/pce_service_bundle /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/pce_service_bundle /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/pce_service_bundle/CMakeFiles/pce_logic_lib.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/pce_service_bundle /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/pce_service_bundle /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/pce_service_bundle/CMakeFiles/pce_logic_lib.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : bundles/pce_service_bundle/CMakeFiles/pce_logic_lib.dir/depend
 

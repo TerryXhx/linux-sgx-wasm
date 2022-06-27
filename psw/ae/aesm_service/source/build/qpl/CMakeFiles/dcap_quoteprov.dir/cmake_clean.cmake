@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
   "../bin/libdcap_quoteprov.pdb"
   "../bin/libdcap_quoteprov.so"
-  "CMakeFiles/dcap_quoteprov.dir/root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qpl/linux/x509.cpp.o"
-  "CMakeFiles/dcap_quoteprov.dir/root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qpl/sgx_base64.cpp.o"
-  "CMakeFiles/dcap_quoteprov.dir/root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qpl/sgx_default_quote_provider.cpp.o"
+  "CMakeFiles/dcap_quoteprov.dir/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qpl/linux/x509.cpp.o"
+  "CMakeFiles/dcap_quoteprov.dir/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qpl/sgx_base64.cpp.o"
+  "CMakeFiles/dcap_quoteprov.dir/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qpl/sgx_default_quote_provider.cpp.o"
 )
 
 # Per-language clean rules from dependency scanning.

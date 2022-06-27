@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/build/linux/libsgx_pce_logic.so"
+  "/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/build/linux/libsgx_pce_logic.so"
   "CMakeFiles/pce_logic_lib"
 )
 

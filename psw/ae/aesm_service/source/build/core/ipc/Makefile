@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/SGXENV/linux-sgx/psw/ae/aesm_service/source
+CMAKE_SOURCE_DIR = /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build
+CMAKE_BINARY_DIR = /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -E cmake_progress_start /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/CMakeFiles /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/core/ipc/CMakeFiles/progress.marks
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 core/ipc/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/CMakeFiles 0
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/CMakeFiles /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/core/ipc/CMakeFiles/progress.marks
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 core/ipc/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 core/ipc/clean
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 core/ipc/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 core/ipc/preinstall
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 core/ipc/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 core/ipc/preinstall
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 core/ipc/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 core/ipc/CMakeFiles/ipc.dir/rule:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 core/ipc/CMakeFiles/ipc.dir/rule
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 core/ipc/CMakeFiles/ipc.dir/rule
 .PHONY : core/ipc/CMakeFiles/ipc.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ ipc: core/ipc/CMakeFiles/ipc.dir/rule
 
 # fast build rule for target.
 ipc/fast:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/build
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/build
 .PHONY : ipc/fast
 
 AECheckUpdateStatusRequest.o: AECheckUpdateStatusRequest.cpp.o
@@ -131,7 +131,7 @@ AECheckUpdateStatusRequest.o: AECheckUpdateStatusRequest.cpp.o
 
 # target to build an object file
 AECheckUpdateStatusRequest.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AECheckUpdateStatusRequest.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AECheckUpdateStatusRequest.cpp.o
 .PHONY : AECheckUpdateStatusRequest.cpp.o
 
 AECheckUpdateStatusRequest.i: AECheckUpdateStatusRequest.cpp.i
@@ -140,7 +140,7 @@ AECheckUpdateStatusRequest.i: AECheckUpdateStatusRequest.cpp.i
 
 # target to preprocess a source file
 AECheckUpdateStatusRequest.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AECheckUpdateStatusRequest.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AECheckUpdateStatusRequest.cpp.i
 .PHONY : AECheckUpdateStatusRequest.cpp.i
 
 AECheckUpdateStatusRequest.s: AECheckUpdateStatusRequest.cpp.s
@@ -149,7 +149,7 @@ AECheckUpdateStatusRequest.s: AECheckUpdateStatusRequest.cpp.s
 
 # target to generate assembly for a file
 AECheckUpdateStatusRequest.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AECheckUpdateStatusRequest.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AECheckUpdateStatusRequest.cpp.s
 .PHONY : AECheckUpdateStatusRequest.cpp.s
 
 AECheckUpdateStatusResponse.o: AECheckUpdateStatusResponse.cpp.o
@@ -158,7 +158,7 @@ AECheckUpdateStatusResponse.o: AECheckUpdateStatusResponse.cpp.o
 
 # target to build an object file
 AECheckUpdateStatusResponse.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AECheckUpdateStatusResponse.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AECheckUpdateStatusResponse.cpp.o
 .PHONY : AECheckUpdateStatusResponse.cpp.o
 
 AECheckUpdateStatusResponse.i: AECheckUpdateStatusResponse.cpp.i
@@ -167,7 +167,7 @@ AECheckUpdateStatusResponse.i: AECheckUpdateStatusResponse.cpp.i
 
 # target to preprocess a source file
 AECheckUpdateStatusResponse.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AECheckUpdateStatusResponse.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AECheckUpdateStatusResponse.cpp.i
 .PHONY : AECheckUpdateStatusResponse.cpp.i
 
 AECheckUpdateStatusResponse.s: AECheckUpdateStatusResponse.cpp.s
@@ -176,7 +176,7 @@ AECheckUpdateStatusResponse.s: AECheckUpdateStatusResponse.cpp.s
 
 # target to generate assembly for a file
 AECheckUpdateStatusResponse.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AECheckUpdateStatusResponse.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AECheckUpdateStatusResponse.cpp.s
 .PHONY : AECheckUpdateStatusResponse.cpp.s
 
 AEGetLaunchTokenRequest.o: AEGetLaunchTokenRequest.cpp.o
@@ -185,7 +185,7 @@ AEGetLaunchTokenRequest.o: AEGetLaunchTokenRequest.cpp.o
 
 # target to build an object file
 AEGetLaunchTokenRequest.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetLaunchTokenRequest.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetLaunchTokenRequest.cpp.o
 .PHONY : AEGetLaunchTokenRequest.cpp.o
 
 AEGetLaunchTokenRequest.i: AEGetLaunchTokenRequest.cpp.i
@@ -194,7 +194,7 @@ AEGetLaunchTokenRequest.i: AEGetLaunchTokenRequest.cpp.i
 
 # target to preprocess a source file
 AEGetLaunchTokenRequest.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetLaunchTokenRequest.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetLaunchTokenRequest.cpp.i
 .PHONY : AEGetLaunchTokenRequest.cpp.i
 
 AEGetLaunchTokenRequest.s: AEGetLaunchTokenRequest.cpp.s
@@ -203,7 +203,7 @@ AEGetLaunchTokenRequest.s: AEGetLaunchTokenRequest.cpp.s
 
 # target to generate assembly for a file
 AEGetLaunchTokenRequest.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetLaunchTokenRequest.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetLaunchTokenRequest.cpp.s
 .PHONY : AEGetLaunchTokenRequest.cpp.s
 
 AEGetLaunchTokenResponse.o: AEGetLaunchTokenResponse.cpp.o
@@ -212,7 +212,7 @@ AEGetLaunchTokenResponse.o: AEGetLaunchTokenResponse.cpp.o
 
 # target to build an object file
 AEGetLaunchTokenResponse.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetLaunchTokenResponse.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetLaunchTokenResponse.cpp.o
 .PHONY : AEGetLaunchTokenResponse.cpp.o
 
 AEGetLaunchTokenResponse.i: AEGetLaunchTokenResponse.cpp.i
@@ -221,7 +221,7 @@ AEGetLaunchTokenResponse.i: AEGetLaunchTokenResponse.cpp.i
 
 # target to preprocess a source file
 AEGetLaunchTokenResponse.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetLaunchTokenResponse.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetLaunchTokenResponse.cpp.i
 .PHONY : AEGetLaunchTokenResponse.cpp.i
 
 AEGetLaunchTokenResponse.s: AEGetLaunchTokenResponse.cpp.s
@@ -230,7 +230,7 @@ AEGetLaunchTokenResponse.s: AEGetLaunchTokenResponse.cpp.s
 
 # target to generate assembly for a file
 AEGetLaunchTokenResponse.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetLaunchTokenResponse.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetLaunchTokenResponse.cpp.s
 .PHONY : AEGetLaunchTokenResponse.cpp.s
 
 AEGetQuoteExRequest.o: AEGetQuoteExRequest.cpp.o
@@ -239,7 +239,7 @@ AEGetQuoteExRequest.o: AEGetQuoteExRequest.cpp.o
 
 # target to build an object file
 AEGetQuoteExRequest.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetQuoteExRequest.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetQuoteExRequest.cpp.o
 .PHONY : AEGetQuoteExRequest.cpp.o
 
 AEGetQuoteExRequest.i: AEGetQuoteExRequest.cpp.i
@@ -248,7 +248,7 @@ AEGetQuoteExRequest.i: AEGetQuoteExRequest.cpp.i
 
 # target to preprocess a source file
 AEGetQuoteExRequest.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetQuoteExRequest.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetQuoteExRequest.cpp.i
 .PHONY : AEGetQuoteExRequest.cpp.i
 
 AEGetQuoteExRequest.s: AEGetQuoteExRequest.cpp.s
@@ -257,7 +257,7 @@ AEGetQuoteExRequest.s: AEGetQuoteExRequest.cpp.s
 
 # target to generate assembly for a file
 AEGetQuoteExRequest.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetQuoteExRequest.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetQuoteExRequest.cpp.s
 .PHONY : AEGetQuoteExRequest.cpp.s
 
 AEGetQuoteExResponse.o: AEGetQuoteExResponse.cpp.o
@@ -266,7 +266,7 @@ AEGetQuoteExResponse.o: AEGetQuoteExResponse.cpp.o
 
 # target to build an object file
 AEGetQuoteExResponse.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetQuoteExResponse.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetQuoteExResponse.cpp.o
 .PHONY : AEGetQuoteExResponse.cpp.o
 
 AEGetQuoteExResponse.i: AEGetQuoteExResponse.cpp.i
@@ -275,7 +275,7 @@ AEGetQuoteExResponse.i: AEGetQuoteExResponse.cpp.i
 
 # target to preprocess a source file
 AEGetQuoteExResponse.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetQuoteExResponse.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetQuoteExResponse.cpp.i
 .PHONY : AEGetQuoteExResponse.cpp.i
 
 AEGetQuoteExResponse.s: AEGetQuoteExResponse.cpp.s
@@ -284,7 +284,7 @@ AEGetQuoteExResponse.s: AEGetQuoteExResponse.cpp.s
 
 # target to generate assembly for a file
 AEGetQuoteExResponse.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetQuoteExResponse.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetQuoteExResponse.cpp.s
 .PHONY : AEGetQuoteExResponse.cpp.s
 
 AEGetQuoteRequest.o: AEGetQuoteRequest.cpp.o
@@ -293,7 +293,7 @@ AEGetQuoteRequest.o: AEGetQuoteRequest.cpp.o
 
 # target to build an object file
 AEGetQuoteRequest.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetQuoteRequest.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetQuoteRequest.cpp.o
 .PHONY : AEGetQuoteRequest.cpp.o
 
 AEGetQuoteRequest.i: AEGetQuoteRequest.cpp.i
@@ -302,7 +302,7 @@ AEGetQuoteRequest.i: AEGetQuoteRequest.cpp.i
 
 # target to preprocess a source file
 AEGetQuoteRequest.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetQuoteRequest.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetQuoteRequest.cpp.i
 .PHONY : AEGetQuoteRequest.cpp.i
 
 AEGetQuoteRequest.s: AEGetQuoteRequest.cpp.s
@@ -311,7 +311,7 @@ AEGetQuoteRequest.s: AEGetQuoteRequest.cpp.s
 
 # target to generate assembly for a file
 AEGetQuoteRequest.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetQuoteRequest.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetQuoteRequest.cpp.s
 .PHONY : AEGetQuoteRequest.cpp.s
 
 AEGetQuoteResponse.o: AEGetQuoteResponse.cpp.o
@@ -320,7 +320,7 @@ AEGetQuoteResponse.o: AEGetQuoteResponse.cpp.o
 
 # target to build an object file
 AEGetQuoteResponse.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetQuoteResponse.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetQuoteResponse.cpp.o
 .PHONY : AEGetQuoteResponse.cpp.o
 
 AEGetQuoteResponse.i: AEGetQuoteResponse.cpp.i
@@ -329,7 +329,7 @@ AEGetQuoteResponse.i: AEGetQuoteResponse.cpp.i
 
 # target to preprocess a source file
 AEGetQuoteResponse.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetQuoteResponse.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetQuoteResponse.cpp.i
 .PHONY : AEGetQuoteResponse.cpp.i
 
 AEGetQuoteResponse.s: AEGetQuoteResponse.cpp.s
@@ -338,7 +338,7 @@ AEGetQuoteResponse.s: AEGetQuoteResponse.cpp.s
 
 # target to generate assembly for a file
 AEGetQuoteResponse.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetQuoteResponse.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetQuoteResponse.cpp.s
 .PHONY : AEGetQuoteResponse.cpp.s
 
 AEGetQuoteSizeExRequest.o: AEGetQuoteSizeExRequest.cpp.o
@@ -347,7 +347,7 @@ AEGetQuoteSizeExRequest.o: AEGetQuoteSizeExRequest.cpp.o
 
 # target to build an object file
 AEGetQuoteSizeExRequest.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetQuoteSizeExRequest.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetQuoteSizeExRequest.cpp.o
 .PHONY : AEGetQuoteSizeExRequest.cpp.o
 
 AEGetQuoteSizeExRequest.i: AEGetQuoteSizeExRequest.cpp.i
@@ -356,7 +356,7 @@ AEGetQuoteSizeExRequest.i: AEGetQuoteSizeExRequest.cpp.i
 
 # target to preprocess a source file
 AEGetQuoteSizeExRequest.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetQuoteSizeExRequest.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetQuoteSizeExRequest.cpp.i
 .PHONY : AEGetQuoteSizeExRequest.cpp.i
 
 AEGetQuoteSizeExRequest.s: AEGetQuoteSizeExRequest.cpp.s
@@ -365,7 +365,7 @@ AEGetQuoteSizeExRequest.s: AEGetQuoteSizeExRequest.cpp.s
 
 # target to generate assembly for a file
 AEGetQuoteSizeExRequest.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetQuoteSizeExRequest.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetQuoteSizeExRequest.cpp.s
 .PHONY : AEGetQuoteSizeExRequest.cpp.s
 
 AEGetQuoteSizeExResponse.o: AEGetQuoteSizeExResponse.cpp.o
@@ -374,7 +374,7 @@ AEGetQuoteSizeExResponse.o: AEGetQuoteSizeExResponse.cpp.o
 
 # target to build an object file
 AEGetQuoteSizeExResponse.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetQuoteSizeExResponse.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetQuoteSizeExResponse.cpp.o
 .PHONY : AEGetQuoteSizeExResponse.cpp.o
 
 AEGetQuoteSizeExResponse.i: AEGetQuoteSizeExResponse.cpp.i
@@ -383,7 +383,7 @@ AEGetQuoteSizeExResponse.i: AEGetQuoteSizeExResponse.cpp.i
 
 # target to preprocess a source file
 AEGetQuoteSizeExResponse.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetQuoteSizeExResponse.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetQuoteSizeExResponse.cpp.i
 .PHONY : AEGetQuoteSizeExResponse.cpp.i
 
 AEGetQuoteSizeExResponse.s: AEGetQuoteSizeExResponse.cpp.s
@@ -392,7 +392,7 @@ AEGetQuoteSizeExResponse.s: AEGetQuoteSizeExResponse.cpp.s
 
 # target to generate assembly for a file
 AEGetQuoteSizeExResponse.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetQuoteSizeExResponse.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetQuoteSizeExResponse.cpp.s
 .PHONY : AEGetQuoteSizeExResponse.cpp.s
 
 AEGetSupportedAttKeyIDNumRequest.o: AEGetSupportedAttKeyIDNumRequest.cpp.o
@@ -401,7 +401,7 @@ AEGetSupportedAttKeyIDNumRequest.o: AEGetSupportedAttKeyIDNumRequest.cpp.o
 
 # target to build an object file
 AEGetSupportedAttKeyIDNumRequest.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetSupportedAttKeyIDNumRequest.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetSupportedAttKeyIDNumRequest.cpp.o
 .PHONY : AEGetSupportedAttKeyIDNumRequest.cpp.o
 
 AEGetSupportedAttKeyIDNumRequest.i: AEGetSupportedAttKeyIDNumRequest.cpp.i
@@ -410,7 +410,7 @@ AEGetSupportedAttKeyIDNumRequest.i: AEGetSupportedAttKeyIDNumRequest.cpp.i
 
 # target to preprocess a source file
 AEGetSupportedAttKeyIDNumRequest.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetSupportedAttKeyIDNumRequest.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetSupportedAttKeyIDNumRequest.cpp.i
 .PHONY : AEGetSupportedAttKeyIDNumRequest.cpp.i
 
 AEGetSupportedAttKeyIDNumRequest.s: AEGetSupportedAttKeyIDNumRequest.cpp.s
@@ -419,7 +419,7 @@ AEGetSupportedAttKeyIDNumRequest.s: AEGetSupportedAttKeyIDNumRequest.cpp.s
 
 # target to generate assembly for a file
 AEGetSupportedAttKeyIDNumRequest.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetSupportedAttKeyIDNumRequest.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetSupportedAttKeyIDNumRequest.cpp.s
 .PHONY : AEGetSupportedAttKeyIDNumRequest.cpp.s
 
 AEGetSupportedAttKeyIDNumResponse.o: AEGetSupportedAttKeyIDNumResponse.cpp.o
@@ -428,7 +428,7 @@ AEGetSupportedAttKeyIDNumResponse.o: AEGetSupportedAttKeyIDNumResponse.cpp.o
 
 # target to build an object file
 AEGetSupportedAttKeyIDNumResponse.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetSupportedAttKeyIDNumResponse.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetSupportedAttKeyIDNumResponse.cpp.o
 .PHONY : AEGetSupportedAttKeyIDNumResponse.cpp.o
 
 AEGetSupportedAttKeyIDNumResponse.i: AEGetSupportedAttKeyIDNumResponse.cpp.i
@@ -437,7 +437,7 @@ AEGetSupportedAttKeyIDNumResponse.i: AEGetSupportedAttKeyIDNumResponse.cpp.i
 
 # target to preprocess a source file
 AEGetSupportedAttKeyIDNumResponse.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetSupportedAttKeyIDNumResponse.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetSupportedAttKeyIDNumResponse.cpp.i
 .PHONY : AEGetSupportedAttKeyIDNumResponse.cpp.i
 
 AEGetSupportedAttKeyIDNumResponse.s: AEGetSupportedAttKeyIDNumResponse.cpp.s
@@ -446,7 +446,7 @@ AEGetSupportedAttKeyIDNumResponse.s: AEGetSupportedAttKeyIDNumResponse.cpp.s
 
 # target to generate assembly for a file
 AEGetSupportedAttKeyIDNumResponse.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetSupportedAttKeyIDNumResponse.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetSupportedAttKeyIDNumResponse.cpp.s
 .PHONY : AEGetSupportedAttKeyIDNumResponse.cpp.s
 
 AEGetSupportedAttKeyIDsRequest.o: AEGetSupportedAttKeyIDsRequest.cpp.o
@@ -455,7 +455,7 @@ AEGetSupportedAttKeyIDsRequest.o: AEGetSupportedAttKeyIDsRequest.cpp.o
 
 # target to build an object file
 AEGetSupportedAttKeyIDsRequest.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetSupportedAttKeyIDsRequest.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetSupportedAttKeyIDsRequest.cpp.o
 .PHONY : AEGetSupportedAttKeyIDsRequest.cpp.o
 
 AEGetSupportedAttKeyIDsRequest.i: AEGetSupportedAttKeyIDsRequest.cpp.i
@@ -464,7 +464,7 @@ AEGetSupportedAttKeyIDsRequest.i: AEGetSupportedAttKeyIDsRequest.cpp.i
 
 # target to preprocess a source file
 AEGetSupportedAttKeyIDsRequest.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetSupportedAttKeyIDsRequest.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetSupportedAttKeyIDsRequest.cpp.i
 .PHONY : AEGetSupportedAttKeyIDsRequest.cpp.i
 
 AEGetSupportedAttKeyIDsRequest.s: AEGetSupportedAttKeyIDsRequest.cpp.s
@@ -473,7 +473,7 @@ AEGetSupportedAttKeyIDsRequest.s: AEGetSupportedAttKeyIDsRequest.cpp.s
 
 # target to generate assembly for a file
 AEGetSupportedAttKeyIDsRequest.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetSupportedAttKeyIDsRequest.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetSupportedAttKeyIDsRequest.cpp.s
 .PHONY : AEGetSupportedAttKeyIDsRequest.cpp.s
 
 AEGetSupportedAttKeyIDsResponse.o: AEGetSupportedAttKeyIDsResponse.cpp.o
@@ -482,7 +482,7 @@ AEGetSupportedAttKeyIDsResponse.o: AEGetSupportedAttKeyIDsResponse.cpp.o
 
 # target to build an object file
 AEGetSupportedAttKeyIDsResponse.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetSupportedAttKeyIDsResponse.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetSupportedAttKeyIDsResponse.cpp.o
 .PHONY : AEGetSupportedAttKeyIDsResponse.cpp.o
 
 AEGetSupportedAttKeyIDsResponse.i: AEGetSupportedAttKeyIDsResponse.cpp.i
@@ -491,7 +491,7 @@ AEGetSupportedAttKeyIDsResponse.i: AEGetSupportedAttKeyIDsResponse.cpp.i
 
 # target to preprocess a source file
 AEGetSupportedAttKeyIDsResponse.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetSupportedAttKeyIDsResponse.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetSupportedAttKeyIDsResponse.cpp.i
 .PHONY : AEGetSupportedAttKeyIDsResponse.cpp.i
 
 AEGetSupportedAttKeyIDsResponse.s: AEGetSupportedAttKeyIDsResponse.cpp.s
@@ -500,7 +500,7 @@ AEGetSupportedAttKeyIDsResponse.s: AEGetSupportedAttKeyIDsResponse.cpp.s
 
 # target to generate assembly for a file
 AEGetSupportedAttKeyIDsResponse.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetSupportedAttKeyIDsResponse.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetSupportedAttKeyIDsResponse.cpp.s
 .PHONY : AEGetSupportedAttKeyIDsResponse.cpp.s
 
 AEGetWhiteListRequest.o: AEGetWhiteListRequest.cpp.o
@@ -509,7 +509,7 @@ AEGetWhiteListRequest.o: AEGetWhiteListRequest.cpp.o
 
 # target to build an object file
 AEGetWhiteListRequest.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetWhiteListRequest.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetWhiteListRequest.cpp.o
 .PHONY : AEGetWhiteListRequest.cpp.o
 
 AEGetWhiteListRequest.i: AEGetWhiteListRequest.cpp.i
@@ -518,7 +518,7 @@ AEGetWhiteListRequest.i: AEGetWhiteListRequest.cpp.i
 
 # target to preprocess a source file
 AEGetWhiteListRequest.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetWhiteListRequest.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetWhiteListRequest.cpp.i
 .PHONY : AEGetWhiteListRequest.cpp.i
 
 AEGetWhiteListRequest.s: AEGetWhiteListRequest.cpp.s
@@ -527,7 +527,7 @@ AEGetWhiteListRequest.s: AEGetWhiteListRequest.cpp.s
 
 # target to generate assembly for a file
 AEGetWhiteListRequest.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetWhiteListRequest.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetWhiteListRequest.cpp.s
 .PHONY : AEGetWhiteListRequest.cpp.s
 
 AEGetWhiteListResponse.o: AEGetWhiteListResponse.cpp.o
@@ -536,7 +536,7 @@ AEGetWhiteListResponse.o: AEGetWhiteListResponse.cpp.o
 
 # target to build an object file
 AEGetWhiteListResponse.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetWhiteListResponse.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetWhiteListResponse.cpp.o
 .PHONY : AEGetWhiteListResponse.cpp.o
 
 AEGetWhiteListResponse.i: AEGetWhiteListResponse.cpp.i
@@ -545,7 +545,7 @@ AEGetWhiteListResponse.i: AEGetWhiteListResponse.cpp.i
 
 # target to preprocess a source file
 AEGetWhiteListResponse.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetWhiteListResponse.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetWhiteListResponse.cpp.i
 .PHONY : AEGetWhiteListResponse.cpp.i
 
 AEGetWhiteListResponse.s: AEGetWhiteListResponse.cpp.s
@@ -554,7 +554,7 @@ AEGetWhiteListResponse.s: AEGetWhiteListResponse.cpp.s
 
 # target to generate assembly for a file
 AEGetWhiteListResponse.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetWhiteListResponse.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetWhiteListResponse.cpp.s
 .PHONY : AEGetWhiteListResponse.cpp.s
 
 AEGetWhiteListSizeRequest.o: AEGetWhiteListSizeRequest.cpp.o
@@ -563,7 +563,7 @@ AEGetWhiteListSizeRequest.o: AEGetWhiteListSizeRequest.cpp.o
 
 # target to build an object file
 AEGetWhiteListSizeRequest.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetWhiteListSizeRequest.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetWhiteListSizeRequest.cpp.o
 .PHONY : AEGetWhiteListSizeRequest.cpp.o
 
 AEGetWhiteListSizeRequest.i: AEGetWhiteListSizeRequest.cpp.i
@@ -572,7 +572,7 @@ AEGetWhiteListSizeRequest.i: AEGetWhiteListSizeRequest.cpp.i
 
 # target to preprocess a source file
 AEGetWhiteListSizeRequest.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetWhiteListSizeRequest.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetWhiteListSizeRequest.cpp.i
 .PHONY : AEGetWhiteListSizeRequest.cpp.i
 
 AEGetWhiteListSizeRequest.s: AEGetWhiteListSizeRequest.cpp.s
@@ -581,7 +581,7 @@ AEGetWhiteListSizeRequest.s: AEGetWhiteListSizeRequest.cpp.s
 
 # target to generate assembly for a file
 AEGetWhiteListSizeRequest.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetWhiteListSizeRequest.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetWhiteListSizeRequest.cpp.s
 .PHONY : AEGetWhiteListSizeRequest.cpp.s
 
 AEGetWhiteListSizeResponse.o: AEGetWhiteListSizeResponse.cpp.o
@@ -590,7 +590,7 @@ AEGetWhiteListSizeResponse.o: AEGetWhiteListSizeResponse.cpp.o
 
 # target to build an object file
 AEGetWhiteListSizeResponse.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetWhiteListSizeResponse.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetWhiteListSizeResponse.cpp.o
 .PHONY : AEGetWhiteListSizeResponse.cpp.o
 
 AEGetWhiteListSizeResponse.i: AEGetWhiteListSizeResponse.cpp.i
@@ -599,7 +599,7 @@ AEGetWhiteListSizeResponse.i: AEGetWhiteListSizeResponse.cpp.i
 
 # target to preprocess a source file
 AEGetWhiteListSizeResponse.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetWhiteListSizeResponse.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetWhiteListSizeResponse.cpp.i
 .PHONY : AEGetWhiteListSizeResponse.cpp.i
 
 AEGetWhiteListSizeResponse.s: AEGetWhiteListSizeResponse.cpp.s
@@ -608,7 +608,7 @@ AEGetWhiteListSizeResponse.s: AEGetWhiteListSizeResponse.cpp.s
 
 # target to generate assembly for a file
 AEGetWhiteListSizeResponse.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetWhiteListSizeResponse.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEGetWhiteListSizeResponse.cpp.s
 .PHONY : AEGetWhiteListSizeResponse.cpp.s
 
 AEInitQuoteExRequest.o: AEInitQuoteExRequest.cpp.o
@@ -617,7 +617,7 @@ AEInitQuoteExRequest.o: AEInitQuoteExRequest.cpp.o
 
 # target to build an object file
 AEInitQuoteExRequest.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEInitQuoteExRequest.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEInitQuoteExRequest.cpp.o
 .PHONY : AEInitQuoteExRequest.cpp.o
 
 AEInitQuoteExRequest.i: AEInitQuoteExRequest.cpp.i
@@ -626,7 +626,7 @@ AEInitQuoteExRequest.i: AEInitQuoteExRequest.cpp.i
 
 # target to preprocess a source file
 AEInitQuoteExRequest.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEInitQuoteExRequest.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEInitQuoteExRequest.cpp.i
 .PHONY : AEInitQuoteExRequest.cpp.i
 
 AEInitQuoteExRequest.s: AEInitQuoteExRequest.cpp.s
@@ -635,7 +635,7 @@ AEInitQuoteExRequest.s: AEInitQuoteExRequest.cpp.s
 
 # target to generate assembly for a file
 AEInitQuoteExRequest.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEInitQuoteExRequest.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEInitQuoteExRequest.cpp.s
 .PHONY : AEInitQuoteExRequest.cpp.s
 
 AEInitQuoteExResponse.o: AEInitQuoteExResponse.cpp.o
@@ -644,7 +644,7 @@ AEInitQuoteExResponse.o: AEInitQuoteExResponse.cpp.o
 
 # target to build an object file
 AEInitQuoteExResponse.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEInitQuoteExResponse.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEInitQuoteExResponse.cpp.o
 .PHONY : AEInitQuoteExResponse.cpp.o
 
 AEInitQuoteExResponse.i: AEInitQuoteExResponse.cpp.i
@@ -653,7 +653,7 @@ AEInitQuoteExResponse.i: AEInitQuoteExResponse.cpp.i
 
 # target to preprocess a source file
 AEInitQuoteExResponse.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEInitQuoteExResponse.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEInitQuoteExResponse.cpp.i
 .PHONY : AEInitQuoteExResponse.cpp.i
 
 AEInitQuoteExResponse.s: AEInitQuoteExResponse.cpp.s
@@ -662,7 +662,7 @@ AEInitQuoteExResponse.s: AEInitQuoteExResponse.cpp.s
 
 # target to generate assembly for a file
 AEInitQuoteExResponse.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEInitQuoteExResponse.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEInitQuoteExResponse.cpp.s
 .PHONY : AEInitQuoteExResponse.cpp.s
 
 AEInitQuoteRequest.o: AEInitQuoteRequest.cpp.o
@@ -671,7 +671,7 @@ AEInitQuoteRequest.o: AEInitQuoteRequest.cpp.o
 
 # target to build an object file
 AEInitQuoteRequest.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEInitQuoteRequest.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEInitQuoteRequest.cpp.o
 .PHONY : AEInitQuoteRequest.cpp.o
 
 AEInitQuoteRequest.i: AEInitQuoteRequest.cpp.i
@@ -680,7 +680,7 @@ AEInitQuoteRequest.i: AEInitQuoteRequest.cpp.i
 
 # target to preprocess a source file
 AEInitQuoteRequest.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEInitQuoteRequest.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEInitQuoteRequest.cpp.i
 .PHONY : AEInitQuoteRequest.cpp.i
 
 AEInitQuoteRequest.s: AEInitQuoteRequest.cpp.s
@@ -689,7 +689,7 @@ AEInitQuoteRequest.s: AEInitQuoteRequest.cpp.s
 
 # target to generate assembly for a file
 AEInitQuoteRequest.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEInitQuoteRequest.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEInitQuoteRequest.cpp.s
 .PHONY : AEInitQuoteRequest.cpp.s
 
 AEInitQuoteResponse.o: AEInitQuoteResponse.cpp.o
@@ -698,7 +698,7 @@ AEInitQuoteResponse.o: AEInitQuoteResponse.cpp.o
 
 # target to build an object file
 AEInitQuoteResponse.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEInitQuoteResponse.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEInitQuoteResponse.cpp.o
 .PHONY : AEInitQuoteResponse.cpp.o
 
 AEInitQuoteResponse.i: AEInitQuoteResponse.cpp.i
@@ -707,7 +707,7 @@ AEInitQuoteResponse.i: AEInitQuoteResponse.cpp.i
 
 # target to preprocess a source file
 AEInitQuoteResponse.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEInitQuoteResponse.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEInitQuoteResponse.cpp.i
 .PHONY : AEInitQuoteResponse.cpp.i
 
 AEInitQuoteResponse.s: AEInitQuoteResponse.cpp.s
@@ -716,7 +716,7 @@ AEInitQuoteResponse.s: AEInitQuoteResponse.cpp.s
 
 # target to generate assembly for a file
 AEInitQuoteResponse.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEInitQuoteResponse.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEInitQuoteResponse.cpp.s
 .PHONY : AEInitQuoteResponse.cpp.s
 
 AEReportAttestationRequest.o: AEReportAttestationRequest.cpp.o
@@ -725,7 +725,7 @@ AEReportAttestationRequest.o: AEReportAttestationRequest.cpp.o
 
 # target to build an object file
 AEReportAttestationRequest.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEReportAttestationRequest.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEReportAttestationRequest.cpp.o
 .PHONY : AEReportAttestationRequest.cpp.o
 
 AEReportAttestationRequest.i: AEReportAttestationRequest.cpp.i
@@ -734,7 +734,7 @@ AEReportAttestationRequest.i: AEReportAttestationRequest.cpp.i
 
 # target to preprocess a source file
 AEReportAttestationRequest.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEReportAttestationRequest.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEReportAttestationRequest.cpp.i
 .PHONY : AEReportAttestationRequest.cpp.i
 
 AEReportAttestationRequest.s: AEReportAttestationRequest.cpp.s
@@ -743,7 +743,7 @@ AEReportAttestationRequest.s: AEReportAttestationRequest.cpp.s
 
 # target to generate assembly for a file
 AEReportAttestationRequest.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEReportAttestationRequest.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEReportAttestationRequest.cpp.s
 .PHONY : AEReportAttestationRequest.cpp.s
 
 AEReportAttestationResponse.o: AEReportAttestationResponse.cpp.o
@@ -752,7 +752,7 @@ AEReportAttestationResponse.o: AEReportAttestationResponse.cpp.o
 
 # target to build an object file
 AEReportAttestationResponse.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEReportAttestationResponse.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEReportAttestationResponse.cpp.o
 .PHONY : AEReportAttestationResponse.cpp.o
 
 AEReportAttestationResponse.i: AEReportAttestationResponse.cpp.i
@@ -761,7 +761,7 @@ AEReportAttestationResponse.i: AEReportAttestationResponse.cpp.i
 
 # target to preprocess a source file
 AEReportAttestationResponse.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEReportAttestationResponse.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEReportAttestationResponse.cpp.i
 .PHONY : AEReportAttestationResponse.cpp.i
 
 AEReportAttestationResponse.s: AEReportAttestationResponse.cpp.s
@@ -770,7 +770,7 @@ AEReportAttestationResponse.s: AEReportAttestationResponse.cpp.s
 
 # target to generate assembly for a file
 AEReportAttestationResponse.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEReportAttestationResponse.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AEReportAttestationResponse.cpp.s
 .PHONY : AEReportAttestationResponse.cpp.s
 
 AESGXGetExtendedEpidGroupIdRequest.o: AESGXGetExtendedEpidGroupIdRequest.cpp.o
@@ -779,7 +779,7 @@ AESGXGetExtendedEpidGroupIdRequest.o: AESGXGetExtendedEpidGroupIdRequest.cpp.o
 
 # target to build an object file
 AESGXGetExtendedEpidGroupIdRequest.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AESGXGetExtendedEpidGroupIdRequest.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AESGXGetExtendedEpidGroupIdRequest.cpp.o
 .PHONY : AESGXGetExtendedEpidGroupIdRequest.cpp.o
 
 AESGXGetExtendedEpidGroupIdRequest.i: AESGXGetExtendedEpidGroupIdRequest.cpp.i
@@ -788,7 +788,7 @@ AESGXGetExtendedEpidGroupIdRequest.i: AESGXGetExtendedEpidGroupIdRequest.cpp.i
 
 # target to preprocess a source file
 AESGXGetExtendedEpidGroupIdRequest.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AESGXGetExtendedEpidGroupIdRequest.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AESGXGetExtendedEpidGroupIdRequest.cpp.i
 .PHONY : AESGXGetExtendedEpidGroupIdRequest.cpp.i
 
 AESGXGetExtendedEpidGroupIdRequest.s: AESGXGetExtendedEpidGroupIdRequest.cpp.s
@@ -797,7 +797,7 @@ AESGXGetExtendedEpidGroupIdRequest.s: AESGXGetExtendedEpidGroupIdRequest.cpp.s
 
 # target to generate assembly for a file
 AESGXGetExtendedEpidGroupIdRequest.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AESGXGetExtendedEpidGroupIdRequest.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AESGXGetExtendedEpidGroupIdRequest.cpp.s
 .PHONY : AESGXGetExtendedEpidGroupIdRequest.cpp.s
 
 AESGXGetExtendedEpidGroupIdResponse.o: AESGXGetExtendedEpidGroupIdResponse.cpp.o
@@ -806,7 +806,7 @@ AESGXGetExtendedEpidGroupIdResponse.o: AESGXGetExtendedEpidGroupIdResponse.cpp.o
 
 # target to build an object file
 AESGXGetExtendedEpidGroupIdResponse.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AESGXGetExtendedEpidGroupIdResponse.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AESGXGetExtendedEpidGroupIdResponse.cpp.o
 .PHONY : AESGXGetExtendedEpidGroupIdResponse.cpp.o
 
 AESGXGetExtendedEpidGroupIdResponse.i: AESGXGetExtendedEpidGroupIdResponse.cpp.i
@@ -815,7 +815,7 @@ AESGXGetExtendedEpidGroupIdResponse.i: AESGXGetExtendedEpidGroupIdResponse.cpp.i
 
 # target to preprocess a source file
 AESGXGetExtendedEpidGroupIdResponse.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AESGXGetExtendedEpidGroupIdResponse.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AESGXGetExtendedEpidGroupIdResponse.cpp.i
 .PHONY : AESGXGetExtendedEpidGroupIdResponse.cpp.i
 
 AESGXGetExtendedEpidGroupIdResponse.s: AESGXGetExtendedEpidGroupIdResponse.cpp.s
@@ -824,7 +824,7 @@ AESGXGetExtendedEpidGroupIdResponse.s: AESGXGetExtendedEpidGroupIdResponse.cpp.s
 
 # target to generate assembly for a file
 AESGXGetExtendedEpidGroupIdResponse.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AESGXGetExtendedEpidGroupIdResponse.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AESGXGetExtendedEpidGroupIdResponse.cpp.s
 .PHONY : AESGXGetExtendedEpidGroupIdResponse.cpp.s
 
 AESGXRegisterRequest.o: AESGXRegisterRequest.cpp.o
@@ -833,7 +833,7 @@ AESGXRegisterRequest.o: AESGXRegisterRequest.cpp.o
 
 # target to build an object file
 AESGXRegisterRequest.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AESGXRegisterRequest.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AESGXRegisterRequest.cpp.o
 .PHONY : AESGXRegisterRequest.cpp.o
 
 AESGXRegisterRequest.i: AESGXRegisterRequest.cpp.i
@@ -842,7 +842,7 @@ AESGXRegisterRequest.i: AESGXRegisterRequest.cpp.i
 
 # target to preprocess a source file
 AESGXRegisterRequest.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AESGXRegisterRequest.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AESGXRegisterRequest.cpp.i
 .PHONY : AESGXRegisterRequest.cpp.i
 
 AESGXRegisterRequest.s: AESGXRegisterRequest.cpp.s
@@ -851,7 +851,7 @@ AESGXRegisterRequest.s: AESGXRegisterRequest.cpp.s
 
 # target to generate assembly for a file
 AESGXRegisterRequest.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AESGXRegisterRequest.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AESGXRegisterRequest.cpp.s
 .PHONY : AESGXRegisterRequest.cpp.s
 
 AESGXRegisterResponse.o: AESGXRegisterResponse.cpp.o
@@ -860,7 +860,7 @@ AESGXRegisterResponse.o: AESGXRegisterResponse.cpp.o
 
 # target to build an object file
 AESGXRegisterResponse.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AESGXRegisterResponse.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AESGXRegisterResponse.cpp.o
 .PHONY : AESGXRegisterResponse.cpp.o
 
 AESGXRegisterResponse.i: AESGXRegisterResponse.cpp.i
@@ -869,7 +869,7 @@ AESGXRegisterResponse.i: AESGXRegisterResponse.cpp.i
 
 # target to preprocess a source file
 AESGXRegisterResponse.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AESGXRegisterResponse.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AESGXRegisterResponse.cpp.i
 .PHONY : AESGXRegisterResponse.cpp.i
 
 AESGXRegisterResponse.s: AESGXRegisterResponse.cpp.s
@@ -878,7 +878,7 @@ AESGXRegisterResponse.s: AESGXRegisterResponse.cpp.s
 
 # target to generate assembly for a file
 AESGXRegisterResponse.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AESGXRegisterResponse.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AESGXRegisterResponse.cpp.s
 .PHONY : AESGXRegisterResponse.cpp.s
 
 AESGXSwitchExtendedEpidGroupRequest.o: AESGXSwitchExtendedEpidGroupRequest.cpp.o
@@ -887,7 +887,7 @@ AESGXSwitchExtendedEpidGroupRequest.o: AESGXSwitchExtendedEpidGroupRequest.cpp.o
 
 # target to build an object file
 AESGXSwitchExtendedEpidGroupRequest.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AESGXSwitchExtendedEpidGroupRequest.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AESGXSwitchExtendedEpidGroupRequest.cpp.o
 .PHONY : AESGXSwitchExtendedEpidGroupRequest.cpp.o
 
 AESGXSwitchExtendedEpidGroupRequest.i: AESGXSwitchExtendedEpidGroupRequest.cpp.i
@@ -896,7 +896,7 @@ AESGXSwitchExtendedEpidGroupRequest.i: AESGXSwitchExtendedEpidGroupRequest.cpp.i
 
 # target to preprocess a source file
 AESGXSwitchExtendedEpidGroupRequest.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AESGXSwitchExtendedEpidGroupRequest.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AESGXSwitchExtendedEpidGroupRequest.cpp.i
 .PHONY : AESGXSwitchExtendedEpidGroupRequest.cpp.i
 
 AESGXSwitchExtendedEpidGroupRequest.s: AESGXSwitchExtendedEpidGroupRequest.cpp.s
@@ -905,7 +905,7 @@ AESGXSwitchExtendedEpidGroupRequest.s: AESGXSwitchExtendedEpidGroupRequest.cpp.s
 
 # target to generate assembly for a file
 AESGXSwitchExtendedEpidGroupRequest.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AESGXSwitchExtendedEpidGroupRequest.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AESGXSwitchExtendedEpidGroupRequest.cpp.s
 .PHONY : AESGXSwitchExtendedEpidGroupRequest.cpp.s
 
 AESGXSwitchExtendedEpidGroupResponse.o: AESGXSwitchExtendedEpidGroupResponse.cpp.o
@@ -914,7 +914,7 @@ AESGXSwitchExtendedEpidGroupResponse.o: AESGXSwitchExtendedEpidGroupResponse.cpp
 
 # target to build an object file
 AESGXSwitchExtendedEpidGroupResponse.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AESGXSwitchExtendedEpidGroupResponse.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AESGXSwitchExtendedEpidGroupResponse.cpp.o
 .PHONY : AESGXSwitchExtendedEpidGroupResponse.cpp.o
 
 AESGXSwitchExtendedEpidGroupResponse.i: AESGXSwitchExtendedEpidGroupResponse.cpp.i
@@ -923,7 +923,7 @@ AESGXSwitchExtendedEpidGroupResponse.i: AESGXSwitchExtendedEpidGroupResponse.cpp
 
 # target to preprocess a source file
 AESGXSwitchExtendedEpidGroupResponse.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AESGXSwitchExtendedEpidGroupResponse.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AESGXSwitchExtendedEpidGroupResponse.cpp.i
 .PHONY : AESGXSwitchExtendedEpidGroupResponse.cpp.i
 
 AESGXSwitchExtendedEpidGroupResponse.s: AESGXSwitchExtendedEpidGroupResponse.cpp.s
@@ -932,7 +932,7 @@ AESGXSwitchExtendedEpidGroupResponse.s: AESGXSwitchExtendedEpidGroupResponse.cpp
 
 # target to generate assembly for a file
 AESGXSwitchExtendedEpidGroupResponse.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AESGXSwitchExtendedEpidGroupResponse.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AESGXSwitchExtendedEpidGroupResponse.cpp.s
 .PHONY : AESGXSwitchExtendedEpidGroupResponse.cpp.s
 
 AESelectAttKeyIDRequest.o: AESelectAttKeyIDRequest.cpp.o
@@ -941,7 +941,7 @@ AESelectAttKeyIDRequest.o: AESelectAttKeyIDRequest.cpp.o
 
 # target to build an object file
 AESelectAttKeyIDRequest.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AESelectAttKeyIDRequest.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AESelectAttKeyIDRequest.cpp.o
 .PHONY : AESelectAttKeyIDRequest.cpp.o
 
 AESelectAttKeyIDRequest.i: AESelectAttKeyIDRequest.cpp.i
@@ -950,7 +950,7 @@ AESelectAttKeyIDRequest.i: AESelectAttKeyIDRequest.cpp.i
 
 # target to preprocess a source file
 AESelectAttKeyIDRequest.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AESelectAttKeyIDRequest.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AESelectAttKeyIDRequest.cpp.i
 .PHONY : AESelectAttKeyIDRequest.cpp.i
 
 AESelectAttKeyIDRequest.s: AESelectAttKeyIDRequest.cpp.s
@@ -959,7 +959,7 @@ AESelectAttKeyIDRequest.s: AESelectAttKeyIDRequest.cpp.s
 
 # target to generate assembly for a file
 AESelectAttKeyIDRequest.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AESelectAttKeyIDRequest.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AESelectAttKeyIDRequest.cpp.s
 .PHONY : AESelectAttKeyIDRequest.cpp.s
 
 AESelectAttKeyIDResponse.o: AESelectAttKeyIDResponse.cpp.o
@@ -968,7 +968,7 @@ AESelectAttKeyIDResponse.o: AESelectAttKeyIDResponse.cpp.o
 
 # target to build an object file
 AESelectAttKeyIDResponse.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AESelectAttKeyIDResponse.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AESelectAttKeyIDResponse.cpp.o
 .PHONY : AESelectAttKeyIDResponse.cpp.o
 
 AESelectAttKeyIDResponse.i: AESelectAttKeyIDResponse.cpp.i
@@ -977,7 +977,7 @@ AESelectAttKeyIDResponse.i: AESelectAttKeyIDResponse.cpp.i
 
 # target to preprocess a source file
 AESelectAttKeyIDResponse.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AESelectAttKeyIDResponse.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AESelectAttKeyIDResponse.cpp.i
 .PHONY : AESelectAttKeyIDResponse.cpp.i
 
 AESelectAttKeyIDResponse.s: AESelectAttKeyIDResponse.cpp.s
@@ -986,7 +986,7 @@ AESelectAttKeyIDResponse.s: AESelectAttKeyIDResponse.cpp.s
 
 # target to generate assembly for a file
 AESelectAttKeyIDResponse.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AESelectAttKeyIDResponse.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/AESelectAttKeyIDResponse.cpp.s
 .PHONY : AESelectAttKeyIDResponse.cpp.s
 
 NonBlockingUnixCommunicationSocket.o: NonBlockingUnixCommunicationSocket.cpp.o
@@ -995,7 +995,7 @@ NonBlockingUnixCommunicationSocket.o: NonBlockingUnixCommunicationSocket.cpp.o
 
 # target to build an object file
 NonBlockingUnixCommunicationSocket.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/NonBlockingUnixCommunicationSocket.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/NonBlockingUnixCommunicationSocket.cpp.o
 .PHONY : NonBlockingUnixCommunicationSocket.cpp.o
 
 NonBlockingUnixCommunicationSocket.i: NonBlockingUnixCommunicationSocket.cpp.i
@@ -1004,7 +1004,7 @@ NonBlockingUnixCommunicationSocket.i: NonBlockingUnixCommunicationSocket.cpp.i
 
 # target to preprocess a source file
 NonBlockingUnixCommunicationSocket.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/NonBlockingUnixCommunicationSocket.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/NonBlockingUnixCommunicationSocket.cpp.i
 .PHONY : NonBlockingUnixCommunicationSocket.cpp.i
 
 NonBlockingUnixCommunicationSocket.s: NonBlockingUnixCommunicationSocket.cpp.s
@@ -1013,7 +1013,7 @@ NonBlockingUnixCommunicationSocket.s: NonBlockingUnixCommunicationSocket.cpp.s
 
 # target to generate assembly for a file
 NonBlockingUnixCommunicationSocket.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/NonBlockingUnixCommunicationSocket.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/NonBlockingUnixCommunicationSocket.cpp.s
 .PHONY : NonBlockingUnixCommunicationSocket.cpp.s
 
 NonBlockingUnixSocketFactory.o: NonBlockingUnixSocketFactory.cpp.o
@@ -1022,7 +1022,7 @@ NonBlockingUnixSocketFactory.o: NonBlockingUnixSocketFactory.cpp.o
 
 # target to build an object file
 NonBlockingUnixSocketFactory.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/NonBlockingUnixSocketFactory.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/NonBlockingUnixSocketFactory.cpp.o
 .PHONY : NonBlockingUnixSocketFactory.cpp.o
 
 NonBlockingUnixSocketFactory.i: NonBlockingUnixSocketFactory.cpp.i
@@ -1031,7 +1031,7 @@ NonBlockingUnixSocketFactory.i: NonBlockingUnixSocketFactory.cpp.i
 
 # target to preprocess a source file
 NonBlockingUnixSocketFactory.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/NonBlockingUnixSocketFactory.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/NonBlockingUnixSocketFactory.cpp.i
 .PHONY : NonBlockingUnixSocketFactory.cpp.i
 
 NonBlockingUnixSocketFactory.s: NonBlockingUnixSocketFactory.cpp.s
@@ -1040,7 +1040,7 @@ NonBlockingUnixSocketFactory.s: NonBlockingUnixSocketFactory.cpp.s
 
 # target to generate assembly for a file
 NonBlockingUnixSocketFactory.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/NonBlockingUnixSocketFactory.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/NonBlockingUnixSocketFactory.cpp.s
 .PHONY : NonBlockingUnixSocketFactory.cpp.s
 
 ProtobufSerializer.o: ProtobufSerializer.cpp.o
@@ -1049,7 +1049,7 @@ ProtobufSerializer.o: ProtobufSerializer.cpp.o
 
 # target to build an object file
 ProtobufSerializer.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/ProtobufSerializer.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/ProtobufSerializer.cpp.o
 .PHONY : ProtobufSerializer.cpp.o
 
 ProtobufSerializer.i: ProtobufSerializer.cpp.i
@@ -1058,7 +1058,7 @@ ProtobufSerializer.i: ProtobufSerializer.cpp.i
 
 # target to preprocess a source file
 ProtobufSerializer.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/ProtobufSerializer.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/ProtobufSerializer.cpp.i
 .PHONY : ProtobufSerializer.cpp.i
 
 ProtobufSerializer.s: ProtobufSerializer.cpp.s
@@ -1067,7 +1067,7 @@ ProtobufSerializer.s: ProtobufSerializer.cpp.s
 
 # target to generate assembly for a file
 ProtobufSerializer.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/ProtobufSerializer.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/ProtobufSerializer.cpp.s
 .PHONY : ProtobufSerializer.cpp.s
 
 SocketTransporter.o: SocketTransporter.cpp.o
@@ -1076,7 +1076,7 @@ SocketTransporter.o: SocketTransporter.cpp.o
 
 # target to build an object file
 SocketTransporter.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/SocketTransporter.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/SocketTransporter.cpp.o
 .PHONY : SocketTransporter.cpp.o
 
 SocketTransporter.i: SocketTransporter.cpp.i
@@ -1085,7 +1085,7 @@ SocketTransporter.i: SocketTransporter.cpp.i
 
 # target to preprocess a source file
 SocketTransporter.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/SocketTransporter.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/SocketTransporter.cpp.i
 .PHONY : SocketTransporter.cpp.i
 
 SocketTransporter.s: SocketTransporter.cpp.s
@@ -1094,7 +1094,7 @@ SocketTransporter.s: SocketTransporter.cpp.s
 
 # target to generate assembly for a file
 SocketTransporter.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/SocketTransporter.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/SocketTransporter.cpp.s
 .PHONY : SocketTransporter.cpp.s
 
 UnixCommunicationSocket.o: UnixCommunicationSocket.cpp.o
@@ -1103,7 +1103,7 @@ UnixCommunicationSocket.o: UnixCommunicationSocket.cpp.o
 
 # target to build an object file
 UnixCommunicationSocket.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/UnixCommunicationSocket.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/UnixCommunicationSocket.cpp.o
 .PHONY : UnixCommunicationSocket.cpp.o
 
 UnixCommunicationSocket.i: UnixCommunicationSocket.cpp.i
@@ -1112,7 +1112,7 @@ UnixCommunicationSocket.i: UnixCommunicationSocket.cpp.i
 
 # target to preprocess a source file
 UnixCommunicationSocket.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/UnixCommunicationSocket.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/UnixCommunicationSocket.cpp.i
 .PHONY : UnixCommunicationSocket.cpp.i
 
 UnixCommunicationSocket.s: UnixCommunicationSocket.cpp.s
@@ -1121,7 +1121,7 @@ UnixCommunicationSocket.s: UnixCommunicationSocket.cpp.s
 
 # target to generate assembly for a file
 UnixCommunicationSocket.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/UnixCommunicationSocket.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/UnixCommunicationSocket.cpp.s
 .PHONY : UnixCommunicationSocket.cpp.s
 
 UnixSocketFactory.o: UnixSocketFactory.cpp.o
@@ -1130,7 +1130,7 @@ UnixSocketFactory.o: UnixSocketFactory.cpp.o
 
 # target to build an object file
 UnixSocketFactory.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/UnixSocketFactory.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/UnixSocketFactory.cpp.o
 .PHONY : UnixSocketFactory.cpp.o
 
 UnixSocketFactory.i: UnixSocketFactory.cpp.i
@@ -1139,7 +1139,7 @@ UnixSocketFactory.i: UnixSocketFactory.cpp.i
 
 # target to preprocess a source file
 UnixSocketFactory.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/UnixSocketFactory.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/UnixSocketFactory.cpp.i
 .PHONY : UnixSocketFactory.cpp.i
 
 UnixSocketFactory.s: UnixSocketFactory.cpp.s
@@ -1148,7 +1148,7 @@ UnixSocketFactory.s: UnixSocketFactory.cpp.s
 
 # target to generate assembly for a file
 UnixSocketFactory.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/UnixSocketFactory.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/UnixSocketFactory.cpp.s
 .PHONY : UnixSocketFactory.cpp.s
 
 messages.pb.o: messages.pb.cc.o
@@ -1157,7 +1157,7 @@ messages.pb.o: messages.pb.cc.o
 
 # target to build an object file
 messages.pb.cc.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/messages.pb.cc.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/messages.pb.cc.o
 .PHONY : messages.pb.cc.o
 
 messages.pb.i: messages.pb.cc.i
@@ -1166,7 +1166,7 @@ messages.pb.i: messages.pb.cc.i
 
 # target to preprocess a source file
 messages.pb.cc.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/messages.pb.cc.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/messages.pb.cc.i
 .PHONY : messages.pb.cc.i
 
 messages.pb.s: messages.pb.cc.s
@@ -1175,7 +1175,7 @@ messages.pb.s: messages.pb.cc.s
 
 # target to generate assembly for a file
 messages.pb.cc.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/messages.pb.cc.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f core/ipc/CMakeFiles/ipc.dir/build.make core/ipc/CMakeFiles/ipc.dir/messages.pb.cc.s
 .PHONY : messages.pb.cc.s
 
 # Help Target
@@ -1315,6 +1315,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

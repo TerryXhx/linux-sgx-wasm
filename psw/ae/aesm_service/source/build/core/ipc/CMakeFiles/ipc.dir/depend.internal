@@ -11,13 +11,13 @@ core/ipc/CMakeFiles/ipc.dir/AECheckUpdateStatusRequest.cpp.o
  ../core/ipc/IAEResponse.h
  ../core/ipc/IAESMLogic.h
  ../core/ipc/messages.pb.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AECheckUpdateStatusRequest.cpp
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AECheckUpdateStatusRequest.cpp
 core/ipc/CMakeFiles/ipc.dir/AECheckUpdateStatusResponse.cpp.o
  ../core/ipc/AECheckUpdateStatusResponse.h
  ../core/ipc/IAEMessage.h
  ../core/ipc/IAEResponse.h
  ../core/ipc/messages.pb.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AECheckUpdateStatusResponse.cpp
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AECheckUpdateStatusResponse.cpp
 core/ipc/CMakeFiles/ipc.dir/AEGetLaunchTokenRequest.cpp.o
  ../../../inc/aeerror.h
  ../../../inc/internal/aesm_error.h
@@ -28,13 +28,13 @@ core/ipc/CMakeFiles/ipc.dir/AEGetLaunchTokenRequest.cpp.o
  ../core/ipc/IAEResponse.h
  ../core/ipc/IAESMLogic.h
  ../core/ipc/messages.pb.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AEGetLaunchTokenRequest.cpp
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AEGetLaunchTokenRequest.cpp
 core/ipc/CMakeFiles/ipc.dir/AEGetLaunchTokenResponse.cpp.o
  ../core/ipc/AEGetLaunchTokenResponse.h
  ../core/ipc/IAEMessage.h
  ../core/ipc/IAEResponse.h
  ../core/ipc/messages.pb.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AEGetLaunchTokenResponse.cpp
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AEGetLaunchTokenResponse.cpp
 core/ipc/CMakeFiles/ipc.dir/AEGetQuoteExRequest.cpp.o
  ../../../inc/aeerror.h
  ../../../inc/internal/aesm_error.h
@@ -44,14 +44,14 @@ core/ipc/CMakeFiles/ipc.dir/AEGetQuoteExRequest.cpp.o
  ../core/ipc/IAERequest.h
  ../core/ipc/IAEResponse.h
  ../core/ipc/messages.pb.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AEGetQuoteExRequest.cpp
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/IAESMLogic.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AEGetQuoteExRequest.cpp
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/IAESMLogic.h
 core/ipc/CMakeFiles/ipc.dir/AEGetQuoteExResponse.cpp.o
  ../core/ipc/AEGetQuoteExResponse.h
  ../core/ipc/IAEMessage.h
  ../core/ipc/IAEResponse.h
  ../core/ipc/messages.pb.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AEGetQuoteExResponse.cpp
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AEGetQuoteExResponse.cpp
 core/ipc/CMakeFiles/ipc.dir/AEGetQuoteRequest.cpp.o
  ../../../inc/aeerror.h
  ../../../inc/internal/aesm_error.h
@@ -61,14 +61,14 @@ core/ipc/CMakeFiles/ipc.dir/AEGetQuoteRequest.cpp.o
  ../core/ipc/IAERequest.h
  ../core/ipc/IAEResponse.h
  ../core/ipc/messages.pb.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AEGetQuoteRequest.cpp
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/IAESMLogic.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AEGetQuoteRequest.cpp
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/IAESMLogic.h
 core/ipc/CMakeFiles/ipc.dir/AEGetQuoteResponse.cpp.o
  ../core/ipc/AEGetQuoteResponse.h
  ../core/ipc/IAEMessage.h
  ../core/ipc/IAEResponse.h
  ../core/ipc/messages.pb.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AEGetQuoteResponse.cpp
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AEGetQuoteResponse.cpp
 core/ipc/CMakeFiles/ipc.dir/AEGetQuoteSizeExRequest.cpp.o
  ../../../inc/aeerror.h
  ../../../inc/internal/aesm_error.h
@@ -79,13 +79,13 @@ core/ipc/CMakeFiles/ipc.dir/AEGetQuoteSizeExRequest.cpp.o
  ../core/ipc/IAEResponse.h
  ../core/ipc/IAESMLogic.h
  ../core/ipc/messages.pb.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AEGetQuoteSizeExRequest.cpp
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AEGetQuoteSizeExRequest.cpp
 core/ipc/CMakeFiles/ipc.dir/AEGetQuoteSizeExResponse.cpp.o
  ../core/ipc/AEGetQuoteSizeExResponse.h
  ../core/ipc/IAEMessage.h
  ../core/ipc/IAEResponse.h
  ../core/ipc/messages.pb.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AEGetQuoteSizeExResponse.cpp
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AEGetQuoteSizeExResponse.cpp
 core/ipc/CMakeFiles/ipc.dir/AEGetSupportedAttKeyIDNumRequest.cpp.o
  ../../../inc/aeerror.h
  ../../../inc/internal/aesm_error.h
@@ -96,13 +96,13 @@ core/ipc/CMakeFiles/ipc.dir/AEGetSupportedAttKeyIDNumRequest.cpp.o
  ../core/ipc/IAEResponse.h
  ../core/ipc/IAESMLogic.h
  ../core/ipc/messages.pb.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AEGetSupportedAttKeyIDNumRequest.cpp
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AEGetSupportedAttKeyIDNumRequest.cpp
 core/ipc/CMakeFiles/ipc.dir/AEGetSupportedAttKeyIDNumResponse.cpp.o
  ../core/ipc/AEGetSupportedAttKeyIDNumResponse.h
  ../core/ipc/IAEMessage.h
  ../core/ipc/IAEResponse.h
  ../core/ipc/messages.pb.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AEGetSupportedAttKeyIDNumResponse.cpp
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AEGetSupportedAttKeyIDNumResponse.cpp
 core/ipc/CMakeFiles/ipc.dir/AEGetSupportedAttKeyIDsRequest.cpp.o
  ../../../inc/aeerror.h
  ../../../inc/internal/aesm_error.h
@@ -113,13 +113,13 @@ core/ipc/CMakeFiles/ipc.dir/AEGetSupportedAttKeyIDsRequest.cpp.o
  ../core/ipc/IAEResponse.h
  ../core/ipc/IAESMLogic.h
  ../core/ipc/messages.pb.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AEGetSupportedAttKeyIDsRequest.cpp
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AEGetSupportedAttKeyIDsRequest.cpp
 core/ipc/CMakeFiles/ipc.dir/AEGetSupportedAttKeyIDsResponse.cpp.o
  ../core/ipc/AEGetSupportedAttKeyIDsResponse.h
  ../core/ipc/IAEMessage.h
  ../core/ipc/IAEResponse.h
  ../core/ipc/messages.pb.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AEGetSupportedAttKeyIDsResponse.cpp
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AEGetSupportedAttKeyIDsResponse.cpp
 core/ipc/CMakeFiles/ipc.dir/AEGetWhiteListRequest.cpp.o
  ../../../inc/aeerror.h
  ../../../inc/internal/aesm_error.h
@@ -130,13 +130,13 @@ core/ipc/CMakeFiles/ipc.dir/AEGetWhiteListRequest.cpp.o
  ../core/ipc/IAEResponse.h
  ../core/ipc/IAESMLogic.h
  ../core/ipc/messages.pb.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AEGetWhiteListRequest.cpp
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AEGetWhiteListRequest.cpp
 core/ipc/CMakeFiles/ipc.dir/AEGetWhiteListResponse.cpp.o
  ../core/ipc/AEGetWhiteListResponse.h
  ../core/ipc/IAEMessage.h
  ../core/ipc/IAEResponse.h
  ../core/ipc/messages.pb.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AEGetWhiteListResponse.cpp
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AEGetWhiteListResponse.cpp
 core/ipc/CMakeFiles/ipc.dir/AEGetWhiteListSizeRequest.cpp.o
  ../../../inc/aeerror.h
  ../../../inc/internal/aesm_error.h
@@ -147,13 +147,13 @@ core/ipc/CMakeFiles/ipc.dir/AEGetWhiteListSizeRequest.cpp.o
  ../core/ipc/IAEResponse.h
  ../core/ipc/IAESMLogic.h
  ../core/ipc/messages.pb.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AEGetWhiteListSizeRequest.cpp
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AEGetWhiteListSizeRequest.cpp
 core/ipc/CMakeFiles/ipc.dir/AEGetWhiteListSizeResponse.cpp.o
  ../core/ipc/AEGetWhiteListSizeResponse.h
  ../core/ipc/IAEMessage.h
  ../core/ipc/IAEResponse.h
  ../core/ipc/messages.pb.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AEGetWhiteListSizeResponse.cpp
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AEGetWhiteListSizeResponse.cpp
 core/ipc/CMakeFiles/ipc.dir/AEInitQuoteExRequest.cpp.o
  ../../../inc/aeerror.h
  ../../../inc/internal/aesm_error.h
@@ -164,13 +164,13 @@ core/ipc/CMakeFiles/ipc.dir/AEInitQuoteExRequest.cpp.o
  ../core/ipc/IAEResponse.h
  ../core/ipc/IAESMLogic.h
  ../core/ipc/messages.pb.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AEInitQuoteExRequest.cpp
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AEInitQuoteExRequest.cpp
 core/ipc/CMakeFiles/ipc.dir/AEInitQuoteExResponse.cpp.o
  ../core/ipc/AEInitQuoteExResponse.h
  ../core/ipc/IAEMessage.h
  ../core/ipc/IAEResponse.h
  ../core/ipc/messages.pb.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AEInitQuoteExResponse.cpp
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AEInitQuoteExResponse.cpp
 core/ipc/CMakeFiles/ipc.dir/AEInitQuoteRequest.cpp.o
  ../../../inc/aeerror.h
  ../../../inc/internal/aesm_error.h
@@ -181,13 +181,13 @@ core/ipc/CMakeFiles/ipc.dir/AEInitQuoteRequest.cpp.o
  ../core/ipc/IAEResponse.h
  ../core/ipc/IAESMLogic.h
  ../core/ipc/messages.pb.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AEInitQuoteRequest.cpp
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AEInitQuoteRequest.cpp
 core/ipc/CMakeFiles/ipc.dir/AEInitQuoteResponse.cpp.o
  ../core/ipc/AEInitQuoteResponse.h
  ../core/ipc/IAEMessage.h
  ../core/ipc/IAEResponse.h
  ../core/ipc/messages.pb.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AEInitQuoteResponse.cpp
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AEInitQuoteResponse.cpp
 core/ipc/CMakeFiles/ipc.dir/AEReportAttestationRequest.cpp.o
  ../../../inc/aeerror.h
  ../../../inc/internal/aesm_error.h
@@ -198,13 +198,13 @@ core/ipc/CMakeFiles/ipc.dir/AEReportAttestationRequest.cpp.o
  ../core/ipc/IAEResponse.h
  ../core/ipc/IAESMLogic.h
  ../core/ipc/messages.pb.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AEReportAttestationRequest.cpp
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AEReportAttestationRequest.cpp
 core/ipc/CMakeFiles/ipc.dir/AEReportAttestationResponse.cpp.o
  ../core/ipc/AEReportAttestationResponse.h
  ../core/ipc/IAEMessage.h
  ../core/ipc/IAEResponse.h
  ../core/ipc/messages.pb.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AEReportAttestationResponse.cpp
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AEReportAttestationResponse.cpp
 core/ipc/CMakeFiles/ipc.dir/AESGXGetExtendedEpidGroupIdRequest.cpp.o
  ../../../inc/aeerror.h
  ../../../inc/internal/aesm_error.h
@@ -215,13 +215,13 @@ core/ipc/CMakeFiles/ipc.dir/AESGXGetExtendedEpidGroupIdRequest.cpp.o
  ../core/ipc/IAEResponse.h
  ../core/ipc/IAESMLogic.h
  ../core/ipc/messages.pb.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AESGXGetExtendedEpidGroupIdRequest.cpp
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AESGXGetExtendedEpidGroupIdRequest.cpp
 core/ipc/CMakeFiles/ipc.dir/AESGXGetExtendedEpidGroupIdResponse.cpp.o
  ../core/ipc/AESGXGetExtendedEpidGroupIdResponse.h
  ../core/ipc/IAEMessage.h
  ../core/ipc/IAEResponse.h
  ../core/ipc/messages.pb.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AESGXGetExtendedEpidGroupIdResponse.cpp
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AESGXGetExtendedEpidGroupIdResponse.cpp
 core/ipc/CMakeFiles/ipc.dir/AESGXRegisterRequest.cpp.o
  ../../../inc/aeerror.h
  ../../../inc/internal/aesm_error.h
@@ -232,13 +232,13 @@ core/ipc/CMakeFiles/ipc.dir/AESGXRegisterRequest.cpp.o
  ../core/ipc/IAEResponse.h
  ../core/ipc/IAESMLogic.h
  ../core/ipc/messages.pb.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AESGXRegisterRequest.cpp
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AESGXRegisterRequest.cpp
 core/ipc/CMakeFiles/ipc.dir/AESGXRegisterResponse.cpp.o
  ../core/ipc/AESGXRegisterResponse.h
  ../core/ipc/IAEMessage.h
  ../core/ipc/IAEResponse.h
  ../core/ipc/messages.pb.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AESGXRegisterResponse.cpp
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AESGXRegisterResponse.cpp
 core/ipc/CMakeFiles/ipc.dir/AESGXSwitchExtendedEpidGroupRequest.cpp.o
  ../../../inc/aeerror.h
  ../../../inc/internal/aesm_error.h
@@ -249,13 +249,13 @@ core/ipc/CMakeFiles/ipc.dir/AESGXSwitchExtendedEpidGroupRequest.cpp.o
  ../core/ipc/IAEResponse.h
  ../core/ipc/IAESMLogic.h
  ../core/ipc/messages.pb.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AESGXSwitchExtendedEpidGroupRequest.cpp
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AESGXSwitchExtendedEpidGroupRequest.cpp
 core/ipc/CMakeFiles/ipc.dir/AESGXSwitchExtendedEpidGroupResponse.cpp.o
  ../core/ipc/AESGXSwitchExtendedEpidGroupResponse.h
  ../core/ipc/IAEMessage.h
  ../core/ipc/IAEResponse.h
  ../core/ipc/messages.pb.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AESGXSwitchExtendedEpidGroupResponse.cpp
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AESGXSwitchExtendedEpidGroupResponse.cpp
 core/ipc/CMakeFiles/ipc.dir/AESelectAttKeyIDRequest.cpp.o
  ../../../inc/aeerror.h
  ../../../inc/internal/aesm_error.h
@@ -266,13 +266,13 @@ core/ipc/CMakeFiles/ipc.dir/AESelectAttKeyIDRequest.cpp.o
  ../core/ipc/IAEResponse.h
  ../core/ipc/IAESMLogic.h
  ../core/ipc/messages.pb.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AESelectAttKeyIDRequest.cpp
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AESelectAttKeyIDRequest.cpp
 core/ipc/CMakeFiles/ipc.dir/AESelectAttKeyIDResponse.cpp.o
  ../core/ipc/AESelectAttKeyIDResponse.h
  ../core/ipc/IAEMessage.h
  ../core/ipc/IAEResponse.h
  ../core/ipc/messages.pb.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/AESelectAttKeyIDResponse.cpp
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/AESelectAttKeyIDResponse.cpp
 core/ipc/CMakeFiles/ipc.dir/NonBlockingUnixCommunicationSocket.cpp.o
  ../../../../../common/inc/internal/arch.h
  ../../../../../common/inc/internal/inst.h
@@ -282,15 +282,15 @@ core/ipc/CMakeFiles/ipc.dir/NonBlockingUnixCommunicationSocket.cpp.o
  ../core/ipc/ICommunicationSocket.h
  ../core/ipc/NonBlockingUnixCommunicationSocket.h
  ../core/ipc/UnixCommunicationSocket.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/NonBlockingUnixCommunicationSocket.cpp
- /root/SGXENV/sgxsdk/include/sgx.h
- /root/SGXENV/sgxsdk/include/sgx_attributes.h
- /root/SGXENV/sgxsdk/include/sgx_defs.h
- /root/SGXENV/sgxsdk/include/sgx_error.h
- /root/SGXENV/sgxsdk/include/sgx_key.h
- /root/SGXENV/sgxsdk/include/sgx_report.h
- /root/SGXENV/sgxsdk/include/sgx_report2.h
- /root/SGXENV/sgxsdk/include/sgx_tcrypto.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/NonBlockingUnixCommunicationSocket.cpp
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_attributes.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_defs.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_error.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_key.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report2.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_tcrypto.h
 core/ipc/CMakeFiles/ipc.dir/NonBlockingUnixSocketFactory.cpp.o
  ../core/ipc/ICommunicationSocket.h
  ../core/ipc/ISocketFactory.h
@@ -298,7 +298,7 @@ core/ipc/CMakeFiles/ipc.dir/NonBlockingUnixSocketFactory.cpp.o
  ../core/ipc/NonBlockingUnixSocketFactory.h
  ../core/ipc/UnixCommunicationSocket.h
  ../core/ipc/UnixSocketFactory.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/NonBlockingUnixSocketFactory.cpp
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/NonBlockingUnixSocketFactory.cpp
 core/ipc/CMakeFiles/ipc.dir/ProtobufSerializer.cpp.o
  ../core/ipc/AECheckUpdateStatusRequest.h
  ../core/ipc/AEGetLaunchTokenRequest.h
@@ -321,7 +321,7 @@ core/ipc/CMakeFiles/ipc.dir/ProtobufSerializer.cpp.o
  ../core/ipc/ISerializer.h
  ../core/ipc/ProtobufSerializer.h
  ../core/ipc/messages.pb.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/ProtobufSerializer.cpp
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/ProtobufSerializer.cpp
 core/ipc/CMakeFiles/ipc.dir/SocketTransporter.cpp.o
  ../../../../../common/inc/internal/arch.h
  ../../../../../common/inc/internal/inst.h
@@ -338,31 +338,31 @@ core/ipc/CMakeFiles/ipc.dir/SocketTransporter.cpp.o
  ../core/ipc/ITransporter.h
  ../core/ipc/SocketTransporter.h
  ../core/ipc/messages.pb.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/SocketTransporter.cpp
- /root/SGXENV/sgxsdk/include/sgx.h
- /root/SGXENV/sgxsdk/include/sgx_attributes.h
- /root/SGXENV/sgxsdk/include/sgx_defs.h
- /root/SGXENV/sgxsdk/include/sgx_eid.h
- /root/SGXENV/sgxsdk/include/sgx_error.h
- /root/SGXENV/sgxsdk/include/sgx_key.h
- /root/SGXENV/sgxsdk/include/sgx_quote.h
- /root/SGXENV/sgxsdk/include/sgx_report.h
- /root/SGXENV/sgxsdk/include/sgx_report2.h
- /root/SGXENV/sgxsdk/include/sgx_tcrypto.h
- /root/SGXENV/sgxsdk/include/sgx_urts.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/SocketTransporter.cpp
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_attributes.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_defs.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_eid.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_error.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_key.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_quote.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report2.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_tcrypto.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_urts.h
 core/ipc/CMakeFiles/ipc.dir/UnixCommunicationSocket.cpp.o
  ../../../../../common/inc/internal/se_trace.h
  ../core/ipc/IAERequest.h
  ../core/ipc/IAEResponse.h
  ../core/ipc/ICommunicationSocket.h
  ../core/ipc/UnixCommunicationSocket.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/UnixCommunicationSocket.cpp
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/UnixCommunicationSocket.cpp
 core/ipc/CMakeFiles/ipc.dir/UnixSocketFactory.cpp.o
  ../core/ipc/ICommunicationSocket.h
  ../core/ipc/ISocketFactory.h
  ../core/ipc/UnixCommunicationSocket.h
  ../core/ipc/UnixSocketFactory.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/ipc/UnixSocketFactory.cpp
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ipc/UnixSocketFactory.cpp
 core/ipc/CMakeFiles/ipc.dir/messages.pb.cc.o
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/core/ipc/messages.pb.cc
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/core/ipc/messages.pb.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/core/ipc/messages.pb.cc
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/core/ipc/messages.pb.h

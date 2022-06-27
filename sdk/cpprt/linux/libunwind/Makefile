@@ -276,22 +276,22 @@ distuninstallcheck_listfiles = find . -type f -print
 am__distuninstallcheck_listfiles = $(distuninstallcheck_listfiles) \
   | sed 's|^\./|$(prefix)/|' | grep -v '$(infodir)/dir$$'
 distcleancheck_listfiles = find . -type f -print
-ACLOCAL = ${SHELL} /root/SGXENV/linux-sgx/sdk/cpprt/linux/libunwind/config/missing aclocal-1.16
+ACLOCAL = ${SHELL} /home/nsec-sgx/SGXENV/linux-sgx-wasm/sdk/cpprt/linux/libunwind/config/missing aclocal-1.16
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 1
 AR = ar
 ARCH = X86_64
-AUTOCONF = ${SHELL} /root/SGXENV/linux-sgx/sdk/cpprt/linux/libunwind/config/missing autoconf
-AUTOHEADER = ${SHELL} /root/SGXENV/linux-sgx/sdk/cpprt/linux/libunwind/config/missing autoheader
-AUTOMAKE = ${SHELL} /root/SGXENV/linux-sgx/sdk/cpprt/linux/libunwind/config/missing automake-1.16
-AWK = gawk
+AUTOCONF = ${SHELL} /home/nsec-sgx/SGXENV/linux-sgx-wasm/sdk/cpprt/linux/libunwind/config/missing autoconf
+AUTOHEADER = ${SHELL} /home/nsec-sgx/SGXENV/linux-sgx-wasm/sdk/cpprt/linux/libunwind/config/missing autoheader
+AUTOMAKE = ${SHELL} /home/nsec-sgx/SGXENV/linux-sgx-wasm/sdk/cpprt/linux/libunwind/config/missing automake-1.16
+AWK = mawk
 BACKTRACELIB = 
 CC = gcc
 CCAS = gcc
 CCASDEPMODE = depmode=gcc3
-CCASFLAGS = -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/root/SGXENV/linux-sgx/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE -DNDEBUG
+CCASFLAGS = -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENV/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE -DNDEBUG
 CCDEPMODE = depmode=gcc3
-CFLAGS = -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/root/SGXENV/linux-sgx/sdk/cpprt/linux/libunwind=/libunwind  -fexceptions -Wall -Wsign-compare
+CFLAGS = -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENV/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind  -fexceptions -Wall -Wsign-compare
 CPP = gcc -E
 CPPFLAGS =  -D_GNU_SOURCE -DNDEBUG
 CXX = g++
@@ -332,7 +332,7 @@ LN_S = ln -s
 LTLIBOBJS = 
 LT_SYS_LIBRARY_PATH = 
 MAINT = #
-MAKEINFO = ${SHELL} /root/SGXENV/linux-sgx/sdk/cpprt/linux/libunwind/config/missing makeinfo
+MAKEINFO = ${SHELL} /home/nsec-sgx/SGXENV/linux-sgx-wasm/sdk/cpprt/linux/libunwind/config/missing makeinfo
 MANIFEST_TOOL = :
 MKDIR_P = /usr/bin/mkdir -p
 NM = /usr/bin/nm -B
@@ -359,10 +359,10 @@ SET_MAKE =
 SHELL = /bin/bash
 STRIP = strip
 VERSION = 1.3.1
-abs_builddir = /root/SGXENV/linux-sgx/sdk/cpprt/linux/libunwind
-abs_srcdir = /root/SGXENV/linux-sgx/sdk/cpprt/linux/libunwind
-abs_top_builddir = /root/SGXENV/linux-sgx/sdk/cpprt/linux/libunwind
-abs_top_srcdir = /root/SGXENV/linux-sgx/sdk/cpprt/linux/libunwind
+abs_builddir = /home/nsec-sgx/SGXENV/linux-sgx-wasm/sdk/cpprt/linux/libunwind
+abs_srcdir = /home/nsec-sgx/SGXENV/linux-sgx-wasm/sdk/cpprt/linux/libunwind
+abs_top_builddir = /home/nsec-sgx/SGXENV/linux-sgx-wasm/sdk/cpprt/linux/libunwind
+abs_top_srcdir = /home/nsec-sgx/SGXENV/linux-sgx-wasm/sdk/cpprt/linux/libunwind
 ac_ct_AR = ar
 ac_ct_CC = gcc
 ac_ct_CXX = g++
@@ -396,7 +396,7 @@ host_vendor = pc
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /root/SGXENV/linux-sgx/sdk/cpprt/linux/libunwind/config/install-sh
+install_sh = ${SHELL} /home/nsec-sgx/SGXENV/linux-sgx-wasm/sdk/cpprt/linux/libunwind/config/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale

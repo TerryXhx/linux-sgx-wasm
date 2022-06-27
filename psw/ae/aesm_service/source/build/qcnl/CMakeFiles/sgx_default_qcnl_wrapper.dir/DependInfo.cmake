@@ -4,14 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/linux/network_wrapper.cpp" "/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/linux/network_wrapper.cpp.o"
-  "/root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/linux/qcnl_config_impl.cpp" "/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/linux/qcnl_config_impl.cpp.o"
-  "/root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/pccs_response_object.cpp" "/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/pccs_response_object.cpp.o"
-  "/root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/pckcert_provider.cpp" "/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/pckcert_provider.cpp.o"
-  "/root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qcnl_config.cpp" "/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qcnl_config.cpp.o"
-  "/root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qcnl_util.cpp" "/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qcnl_util.cpp.o"
-  "/root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qv_collateral_provider.cpp" "/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/qv_collateral_provider.cpp.o"
-  "/root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/sgx_default_qcnl_wrapper.cpp" "/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/root/SGXENV/linux-sgx/external/dcap_source/QuoteGeneration/qcnl/sgx_default_qcnl_wrapper.cpp.o"
+  "/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/linux/network_wrapper.cpp" "/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/linux/network_wrapper.cpp.o"
+  "/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/linux/qcnl_config_impl.cpp" "/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/linux/qcnl_config_impl.cpp.o"
+  "/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/pccs_response_object.cpp" "/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/pccs_response_object.cpp.o"
+  "/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/pckcert_provider.cpp" "/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/pckcert_provider.cpp.o"
+  "/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qcnl_config.cpp" "/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qcnl_config.cpp.o"
+  "/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qcnl_util.cpp" "/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qcnl_util.cpp.o"
+  "/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qv_collateral_provider.cpp" "/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qv_collateral_provider.cpp.o"
+  "/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/sgx_default_qcnl_wrapper.cpp" "/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/qcnl/CMakeFiles/sgx_default_qcnl_wrapper.dir/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/sgx_default_qcnl_wrapper.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -23,7 +23,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/root/SGXENV/sgxsdk/include"
+  "/home/nsec-sgx/SGXENVWASM/sgxsdk/include"
   "../../../../../external/dcap_source/QuoteGeneration/qcnl/inc"
   "../../../../../external/dcap_source/QuoteGeneration/pce_wrapper/inc"
   "../../../../../external/dcap_source/QuoteGeneration/quote_wrapper/common/inc"

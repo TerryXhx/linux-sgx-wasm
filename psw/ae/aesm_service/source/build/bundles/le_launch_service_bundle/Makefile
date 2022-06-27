@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/SGXENV/linux-sgx/psw/ae/aesm_service/source
+CMAKE_SOURCE_DIR = /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build
+CMAKE_BINARY_DIR = /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -E cmake_progress_start /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/CMakeFiles /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/le_launch_service_bundle/CMakeFiles/progress.marks
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 bundles/le_launch_service_bundle/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/CMakeFiles 0
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/CMakeFiles /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/le_launch_service_bundle/CMakeFiles/progress.marks
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 bundles/le_launch_service_bundle/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 bundles/le_launch_service_bundle/clean
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 bundles/le_launch_service_bundle/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 bundles/le_launch_service_bundle/preinstall
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 bundles/le_launch_service_bundle/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 bundles/le_launch_service_bundle/preinstall
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 bundles/le_launch_service_bundle/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/rule:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/rule
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f CMakeFiles/Makefile2 bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/rule
 .PHONY : bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ le_launch_service_bundle: bundles/le_launch_service_bundle/CMakeFiles/le_launch_
 
 # fast build rule for target.
 le_launch_service_bundle/fast:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/build.make bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/build
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/build.make bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/build
 .PHONY : le_launch_service_bundle/fast
 
 LEClass.o: LEClass.cpp.o
@@ -131,7 +131,7 @@ LEClass.o: LEClass.cpp.o
 
 # target to build an object file
 LEClass.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/build.make bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/LEClass.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/build.make bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/LEClass.cpp.o
 .PHONY : LEClass.cpp.o
 
 LEClass.i: LEClass.cpp.i
@@ -140,7 +140,7 @@ LEClass.i: LEClass.cpp.i
 
 # target to preprocess a source file
 LEClass.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/build.make bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/LEClass.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/build.make bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/LEClass.cpp.i
 .PHONY : LEClass.cpp.i
 
 LEClass.s: LEClass.cpp.s
@@ -149,7 +149,7 @@ LEClass.s: LEClass.cpp.s
 
 # target to generate assembly for a file
 LEClass.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/build.make bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/LEClass.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/build.make bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/LEClass.cpp.s
 .PHONY : LEClass.cpp.s
 
 launch_enclave_u.o: launch_enclave_u.c.o
@@ -158,7 +158,7 @@ launch_enclave_u.o: launch_enclave_u.c.o
 
 # target to build an object file
 launch_enclave_u.c.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/build.make bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/launch_enclave_u.c.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/build.make bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/launch_enclave_u.c.o
 .PHONY : launch_enclave_u.c.o
 
 launch_enclave_u.i: launch_enclave_u.c.i
@@ -167,7 +167,7 @@ launch_enclave_u.i: launch_enclave_u.c.i
 
 # target to preprocess a source file
 launch_enclave_u.c.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/build.make bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/launch_enclave_u.c.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/build.make bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/launch_enclave_u.c.i
 .PHONY : launch_enclave_u.c.i
 
 launch_enclave_u.s: launch_enclave_u.c.s
@@ -176,7 +176,7 @@ launch_enclave_u.s: launch_enclave_u.c.s
 
 # target to generate assembly for a file
 launch_enclave_u.c.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/build.make bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/launch_enclave_u.c.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/build.make bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/launch_enclave_u.c.s
 .PHONY : launch_enclave_u.c.s
 
 le_launch_service_bundle.o: le_launch_service_bundle.cpp.o
@@ -185,7 +185,7 @@ le_launch_service_bundle.o: le_launch_service_bundle.cpp.o
 
 # target to build an object file
 le_launch_service_bundle.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/build.make bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/le_launch_service_bundle.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/build.make bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/le_launch_service_bundle.cpp.o
 .PHONY : le_launch_service_bundle.cpp.o
 
 le_launch_service_bundle.i: le_launch_service_bundle.cpp.i
@@ -194,7 +194,7 @@ le_launch_service_bundle.i: le_launch_service_bundle.cpp.i
 
 # target to preprocess a source file
 le_launch_service_bundle.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/build.make bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/le_launch_service_bundle.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/build.make bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/le_launch_service_bundle.cpp.i
 .PHONY : le_launch_service_bundle.cpp.i
 
 le_launch_service_bundle.s: le_launch_service_bundle.cpp.s
@@ -203,7 +203,7 @@ le_launch_service_bundle.s: le_launch_service_bundle.cpp.s
 
 # target to generate assembly for a file
 le_launch_service_bundle.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/build.make bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/le_launch_service_bundle.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/build.make bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/le_launch_service_bundle.cpp.s
 .PHONY : le_launch_service_bundle.cpp.s
 
 le_launch_service_bundle/cppmicroservices_init.o: le_launch_service_bundle/cppmicroservices_init.cpp.o
@@ -212,7 +212,7 @@ le_launch_service_bundle/cppmicroservices_init.o: le_launch_service_bundle/cppmi
 
 # target to build an object file
 le_launch_service_bundle/cppmicroservices_init.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/build.make bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/le_launch_service_bundle/cppmicroservices_init.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/build.make bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/le_launch_service_bundle/cppmicroservices_init.cpp.o
 .PHONY : le_launch_service_bundle/cppmicroservices_init.cpp.o
 
 le_launch_service_bundle/cppmicroservices_init.i: le_launch_service_bundle/cppmicroservices_init.cpp.i
@@ -221,7 +221,7 @@ le_launch_service_bundle/cppmicroservices_init.i: le_launch_service_bundle/cppmi
 
 # target to preprocess a source file
 le_launch_service_bundle/cppmicroservices_init.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/build.make bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/le_launch_service_bundle/cppmicroservices_init.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/build.make bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/le_launch_service_bundle/cppmicroservices_init.cpp.i
 .PHONY : le_launch_service_bundle/cppmicroservices_init.cpp.i
 
 le_launch_service_bundle/cppmicroservices_init.s: le_launch_service_bundle/cppmicroservices_init.cpp.s
@@ -230,7 +230,7 @@ le_launch_service_bundle/cppmicroservices_init.s: le_launch_service_bundle/cppmi
 
 # target to generate assembly for a file
 le_launch_service_bundle/cppmicroservices_init.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/build.make bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/le_launch_service_bundle/cppmicroservices_init.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/build.make bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/le_launch_service_bundle/cppmicroservices_init.cpp.s
 .PHONY : le_launch_service_bundle/cppmicroservices_init.cpp.s
 
 le_launch_service_bundle/cppmicroservices_resources.o: le_launch_service_bundle/cppmicroservices_resources.cpp.o
@@ -239,7 +239,7 @@ le_launch_service_bundle/cppmicroservices_resources.o: le_launch_service_bundle/
 
 # target to build an object file
 le_launch_service_bundle/cppmicroservices_resources.cpp.o:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/build.make bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/le_launch_service_bundle/cppmicroservices_resources.cpp.o
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/build.make bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/le_launch_service_bundle/cppmicroservices_resources.cpp.o
 .PHONY : le_launch_service_bundle/cppmicroservices_resources.cpp.o
 
 le_launch_service_bundle/cppmicroservices_resources.i: le_launch_service_bundle/cppmicroservices_resources.cpp.i
@@ -248,7 +248,7 @@ le_launch_service_bundle/cppmicroservices_resources.i: le_launch_service_bundle/
 
 # target to preprocess a source file
 le_launch_service_bundle/cppmicroservices_resources.cpp.i:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/build.make bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/le_launch_service_bundle/cppmicroservices_resources.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/build.make bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/le_launch_service_bundle/cppmicroservices_resources.cpp.i
 .PHONY : le_launch_service_bundle/cppmicroservices_resources.cpp.i
 
 le_launch_service_bundle/cppmicroservices_resources.s: le_launch_service_bundle/cppmicroservices_resources.cpp.s
@@ -257,7 +257,7 @@ le_launch_service_bundle/cppmicroservices_resources.s: le_launch_service_bundle/
 
 # target to generate assembly for a file
 le_launch_service_bundle/cppmicroservices_resources.cpp.s:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/build.make bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/le_launch_service_bundle/cppmicroservices_resources.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(MAKE) -f bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/build.make bundles/le_launch_service_bundle/CMakeFiles/le_launch_service_bundle.dir/le_launch_service_bundle/cppmicroservices_resources.cpp.s
 .PHONY : le_launch_service_bundle/cppmicroservices_resources.cpp.s
 
 # Help Target
@@ -295,6 +295,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

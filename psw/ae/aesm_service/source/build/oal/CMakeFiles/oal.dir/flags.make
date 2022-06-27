@@ -7,13 +7,13 @@ C_FLAGS = -O3 -DNDEBUG -fPIC
 
 C_DEFINES = -DOPENSSL_API_COMPAT=10101 -Doal_EXPORTS
 
-C_INCLUDES = -I/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/common -I/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/common/oal -I/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/../../inc -I/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/../../inc/internal -I/root/SGXENV/sgxsdk/include -I/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/../../../../common/inc/internal -I/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/../../../../external/epid-sdk -I/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/../../data/constants/linux 
+C_INCLUDES = -I/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/common -I/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/common/oal -I/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/../../inc -I/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/../../inc/internal -I/home/nsec-sgx/SGXENVWASM/sgxsdk/include -I/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/../../../../common/inc/internal -I/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/../../../../external/epid-sdk -I/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/../../data/constants/linux 
 
 CXX_FLAGS = -O3 -DNDEBUG -fPIC   -std=gnu++11
 
 CXX_DEFINES = -DOPENSSL_API_COMPAT=10101 -Doal_EXPORTS
 
-CXX_INCLUDES = -I/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/common -I/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/common/oal -I/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/../../inc -I/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/../../inc/internal -I/root/SGXENV/sgxsdk/include -I/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/../../../../common/inc/internal -I/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/../../../../external/epid-sdk -I/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/../../data/constants/linux 
+CXX_INCLUDES = -I/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/common -I/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/common/oal -I/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/../../inc -I/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/../../inc/internal -I/home/nsec-sgx/SGXENVWASM/sgxsdk/include -I/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/../../../../common/inc/internal -I/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/../../../../external/epid-sdk -I/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/../../data/constants/linux 
 
 # Custom flags: oal/CMakeFiles/oal.dir/linux/aesm_util.cpp.o_FLAGS = -fno-optimize-sibling-calls
 

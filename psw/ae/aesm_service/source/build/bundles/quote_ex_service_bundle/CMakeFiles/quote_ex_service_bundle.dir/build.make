@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/SGXENV/linux-sgx/psw/ae/aesm_service/source
+CMAKE_SOURCE_DIR = /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build
+CMAKE_BINARY_DIR = /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build
 
 # Include any dependencies generated for this target.
 include bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/depend.make
@@ -58,53 +58,53 @@ include bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/p
 include bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/flags.make
 
 bundles/quote_ex_service_bundle/quote_ex_service_bundle/cppmicroservices_resources.cpp: bundles/quote_ex_service_bundle/quote_ex_service_bundle/res_0.zip
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Checking resource dependencies for quote_ex_service_bundle"
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/quote_ex_service_bundle && /usr/bin/cmake -E copy /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/share/cppmicroservices4/cmake/CMakeResourceDependencies.cpp /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/quote_ex_service_bundle/quote_ex_service_bundle/cppmicroservices_resources.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Checking resource dependencies for quote_ex_service_bundle"
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/quote_ex_service_bundle && /usr/bin/cmake -E copy /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/share/cppmicroservices4/cmake/CMakeResourceDependencies.cpp /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/quote_ex_service_bundle/quote_ex_service_bundle/cppmicroservices_resources.cpp
 
 bundles/quote_ex_service_bundle/quote_ex_service_bundle/res_0.zip: ../bundles/quote_ex_service_bundle/manifest.json
-bundles/quote_ex_service_bundle/quote_ex_service_bundle/res_0.zip: /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/bin/usResourceCompiler4
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Checking resource dependencies for quote_ex_service_bundle"
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/quote_ex_service_bundle && /usr/bin/cmake -E make_directory /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/quote_ex_service_bundle/quote_ex_service_bundle
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/quote_ex_service_bundle && /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/bin/usResourceCompiler4 -o /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/quote_ex_service_bundle/quote_ex_service_bundle/res_0.zip -n quote_ex_service_bundle_name -r manifest.json
+bundles/quote_ex_service_bundle/quote_ex_service_bundle/res_0.zip: /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/bin/usResourceCompiler4
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Checking resource dependencies for quote_ex_service_bundle"
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/quote_ex_service_bundle && /usr/bin/cmake -E make_directory /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/quote_ex_service_bundle/quote_ex_service_bundle
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/quote_ex_service_bundle && /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/bin/usResourceCompiler4 -o /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/quote_ex_service_bundle/quote_ex_service_bundle/res_0.zip -n quote_ex_service_bundle_name -r manifest.json
 
 bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle.cpp.o: bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/flags.make
 bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle.cpp.o: ../bundles/quote_ex_service_bundle/quote_ex_service_bundle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle.cpp.o"
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/quote_ex_service_bundle && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle.cpp.o -c /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/quote_ex_service_bundle/quote_ex_service_bundle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle.cpp.o"
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/quote_ex_service_bundle && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle.cpp.o -c /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/quote_ex_service_bundle/quote_ex_service_bundle.cpp
 
 bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle.cpp.i"
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/quote_ex_service_bundle && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/quote_ex_service_bundle/quote_ex_service_bundle.cpp > CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/quote_ex_service_bundle && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/quote_ex_service_bundle/quote_ex_service_bundle.cpp > CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle.cpp.i
 
 bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle.cpp.s"
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/quote_ex_service_bundle && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/quote_ex_service_bundle/quote_ex_service_bundle.cpp -o CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/quote_ex_service_bundle && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/quote_ex_service_bundle/quote_ex_service_bundle.cpp -o CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle.cpp.s
 
 bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle/cppmicroservices_resources.cpp.o: bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/flags.make
 bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle/cppmicroservices_resources.cpp.o: bundles/quote_ex_service_bundle/quote_ex_service_bundle/cppmicroservices_resources.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle/cppmicroservices_resources.cpp.o"
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/quote_ex_service_bundle && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle/cppmicroservices_resources.cpp.o -c /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/quote_ex_service_bundle/quote_ex_service_bundle/cppmicroservices_resources.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle/cppmicroservices_resources.cpp.o"
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/quote_ex_service_bundle && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle/cppmicroservices_resources.cpp.o -c /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/quote_ex_service_bundle/quote_ex_service_bundle/cppmicroservices_resources.cpp
 
 bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle/cppmicroservices_resources.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle/cppmicroservices_resources.cpp.i"
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/quote_ex_service_bundle && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/quote_ex_service_bundle/quote_ex_service_bundle/cppmicroservices_resources.cpp > CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle/cppmicroservices_resources.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/quote_ex_service_bundle && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/quote_ex_service_bundle/quote_ex_service_bundle/cppmicroservices_resources.cpp > CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle/cppmicroservices_resources.cpp.i
 
 bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle/cppmicroservices_resources.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle/cppmicroservices_resources.cpp.s"
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/quote_ex_service_bundle && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/quote_ex_service_bundle/quote_ex_service_bundle/cppmicroservices_resources.cpp -o CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle/cppmicroservices_resources.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/quote_ex_service_bundle && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/quote_ex_service_bundle/quote_ex_service_bundle/cppmicroservices_resources.cpp -o CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle/cppmicroservices_resources.cpp.s
 
 bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle/cppmicroservices_init.cpp.o: bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/flags.make
 bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle/cppmicroservices_init.cpp.o: bundles/quote_ex_service_bundle/quote_ex_service_bundle/cppmicroservices_init.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle/cppmicroservices_init.cpp.o"
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/quote_ex_service_bundle && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle/cppmicroservices_init.cpp.o -c /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/quote_ex_service_bundle/quote_ex_service_bundle/cppmicroservices_init.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle/cppmicroservices_init.cpp.o"
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/quote_ex_service_bundle && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle/cppmicroservices_init.cpp.o -c /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/quote_ex_service_bundle/quote_ex_service_bundle/cppmicroservices_init.cpp
 
 bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle/cppmicroservices_init.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle/cppmicroservices_init.cpp.i"
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/quote_ex_service_bundle && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/quote_ex_service_bundle/quote_ex_service_bundle/cppmicroservices_init.cpp > CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle/cppmicroservices_init.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/quote_ex_service_bundle && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/quote_ex_service_bundle/quote_ex_service_bundle/cppmicroservices_init.cpp > CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle/cppmicroservices_init.cpp.i
 
 bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle/cppmicroservices_init.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle/cppmicroservices_init.cpp.s"
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/quote_ex_service_bundle && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/quote_ex_service_bundle/quote_ex_service_bundle/cppmicroservices_init.cpp -o CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle/cppmicroservices_init.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/quote_ex_service_bundle && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/quote_ex_service_bundle/quote_ex_service_bundle/cppmicroservices_init.cpp -o CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle/cppmicroservices_init.cpp.s
 
 # Object files for target quote_ex_service_bundle
 quote_ex_service_bundle_OBJECTS = \
@@ -119,17 +119,17 @@ bin/bundles/libquote_ex_service_bundle.so: bundles/quote_ex_service_bundle/CMake
 bin/bundles/libquote_ex_service_bundle.so: bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle/cppmicroservices_resources.cpp.o
 bin/bundles/libquote_ex_service_bundle.so: bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/quote_ex_service_bundle/cppmicroservices_init.cpp.o
 bin/bundles/libquote_ex_service_bundle.so: bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/build.make
-bin/bundles/libquote_ex_service_bundle.so: /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/lib/libCppMicroServices.so.4.0.0
+bin/bundles/libquote_ex_service_bundle.so: /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/lib/libCppMicroServices.so.4.0.0
 bin/bundles/libquote_ex_service_bundle.so: bin/libutils.so
 bin/bundles/libquote_ex_service_bundle.so: bin/liboal.so
 bin/bundles/libquote_ex_service_bundle.so: /usr/lib/x86_64-linux-gnu/libssl.so
 bin/bundles/libquote_ex_service_bundle.so: /usr/lib/x86_64-linux-gnu/libcrypto.so
 bin/bundles/libquote_ex_service_bundle.so: ../../../../../external/rdrand/src/librdrand.a
 bin/bundles/libquote_ex_service_bundle.so: bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX shared library ../../bin/bundles/libquote_ex_service_bundle.so"
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/quote_ex_service_bundle && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/quote_ex_service_bundle.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX shared library ../../bin/bundles/libquote_ex_service_bundle.so"
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/quote_ex_service_bundle && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/quote_ex_service_bundle.dir/link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Appending zipped resources to quote_ex_service_bundle"
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/quote_ex_service_bundle && objcopy --add-section .note.sgx.aesm_resource=/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/quote_ex_service_bundle/quote_ex_service_bundle/res_0.zip /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bin/bundles/libquote_ex_service_bundle.so
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/quote_ex_service_bundle && objcopy --add-section .note.sgx.aesm_resource=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/quote_ex_service_bundle/quote_ex_service_bundle/res_0.zip /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bin/bundles/libquote_ex_service_bundle.so
 
 # Rule to build all files generated by this target.
 bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/build: bin/bundles/libquote_ex_service_bundle.so
@@ -137,11 +137,11 @@ bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/build: bi
 .PHONY : bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/build
 
 bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/clean:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/quote_ex_service_bundle && $(CMAKE_COMMAND) -P CMakeFiles/quote_ex_service_bundle.dir/cmake_clean.cmake
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/quote_ex_service_bundle && $(CMAKE_COMMAND) -P CMakeFiles/quote_ex_service_bundle.dir/cmake_clean.cmake
 .PHONY : bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/clean
 
 bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/depend: bundles/quote_ex_service_bundle/quote_ex_service_bundle/cppmicroservices_resources.cpp
 bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/depend: bundles/quote_ex_service_bundle/quote_ex_service_bundle/res_0.zip
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/SGXENV/linux-sgx/psw/ae/aesm_service/source /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/bundles/quote_ex_service_bundle /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/quote_ex_service_bundle /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/quote_ex_service_bundle /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/quote_ex_service_bundle /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : bundles/quote_ex_service_bundle/CMakeFiles/quote_ex_service_bundle.dir/depend
 

@@ -42,39 +42,39 @@ core/CMakeFiles/aesm_service.dir/AESMLogicWrapper.cpp.o
  ../interfaces/quote_service.h
  ../interfaces/select_att_key_id.h
  ../interfaces/service.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/Any.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/AnyMap.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/Bundle.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/BundleContext.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/BundleImport.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/BundleVersion.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/Framework.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/FrameworkConfig.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/FrameworkEvent.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/FrameworkExport.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/FrameworkFactory.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/GlobalConfig.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ListenerFunctors.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ListenerToken.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ServiceException.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ServiceInterface.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ServiceProperties.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ServiceReference.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ServiceReferenceBase.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ServiceRegistration.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ServiceRegistrationBase.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/AESMLogicWrapper.cpp
- /root/SGXENV/sgxsdk/include/sgx.h
- /root/SGXENV/sgxsdk/include/sgx_attributes.h
- /root/SGXENV/sgxsdk/include/sgx_defs.h
- /root/SGXENV/sgxsdk/include/sgx_eid.h
- /root/SGXENV/sgxsdk/include/sgx_error.h
- /root/SGXENV/sgxsdk/include/sgx_key.h
- /root/SGXENV/sgxsdk/include/sgx_quote.h
- /root/SGXENV/sgxsdk/include/sgx_report.h
- /root/SGXENV/sgxsdk/include/sgx_report2.h
- /root/SGXENV/sgxsdk/include/sgx_tcrypto.h
- /root/SGXENV/sgxsdk/include/sgx_urts.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/Any.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/AnyMap.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/Bundle.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/BundleContext.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/BundleImport.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/BundleVersion.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/Framework.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/FrameworkConfig.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/FrameworkEvent.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/FrameworkExport.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/FrameworkFactory.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/GlobalConfig.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ListenerFunctors.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ListenerToken.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ServiceException.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ServiceInterface.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ServiceProperties.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ServiceReference.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ServiceReferenceBase.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ServiceRegistration.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ServiceRegistrationBase.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/AESMLogicWrapper.cpp
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_attributes.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_defs.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_eid.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_error.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_key.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_quote.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report2.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_tcrypto.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_urts.h
 core/CMakeFiles/aesm_service.dir/AESMQueueManager.cpp.o
  ../../../../../common/inc/internal/arch.h
  ../../../../../common/inc/internal/inst.h
@@ -95,18 +95,18 @@ core/CMakeFiles/aesm_service.dir/AESMQueueManager.cpp.o
  ../core/ipc/IAESMLogic.h
  ../core/ipc/ICommunicationSocket.h
  ../core/ipc/ITransporter.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/AESMQueueManager.cpp
- /root/SGXENV/sgxsdk/include/sgx.h
- /root/SGXENV/sgxsdk/include/sgx_attributes.h
- /root/SGXENV/sgxsdk/include/sgx_defs.h
- /root/SGXENV/sgxsdk/include/sgx_eid.h
- /root/SGXENV/sgxsdk/include/sgx_error.h
- /root/SGXENV/sgxsdk/include/sgx_key.h
- /root/SGXENV/sgxsdk/include/sgx_quote.h
- /root/SGXENV/sgxsdk/include/sgx_report.h
- /root/SGXENV/sgxsdk/include/sgx_report2.h
- /root/SGXENV/sgxsdk/include/sgx_tcrypto.h
- /root/SGXENV/sgxsdk/include/sgx_urts.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/AESMQueueManager.cpp
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_attributes.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_defs.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_eid.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_error.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_key.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_quote.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report2.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_tcrypto.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_urts.h
 core/CMakeFiles/aesm_service.dir/AESMWorkerThread.cpp.o
  ../../../../../common/inc/internal/arch.h
  ../../../../../common/inc/internal/inst.h
@@ -124,18 +124,18 @@ core/CMakeFiles/aesm_service.dir/AESMWorkerThread.cpp.o
  ../core/ipc/IAESMLogic.h
  ../core/ipc/ICommunicationSocket.h
  ../core/ipc/ITransporter.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/AESMWorkerThread.cpp
- /root/SGXENV/sgxsdk/include/sgx.h
- /root/SGXENV/sgxsdk/include/sgx_attributes.h
- /root/SGXENV/sgxsdk/include/sgx_defs.h
- /root/SGXENV/sgxsdk/include/sgx_eid.h
- /root/SGXENV/sgxsdk/include/sgx_error.h
- /root/SGXENV/sgxsdk/include/sgx_key.h
- /root/SGXENV/sgxsdk/include/sgx_quote.h
- /root/SGXENV/sgxsdk/include/sgx_report.h
- /root/SGXENV/sgxsdk/include/sgx_report2.h
- /root/SGXENV/sgxsdk/include/sgx_tcrypto.h
- /root/SGXENV/sgxsdk/include/sgx_urts.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/AESMWorkerThread.cpp
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_attributes.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_defs.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_eid.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_error.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_key.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_quote.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report2.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_tcrypto.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_urts.h
 core/CMakeFiles/aesm_service.dir/CAESMServer.cpp.o
  ../../../../../common/inc/internal/arch.h
  ../../../../../common/inc/internal/inst.h
@@ -166,23 +166,23 @@ core/CMakeFiles/aesm_service.dir/CAESMServer.cpp.o
  ../core/ipc/ITransporter.h
  ../core/ipc/ProtobufSerializer.h
  ../core/ipc/SocketTransporter.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/CAESMServer.cpp
- /root/SGXENV/sgxsdk/include/sgx.h
- /root/SGXENV/sgxsdk/include/sgx_attributes.h
- /root/SGXENV/sgxsdk/include/sgx_defs.h
- /root/SGXENV/sgxsdk/include/sgx_eid.h
- /root/SGXENV/sgxsdk/include/sgx_error.h
- /root/SGXENV/sgxsdk/include/sgx_key.h
- /root/SGXENV/sgxsdk/include/sgx_quote.h
- /root/SGXENV/sgxsdk/include/sgx_report.h
- /root/SGXENV/sgxsdk/include/sgx_report2.h
- /root/SGXENV/sgxsdk/include/sgx_tcrypto.h
- /root/SGXENV/sgxsdk/include/sgx_urts.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/CAESMServer.cpp
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_attributes.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_defs.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_eid.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_error.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_key.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_quote.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report2.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_tcrypto.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_urts.h
 core/CMakeFiles/aesm_service.dir/CSelector.cpp.o
  ../common/CSelector.h
  ../common/IServerSocket.h
  ../core/ipc/ICommunicationSocket.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/CSelector.cpp
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/CSelector.cpp
 core/CMakeFiles/aesm_service.dir/Thread.cpp.o
  ../../../../../common/inc/internal/arch.h
  ../../../../../common/inc/internal/inst.h
@@ -193,22 +193,22 @@ core/CMakeFiles/aesm_service.dir/Thread.cpp.o
  ../common/event_strings.h
  ../common/oal/error_report.h
  ../common/oal/internal_log.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/Thread.cpp
- /root/SGXENV/sgxsdk/include/sgx.h
- /root/SGXENV/sgxsdk/include/sgx_attributes.h
- /root/SGXENV/sgxsdk/include/sgx_defs.h
- /root/SGXENV/sgxsdk/include/sgx_error.h
- /root/SGXENV/sgxsdk/include/sgx_key.h
- /root/SGXENV/sgxsdk/include/sgx_report.h
- /root/SGXENV/sgxsdk/include/sgx_report2.h
- /root/SGXENV/sgxsdk/include/sgx_tcrypto.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/Thread.cpp
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_attributes.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_defs.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_error.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_key.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report2.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_tcrypto.h
 core/CMakeFiles/aesm_service.dir/UnixServerSocket.cpp.o
  ../common/IServerSocket.h
  ../common/UnixServerSocket.h
  ../core/ipc/ICommunicationSocket.h
  ../core/ipc/NonBlockingUnixCommunicationSocket.h
  ../core/ipc/UnixCommunicationSocket.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/UnixServerSocket.cpp
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/UnixServerSocket.cpp
 core/CMakeFiles/aesm_service.dir/main.cpp.o
  ../../../../../common/inc/internal/arch.h
  ../../../../../common/inc/internal/inst.h
@@ -236,29 +236,29 @@ core/CMakeFiles/aesm_service.dir/main.cpp.o
  ../core/ipc/ISerializer.h
  ../core/ipc/ITransporter.h
  ../core/ipc/SocketConfig.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/Any.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/BundleContext.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/FrameworkConfig.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/FrameworkExport.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/GlobalConfig.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ListenerFunctors.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ListenerToken.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ServiceException.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ServiceInterface.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ServiceProperties.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ServiceReference.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ServiceReferenceBase.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ServiceRegistration.h
- /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ServiceRegistrationBase.h
- /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/main.cpp
- /root/SGXENV/sgxsdk/include/sgx.h
- /root/SGXENV/sgxsdk/include/sgx_attributes.h
- /root/SGXENV/sgxsdk/include/sgx_defs.h
- /root/SGXENV/sgxsdk/include/sgx_eid.h
- /root/SGXENV/sgxsdk/include/sgx_error.h
- /root/SGXENV/sgxsdk/include/sgx_key.h
- /root/SGXENV/sgxsdk/include/sgx_quote.h
- /root/SGXENV/sgxsdk/include/sgx_report.h
- /root/SGXENV/sgxsdk/include/sgx_report2.h
- /root/SGXENV/sgxsdk/include/sgx_tcrypto.h
- /root/SGXENV/sgxsdk/include/sgx_urts.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/Any.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/BundleContext.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/FrameworkConfig.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/FrameworkExport.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/GlobalConfig.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ListenerFunctors.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ListenerToken.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ServiceException.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ServiceInterface.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ServiceProperties.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ServiceReference.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ServiceReferenceBase.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ServiceRegistration.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/ServiceRegistrationBase.h
+ /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/main.cpp
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_attributes.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_defs.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_eid.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_error.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_key.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_quote.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_report2.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_tcrypto.h
+ /home/nsec-sgx/SGXENVWASM/sgxsdk/include/sgx_urts.h

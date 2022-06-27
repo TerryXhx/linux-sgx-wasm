@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/SGXENV/linux-sgx/psw/ae/aesm_service/source
+CMAKE_SOURCE_DIR = /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build
+CMAKE_BINARY_DIR = /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build
 
 # Include any dependencies generated for this target.
 include core/CMakeFiles/aesm_service.dir/depend.make
@@ -59,107 +59,107 @@ include core/CMakeFiles/aesm_service.dir/flags.make
 
 core/CMakeFiles/aesm_service.dir/AESMLogicWrapper.cpp.o: core/CMakeFiles/aesm_service.dir/flags.make
 core/CMakeFiles/aesm_service.dir/AESMLogicWrapper.cpp.o: ../core/AESMLogicWrapper.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object core/CMakeFiles/aesm_service.dir/AESMLogicWrapper.cpp.o"
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/core && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/aesm_service.dir/AESMLogicWrapper.cpp.o -c /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/AESMLogicWrapper.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object core/CMakeFiles/aesm_service.dir/AESMLogicWrapper.cpp.o"
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/core && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/aesm_service.dir/AESMLogicWrapper.cpp.o -c /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/AESMLogicWrapper.cpp
 
 core/CMakeFiles/aesm_service.dir/AESMLogicWrapper.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/aesm_service.dir/AESMLogicWrapper.cpp.i"
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/AESMLogicWrapper.cpp > CMakeFiles/aesm_service.dir/AESMLogicWrapper.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/AESMLogicWrapper.cpp > CMakeFiles/aesm_service.dir/AESMLogicWrapper.cpp.i
 
 core/CMakeFiles/aesm_service.dir/AESMLogicWrapper.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/aesm_service.dir/AESMLogicWrapper.cpp.s"
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/AESMLogicWrapper.cpp -o CMakeFiles/aesm_service.dir/AESMLogicWrapper.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/AESMLogicWrapper.cpp -o CMakeFiles/aesm_service.dir/AESMLogicWrapper.cpp.s
 
 core/CMakeFiles/aesm_service.dir/AESMQueueManager.cpp.o: core/CMakeFiles/aesm_service.dir/flags.make
 core/CMakeFiles/aesm_service.dir/AESMQueueManager.cpp.o: ../core/AESMQueueManager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object core/CMakeFiles/aesm_service.dir/AESMQueueManager.cpp.o"
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/core && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/aesm_service.dir/AESMQueueManager.cpp.o -c /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/AESMQueueManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object core/CMakeFiles/aesm_service.dir/AESMQueueManager.cpp.o"
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/core && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/aesm_service.dir/AESMQueueManager.cpp.o -c /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/AESMQueueManager.cpp
 
 core/CMakeFiles/aesm_service.dir/AESMQueueManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/aesm_service.dir/AESMQueueManager.cpp.i"
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/AESMQueueManager.cpp > CMakeFiles/aesm_service.dir/AESMQueueManager.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/AESMQueueManager.cpp > CMakeFiles/aesm_service.dir/AESMQueueManager.cpp.i
 
 core/CMakeFiles/aesm_service.dir/AESMQueueManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/aesm_service.dir/AESMQueueManager.cpp.s"
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/AESMQueueManager.cpp -o CMakeFiles/aesm_service.dir/AESMQueueManager.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/AESMQueueManager.cpp -o CMakeFiles/aesm_service.dir/AESMQueueManager.cpp.s
 
 core/CMakeFiles/aesm_service.dir/AESMWorkerThread.cpp.o: core/CMakeFiles/aesm_service.dir/flags.make
 core/CMakeFiles/aesm_service.dir/AESMWorkerThread.cpp.o: ../core/AESMWorkerThread.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object core/CMakeFiles/aesm_service.dir/AESMWorkerThread.cpp.o"
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/core && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/aesm_service.dir/AESMWorkerThread.cpp.o -c /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/AESMWorkerThread.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object core/CMakeFiles/aesm_service.dir/AESMWorkerThread.cpp.o"
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/core && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/aesm_service.dir/AESMWorkerThread.cpp.o -c /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/AESMWorkerThread.cpp
 
 core/CMakeFiles/aesm_service.dir/AESMWorkerThread.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/aesm_service.dir/AESMWorkerThread.cpp.i"
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/AESMWorkerThread.cpp > CMakeFiles/aesm_service.dir/AESMWorkerThread.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/AESMWorkerThread.cpp > CMakeFiles/aesm_service.dir/AESMWorkerThread.cpp.i
 
 core/CMakeFiles/aesm_service.dir/AESMWorkerThread.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/aesm_service.dir/AESMWorkerThread.cpp.s"
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/AESMWorkerThread.cpp -o CMakeFiles/aesm_service.dir/AESMWorkerThread.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/AESMWorkerThread.cpp -o CMakeFiles/aesm_service.dir/AESMWorkerThread.cpp.s
 
 core/CMakeFiles/aesm_service.dir/CAESMServer.cpp.o: core/CMakeFiles/aesm_service.dir/flags.make
 core/CMakeFiles/aesm_service.dir/CAESMServer.cpp.o: ../core/CAESMServer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object core/CMakeFiles/aesm_service.dir/CAESMServer.cpp.o"
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/core && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/aesm_service.dir/CAESMServer.cpp.o -c /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/CAESMServer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object core/CMakeFiles/aesm_service.dir/CAESMServer.cpp.o"
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/core && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/aesm_service.dir/CAESMServer.cpp.o -c /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/CAESMServer.cpp
 
 core/CMakeFiles/aesm_service.dir/CAESMServer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/aesm_service.dir/CAESMServer.cpp.i"
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/CAESMServer.cpp > CMakeFiles/aesm_service.dir/CAESMServer.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/CAESMServer.cpp > CMakeFiles/aesm_service.dir/CAESMServer.cpp.i
 
 core/CMakeFiles/aesm_service.dir/CAESMServer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/aesm_service.dir/CAESMServer.cpp.s"
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/CAESMServer.cpp -o CMakeFiles/aesm_service.dir/CAESMServer.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/CAESMServer.cpp -o CMakeFiles/aesm_service.dir/CAESMServer.cpp.s
 
 core/CMakeFiles/aesm_service.dir/CSelector.cpp.o: core/CMakeFiles/aesm_service.dir/flags.make
 core/CMakeFiles/aesm_service.dir/CSelector.cpp.o: ../core/CSelector.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object core/CMakeFiles/aesm_service.dir/CSelector.cpp.o"
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/core && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/aesm_service.dir/CSelector.cpp.o -c /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/CSelector.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object core/CMakeFiles/aesm_service.dir/CSelector.cpp.o"
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/core && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/aesm_service.dir/CSelector.cpp.o -c /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/CSelector.cpp
 
 core/CMakeFiles/aesm_service.dir/CSelector.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/aesm_service.dir/CSelector.cpp.i"
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/CSelector.cpp > CMakeFiles/aesm_service.dir/CSelector.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/CSelector.cpp > CMakeFiles/aesm_service.dir/CSelector.cpp.i
 
 core/CMakeFiles/aesm_service.dir/CSelector.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/aesm_service.dir/CSelector.cpp.s"
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/CSelector.cpp -o CMakeFiles/aesm_service.dir/CSelector.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/CSelector.cpp -o CMakeFiles/aesm_service.dir/CSelector.cpp.s
 
 core/CMakeFiles/aesm_service.dir/Thread.cpp.o: core/CMakeFiles/aesm_service.dir/flags.make
 core/CMakeFiles/aesm_service.dir/Thread.cpp.o: ../core/Thread.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object core/CMakeFiles/aesm_service.dir/Thread.cpp.o"
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/core && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/aesm_service.dir/Thread.cpp.o -c /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/Thread.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object core/CMakeFiles/aesm_service.dir/Thread.cpp.o"
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/core && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/aesm_service.dir/Thread.cpp.o -c /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/Thread.cpp
 
 core/CMakeFiles/aesm_service.dir/Thread.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/aesm_service.dir/Thread.cpp.i"
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/Thread.cpp > CMakeFiles/aesm_service.dir/Thread.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/Thread.cpp > CMakeFiles/aesm_service.dir/Thread.cpp.i
 
 core/CMakeFiles/aesm_service.dir/Thread.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/aesm_service.dir/Thread.cpp.s"
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/Thread.cpp -o CMakeFiles/aesm_service.dir/Thread.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/Thread.cpp -o CMakeFiles/aesm_service.dir/Thread.cpp.s
 
 core/CMakeFiles/aesm_service.dir/UnixServerSocket.cpp.o: core/CMakeFiles/aesm_service.dir/flags.make
 core/CMakeFiles/aesm_service.dir/UnixServerSocket.cpp.o: ../core/UnixServerSocket.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object core/CMakeFiles/aesm_service.dir/UnixServerSocket.cpp.o"
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/core && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/aesm_service.dir/UnixServerSocket.cpp.o -c /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/UnixServerSocket.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object core/CMakeFiles/aesm_service.dir/UnixServerSocket.cpp.o"
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/core && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/aesm_service.dir/UnixServerSocket.cpp.o -c /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/UnixServerSocket.cpp
 
 core/CMakeFiles/aesm_service.dir/UnixServerSocket.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/aesm_service.dir/UnixServerSocket.cpp.i"
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/UnixServerSocket.cpp > CMakeFiles/aesm_service.dir/UnixServerSocket.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/UnixServerSocket.cpp > CMakeFiles/aesm_service.dir/UnixServerSocket.cpp.i
 
 core/CMakeFiles/aesm_service.dir/UnixServerSocket.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/aesm_service.dir/UnixServerSocket.cpp.s"
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/UnixServerSocket.cpp -o CMakeFiles/aesm_service.dir/UnixServerSocket.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/UnixServerSocket.cpp -o CMakeFiles/aesm_service.dir/UnixServerSocket.cpp.s
 
 core/CMakeFiles/aesm_service.dir/main.cpp.o: core/CMakeFiles/aesm_service.dir/flags.make
 core/CMakeFiles/aesm_service.dir/main.cpp.o: ../core/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object core/CMakeFiles/aesm_service.dir/main.cpp.o"
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/core && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/aesm_service.dir/main.cpp.o -c /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object core/CMakeFiles/aesm_service.dir/main.cpp.o"
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/core && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/aesm_service.dir/main.cpp.o -c /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/main.cpp
 
 core/CMakeFiles/aesm_service.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/aesm_service.dir/main.cpp.i"
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/main.cpp > CMakeFiles/aesm_service.dir/main.cpp.i
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/main.cpp > CMakeFiles/aesm_service.dir/main.cpp.i
 
 core/CMakeFiles/aesm_service.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/aesm_service.dir/main.cpp.s"
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core/main.cpp -o CMakeFiles/aesm_service.dir/main.cpp.s
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/main.cpp -o CMakeFiles/aesm_service.dir/main.cpp.s
 
 # Object files for target aesm_service
 aesm_service_OBJECTS = \
@@ -184,7 +184,7 @@ bin/aesm_service: core/CMakeFiles/aesm_service.dir/Thread.cpp.o
 bin/aesm_service: core/CMakeFiles/aesm_service.dir/UnixServerSocket.cpp.o
 bin/aesm_service: core/CMakeFiles/aesm_service.dir/main.cpp.o
 bin/aesm_service: core/CMakeFiles/aesm_service.dir/build.make
-bin/aesm_service: /root/SGXENV/linux-sgx/external/CppMicroServices/local-install/lib/libCppMicroServices.so.4.0.0
+bin/aesm_service: /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/lib/libCppMicroServices.so.4.0.0
 bin/aesm_service: bin/libutils.so
 bin/aesm_service: bin/libipc.so
 bin/aesm_service: bin/liboal.so
@@ -193,8 +193,8 @@ bin/aesm_service: /usr/lib/x86_64-linux-gnu/libcrypto.so
 bin/aesm_service: ../../../../../external/rdrand/src/librdrand.a
 bin/aesm_service: /usr/lib/x86_64-linux-gnu/libprotobuf.so
 bin/aesm_service: core/CMakeFiles/aesm_service.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable ../bin/aesm_service"
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/core && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/aesm_service.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable ../bin/aesm_service"
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/core && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/aesm_service.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 core/CMakeFiles/aesm_service.dir/build: bin/aesm_service
@@ -202,10 +202,10 @@ core/CMakeFiles/aesm_service.dir/build: bin/aesm_service
 .PHONY : core/CMakeFiles/aesm_service.dir/build
 
 core/CMakeFiles/aesm_service.dir/clean:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/core && $(CMAKE_COMMAND) -P CMakeFiles/aesm_service.dir/cmake_clean.cmake
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/core && $(CMAKE_COMMAND) -P CMakeFiles/aesm_service.dir/cmake_clean.cmake
 .PHONY : core/CMakeFiles/aesm_service.dir/clean
 
 core/CMakeFiles/aesm_service.dir/depend:
-	cd /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/SGXENV/linux-sgx/psw/ae/aesm_service/source /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/core /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/core /root/SGXENV/linux-sgx/psw/ae/aesm_service/source/build/core/CMakeFiles/aesm_service.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/core /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/core/CMakeFiles/aesm_service.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : core/CMakeFiles/aesm_service.dir/depend
 
