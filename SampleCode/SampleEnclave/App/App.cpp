@@ -207,6 +207,8 @@ int SGX_CDECL main(int argc, char *argv[])
     ecall_libcxx_functions();
     ecall_thread_functions();
 
+    ecall_test_wasm(global_eid);
+
     /* Destroy the enclave */
     sgx_destroy_enclave(global_eid);
     

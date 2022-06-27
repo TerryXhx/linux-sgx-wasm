@@ -34,6 +34,7 @@
 #include <stdarg.h>
 #include <stdio.h> /* vsnprintf */
 #include <string.h>
+#include "sgx_wasm.h"
 
 /* 
  * printf: 
@@ -48,4 +49,9 @@ int printf(const char* fmt, ...)
     va_end(ap);
     ocall_print_string(buf);
     return (int)strnlen(buf, BUFSIZ - 1) + 1;
+}
+
+void ecall_test_wasm()
+{
+    printf("wasm section address: %p\n", sgx_get_wasm_sec_buf_addr());
 }
