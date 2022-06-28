@@ -106,7 +106,7 @@ private:
     std::vector<Section *> m_sections;
     const Section*         m_tls_section;
     Section*               m_wasm_section;
-    bool                   ignore_wasm_sec;
+    bool                   m_ignore_wasm_sec;
     Section*               m_wasm_vm_mr_section;
     uint64_t               m_metadata_offset;
     uint64_t               m_metadata_block_size;/*multiple metadata block size*/
