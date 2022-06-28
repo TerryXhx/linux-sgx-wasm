@@ -539,13 +539,28 @@ Section* build_wasm_section(const uint8_t *start_addr, const ElfW(Ehdr) *elf_hdr
         GET_PTR(uint8_t, start_addr, wasm_shdr->sh_offset),
         wasm_shdr->sh_size, wasm_shdr->sh_size, wasm_shdr->sh_addr, wasm_shdr->sh_offset, sf
     );
+}
 
+Section* build_wasm_vm_mr_section(const uint8_t *start_addr, const ElfW(Ehdr) *elf_hdr)
+{
+    const ElfW(Shdr) *wasm_vm_mr_shdr = get_section_by_name(elf_hdr, SGX_WASM_VM_MR_SEC_NAME);
+    if (NULL == wasm_vm_mr_shdr) {
+        SE_TRACE(SE_TRACE_DEBUG, "NO WASM VM MR section found\n");
+        return NULL;
+    }
+
+    si_flags_t sf = SI_FLAG_REG | SI_FLAG_R;
+    return new Section(
+        GET_PTR(uint8_t, start_addr, wasm_vm_mr_shdr->sh_offset),
+        wasm_vm_mr_shdr->sh_size, wasm_vm_mr_shdr->sh_size, wasm_vm_mr_shdr->sh_addr, wasm_vm_mr_shdr->sh_offset, sf
+    );
 }
 
 bool build_regular_sections(const uint8_t* start_addr,
                             std::vector<Section *>& sections,
                             const Section*& tls_sec,
                             Section*& wasm_sec,
+                            Section*& wasm_vm_mr_sec,
                             uint64_t& metadata_offset,
                             uint64_t& metadata_block_size)
 {
@@ -560,6 +575,7 @@ bool build_regular_sections(const uint8_t* start_addr,
         return false;
 
     wasm_sec = build_wasm_section(start_addr, elf_hdr);
+    wasm_vm_mr_sec = build_wasm_vm_mr_section(start_addr, elf_hdr);
 
     for (unsigned idx = 0; idx < elf_hdr->e_phnum; ++idx, ++prg_hdr)
     {
@@ -640,7 +656,7 @@ const Section* get_max_rva_section(const std::vector<Section*> sections)
 
 ElfParser::ElfParser (const uint8_t* start_addr, uint64_t len)
     :m_start_addr(start_addr), m_len(len), m_bin_fmt(BF_UNKNOWN),
-     m_tls_section(NULL), m_wasm_section(NULL), m_metadata_offset(0), m_metadata_block_size(0)
+     m_tls_section(NULL), m_wasm_section(NULL), ignore_wasm_sec_sign(false), m_wasm_vm_mr_section(NULL), m_metadata_offset(0), m_metadata_block_size(0)
 {
     memset(&m_dyn_info, 0, sizeof(m_dyn_info));
 }
@@ -699,7 +715,7 @@ sgx_status_t ElfParser::run_parser()
     }
 
     /* build regular sections */
-    if (build_regular_sections(m_start_addr, m_sections, m_tls_section, m_wasm_section, m_metadata_offset, m_metadata_block_size))
+    if (build_regular_sections(m_start_addr, m_sections, m_tls_section, m_wasm_section, m_wasm_vm_mr_section, m_metadata_offset, m_metadata_block_size))
         return SGX_SUCCESS;
     else {
         SE_TRACE_ERROR("Regular sections incorrect\n");
@@ -784,6 +800,23 @@ const Section* ElfParser::get_tls_section() const
 const Section* ElfParser::get_wasm_section() const
 {
     return m_wasm_section;
+}
+
+const Section* ElfParser::get_wasm_section_ex() const
+{
+    if (ignore_wasm_sec_sign)
+        return NULL;
+    return m_wasm_section;
+}
+
+void ElfParser::set_ignore_wasm_sec_sign(bool sign)
+{
+    ignore_wasm_sec_sign = sign;
+}
+
+const Section* ElfParser::get_wasm_vm_mr_section() const
+{
+    return m_wasm_vm_mr_section;
 }
 
 uint64_t ElfParser::get_symbol_rva(const char* name) const

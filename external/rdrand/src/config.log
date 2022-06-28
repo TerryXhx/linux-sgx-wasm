@@ -38,6 +38,8 @@ PATH: /usr/local/games
 PATH: /snap/bin
 PATH: /home/nsec-sgx/SGXENVWASM/sgxsdk/bin
 PATH: /home/nsec-sgx/SGXENVWASM/sgxsdk/bin/x64
+PATH: /home/nsec-sgx/SGXENVWASM/sgxsdk/bin
+PATH: /home/nsec-sgx/SGXENVWASM/sgxsdk/bin/x64
 
 
 ## ----------- ##

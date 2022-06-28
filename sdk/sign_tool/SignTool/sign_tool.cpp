@@ -143,8 +143,11 @@ static bool get_enclave_info(BinParser *parser, bin_fmt_t *bf, uint64_t * meta_o
 // measure_enclave():
 //    1. Get the enclave hash by loading enclave
 //    2. Get the enclave info - metadata offset and enclave file format
-static bool measure_enclave(uint8_t *hash, const char *dllpath, const xml_parameter_t *parameter, uint32_t option_flag_bits, metadata_t *metadata, uint64_t *meta_offset, uint64_t &wasm_offset)
-{
+static bool measure_enclave(
+    uint8_t *hash, const char *dllpath, const xml_parameter_t *parameter, uint32_t option_flag_bits, 
+    metadata_t *metadata, uint64_t *meta_offset, 
+    uint64_t &wasm_offset
+) {
     assert(hash && dllpath && metadata && meta_offset);
     bool res = false;
     off_t file_size = 0;

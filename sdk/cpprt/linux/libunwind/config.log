@@ -38,6 +38,8 @@ PATH: /usr/local/games
 PATH: /snap/bin
 PATH: /home/nsec-sgx/SGXENVWASM/sgxsdk/bin
 PATH: /home/nsec-sgx/SGXENVWASM/sgxsdk/bin/x64
+PATH: /home/nsec-sgx/SGXENVWASM/sgxsdk/bin
+PATH: /home/nsec-sgx/SGXENVWASM/sgxsdk/bin/x64
 
 
 ## ----------- ##
@@ -617,7 +619,7 @@ conftest.c:30:1: warning: function declaration isn't a prototype [-Wstrict-proto
 conftest.c:32:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    32 | main ()
       | ^~~~
-/usr/local/bin/ld: /tmp/cc4U3iqv.o: in function `main':
+/usr/local/bin/ld: /tmp/ccC2LdUY.o: in function `main':
 conftest.c:(.text.startup.main+0xb): undefined reference to `dlopen'
 collect2: error: ld returned 1 exit status
 configure:12294: $? = 1
@@ -2047,7 +2049,7 @@ conftest.c:75:1: warning: function declaration isn't a prototype [-Wstrict-proto
 conftest.c:84:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    84 | main ()
       | ^~~~
-/usr/local/bin/ld: /tmp/ccH1Udv7.o: in function `main':
+/usr/local/bin/ld: /tmp/ccWHihM7.o: in function `main':
 conftest.c:(.text.startup.main+0xb): undefined reference to `dl_phdr_removals_counter'
 collect2: error: ld returned 1 exit status
 configure:12915: $? = 1
@@ -2150,7 +2152,7 @@ conftest.c:75:1: warning: function declaration isn't a prototype [-Wstrict-proto
 conftest.c:84:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    84 | main ()
       | ^~~~
-/usr/local/bin/ld: /tmp/cc2Yezft.o: in function `main':
+/usr/local/bin/ld: /tmp/ccbgH5Ft.o: in function `main':
 conftest.c:(.text.startup.main+0xb): undefined reference to `dlmodinfo'
 collect2: error: ld returned 1 exit status
 configure:12915: $? = 1
@@ -2253,7 +2255,7 @@ conftest.c:75:1: warning: function declaration isn't a prototype [-Wstrict-proto
 conftest.c:84:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    84 | main ()
       | ^~~~
-/usr/local/bin/ld: /tmp/ccEdDu8P.o: in function `main':
+/usr/local/bin/ld: /tmp/ccfJ1NyS.o: in function `main':
 conftest.c:(.text.startup.main+0xb): undefined reference to `getunwind'
 collect2: error: ld returned 1 exit status
 configure:12915: $? = 1
@@ -2356,7 +2358,7 @@ conftest.c:75:1: warning: function declaration isn't a prototype [-Wstrict-proto
 conftest.c:84:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    84 | main ()
       | ^~~~
-/usr/local/bin/ld: /tmp/cclJbUFa.o: in function `main':
+/usr/local/bin/ld: /tmp/ccOjmetd.o: in function `main':
 conftest.c:(.text.startup.main+0xb): undefined reference to `ttrace'
 collect2: error: ld returned 1 exit status
 configure:12915: $? = 1
