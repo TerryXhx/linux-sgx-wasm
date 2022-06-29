@@ -146,7 +146,8 @@ static bool get_enclave_info(BinParser *parser, bin_fmt_t *bf, uint64_t * meta_o
 static bool measure_enclave(
     uint8_t *hash, const char *dllpath, const xml_parameter_t *parameter, uint32_t option_flag_bits, 
     metadata_t *metadata, uint64_t *meta_offset, 
-    uint64_t &wasm_offset
+    uint64_t &wasm_offset,
+    sgx_wasm_vm_mr_t *wasm_vm_mr = NULL
 ) {
     assert(hash && dllpath && metadata && meta_offset);
     bool res = false;
@@ -242,7 +243,7 @@ static bool measure_enclave(
         res = false;
         break;
     case SGX_SUCCESS:
-        ret = dynamic_cast<EnclaveCreatorST*>(get_enclave_creator())->get_enclave_info(hash, SGX_HASH_SIZE, &quota);
+        ret = dynamic_cast<EnclaveCreatorST*>(get_enclave_creator())->get_enclave_info(hash, SGX_HASH_SIZE, &quota, wasm_vm_mr);
         if(ret != SGX_SUCCESS)
         {
             res = false;
