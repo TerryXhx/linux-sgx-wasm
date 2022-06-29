@@ -46,6 +46,8 @@
     "                           public key and the enclave signing material\n"\
     "   dump                    Dump metadata information for a signed enclave file\n"\
     "   signwasm                Sign the enclave and load the wasm file\n"\
+    "   gen_wasm_vm_mr          Generate the pre-measurement ignoring the wasm section\n"\
+    "   sign_wasm_vm_mr         Sign the enclave with a pre-measurement of a wasm-vm-enclave"\
     "Options:\n"\
     "   -enclave                Specify the enclave file to be signed or already signed\n"\
     "                           It is a required option for the four commands\n"\
@@ -62,6 +64,8 @@
     "                           It is a required option for \"dump\"\n" \
     "   -cssfile                Specify a file to dump the enclave SIGSTRUCT information (binary format)\n" \
     "   -wasmfile               Specify a file to be loaded into the wasm section\n" \
+    "   -wasm_vm_mr_in          Specify a file storing the pre-measurement of the wasm-vm-enclave to be loaded\n" \
+    "   -wasm_vm_mr_out         Specify a file to store the pre-measurement of the wasm-vm-enclave\n" \
     "   -ignore-rel-error       By default, sgx_sign provides an error for enclaves with\n" \
     "                           text relocations. You can ignore the error and continue signing\n" \
     "                           by providing this option. But it is recommended you eliminate the\n" \
@@ -183,7 +187,9 @@ typedef enum _command_mode_t
     GENDATA,
     CATSIG,
     DUMP,
-    SIGNWASM
+    SIGNWASM,
+    GEN_WASM_VM_MR,
+    SIGN_WASM_VM_MR
 } command_mode_t;
 
 

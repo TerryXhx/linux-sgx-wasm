@@ -95,7 +95,9 @@ typedef enum _file_path_t
     UNSIGNED,
     DUMPFILE,
     CSSFILE,
-    WASMFILE
+    WASMFILE,
+    WASM_VM_MR_IN,
+    WASM_VM_MR_OUT,
 } file_path_t;
 
 
@@ -146,8 +148,10 @@ static bool get_enclave_info(BinParser *parser, bin_fmt_t *bf, uint64_t * meta_o
 static bool measure_enclave(
     uint8_t *hash, const char *dllpath, const xml_parameter_t *parameter, uint32_t option_flag_bits, 
     metadata_t *metadata, uint64_t *meta_offset, 
-    uint64_t &wasm_offset,
-    sgx_wasm_vm_mr_t *wasm_vm_mr = NULL
+    uint64_t &wasm_rva, uint64_t &wasm_offset,
+    uint64_t &wasm_vm_mr_offset, 
+    sgx_wasm_vm_mr_t *wasm_vm_mr = NULL,
+    bool ignore_wasm_sec_sign = false
 ) {
     assert(hash && dllpath && metadata && meta_offset);
     bool res = false;
@@ -184,8 +188,17 @@ static bool measure_enclave(
     const Section* wasm_section = parser->get_wasm_section();
     if (wasm_section != NULL)
     {
+        wasm_rva = wasm_section->get_rva();
         wasm_offset = wasm_section->get_offset();
     }
+
+    const Section* wasm_vm_mr_section = parser->get_wasm_vm_mr_section();
+    if (wasm_vm_mr_section != NULL)
+    {
+        wasm_vm_mr_offset = wasm_vm_mr_section->get_offset();
+    }
+
+    parser->set_ignore_wasm_sec_sign(ignore_wasm_sec_sign);
 
     if(parser->has_init_section() && IGNORE_INIT_SEC_ERROR(option_flag_bits) == false)
     {
@@ -597,7 +610,9 @@ static bool cmdline_parse(unsigned int argc, char *argv[], int *mode, const char
         {"-unsigned", NULL, PAR_INVALID},
         {"-dumpfile", NULL, PAR_OPTIONAL},
         {"-cssfile", NULL, PAR_OPTIONAL},
-        {"-wasmfile", NULL, PAR_INVALID}};
+        {"-wasmfile", NULL, PAR_INVALID},
+        {"-wasm_vm_mr_in", NULL, PAR_INVALID}, 
+        {"-wasm_vm_mr_out", NULL, PAR_INVALID}};
     param_struct_t params_gendata[] = {
         {"-enclave", NULL, PAR_REQUIRED},
         {"-config", NULL, PAR_OPTIONAL},
@@ -607,7 +622,9 @@ static bool cmdline_parse(unsigned int argc, char *argv[], int *mode, const char
         {"-unsigned", NULL, PAR_INVALID},
         {"-dumpfile", NULL, PAR_INVALID},
         {"-cssfile", NULL, PAR_INVALID},
-        {"-wasmfile", NULL, PAR_INVALID}};
+        {"-wasmfile", NULL, PAR_INVALID},
+        {"-wasm_vm_mr_in", NULL, PAR_INVALID}, 
+        {"-wasm_vm_mr_out", NULL, PAR_INVALID}};
     param_struct_t params_catsig[] = {
         {"-enclave", NULL, PAR_REQUIRED},
         {"-config", NULL, PAR_OPTIONAL},
@@ -617,7 +634,9 @@ static bool cmdline_parse(unsigned int argc, char *argv[], int *mode, const char
         {"-unsigned", NULL, PAR_REQUIRED},
         {"-dumpfile", NULL, PAR_OPTIONAL},
         {"-cssfile", NULL, PAR_OPTIONAL},
-        {"-wasmfile", NULL, PAR_INVALID}};
+        {"-wasmfile", NULL, PAR_INVALID},
+        {"-wasm_vm_mr_in", NULL, PAR_INVALID}, 
+        {"-wasm_vm_mr_out", NULL, PAR_INVALID}};
     param_struct_t params_dump[] = {
         {"-enclave", NULL, PAR_REQUIRED},
         {"-config", NULL, PAR_INVALID},
@@ -627,7 +646,9 @@ static bool cmdline_parse(unsigned int argc, char *argv[], int *mode, const char
         {"-unsigned", NULL, PAR_INVALID},
         {"-dumpfile", NULL, PAR_REQUIRED},
         {"-cssfile", NULL, PAR_OPTIONAL},
-        {"-wasmfile", NULL, PAR_INVALID}};
+        {"-wasmfile", NULL, PAR_INVALID},
+        {"-wasm_vm_mr_in", NULL, PAR_INVALID}, 
+        {"-wasm_vm_mr_out", NULL, PAR_INVALID}};
     param_struct_t params_signwasm[] = {
         {"-enclave", NULL, PAR_REQUIRED},
         {"-config", NULL, PAR_OPTIONAL},
@@ -637,11 +658,37 @@ static bool cmdline_parse(unsigned int argc, char *argv[], int *mode, const char
         {"-unsigned", NULL, PAR_INVALID},
         {"-dumpfile", NULL, PAR_OPTIONAL},
         {"-cssfile", NULL, PAR_OPTIONAL},
-        {"-wasmfile", NULL, PAR_REQUIRED}};
+        {"-wasmfile", NULL, PAR_REQUIRED},
+        {"-wasm_vm_mr_in", NULL, PAR_INVALID}, 
+        {"-wasm_vm_mr_out", NULL, PAR_INVALID}};
+    param_struct_t params_gen_wasm_vm_mr[] = {
+        {"-enclave", NULL, PAR_REQUIRED},
+        {"-config", NULL, PAR_OPTIONAL},
+        {"-key", NULL, PAR_REQUIRED},
+        {"-out", NULL, PAR_REQUIRED},
+        {"-sig", NULL, PAR_INVALID},
+        {"-unsigned", NULL, PAR_INVALID},
+        {"-dumpfile", NULL, PAR_OPTIONAL},
+        {"-cssfile", NULL, PAR_OPTIONAL},
+        {"-wasmfile", NULL, PAR_INVALID},
+        {"-wasm_vm_mr_in", NULL, PAR_INVALID}, 
+        {"-wasm_vm_mr_out", NULL, PAR_REQUIRED}};
+    param_struct_t params_sign_wasm_vm_mr[] = {
+        {"-enclave", NULL, PAR_REQUIRED},
+        {"-config", NULL, PAR_OPTIONAL},
+        {"-key", NULL, PAR_REQUIRED},
+        {"-out", NULL, PAR_REQUIRED},
+        {"-sig", NULL, PAR_INVALID},
+        {"-unsigned", NULL, PAR_INVALID},
+        {"-dumpfile", NULL, PAR_OPTIONAL},
+        {"-cssfile", NULL, PAR_OPTIONAL},
+        {"-wasmfile", NULL, PAR_INVALID},
+        {"-wasm_vm_mr_in", NULL, PAR_REQUIRED}, 
+        {"-wasm_vm_mr_out", NULL, PAR_INVALID}};
 
 
-    const char *mode_m[] ={"sign", "gendata","catsig", "dump", "signwasm"};
-    param_struct_t *params[] = {params_sign, params_gendata, params_catsig, params_dump, params_signwasm};
+    const char *mode_m[] ={"sign", "gendata","catsig", "dump", "signwasm", "gen_wasm_vm_mr", "sign_wasm_vm_mr"};
+    param_struct_t *params[] = {params_sign, params_gendata, params_catsig, params_dump, params_signwasm, params_gen_wasm_vm_mr, params_sign_wasm_vm_mr};
     unsigned int tempidx=0;
     for(; tempidx<sizeof(mode_m)/sizeof(mode_m[0]); tempidx++)
     {
@@ -789,6 +836,8 @@ static bool generate_output(int mode, int ktype, const uint8_t *enclave_hash, co
     {
     case SIGN:
     case SIGNWASM:
+    case GEN_WASM_VM_MR:
+    case SIGN_WASM_VM_MR:
         {
             if(ktype != PRIVATE_KEY || !rsa)
             {
@@ -1335,7 +1384,7 @@ int main(int argc, char* argv[])
                                    {"ELRangeStartAddress",  0xFFFFFFFFFFFFFFFF,    0,              0,                   0},
                                    {"ELRangeSize",          0xFFFFFFFFFFFFFFFF,    0x1000,         0,                   0},
 				   {"PKRU",                 FEATURE_LOADER_SELECTS,                     FEATURE_MUST_BE_DISABLED,              FEATURE_MUST_BE_DISABLED,                   0}};
-    const char *path[9] = {NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL};
+    const char *path[11] = {NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL};
     uint8_t enclave_hash[SGX_HASH_SIZE] = {0};
     uint8_t metadata_raw[METADATA_SIZE];
     metadata_t *metadata = (metadata_t*)metadata_raw;
@@ -1343,7 +1392,9 @@ int main(int argc, char* argv[])
     int key_type = UNIDENTIFIABLE_KEY; //indicate the type of the input key file
     size_t parameter_count = sizeof(parameter)/sizeof(parameter[0]);
     uint64_t meta_offset = 0;
+    uint64_t wasm_rva = 0;
     uint64_t wasm_offset = 0;
+    uint64_t wasm_vm_mr_offset = 0;
     uint32_t option_flag_bits = 0;
     RSA *rsa = NULL;
     memset(&metadata_raw, 0, sizeof(metadata_raw));
@@ -1392,6 +1443,37 @@ int main(int argc, char* argv[])
     {
         goto clear_return;
     }
+
+    if (mode == GEN_WASM_VM_MR)
+    {
+        sgx_wasm_vm_mr_t wasm_vm_mr;
+        if (measure_enclave(
+                enclave_hash, path[DLL], parameter, option_flag_bits, 
+                metadata, &meta_offset, 
+                wasm_rva, wasm_offset, 
+                wasm_vm_mr_offset, 
+                &wasm_vm_mr, 
+                true
+            ) == false
+        ) {
+            se_trace(SE_TRACE_ERROR, OVERALL_ERROR);
+            goto clear_return;
+        }
+        wasm_vm_mr.offset = wasm_rva;
+        for (uint64_t i = 0; i < sizeof(wasm_vm_mr); i++) 
+            printf("%02x", reinterpret_cast<uint8_t*>(&wasm_vm_mr)[i]);
+        printf("\n");
+        printf("Writing to file %s .\n", path[WASM_VM_MR_OUT]);
+        if(write_data_to_file(path[WASM_VM_MR_OUT], std::ios::binary | std::ios::out | std::ios::app, reinterpret_cast<uint8_t*>(&wasm_vm_mr), sizeof(wasm_vm_mr), 0) == false)
+        {
+            se_trace(SE_TRACE_ERROR, OVERALL_ERROR);
+            goto clear_return;
+        }
+        se_trace(SE_TRACE_ERROR, SUCCESS_EXIT);
+        res = 0;
+        goto clear_return;
+    }
+
     if(copy_file(path[DLL], path[OUTPUT]) == false)
     {
         se_trace(SE_TRACE_ERROR, OVERALL_ERROR);
@@ -1422,7 +1504,7 @@ int main(int argc, char* argv[])
         for (uint64_t i = 0; i < 10; i++) printf("%02x ", wasm_sec->wasm_blob[i]);
 
         // Get the offset of wasm section by measure_enclave
-        if (measure_enclave(enclave_hash, path[OUTPUT], parameter, option_flag_bits, metadata, &meta_offset, wasm_offset) == false) {
+        if (measure_enclave(enclave_hash, path[OUTPUT], parameter, option_flag_bits, metadata, &meta_offset, wasm_rva, wasm_offset, wasm_vm_mr_offset) == false) {
             se_trace(SE_TRACE_ERROR, OVERALL_ERROR);
             goto clear_return;
         }
@@ -1445,7 +1527,56 @@ int main(int argc, char* argv[])
         printf("\n Reading %d from %s @ %lx .\n", 10, path[OUTPUT], wasm_offset);    
     }
 
-    if(measure_enclave(enclave_hash, path[OUTPUT], parameter, option_flag_bits, metadata, &meta_offset, wasm_offset) == false)
+    if (mode == SIGN_WASM_VM_MR)
+    {
+        uint64_t wasm_vm_mr_size = get_file_size(path[WASM_VM_MR_IN]);
+        printf("Read size %lu from file %s.\n", wasm_vm_mr_size, path[WASM_VM_MR_IN]);
+        sgx_wasm_vm_mr_t *wasm_vm_mr = (sgx_wasm_vm_mr_t *)malloc(wasm_vm_mr_size);
+        if (wasm_vm_mr == NULL) 
+        {
+            se_trace(SE_TRACE_ERROR, OVERALL_ERROR);
+            goto clear_return;
+        }
+        if(read_file_to_buf(path[WASM_VM_MR_IN], (uint8_t*)wasm_vm_mr, wasm_vm_mr_size) == false)
+        {
+            se_trace(SE_TRACE_ERROR, READ_FILE_ERROR, path[UNSIGNED]);
+            delete [] wasm_vm_mr;
+            goto clear_return;
+        }
+        if (measure_enclave(
+                enclave_hash, path[OUTPUT], parameter, option_flag_bits, 
+                metadata, &meta_offset, 
+                wasm_rva, wasm_offset, 
+                wasm_vm_mr_offset, 
+                NULL, 
+                true
+            ) == false
+        ) {
+            se_trace(SE_TRACE_ERROR, OVERALL_ERROR);
+            goto clear_return;
+        } 
+        if(write_data_to_file(path[OUTPUT], std::ios::in | std::ios::binary| std::ios::out, reinterpret_cast<uint8_t*>(wasm_vm_mr), wasm_vm_mr_size, wasm_vm_mr_offset) == false)
+        {
+            se_trace(SE_TRACE_ERROR, OVERALL_ERROR);
+            goto clear_return;
+        }
+        for (uint64_t i = 0; i < wasm_vm_mr_size; i++) 
+            printf("%02x", reinterpret_cast<uint8_t*>(wasm_vm_mr)[i]);
+        printf("\n");
+        printf("Begin verification...\n");
+        uint8_t* written_wasm_vm_mr = (uint8_t *)malloc(wasm_vm_mr_size);
+        if (read_file_to_buf(path[OUTPUT], written_wasm_vm_mr, wasm_vm_mr_size, wasm_vm_mr_offset) == false)
+        {
+            se_trace(SE_TRACE_ERROR, READ_FILE_ERROR, path[UNSIGNED]);
+            delete [] written_wasm_vm_mr;
+            goto clear_return;
+        }
+        for (uint64_t i = 0; i < wasm_vm_mr_size; i++) 
+            printf("%02x", written_wasm_vm_mr[i]);
+
+    }
+
+    if(measure_enclave(enclave_hash, path[OUTPUT], parameter, option_flag_bits, metadata, &meta_offset, wasm_rva, wasm_offset, wasm_vm_mr_offset) == false)
     {
         se_trace(SE_TRACE_ERROR, OVERALL_ERROR);
         goto clear_return;
@@ -1457,7 +1588,7 @@ int main(int argc, char* argv[])
     }
 
     //to verify
-    if(mode == SIGN || mode == CATSIG || mode == SIGNWASM)
+    if(mode == SIGN || mode == CATSIG || mode == SIGNWASM || mode == GEN_WASM_VM_MR || mode == SIGN_WASM_VM_MR)
     {
         if(verify_signature(rsa, &(metadata->enclave_css)) == false)
         {

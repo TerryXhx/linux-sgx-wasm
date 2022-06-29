@@ -619,7 +619,7 @@ conftest.c:30:1: warning: function declaration isn't a prototype [-Wstrict-proto
 conftest.c:32:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    32 | main ()
       | ^~~~
-/usr/local/bin/ld: /tmp/cckRoCkN.o: in function `main':
+/usr/local/bin/ld: /tmp/ccv48ZEn.o: in function `main':
 conftest.c:(.text.startup.main+0xb): undefined reference to `dlopen'
 collect2: error: ld returned 1 exit status
 configure:12294: $? = 1
@@ -2049,7 +2049,7 @@ conftest.c:75:1: warning: function declaration isn't a prototype [-Wstrict-proto
 conftest.c:84:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    84 | main ()
       | ^~~~
-/usr/local/bin/ld: /tmp/ccqWoIGa.o: in function `main':
+/usr/local/bin/ld: /tmp/ccVz5EwP.o: in function `main':
 conftest.c:(.text.startup.main+0xb): undefined reference to `dl_phdr_removals_counter'
 collect2: error: ld returned 1 exit status
 configure:12915: $? = 1
@@ -2152,7 +2152,7 @@ conftest.c:75:1: warning: function declaration isn't a prototype [-Wstrict-proto
 conftest.c:84:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    84 | main ()
       | ^~~~
-/usr/local/bin/ld: /tmp/cc5iss7x.o: in function `main':
+/usr/local/bin/ld: /tmp/ccQ3MRAd.o: in function `main':
 conftest.c:(.text.startup.main+0xb): undefined reference to `dlmodinfo'
 collect2: error: ld returned 1 exit status
 configure:12915: $? = 1
@@ -2255,7 +2255,7 @@ conftest.c:75:1: warning: function declaration isn't a prototype [-Wstrict-proto
 conftest.c:84:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    84 | main ()
       | ^~~~
-/usr/local/bin/ld: /tmp/cc3WlD0V.o: in function `main':
+/usr/local/bin/ld: /tmp/ccomUofy.o: in function `main':
 conftest.c:(.text.startup.main+0xb): undefined reference to `getunwind'
 collect2: error: ld returned 1 exit status
 configure:12915: $? = 1
@@ -2358,7 +2358,7 @@ conftest.c:75:1: warning: function declaration isn't a prototype [-Wstrict-proto
 conftest.c:84:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    84 | main ()
       | ^~~~
-/usr/local/bin/ld: /tmp/ccyicu6e.o: in function `main':
+/usr/local/bin/ld: /tmp/cca9JmuV.o: in function `main':
 conftest.c:(.text.startup.main+0xb): undefined reference to `ttrace'
 collect2: error: ld returned 1 exit status
 configure:12915: $? = 1
