@@ -83,7 +83,7 @@ public:
     // Get the WASM section
     virtual const Section* get_wasm_section() const = 0;
     virtual const Section* get_wasm_section_ex() const = 0;
-    virtual void set_ignore_wasm_sign(bool sign) = 0;
+    virtual void set_ignore_wasm_sec_sign(bool sign) = 0;
 
     // Get the WASM_VM_MR section
     virtual const Section* get_wasm_vm_mr_section() const = 0;
