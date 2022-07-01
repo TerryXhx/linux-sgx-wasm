@@ -1,13 +1,13 @@
 Origin: Intel Corporation
 Label: Intel Corporation
 Codename: focal
-Date: Mon, 27 Jun 2022 15:47:03 UTC
+Date: Fri, 01 Jul 2022 04:00:42 UTC
 Architectures: amd64
 Components: main
 Description: ubuntu/focal repository for SGX PSW
 MD5Sum:
- c8ff05f2b48fcc2f82735ce2fe3e7589 40091 main/binary-amd64/Packages
+ e1e32e6307d1866823bde097a4cd15b0 40736 main/binary-amd64/Packages
 SHA1:
- 7a4f98ed7d27cd526710231b4c41fcae39cc8fee 40091 main/binary-amd64/Packages
+ 45abc466b687f0780a7170d1acd585114491f189 40736 main/binary-amd64/Packages
 SHA256:
- 5bd1179ca5b19f17de7d5e10fec250d7eb72e2fc60aa565ed7304fa94afc9631 40091 main/binary-amd64/Packages
+ b09e18b3c23bd748714011e8f95255448248fcc1309afd255339166caab5e027 40736 main/binary-amd64/Packages

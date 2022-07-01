@@ -38,8 +38,6 @@ PATH: /usr/local/games
 PATH: /snap/bin
 PATH: /home/nsec-sgx/SGXENVWASM/sgxsdk/bin
 PATH: /home/nsec-sgx/SGXENVWASM/sgxsdk/bin/x64
-PATH: /home/nsec-sgx/SGXENVWASM/sgxsdk/bin
-PATH: /home/nsec-sgx/SGXENVWASM/sgxsdk/bin/x64
 
 
 ## ----------- ##
@@ -102,7 +100,7 @@ gcc: fatal error: no input files
 compilation terminated.
 configure:3890: $? = 1
 configure:3915: checking whether the C compiler works
-configure:3937: gcc -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind    conftest.c  >&5
+configure:3937: gcc -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind    conftest.c  >&5
 conftest.c:13:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    13 | main ()
       | ^~~~
@@ -117,7 +115,7 @@ configure:3989: result: yes
 configure:3992: checking for C compiler default output file name
 configure:3994: result: a.out
 configure:4000: checking for suffix of executables
-configure:4007: gcc -o conftest -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind    conftest.c  >&5
+configure:4007: gcc -o conftest -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind    conftest.c  >&5
 conftest.c:13:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    13 | main ()
       | ^~~~
@@ -130,7 +128,7 @@ conftest.c:22:6: warning: function declaration isn't a prototype [-Wstrict-proto
 configure:4011: $? = 0
 configure:4033: result: 
 configure:4060: checking whether we are cross compiling
-configure:4068: gcc -o conftest -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind    conftest.c  >&5
+configure:4068: gcc -o conftest -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind    conftest.c  >&5
 conftest.c:13:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    13 | main ()
       | ^~~~
@@ -145,14 +143,14 @@ configure:4079: ./conftest
 configure:4083: $? = 0
 configure:4071: result: no
 configure:4076: checking for suffix of object files
-configure:4098: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
+configure:4098: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
 conftest.c:13:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    13 | main ()
       | ^~~~
 configure:4102: $? = 0
 configure:4123: result: o
 configure:4127: checking whether we are using the GNU C compiler
-configure:4146: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
+configure:4146: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
 conftest.c:13:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    13 | main ()
       | ^~~~
@@ -163,7 +161,7 @@ configure:4184: gcc -c -g  conftest.c >&5
 configure:4184: $? = 0
 configure:4225: result: yes
 configure:4242: checking for gcc option to accept ISO C89
-configure:4305: gcc  -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
+configure:4305: gcc  -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
 conftest.c:17:14: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    17 | static char *e (p, i)
       |              ^
@@ -235,7 +233,7 @@ configure:5055: checking for ar
 configure:5071: found /usr/local/bin/ar
 configure:5082: result: ar
 configure:5108: checking the archiver (ar) interface
-configure:5124: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
+configure:5124: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
 configure:5124: $? = 0
 configure:5126: ar cru libconftest.a conftest.o >&5
 configure:5129: $? = 0
@@ -257,7 +255,7 @@ configure:5640: result: yes
 configure:5652: checking for BSD- or MS-compatible name lister (nm)
 configure:5706: result: /usr/bin/nm -B
 configure:5836: checking the name lister (/usr/bin/nm -B) interface
-configure:5843: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
+configure:5843: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
 configure:5846: /usr/bin/nm -B "conftest.o"
 configure:5849: output
 0000000000000000 B some_variable
@@ -282,7 +280,7 @@ configure:6573: result: no
 configure:6603: checking how to associate runtime and link libraries
 configure:6630: result: printf %s\n
 configure:6754: checking for archiver @FILE support
-configure:6771: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
+configure:6771: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
 conftest.c:13:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    13 | main ()
       | ^~~~
@@ -300,13 +298,13 @@ configure:6941: checking for ranlib
 configure:6957: found /usr/local/bin/ranlib
 configure:6968: result: ranlib
 configure:7070: checking command to parse /usr/bin/nm -B output from gcc object
-configure:7223: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
+configure:7223: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
 conftest.c:10:5: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    10 | int main(){nm_test_var='a';nm_test_func();return(0);}
       |     ^~~~
 configure:7226: $? = 0
 configure:7230: /usr/bin/nm -B conftest.o | sed -n -e 's/^.*[	 ]\([ABCDGIRSTW][ABCDGIRSTW]*\)[	 ][	 ]*\([_A-Za-z][_A-Za-z0-9]*\)$/\1 \2 \2/p' | sed '/ __gnu_lto/d' > conftest.nm
-configure:7296: gcc -o conftest -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind    conftest.c conftstm.o >&5
+configure:7296: gcc -o conftest -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind    conftest.c conftstm.o >&5
 conftest.c:18:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    18 | extern int nm_test_func();
       | ^~~~~~
@@ -318,7 +316,7 @@ configure:7421: checking for a working dd
 configure:7459: result: /usr/bin/dd
 configure:7463: checking how to truncate binary pipes
 configure:7478: result: /usr/bin/dd bs=4096 count=1
-configure:7614: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
+configure:7614: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
 configure:7617: $? = 0
 configure:7807: checking for mt
 configure:7823: found /usr/bin/mt
@@ -369,12 +367,12 @@ configure: failed program was:
 | /* end confdefs.h.  */
 | #include <ac_nonexistent.h>
 configure:8681: checking for ANSI C header files
-configure:8701: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
+configure:8701: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
 conftest.c:17:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    17 | main ()
       | ^~~~
 configure:8701: $? = 0
-configure:8774: gcc -o conftest -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind    conftest.c  >&5
+configure:8774: gcc -o conftest -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind    conftest.c  >&5
 conftest.c:23:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    23 | main ()
       | ^~~~
@@ -383,56 +381,56 @@ configure:8774: ./conftest
 configure:8774: $? = 0
 configure:8785: result: yes
 configure:8798: checking for sys/types.h
-configure:8798: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
+configure:8798: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
 configure:8798: $? = 0
 configure:8798: result: yes
 configure:8798: checking for sys/stat.h
-configure:8798: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
+configure:8798: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
 configure:8798: $? = 0
 configure:8798: result: yes
 configure:8798: checking for stdlib.h
-configure:8798: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
+configure:8798: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
 configure:8798: $? = 0
 configure:8798: result: yes
 configure:8798: checking for string.h
-configure:8798: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
+configure:8798: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
 configure:8798: $? = 0
 configure:8798: result: yes
 configure:8798: checking for memory.h
-configure:8798: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
+configure:8798: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
 configure:8798: $? = 0
 configure:8798: result: yes
 configure:8798: checking for strings.h
-configure:8798: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
+configure:8798: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
 configure:8798: $? = 0
 configure:8798: result: yes
 configure:8798: checking for inttypes.h
-configure:8798: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
+configure:8798: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
 configure:8798: $? = 0
 configure:8798: result: yes
 configure:8798: checking for stdint.h
-configure:8798: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
+configure:8798: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
 configure:8798: $? = 0
 configure:8798: result: yes
 configure:8798: checking for unistd.h
-configure:8798: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
+configure:8798: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
 configure:8798: $? = 0
 configure:8798: result: yes
 configure:8812: checking for dlfcn.h
-configure:8812: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
+configure:8812: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
 configure:8812: $? = 0
 configure:8812: result: yes
 configure:9079: checking for objdir
 configure:9094: result: .libs
 configure:9358: checking if gcc supports -fno-rtti -fno-exceptions
-configure:9376: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -fno-rtti -fno-exceptions conftest.c >&5
+configure:9376: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -fno-rtti -fno-exceptions conftest.c >&5
 cc1: warning: command line option '-fno-rtti' is valid for C++/D/ObjC++ but not for C
 configure:9380: $? = 0
 configure:9393: result: no
 configure:9757: checking for gcc option to produce PIC
 configure:9764: result: -fPIC -DPIC
 configure:9772: checking if gcc PIC flag -fPIC -DPIC works
-configure:9790: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -fPIC -DPIC -DPIC conftest.c >&5
+configure:9790: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -fPIC -DPIC -DPIC conftest.c >&5
 configure:9794: $? = 0
 configure:9807: result: yes
 configure:9836: checking if gcc static flag -static works
@@ -441,7 +439,7 @@ conftest.c:1:5: warning: function declaration isn't a prototype [-Wstrict-protot
       |     ^~~~
 configure:9864: result: yes
 configure:9879: checking if gcc supports -c -o file.o
-configure:9900: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -o out/conftest2.o conftest.c >&5
+configure:9900: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -o out/conftest2.o conftest.c >&5
 configure:9904: $? = 0
 configure:9926: result: yes
 configure:9934: checking if gcc supports -c -o file.o
@@ -449,7 +447,7 @@ configure:9981: result: yes
 configure:10014: checking whether the gcc linker (/usr/local/bin/ld -m elf_x86_64) supports shared libraries
 configure:11277: result: yes
 configure:11517: checking dynamic linker characteristics
-configure:12098: gcc -o conftest -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind    -Wl,-rpath -Wl,/foo conftest.c  >&5
+configure:12098: gcc -o conftest -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind    -Wl,-rpath -Wl,/foo conftest.c  >&5
 conftest.c:25:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    25 | main ()
       | ^~~~
@@ -562,7 +560,7 @@ configure:13190: result: immediate
 configure:12091: checking dependency style of gcc
 configure:12200: result: gcc3
 configure:12217: checking for __uc_get_grs in -luca
-configure:12242: gcc -o conftest -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind    conftest.c -luca   >&5
+configure:12242: gcc -o conftest -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind    conftest.c -luca   >&5
 conftest.c:30:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    30 | char __uc_get_grs ();
       | ^~~~
@@ -612,15 +610,15 @@ configure: failed program was:
 | }
 configure:12251: result: no
 configure:12263: checking for library containing dlopen
-configure:12294: gcc -o conftest -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind    conftest.c  >&5
+configure:12294: gcc -o conftest -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind    conftest.c  >&5
 conftest.c:30:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    30 | char dlopen ();
       | ^~~~
 conftest.c:32:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    32 | main ()
       | ^~~~
-/usr/local/bin/ld: /tmp/ccv48ZEn.o: in function `main':
-conftest.c:(.text.startup.main+0xb): undefined reference to `dlopen'
+/usr/local/bin/ld: /tmp/ccBoAkpa.o: in function `main':
+/libunwind/conftest.c:34: undefined reference to `dlopen'
 collect2: error: ld returned 1 exit status
 configure:12294: $? = 1
 configure: failed program was:
@@ -661,7 +659,7 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:12294: gcc -o conftest -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind    conftest.c -ldl   >&5
+configure:12294: gcc -o conftest -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind    conftest.c -ldl   >&5
 conftest.c:30:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    30 | char dlopen ();
       | ^~~~
@@ -671,7 +669,7 @@ conftest.c:32:1: warning: function declaration isn't a prototype [-Wstrict-proto
 configure:12294: $? = 0
 configure:12311: result: -ldl
 configure:12327: checking atomic_ops.h usability
-configure:12327: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
+configure:12327: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
 conftest.c:56:10: fatal error: atomic_ops.h: No such file or directory
    56 | #include <atomic_ops.h>
       |          ^~~~~~~~~~~~~~
@@ -772,7 +770,7 @@ configure:12327: result: no
 configure:12346: checking for ANSI C header files
 configure:12450: result: yes
 configure:12463: checking asm/ptrace_offsets.h usability
-configure:12463: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
+configure:12463: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
 conftest.c:57:10: fatal error: asm/ptrace_offsets.h: No such file or directory
    57 | #include <asm/ptrace_offsets.h>
       |          ^~~~~~~~~~~~~~~~~~~~~~
@@ -873,7 +871,7 @@ configure:12463: result: no
 configure:12463: checking for asm/ptrace_offsets.h
 configure:12463: result: no
 configure:12463: checking endian.h usability
-configure:12463: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
+configure:12463: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
 configure:12463: $? = 0
 configure:12463: result: yes
 configure:12463: checking endian.h presence
@@ -883,7 +881,7 @@ configure:12463: result: yes
 configure:12463: checking for endian.h
 configure:12463: result: yes
 configure:12463: checking sys/endian.h usability
-configure:12463: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
+configure:12463: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
 conftest.c:58:10: fatal error: sys/endian.h: No such file or directory
    58 | #include <sys/endian.h>
       |          ^~~~~~~~~~~~~~
@@ -986,7 +984,7 @@ configure:12463: result: no
 configure:12463: checking for sys/endian.h
 configure:12463: result: no
 configure:12463: checking execinfo.h usability
-configure:12463: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
+configure:12463: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
 configure:12463: $? = 0
 configure:12463: result: yes
 configure:12463: checking execinfo.h presence
@@ -996,7 +994,7 @@ configure:12463: result: yes
 configure:12463: checking for execinfo.h
 configure:12463: result: yes
 configure:12463: checking ia64intrin.h usability
-configure:12463: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
+configure:12463: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
 conftest.c:59:10: fatal error: ia64intrin.h: No such file or directory
    59 | #include <ia64intrin.h>
       |          ^~~~~~~~~~~~~~
@@ -1101,7 +1099,7 @@ configure:12463: result: no
 configure:12463: checking for ia64intrin.h
 configure:12463: result: no
 configure:12463: checking sys/uc_access.h usability
-configure:12463: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
+configure:12463: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
 conftest.c:59:10: fatal error: sys/uc_access.h: No such file or directory
    59 | #include <sys/uc_access.h>
       |          ^~~~~~~~~~~~~~~~~
@@ -1208,7 +1206,7 @@ configure:12463: result: no
 configure:12463: checking for unistd.h
 configure:12463: result: yes
 configure:12463: checking signal.h usability
-configure:12463: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
+configure:12463: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
 configure:12463: $? = 0
 configure:12463: result: yes
 configure:12463: checking signal.h presence
@@ -1220,7 +1218,7 @@ configure:12463: result: yes
 configure:12463: checking for sys/types.h
 configure:12463: result: yes
 configure:12463: checking sys/procfs.h usability
-configure:12463: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
+configure:12463: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
 configure:12463: $? = 0
 configure:12463: result: yes
 configure:12463: checking sys/procfs.h presence
@@ -1230,7 +1228,7 @@ configure:12463: result: yes
 configure:12463: checking for sys/procfs.h
 configure:12463: result: yes
 configure:12463: checking sys/ptrace.h usability
-configure:12463: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
+configure:12463: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
 configure:12463: $? = 0
 configure:12463: result: yes
 configure:12463: checking sys/ptrace.h presence
@@ -1240,7 +1238,7 @@ configure:12463: result: yes
 configure:12463: checking for sys/ptrace.h
 configure:12463: result: yes
 configure:12463: checking byteswap.h usability
-configure:12463: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
+configure:12463: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
 configure:12463: $? = 0
 configure:12463: result: yes
 configure:12463: checking byteswap.h presence
@@ -1250,7 +1248,7 @@ configure:12463: result: yes
 configure:12463: checking for byteswap.h
 configure:12463: result: yes
 configure:12463: checking elf.h usability
-configure:12463: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
+configure:12463: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
 configure:12463: $? = 0
 configure:12463: result: yes
 configure:12463: checking elf.h presence
@@ -1260,7 +1258,7 @@ configure:12463: result: yes
 configure:12463: checking for elf.h
 configure:12463: result: yes
 configure:12463: checking sys/elf.h usability
-configure:12463: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
+configure:12463: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
 In file included from conftest.c:66:
 /usr/include/x86_64-linux-gnu/sys/elf.h:22:3: error: #error This header is unsupported on x86-64.
    22 | # error This header is unsupported on x86-64.
@@ -1379,7 +1377,7 @@ configure:12463: result: no
 configure:12463: checking for sys/elf.h
 configure:12463: result: no
 configure:12463: checking link.h usability
-configure:12463: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
+configure:12463: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
 configure:12463: $? = 0
 configure:12463: result: yes
 configure:12463: checking link.h presence
@@ -1389,7 +1387,7 @@ configure:12463: result: yes
 configure:12463: checking for link.h
 configure:12463: result: yes
 configure:12463: checking sys/link.h usability
-configure:12463: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
+configure:12463: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
 conftest.c:67:10: fatal error: sys/link.h: No such file or directory
    67 | #include <sys/link.h>
       |          ^~~~~~~~~~~~
@@ -1510,14 +1508,14 @@ configure:12463: result: no
 configure:12463: checking for sys/link.h
 configure:12463: result: no
 configure:12474: checking for an ANSI C-conforming const
-configure:12540: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
+configure:12540: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
 conftest.c:36:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    36 | main ()
       | ^~~~
 configure:12540: $? = 0
 configure:12547: result: yes
 configure:12555: checking for inline
-configure:12571: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
+configure:12571: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
 conftest.c:36:21: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    36 | static inline foo_t static_foo () {return 0; }
       |                     ^~~~~~~~~~
@@ -1527,12 +1525,12 @@ conftest.c:37:14: warning: function declaration isn't a prototype [-Wstrict-prot
 configure:12571: $? = 0
 configure:12579: result: inline
 configure:12597: checking for size_t
-configure:12597: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
+configure:12597: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
 conftest.c:68:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    68 | main ()
       | ^~~~
 configure:12597: $? = 0
-configure:12597: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
+configure:12597: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   conftest.c >&5
 conftest.c:68:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    68 | main ()
       | ^~~~
@@ -1618,7 +1616,7 @@ configure: failed program was:
 | }
 configure:12597: result: yes
 configure:12612: checking size of off_t
-configure:12617: gcc -o conftest -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind    conftest.c  >&5
+configure:12617: gcc -o conftest -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind    conftest.c  >&5
 conftest.c:67:17: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    67 | static long int longval () { return (long int) (sizeof (off_t)); }
       |                 ^~~~~~~
@@ -1633,19 +1631,19 @@ configure:12617: ./conftest
 configure:12617: $? = 0
 configure:12631: result: 8
 configure:12644: checking for struct dl_phdr_info.dlpi_subs
-configure:12644: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE conftest.c >&5
+configure:12644: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE conftest.c >&5
 conftest.c:38:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    38 | main ()
       | ^~~~
 configure:12644: $? = 0
 configure:12644: result: yes
 configure:12655: checking for struct elf_prstatus
-configure:12655: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE conftest.c >&5
+configure:12655: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE conftest.c >&5
 conftest.c:75:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    75 | main ()
       | ^~~~
 configure:12655: $? = 0
-configure:12655: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE conftest.c >&5
+configure:12655: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE conftest.c >&5
 conftest.c:75:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    75 | main ()
       | ^~~~
@@ -1738,7 +1736,7 @@ configure: failed program was:
 | }
 configure:12655: result: yes
 configure:12669: checking for struct prstatus
-configure:12669: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE conftest.c >&5
+configure:12669: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE conftest.c >&5
 conftest.c:76:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    76 | main ()
       | ^~~~
@@ -1832,56 +1830,56 @@ configure: failed program was:
 | }
 configure:12669: result: no
 configure:12685: checking whether PTRACE_POKEUSER is declared
-configure:12685: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE conftest.c >&5
+configure:12685: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE conftest.c >&5
 conftest.c:77:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    77 | main ()
       | ^~~~
 configure:12685: $? = 0
 configure:12685: result: yes
 configure:12701: checking whether PTRACE_POKEDATA is declared
-configure:12701: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE conftest.c >&5
+configure:12701: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE conftest.c >&5
 conftest.c:78:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    78 | main ()
       | ^~~~
 configure:12701: $? = 0
 configure:12701: result: yes
 configure:12717: checking whether PTRACE_SETREGSET is declared
-configure:12717: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE conftest.c >&5
+configure:12717: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE conftest.c >&5
 conftest.c:79:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    79 | main ()
       | ^~~~
 configure:12717: $? = 0
 configure:12717: result: yes
 configure:12733: checking whether PTRACE_TRACEME is declared
-configure:12733: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE conftest.c >&5
+configure:12733: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE conftest.c >&5
 conftest.c:80:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    80 | main ()
       | ^~~~
 configure:12733: $? = 0
 configure:12733: result: yes
 configure:12749: checking whether PTRACE_CONT is declared
-configure:12749: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE conftest.c >&5
+configure:12749: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE conftest.c >&5
 conftest.c:81:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    81 | main ()
       | ^~~~
 configure:12749: $? = 0
 configure:12749: result: yes
 configure:12765: checking whether PTRACE_SINGLESTEP is declared
-configure:12765: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE conftest.c >&5
+configure:12765: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE conftest.c >&5
 conftest.c:82:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    82 | main ()
       | ^~~~
 configure:12765: $? = 0
 configure:12765: result: yes
 configure:12781: checking whether PTRACE_SYSCALL is declared
-configure:12781: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE conftest.c >&5
+configure:12781: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE conftest.c >&5
 conftest.c:83:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    83 | main ()
       | ^~~~
 configure:12781: $? = 0
 configure:12781: result: yes
 configure:12797: checking whether PT_IO is declared
-configure:12797: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE conftest.c >&5
+configure:12797: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE conftest.c >&5
 conftest.c:84:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    84 | main ()
       | ^~~~
@@ -1990,49 +1988,49 @@ configure: failed program was:
 | }
 configure:12797: result: no
 configure:12813: checking whether PT_GETREGS is declared
-configure:12813: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE conftest.c >&5
+configure:12813: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE conftest.c >&5
 conftest.c:85:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    85 | main ()
       | ^~~~
 configure:12813: $? = 0
 configure:12813: result: yes
 configure:12829: checking whether PT_GETFPREGS is declared
-configure:12829: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE conftest.c >&5
+configure:12829: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE conftest.c >&5
 conftest.c:86:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    86 | main ()
       | ^~~~
 configure:12829: $? = 0
 configure:12829: result: yes
 configure:12845: checking whether PT_CONTINUE is declared
-configure:12845: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE conftest.c >&5
+configure:12845: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE conftest.c >&5
 conftest.c:87:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    87 | main ()
       | ^~~~
 configure:12845: $? = 0
 configure:12845: result: yes
 configure:12861: checking whether PT_TRACE_ME is declared
-configure:12861: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE conftest.c >&5
+configure:12861: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE conftest.c >&5
 conftest.c:88:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    88 | main ()
       | ^~~~
 configure:12861: $? = 0
 configure:12861: result: yes
 configure:12877: checking whether PT_STEP is declared
-configure:12877: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE conftest.c >&5
+configure:12877: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE conftest.c >&5
 conftest.c:89:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    89 | main ()
       | ^~~~
 configure:12877: $? = 0
 configure:12877: result: yes
 configure:12893: checking whether PT_SYSCALL is declared
-configure:12893: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE conftest.c >&5
+configure:12893: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE conftest.c >&5
 conftest.c:90:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    90 | main ()
       | ^~~~
 configure:12893: $? = 0
 configure:12893: result: yes
 configure:12915: checking for dl_iterate_phdr
-configure:12915: gcc -o conftest -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE  conftest.c  >&5
+configure:12915: gcc -o conftest -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE  conftest.c  >&5
 conftest.c:74:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    74 | char dl_iterate_phdr ();
       | ^~~~
@@ -2042,15 +2040,15 @@ conftest.c:83:1: warning: function declaration isn't a prototype [-Wstrict-proto
 configure:12915: $? = 0
 configure:12915: result: yes
 configure:12915: checking for dl_phdr_removals_counter
-configure:12915: gcc -o conftest -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE  conftest.c  >&5
+configure:12915: gcc -o conftest -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE  conftest.c  >&5
 conftest.c:75:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    75 | char dl_phdr_removals_counter ();
       | ^~~~
 conftest.c:84:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    84 | main ()
       | ^~~~
-/usr/local/bin/ld: /tmp/ccVz5EwP.o: in function `main':
-conftest.c:(.text.startup.main+0xb): undefined reference to `dl_phdr_removals_counter'
+/usr/local/bin/ld: /tmp/cc0J241f.o: in function `main':
+/libunwind/conftest.c:86: undefined reference to `dl_phdr_removals_counter'
 collect2: error: ld returned 1 exit status
 configure:12915: $? = 1
 configure: failed program was:
@@ -2145,15 +2143,15 @@ configure: failed program was:
 | }
 configure:12915: result: no
 configure:12915: checking for dlmodinfo
-configure:12915: gcc -o conftest -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE  conftest.c  >&5
+configure:12915: gcc -o conftest -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE  conftest.c  >&5
 conftest.c:75:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    75 | char dlmodinfo ();
       | ^~~~
 conftest.c:84:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    84 | main ()
       | ^~~~
-/usr/local/bin/ld: /tmp/ccQ3MRAd.o: in function `main':
-conftest.c:(.text.startup.main+0xb): undefined reference to `dlmodinfo'
+/usr/local/bin/ld: /tmp/cctzXH3D.o: in function `main':
+/libunwind/conftest.c:86: undefined reference to `dlmodinfo'
 collect2: error: ld returned 1 exit status
 configure:12915: $? = 1
 configure: failed program was:
@@ -2248,15 +2246,15 @@ configure: failed program was:
 | }
 configure:12915: result: no
 configure:12915: checking for getunwind
-configure:12915: gcc -o conftest -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE  conftest.c  >&5
+configure:12915: gcc -o conftest -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE  conftest.c  >&5
 conftest.c:75:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    75 | char getunwind ();
       | ^~~~
 conftest.c:84:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    84 | main ()
       | ^~~~
-/usr/local/bin/ld: /tmp/ccomUofy.o: in function `main':
-conftest.c:(.text.startup.main+0xb): undefined reference to `getunwind'
+/usr/local/bin/ld: /tmp/ccO9iPs0.o: in function `main':
+/libunwind/conftest.c:86: undefined reference to `getunwind'
 collect2: error: ld returned 1 exit status
 configure:12915: $? = 1
 configure: failed program was:
@@ -2351,15 +2349,15 @@ configure: failed program was:
 | }
 configure:12915: result: no
 configure:12915: checking for ttrace
-configure:12915: gcc -o conftest -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE  conftest.c  >&5
+configure:12915: gcc -o conftest -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE  conftest.c  >&5
 conftest.c:75:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    75 | char ttrace ();
       | ^~~~
 conftest.c:84:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    84 | main ()
       | ^~~~
-/usr/local/bin/ld: /tmp/cca9JmuV.o: in function `main':
-conftest.c:(.text.startup.main+0xb): undefined reference to `ttrace'
+/usr/local/bin/ld: /tmp/cc0DWVZl.o: in function `main':
+/libunwind/conftest.c:86: undefined reference to `ttrace'
 collect2: error: ld returned 1 exit status
 configure:12915: $? = 1
 configure: failed program was:
@@ -2454,7 +2452,7 @@ configure: failed program was:
 | }
 configure:12915: result: no
 configure:12915: checking for mincore
-configure:12915: gcc -o conftest -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE  conftest.c  >&5
+configure:12915: gcc -o conftest -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE  conftest.c  >&5
 conftest.c:75:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    75 | char mincore ();
       | ^~~~
@@ -2464,7 +2462,7 @@ conftest.c:84:1: warning: function declaration isn't a prototype [-Wstrict-proto
 configure:12915: $? = 0
 configure:12915: result: yes
 configure:12925: checking if building with AltiVec
-configure:12935: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE conftest.c >&5
+configure:12935: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE conftest.c >&5
 conftest.c:55:3: error: #error choke
    55 | # error choke
       |   ^~~~~
@@ -2528,7 +2526,7 @@ configure: failed program was:
 | #endif
 | 
 configure:12949: result: no
-configure:12960: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE conftest.c >&5
+configure:12960: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE conftest.c >&5
 conftest.c:55:3: error: #error choke
    55 | # error choke
       |   ^~~~~
@@ -2628,7 +2626,7 @@ configure:13495: result:
 configure:13499: checking whether to support LZMA-compressed symbol tables
 configure:13508: result: auto
 configure:13511: checking for lzma_mf_is_supported in -llzma
-configure:13536: gcc -o conftest -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE -DNDEBUG  conftest.c -llzma   >&5
+configure:13536: gcc -o conftest -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE -DNDEBUG  conftest.c -llzma   >&5
 conftest.c:61:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    61 | char lzma_mf_is_supported ();
       | ^~~~
@@ -2711,7 +2709,7 @@ configure:13545: result: no
 configure:13573: checking whether to support UNW_CACHE_PER_THREAD
 configure:13580: result: 
 configure:13626: checking for Intel compiler
-configure:13641: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE -DNDEBUG conftest.c >&5
+configure:13641: gcc -c -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE -DNDEBUG conftest.c >&5
 conftest.c:56:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    56 | main ()
       | ^~~~
@@ -2788,28 +2786,28 @@ configure:13651: result: no
 configure:13654: checking for QCC compiler
 configure:13662: result: no
 configure:13706: checking for __builtin___clear_cache
-configure:13719: gcc -o conftest -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind  -fexceptions -Wall -Wsign-compare  -D_GNU_SOURCE -DNDEBUG  conftest.c  >&5
+configure:13719: gcc -o conftest -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind  -fexceptions -Wall -Wsign-compare  -D_GNU_SOURCE -DNDEBUG  conftest.c  >&5
 conftest.c:56:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    56 | main ()
       | ^~~~
 configure:13719: $? = 0
 configure:13731: result: yes
 configure:13734: checking for __builtin_unreachable
-configure:13747: gcc -o conftest -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind  -fexceptions -Wall -Wsign-compare  -D_GNU_SOURCE -DNDEBUG  conftest.c  >&5
+configure:13747: gcc -o conftest -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind  -fexceptions -Wall -Wsign-compare  -D_GNU_SOURCE -DNDEBUG  conftest.c  >&5
 conftest.c:57:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    57 | main ()
       | ^~~~
 configure:13747: $? = 0
 configure:13759: result: yes
 configure:13762: checking for __sync atomics
-configure:13778: gcc -o conftest -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind  -fexceptions -Wall -Wsign-compare  -D_GNU_SOURCE -DNDEBUG  conftest.c  >&5
+configure:13778: gcc -o conftest -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind  -fexceptions -Wall -Wsign-compare  -D_GNU_SOURCE -DNDEBUG  conftest.c  >&5
 conftest.c:58:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    58 | main ()
       | ^~~~
 configure:13778: $? = 0
 configure:13790: result: yes
 configure:13805: checking for library containing backtrace
-configure:13836: gcc -o conftest -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind  -fexceptions -Wall -Wsign-compare  -D_GNU_SOURCE -DNDEBUG  conftest.c  >&5
+configure:13836: gcc -o conftest -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind  -fexceptions -Wall -Wsign-compare  -D_GNU_SOURCE -DNDEBUG  conftest.c  >&5
 conftest.c:64:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
    64 | char backtrace ();
       | ^~~~
@@ -2877,7 +2875,7 @@ ac_cv_env_CCC_value=
 ac_cv_env_CC_set=
 ac_cv_env_CC_value=
 ac_cv_env_CFLAGS_set=set
-ac_cv_env_CFLAGS_value='-Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind '
+ac_cv_env_CFLAGS_value='-Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind '
 ac_cv_env_CPPFLAGS_set=
 ac_cv_env_CPPFLAGS_value=
 ac_cv_env_CPP_set=
@@ -3070,9 +3068,9 @@ BUILD_SETJMP_TRUE='#'
 CC='gcc'
 CCAS='gcc'
 CCASDEPMODE='depmode=gcc3'
-CCASFLAGS='-Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE -DNDEBUG'
+CCASFLAGS='-Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE -DNDEBUG'
 CCDEPMODE='depmode=gcc3'
-CFLAGS='-Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind  -fexceptions -Wall -Wsign-compare'
+CFLAGS='-Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O0 -ggdb -DDEBUG -UNDEBUG -DSE_DEBUG_LEVEL=SE_TRACE_DEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -fcf-protection -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/sdk/cpprt/linux/libunwind=/libunwind  -fexceptions -Wall -Wsign-compare'
 CONFIG_DOCS_FALSE=''
 CONFIG_DOCS_TRUE='#'
 CONFIG_TESTS_FALSE=''

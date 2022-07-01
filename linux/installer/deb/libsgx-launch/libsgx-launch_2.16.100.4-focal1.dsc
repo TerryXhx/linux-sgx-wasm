@@ -11,11 +11,11 @@ Package-List:
  libsgx-launch deb libs optional arch=amd64
  libsgx-launch-dev deb devel optional arch=amd64
 Checksums-Sha1:
- 3d3e6fc6e55a47cd4ce1ea02d62930884abe91e7 125388 libsgx-launch_2.16.100.4.orig.tar.gz
- 1f722964a6654c3f0bdc17859c5e5168a647d49a 20544 libsgx-launch_2.16.100.4-focal1.debian.tar.xz
+ 8c96ea3dc3e1b44b20afea4519bc8f4c776cb9c2 125387 libsgx-launch_2.16.100.4.orig.tar.gz
+ d8d04d9c814149468ae526870b95a27a66b17086 20556 libsgx-launch_2.16.100.4-focal1.debian.tar.xz
 Checksums-Sha256:
- de1529358fcdea2296b8ff5e1cf3fcf2eeb9c388eda4e0e17819ca977839e389 125388 libsgx-launch_2.16.100.4.orig.tar.gz
- 6c3af08a9867ad925e1764b64c3296bc4523e9a5f6adba788a66d205be90f56e 20544 libsgx-launch_2.16.100.4-focal1.debian.tar.xz
+ 0cb2c14ff3e34ea3b984cb02d805b454482ff28a5a47e7d2163a33b7f51366a7 125387 libsgx-launch_2.16.100.4.orig.tar.gz
+ e80fe04cdd711b80f86717016a4ae2bcc8da049c51fe1414e160434f80945c53 20556 libsgx-launch_2.16.100.4-focal1.debian.tar.xz
 Files:
- 9e159c6c6ea31ab3a31c9d11df250060 125388 libsgx-launch_2.16.100.4.orig.tar.gz
- bc98e824f399f369ac45bd935b1ff6f8 20544 libsgx-launch_2.16.100.4-focal1.debian.tar.xz
+ 277fed24b6f0578ea0a93052d79ecdd1 125387 libsgx-launch_2.16.100.4.orig.tar.gz
+ eb91ff2b4e2173a7cb618306ea273275 20556 libsgx-launch_2.16.100.4-focal1.debian.tar.xz

@@ -304,26 +304,6 @@ curl/curl.h
 unistd.h
 -
 
-/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/linux/qcnl_config_impl.cpp
-istreamwrapper.h
-/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/linux/istreamwrapper.h
-qcnl_config.h
-/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/linux/qcnl_config.h
-algorithm
--
-curl/curl.h
--
-fstream
--
-
-/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/pccs_response_object.cpp
-pccs_response_object.h
-/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/pccs_response_object.h
-qcnl_def.h
-/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qcnl_def.h
-qcnl_util.h
-/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qcnl_util.h
-
 /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/pckcert_provider.cpp
 pckcert_provider.h
 /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/pckcert_provider.h
@@ -342,14 +322,6 @@ sgx_default_qcnl_wrapper.h
 fstream
 -
 istreamwrapper.h
--
-
-/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qcnl_util.cpp
-qcnl_util.h
-/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qcnl_util.h
-qcnl_config.h
-/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qcnl_config.h
-algorithm
 -
 
 /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/dcap_source/QuoteGeneration/qcnl/qv_collateral_provider.cpp

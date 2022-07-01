@@ -336,10 +336,6 @@ ICommunicationSocket.h
 oal/uae_oal_api.h
 -
 
-../core/ipc/NonBlockingUnixCommunicationSocket.h
-UnixCommunicationSocket.h
--
-
 ../core/ipc/ProtobufSerializer.h
 ISerializer.h
 -
@@ -356,12 +352,6 @@ IAEResponse.h
 ISocketFactory.h
 -
 oal/uae_oal_api.h
--
-
-../core/ipc/UnixCommunicationSocket.h
-ICommunicationSocket.h
--
-sys/time.h
 -
 
 ../interfaces/epid_quote_service.h
@@ -734,20 +724,6 @@ aesm_exception.h
 unistd.h
 -
 
-/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/CSelector.cpp
-CSelector.h
-/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/CSelector.h
-ICommunicationSocket.h
-/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/ICommunicationSocket.h
-sys/epoll.h
--
-stdlib.h
--
-errno.h
--
-unistd.h
--
-
 /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/Thread.cpp
 Thread.h
 /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/Thread.h
@@ -761,24 +737,6 @@ new
 -
 util.h
 /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/util.h
-
-/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/UnixServerSocket.cpp
-sys/types.h
--
-sys/socket.h
--
-sys/stat.h
--
-sys/un.h
--
-unistd.h
--
-errno.h
--
-NonBlockingUnixCommunicationSocket.h
-/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/NonBlockingUnixCommunicationSocket.h
-UnixServerSocket.h
-/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/UnixServerSocket.h
 
 /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/core/main.cpp
 signal.h

@@ -388,16 +388,6 @@ se_memcpy.h
 aeerror.h
 ../common/aeerror.h
 
-/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/common/src/sgx_memset_s.cpp
-sgx_memset_s.h
-/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/common/src/sgx_memset_s.h
-errno.h
--
-string
--
-string.h
--
-
 /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/common/src/sgx_read_rand.cpp
 stdint.h
 -
@@ -527,18 +517,6 @@ openssl/sha.h
 -
 ssl_crypto.h
 /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/utils/ssl_crypto.h
-
-/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/utils/ssl_compat_wrapper.cpp
-ssl_compat_wrapper.h
-/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/utils/ssl_compat_wrapper.h
-openssl/crypto.h
--
-openssl/err.h
--
-stdlib.h
--
-string.h
--
 
 /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/utils/type_length_value.cpp
 type_length_value.h

@@ -18,7 +18,6 @@ se-libc-stubs.lo: se-libc-stubs.c \
  /usr/include/x86_64-linux-gnu/bits/time64.h \
  /usr/lib/gcc/x86_64-linux-gnu/9/include/stddef.h \
  /usr/include/x86_64-linux-gnu/bits/confname.h \
- /usr/include/x86_64-linux-gnu/bits/unistd.h \
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
  ../../../../../common/inc/sgx_attributes.h \
  ../../../../../common/inc/sgx_key.h \
@@ -33,13 +32,9 @@ se-libc-stubs.lo: se-libc-stubs.c \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib.h \
  ../../../../../common/inc/sgx_trts.h /usr/include/assert.h \
- /usr/include/string.h \
- /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
- /usr/include/x86_64-linux-gnu/sys/mman.h \
+ /usr/include/string.h /usr/include/x86_64-linux-gnu/sys/mman.h \
  /usr/include/x86_64-linux-gnu/bits/mman.h \
  /usr/include/x86_64-linux-gnu/bits/mman-map-flags-generic.h \
  /usr/include/x86_64-linux-gnu/bits/mman-linux.h \
@@ -87,8 +82,6 @@ se-libc-stubs.lo: se-libc-stubs.c \
 
 /usr/include/x86_64-linux-gnu/bits/confname.h:
 
-/usr/include/x86_64-linux-gnu/bits/unistd.h:
-
 /usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
 
 ../../../../../common/inc/sgx_attributes.h:
@@ -121,19 +114,13 @@ se-libc-stubs.lo: se-libc-stubs.c \
 
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h:
-
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdlib.h:
 
 ../../../../../common/inc/sgx_trts.h:
 
 /usr/include/assert.h:
 
 /usr/include/string.h:
-
-/usr/include/x86_64-linux-gnu/bits/string_fortified.h:
 
 /usr/include/x86_64-linux-gnu/sys/mman.h:
 

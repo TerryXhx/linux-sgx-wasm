@@ -484,14 +484,6 @@ cppmicroservices/ServiceProperties.h
 cppmicroservices/ServiceReference.h
 /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/external/CppMicroServices/local-install/include/cppmicroservices4/cppmicroservices/cppmicroservices/ServiceReference.h
 
-/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/quote_ex_service_bundle/quote_ex_service_bundle/cppmicroservices_init.cpp
-cppmicroservices/BundleInitialization.h
-/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/quote_ex_service_bundle/quote_ex_service_bundle/cppmicroservices/BundleInitialization.h
-
-/home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/build/bundles/quote_ex_service_bundle/quote_ex_service_bundle/cppmicroservices_resources.cpp
-iostream
--
-
 /home/nsec-sgx/SGXENVWASM/linux-sgx-wasm/psw/ae/aesm_service/source/bundles/quote_ex_service_bundle/quote_ex_service_bundle.cpp
 select_att_key_id.h
 -

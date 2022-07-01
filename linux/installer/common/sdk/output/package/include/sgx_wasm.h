@@ -14,13 +14,20 @@ extern "C" {
 #define SGX_WASM_VM_MR_SEC_NAME ".sgx_wasm_vm_mr"
 #define SGX_WASM_VM_MR_SEC_SIZE 4096
 // must be a multiple of 4096 (page size)
-// 4096 is large enough to store the measuremenT
+// 4096 is large enough to store the measurement
 
 
 typedef struct _sgx_wasm_t {
     uint64_t size;
     uint8_t wasm_blob[];
 } sgx_wasm_t;
+
+typedef struct _sgx_wasm_vm_mr_t
+{
+    uint64_t size;              // number of blocks updated
+    uint64_t offset;            // offset of sgx_mage section
+    uint8_t digest[32];         // sha-256 internal state
+} sgx_wasm_vm_mr_t;
 
 uint8_t* sgx_get_wasm_sec_buf_addr();
 

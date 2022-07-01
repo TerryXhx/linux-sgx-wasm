@@ -54,5 +54,5 @@ int printf(const char* fmt, ...)
 void ecall_test_wasm()
 {
     printf("wasm section address: %p\n", sgx_get_wasm_sec_buf_addr());
-    printf("wasm vm mr section address: %p\n", sgx_wasm_vm_mr_sec_buf_addr());
+    printf("wasm vm mr section address: %p\n", sgx_get_wasm_vm_mr_sec_buf_addr());
 }
