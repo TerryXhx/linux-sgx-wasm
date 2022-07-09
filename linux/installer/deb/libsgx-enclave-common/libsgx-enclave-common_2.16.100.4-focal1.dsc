@@ -11,11 +11,11 @@ Package-List:
  libsgx-enclave-common deb libs optional arch=amd64
  libsgx-enclave-common-dev deb devel optional arch=amd64
 Checksums-Sha1:
- ffe330bf38a606ccebb0cd1efc7f37759bf988a7 42299 libsgx-enclave-common_2.16.100.4.orig.tar.gz
- 9e9a276e66793d3f45771cfb93d9528ac0dbcff0 21140 libsgx-enclave-common_2.16.100.4-focal1.debian.tar.xz
+ 979eddec87971b271df77070d2dd2108145a15b6 42291 libsgx-enclave-common_2.16.100.4.orig.tar.gz
+ 147933bc6c16eda9e87f9c75a76f62baed853910 21144 libsgx-enclave-common_2.16.100.4-focal1.debian.tar.xz
 Checksums-Sha256:
- b4cf5122cc30f161abebd70a920273de866d7484493ee2804f2db15fef55ef49 42299 libsgx-enclave-common_2.16.100.4.orig.tar.gz
- 76325c17ba72b86a380e8520efffad89a676979996d294de2a673584ca8a31c8 21140 libsgx-enclave-common_2.16.100.4-focal1.debian.tar.xz
+ 09ae5d709776c57a84c07f7e4bd1654d3fa223cbc4c704fd990f17bd8bc9577d 42291 libsgx-enclave-common_2.16.100.4.orig.tar.gz
+ e9de144e884b947849f91e74a54366d2e7fc31076b8e7d259c2074a422f31d36 21144 libsgx-enclave-common_2.16.100.4-focal1.debian.tar.xz
 Files:
- 15d3c0d314e7d41f6a57e668c34af983 42299 libsgx-enclave-common_2.16.100.4.orig.tar.gz
- 581c70f870fb8e741c3de833da6997be 21140 libsgx-enclave-common_2.16.100.4-focal1.debian.tar.xz
+ 741b68b672d6e67e2f816597c7f7071f 42291 libsgx-enclave-common_2.16.100.4.orig.tar.gz
+ 57cb00856da1bacc2bc52896ec90d009 21144 libsgx-enclave-common_2.16.100.4-focal1.debian.tar.xz

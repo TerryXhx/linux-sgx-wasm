@@ -27,6 +27,9 @@ uname -v = #137-Ubuntu SMP Wed Jun 15 13:33:07 UTC 2022
 /usr/bin/oslevel       = unknown
 /bin/universe          = unknown
 
+PATH: /home/nsec-sgx/SGXENVWASM/emsdk
+PATH: /home/nsec-sgx/SGXENVWASM/emsdk/upstream/emscripten
+PATH: /home/nsec-sgx/SGXENVWASM/emsdk/node/14.18.2_64bit/bin
 PATH: /usr/local/sbin
 PATH: /usr/local/bin
 PATH: /usr/sbin
@@ -36,8 +39,6 @@ PATH: /bin
 PATH: /usr/games
 PATH: /usr/local/games
 PATH: /snap/bin
-PATH: /home/nsec-sgx/SGXENVWASM/sgxsdk/bin
-PATH: /home/nsec-sgx/SGXENVWASM/sgxsdk/bin/x64
 
 
 ## ----------- ##

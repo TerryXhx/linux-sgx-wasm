@@ -16,26 +16,26 @@ Changes:
  .
    * Initial Release
 Checksums-Sha1:
- 0ff47cbeb2efef61b39f2821f90b1e7e06b3be29 1016 libsgx-quote-ex_2.16.100.4-focal1.dsc
- 41858c8a08a79ec0673517a599311cfd64d70331 128870 libsgx-quote-ex_2.16.100.4.orig.tar.gz
- 27d196a5b9b57b9b6f44a625325d9a969adf0e7c 20552 libsgx-quote-ex_2.16.100.4-focal1.debian.tar.xz
- 2d9588b508fa0fcd0e85110264c2985464759893 22680 libsgx-quote-ex-dbgsym_2.16.100.4-focal1_amd64.ddeb
- bacca9f9cc6341929bfdaaddc2ce858f6cc89095 24336 libsgx-quote-ex-dev_2.16.100.4-focal1_amd64.deb
- dbc18a56d75c677d9d252d1961e8e9778a9a162f 6514 libsgx-quote-ex_2.16.100.4-focal1_amd64.buildinfo
- efae9436e42a8f4204fbff93834ad87aaef70b27 74552 libsgx-quote-ex_2.16.100.4-focal1_amd64.deb
+ 1f5bc181235374c495ce62b141ef55d1b06f01ef 1016 libsgx-quote-ex_2.16.100.4-focal1.dsc
+ 828d6cddbbf5a606cec03817ae35d7edfaeec3be 128872 libsgx-quote-ex_2.16.100.4.orig.tar.gz
+ 053620584247bf89fdf423cc42ef7c3147305deb 20556 libsgx-quote-ex_2.16.100.4-focal1.debian.tar.xz
+ 1909622df156a7d60094b6efb5aae84f006b55e4 22660 libsgx-quote-ex-dbgsym_2.16.100.4-focal1_amd64.ddeb
+ 6d08450096fe3f5dadb1ed4a5965eb192c2a957a 24324 libsgx-quote-ex-dev_2.16.100.4-focal1_amd64.deb
+ 9e7159a730928a38aa925c23782a0af85e415439 6472 libsgx-quote-ex_2.16.100.4-focal1_amd64.buildinfo
+ 0ac569e24d6ef6a7847307713f80a5b46edeca66 74504 libsgx-quote-ex_2.16.100.4-focal1_amd64.deb
 Checksums-Sha256:
- c848e5be66a0bb74105898ccc0ca3a8585fbb43be4bbad412efe43eef66067e2 1016 libsgx-quote-ex_2.16.100.4-focal1.dsc
- 3e942ec7870a00d8c518d29def0758f6173603f3cd47c071a2750aa4a0e6bb8f 128870 libsgx-quote-ex_2.16.100.4.orig.tar.gz
- 640299fe0f359b2d036b4cf3ed4edd757e2ccf7ee7957e314cd367fa23b7ac98 20552 libsgx-quote-ex_2.16.100.4-focal1.debian.tar.xz
- d7b6aff0290ee3c87ae3fa39dcbde6d2c9b9fd4c549e67672bb925f64ac81dae 22680 libsgx-quote-ex-dbgsym_2.16.100.4-focal1_amd64.ddeb
- f05b1202a31aa62c81026a90172b2660871947c63c82567d650d496b375fb7a4 24336 libsgx-quote-ex-dev_2.16.100.4-focal1_amd64.deb
- 04841f302bffc916be1f55476cec4c73b8a2b861dfce89a5f78603fefbc476d8 6514 libsgx-quote-ex_2.16.100.4-focal1_amd64.buildinfo
- ac368bd3c86158e2c0ebaee3aee1bbd13853dbcfcbc78bdb280acc9e34f61adc 74552 libsgx-quote-ex_2.16.100.4-focal1_amd64.deb
+ 0261926ffc56c0ed33677e8ee73dfe7a1ffb8368fc24b8b0b3351eb6c31278ad 1016 libsgx-quote-ex_2.16.100.4-focal1.dsc
+ b4ed6e019fc547afdbb693fa9622c027dc59ee602d984972966b751b429685fd 128872 libsgx-quote-ex_2.16.100.4.orig.tar.gz
+ d12f1fb84ad2c37c0b43c143dd0f3325674ab6e4bca246cd275a5f3c84ffdc8e 20556 libsgx-quote-ex_2.16.100.4-focal1.debian.tar.xz
+ 6c16be8f0e2ec2208333c0e082fea4f541433852f2771c33b4a1f05e874195a5 22660 libsgx-quote-ex-dbgsym_2.16.100.4-focal1_amd64.ddeb
+ 23fcb974eae1379526711f1950991d7ca092e92824988740db360f44b2d7cf82 24324 libsgx-quote-ex-dev_2.16.100.4-focal1_amd64.deb
+ bd1f3fb5bdee2ac01e90dcc1729fd0708bf31091569053626dd676ff351a4158 6472 libsgx-quote-ex_2.16.100.4-focal1_amd64.buildinfo
+ 8f2423a5fe92bec1d185bc545ee8ada384d31f3d1e720daa58a37eb7c61376cd 74504 libsgx-quote-ex_2.16.100.4-focal1_amd64.deb
 Files:
- 399c568c74ec12459aa8eda4311926ff 1016 libs optional libsgx-quote-ex_2.16.100.4-focal1.dsc
- 962b55aa062a925d5993fe7b9328021b 128870 libs optional libsgx-quote-ex_2.16.100.4.orig.tar.gz
- da5dde0d18af155c8f3c845363defa9b 20552 libs optional libsgx-quote-ex_2.16.100.4-focal1.debian.tar.xz
- 802b792399e11933b0fe3fd14f3667d3 22680 debug optional libsgx-quote-ex-dbgsym_2.16.100.4-focal1_amd64.ddeb
- 77df51afbf15805b67aab79d796872c7 24336 devel optional libsgx-quote-ex-dev_2.16.100.4-focal1_amd64.deb
- 2cc96604853529911e2ef7567f6d89f1 6514 libs optional libsgx-quote-ex_2.16.100.4-focal1_amd64.buildinfo
- 8b68922e67bc628f8b4b37fdc0997872 74552 libs optional libsgx-quote-ex_2.16.100.4-focal1_amd64.deb
+ ebe33b6c8ce00f939eefd7df13768b3b 1016 libs optional libsgx-quote-ex_2.16.100.4-focal1.dsc
+ c57b6b0cb5d159635bd62f8c26b53167 128872 libs optional libsgx-quote-ex_2.16.100.4.orig.tar.gz
+ 9277656f692da8a11a17e697d1f5a14f 20556 libs optional libsgx-quote-ex_2.16.100.4-focal1.debian.tar.xz
+ d301340769847d300ccf5d147bd4404f 22660 debug optional libsgx-quote-ex-dbgsym_2.16.100.4-focal1_amd64.ddeb
+ 97e42cc13c93cff974e104da9e4dd58d 24324 devel optional libsgx-quote-ex-dev_2.16.100.4-focal1_amd64.deb
+ 03ab620c3b2abc1a00417a8cefec438a 6472 libs optional libsgx-quote-ex_2.16.100.4-focal1_amd64.buildinfo
+ 7e61d18f4f906e283ddb79593527115c 74504 libs optional libsgx-quote-ex_2.16.100.4-focal1_amd64.deb

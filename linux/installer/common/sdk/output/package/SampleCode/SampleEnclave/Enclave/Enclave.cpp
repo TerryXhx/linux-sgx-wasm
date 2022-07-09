@@ -35,6 +35,9 @@
 #include <stdio.h> /* vsnprintf */
 #include <string.h>
 #include "sgx_wasm.h"
+#include "sgx_utils.h"
+#include "sgx_trts.h"
+#include "sgx_tseal.h"
 
 /* 
  * printf: 
@@ -51,8 +54,24 @@ int printf(const char* fmt, ...)
     return (int)strnlen(buf, BUFSIZ - 1) + 1;
 }
 
+sgx_status_t print_measurement()
+{
+    sgx_status_t ret = SGX_SUCCESS;
+    sgx_target_info_t target_info = {};
+    sgx_report_t report;
+    sgx_report_data_t report_data = {{0}};
+    ret = sgx_create_report(&target_info, &report_data, &report);
+    if (ret != SGX_SUCCESS) printf("ERROR get report %x\n", ret);
+    else {
+        for(int i = 0; i < 32; i++) printf("%02x", report.body.mr_enclave.m[i]);
+        printf("\n");
+    }
+    return ret;
+}
+
 void ecall_test_wasm()
 {
     printf("wasm section address: %p\n", sgx_get_wasm_sec_buf_addr());
     printf("wasm vm mr section address: %p\n", sgx_get_wasm_vm_mr_sec_buf_addr());
+    print_measurement();
 }

@@ -1581,6 +1581,10 @@ int main(int argc, char* argv[])
         se_trace(SE_TRACE_ERROR, OVERALL_ERROR);
         goto clear_return;
     }
+    printf("signtool measurement\n");
+    for (int i = 0; i < SGX_HASH_SIZE; ++i)
+        printf("%02x ", enclave_hash[i]);
+    printf("\n");
     if((generate_output(mode, key_type, enclave_hash, rsa, metadata, path)) == false)
     {
         se_trace(SE_TRACE_ERROR, OVERALL_ERROR);

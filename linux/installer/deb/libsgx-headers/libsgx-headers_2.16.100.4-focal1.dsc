@@ -10,11 +10,11 @@ Build-Depends: debhelper (>= 8.0.0)
 Package-List:
  libsgx-headers deb devel optional arch=amd64
 Checksums-Sha1:
- 8f9802ecb3fb5043f1fcab9963c02f5509cb1042 37315 libsgx-headers_2.16.100.4.orig.tar.gz
- 979a20c6e359aadb35be55c055938ae8fd2ccc25 20428 libsgx-headers_2.16.100.4-focal1.debian.tar.xz
+ 56c21511f41d1acf7549c2dc17c450dd65b5cc04 37314 libsgx-headers_2.16.100.4.orig.tar.gz
+ b5f2e711d715268f6d44182702672076c69f0e5b 20416 libsgx-headers_2.16.100.4-focal1.debian.tar.xz
 Checksums-Sha256:
- d84fcea7c27d801244ad6750fa7b30cbd972837e50ab1f8074d1f189522560e4 37315 libsgx-headers_2.16.100.4.orig.tar.gz
- 6982eb7c9eb8869cf038b50703cdf6a08fff0b0266bafd47e8c7d38556964aaa 20428 libsgx-headers_2.16.100.4-focal1.debian.tar.xz
+ 102b7de61e1d88ebf98e14685d8993c687439bcd21d59807b86b084c8467f936 37314 libsgx-headers_2.16.100.4.orig.tar.gz
+ 4044c4d35e2c1d18e5508a4c7800f09d6a2d2a67e2028cd28a381cda75fc6599 20416 libsgx-headers_2.16.100.4-focal1.debian.tar.xz
 Files:
- 3fd7e2d9861bb69e13a01b393e900bed 37315 libsgx-headers_2.16.100.4.orig.tar.gz
- df08d80380f44230244d58f6b1e6f8ff 20428 libsgx-headers_2.16.100.4-focal1.debian.tar.xz
+ e4cc38d24681177558dc200f7c088a1a 37314 libsgx-headers_2.16.100.4.orig.tar.gz
+ d7d9152b504efa8a5f6a12a59b9d25dd 20416 libsgx-headers_2.16.100.4-focal1.debian.tar.xz

@@ -23,62 +23,62 @@ Changes:
  .
    * Initial Release
 Checksums-Sha1:
- 521af2c7afc049e3a9baddacb7d5f94cea69f04f 1552 sgx-aesm-service_2.16.100.4-focal1.dsc
- 50f311e56e161676fd4f3929cf467540de693a01 10797962 sgx-aesm-service_2.16.100.4.orig.tar.gz
- 4f3371583142915b020525fa6a0eaa25cb0d9e99 21660 sgx-aesm-service_2.16.100.4-focal1.debian.tar.xz
- 0cc2d56faae99968c3b4a6246ec312c54bc85fa8 297728 libsgx-ae-epid_2.16.100.4-focal1_amd64.deb
- 5edb96b9a2248b78532979fad75b19680a5877f8 131508 libsgx-ae-le_2.16.100.4-focal1_amd64.deb
- ae1f4cdc9a6aac97ac86802f6d72a59d1f385a2d 220896 libsgx-ae-pce_2.16.100.4-focal1_amd64.deb
- ce55aa64d49a2895b7c9ebceae9d1ab211b9bf17 5272 libsgx-aesm-ecdsa-plugin-dbgsym_2.16.100.4-focal1_amd64.ddeb
- 684e68a3c94b49df9ac454e1229d8c81004b7140 32252 libsgx-aesm-ecdsa-plugin_2.16.100.4-focal1_amd64.deb
- 82e12b5974f7e20fa4fff8f862663a6fc6c1f0f1 9384 libsgx-aesm-epid-plugin-dbgsym_2.16.100.4-focal1_amd64.ddeb
- 30b428e4224af94c1b3af76fc76e889ed58b54dd 54640 libsgx-aesm-epid-plugin_2.16.100.4-focal1_amd64.deb
- aea6fd2f8006a79f7a63c46adf94aea59a66908e 6204 libsgx-aesm-launch-plugin-dbgsym_2.16.100.4-focal1_amd64.ddeb
- 9fb5d7303f303435770f52214f5237f6a3398bdd 38860 libsgx-aesm-launch-plugin_2.16.100.4-focal1_amd64.deb
- 90c36eed588dc4314966e38f65f36a38fba6f343 4604 libsgx-aesm-pce-plugin-dbgsym_2.16.100.4-focal1_amd64.ddeb
- f49f59b8c56758d6fd22ac02b9af38e7338664ee 29468 libsgx-aesm-pce-plugin_2.16.100.4-focal1_amd64.deb
- bb8bab56fcd840083e40ddb6a7bb3b9dbc18f90a 5840 libsgx-aesm-quote-ex-plugin-dbgsym_2.16.100.4-focal1_amd64.ddeb
- a96f96bcfa0b72f043a8d0e02bf5858debffc274 40624 libsgx-aesm-quote-ex-plugin_2.16.100.4-focal1_amd64.deb
- cf72ef5d8cdc2ed9e9257f3323f934b24b3cbc2d 8713320 sgx-aesm-service-dbgsym_2.16.100.4-focal1_amd64.ddeb
- 4a5362234c487b874bbbc3c49dfbaf9252708e7e 10546 sgx-aesm-service_2.16.100.4-focal1_amd64.buildinfo
- 2763beea59ab6fb4fec9c3afe0db1e4804ff24df 549852 sgx-aesm-service_2.16.100.4-focal1_amd64.deb
+ 9a9ad3a25be94bb59826b90c5c4b8adeea6eec58 1552 sgx-aesm-service_2.16.100.4-focal1.dsc
+ 69433d611783b3582168e3c8fb6c96b54a69075c 10794204 sgx-aesm-service_2.16.100.4.orig.tar.gz
+ 46f8e3652618f0fea4114c34c16efb9836c3eab7 21684 sgx-aesm-service_2.16.100.4-focal1.debian.tar.xz
+ 5c4ec7f12dacde4a42e4a061296f52f8a736b773 297408 libsgx-ae-epid_2.16.100.4-focal1_amd64.deb
+ 9dd00ec32bbdee888b388b5c36f9f9b28b845734 131508 libsgx-ae-le_2.16.100.4-focal1_amd64.deb
+ 6fa44d32089b59bbde7751e3df8cfb1e0cded0d7 220948 libsgx-ae-pce_2.16.100.4-focal1_amd64.deb
+ cf85e9e41c6cdbc0ffc729ca48663a02bb98772e 5284 libsgx-aesm-ecdsa-plugin-dbgsym_2.16.100.4-focal1_amd64.ddeb
+ f24247cbc71062479251587ff7b518127b773aa9 32248 libsgx-aesm-ecdsa-plugin_2.16.100.4-focal1_amd64.deb
+ f30bed91259d659d3e351b3d6fa15183796ed773 9384 libsgx-aesm-epid-plugin-dbgsym_2.16.100.4-focal1_amd64.ddeb
+ 97c6b380ee1847509532d78800fbc771deda1141 54732 libsgx-aesm-epid-plugin_2.16.100.4-focal1_amd64.deb
+ 98dfe0ecafd099b5945715a3c8dcfd1974618d88 6200 libsgx-aesm-launch-plugin-dbgsym_2.16.100.4-focal1_amd64.ddeb
+ 53103dc441701bcaa0f50af7c13b7207fdfcf213 38848 libsgx-aesm-launch-plugin_2.16.100.4-focal1_amd64.deb
+ e3634590b58c994e70eae73ea7cd306adac26788 4604 libsgx-aesm-pce-plugin-dbgsym_2.16.100.4-focal1_amd64.ddeb
+ 6de06acb438cb5a55c18fba8a392627996814681 29480 libsgx-aesm-pce-plugin_2.16.100.4-focal1_amd64.deb
+ fad23ba6ba05c0e7145f8391a602cfca1f306e7d 5832 libsgx-aesm-quote-ex-plugin-dbgsym_2.16.100.4-focal1_amd64.ddeb
+ c9c8657719edf598f09f6bfef8e2c3de40a3a2a1 40640 libsgx-aesm-quote-ex-plugin_2.16.100.4-focal1_amd64.deb
+ 1bec433acd9ec47d3900980694160bdb90b4b570 8722088 sgx-aesm-service-dbgsym_2.16.100.4-focal1_amd64.ddeb
+ 31e57feb17427613c7c0c567aa3efb8b1d5d2bfb 10504 sgx-aesm-service_2.16.100.4-focal1_amd64.buildinfo
+ 58886203074ef183b067caa70467859edd428fb8 541708 sgx-aesm-service_2.16.100.4-focal1_amd64.deb
 Checksums-Sha256:
- 46f22ec3f28230e36a54914c2aaeb2dcaf7da46d5c27e59dbfa2fb8e33996616 1552 sgx-aesm-service_2.16.100.4-focal1.dsc
- 3ff95e6c19e49dddead4ae231cf551208ddd2a716570bd65c3a0edeb447ea76e 10797962 sgx-aesm-service_2.16.100.4.orig.tar.gz
- 9ae139c220de49d322b35dff533d431c97c79b2468f291a710b8013ae9b57aac 21660 sgx-aesm-service_2.16.100.4-focal1.debian.tar.xz
- 64409d9d99ed9278d65747b3139a41e55b4a0b3a54bc7cd488e62cb8d50cfe2e 297728 libsgx-ae-epid_2.16.100.4-focal1_amd64.deb
- 3fb59f2bf0b2777cb7685a37f58352635115c072c99448684be915cce85e4154 131508 libsgx-ae-le_2.16.100.4-focal1_amd64.deb
- da1e76e8be7421ccf676b741d1a0fc496e8f7a7a4a014fc01e8193e2390d9a63 220896 libsgx-ae-pce_2.16.100.4-focal1_amd64.deb
- 76e0ff54a0eb50acbb76356e93961b177a2937010f1bb229e8206105681525b6 5272 libsgx-aesm-ecdsa-plugin-dbgsym_2.16.100.4-focal1_amd64.ddeb
- 260dac46dd4f4bd8daf051c3fae42383e089559a0ef6272af01accd67487b139 32252 libsgx-aesm-ecdsa-plugin_2.16.100.4-focal1_amd64.deb
- 7657119e63b1e71c76accfce4ff32d928507f4efe669261e778fc47b62289b78 9384 libsgx-aesm-epid-plugin-dbgsym_2.16.100.4-focal1_amd64.ddeb
- 3e4c04280c8be5669155e8c8ff7c2fe2f2aacfca5e79a8fa8ccddd805477a6a7 54640 libsgx-aesm-epid-plugin_2.16.100.4-focal1_amd64.deb
- 6a8cbf2e5d7afb5fa7d6de86bac8d2efacb3581db52d0487efa9075bb24f45ad 6204 libsgx-aesm-launch-plugin-dbgsym_2.16.100.4-focal1_amd64.ddeb
- f912ecae47ef1a919ca5f4e9d21ddf111505b30452446c457fd04c54b6fe4883 38860 libsgx-aesm-launch-plugin_2.16.100.4-focal1_amd64.deb
- fc365cb9433d82409ccfc84c04e69b4c05fa0fb71e0a2dc7f5166b775f7a199c 4604 libsgx-aesm-pce-plugin-dbgsym_2.16.100.4-focal1_amd64.ddeb
- 38e88a72472ee97cf0826886ddd0aae811e6cf72172c010cf694d91001ff4b16 29468 libsgx-aesm-pce-plugin_2.16.100.4-focal1_amd64.deb
- cf63fb921a5d1e7da5069bfa221b629e512d513f72d687dda39d97d9b543c481 5840 libsgx-aesm-quote-ex-plugin-dbgsym_2.16.100.4-focal1_amd64.ddeb
- 98ce53b5c090f1b6ffcb977f3fc21057a23faef5a940b565a3ca46d9a528b334 40624 libsgx-aesm-quote-ex-plugin_2.16.100.4-focal1_amd64.deb
- 2ab6532ed147463a12321a42bbc90ab1e8fe3fe1ff475b6374c08180abf9569d 8713320 sgx-aesm-service-dbgsym_2.16.100.4-focal1_amd64.ddeb
- d6e1d102e7928923c13ccad115021f25f9be1b18fc73a47cd48355c06f4149b4 10546 sgx-aesm-service_2.16.100.4-focal1_amd64.buildinfo
- fca14a824956c89f0e81b645cce705c4a474108597836742cb7d74075da79ee1 549852 sgx-aesm-service_2.16.100.4-focal1_amd64.deb
+ 8908b8ecc9379c647eb4ca4c51684b3999df4d49f709a2dfa3a3bef05bb1646f 1552 sgx-aesm-service_2.16.100.4-focal1.dsc
+ 95258f8f583b94031a2a0aae92de994e0d1bda9f60c6e0f543fbb999601e6696 10794204 sgx-aesm-service_2.16.100.4.orig.tar.gz
+ 75f6f097c1662cda0a74377e5e82dec64c881729c73055928b6ebcc86f96a907 21684 sgx-aesm-service_2.16.100.4-focal1.debian.tar.xz
+ 2a54539b8b01449a38828a7d52eb6f2e5eba12fa97c8d9270a6ef723ae17bd64 297408 libsgx-ae-epid_2.16.100.4-focal1_amd64.deb
+ 4332764204a38b8bf123177237bf86b607c7c06bada66bb52a2ef0cd92aa9c2f 131508 libsgx-ae-le_2.16.100.4-focal1_amd64.deb
+ a9d9e219841f922b179f724dd8e5d1f23c753b8dcbd30491a78162cde9426f8c 220948 libsgx-ae-pce_2.16.100.4-focal1_amd64.deb
+ c448341a3e61d730b10d9113fc3a27dabb52bb7275b32be553ac2ae921236179 5284 libsgx-aesm-ecdsa-plugin-dbgsym_2.16.100.4-focal1_amd64.ddeb
+ 54bd10f426215cf93b2644d754d77ae25c3dee56cff962874c66376aabcbfd98 32248 libsgx-aesm-ecdsa-plugin_2.16.100.4-focal1_amd64.deb
+ d9d5cbed8d6a935ab645e881dbc9cebc07015f4afa85092db8e6cb9593070885 9384 libsgx-aesm-epid-plugin-dbgsym_2.16.100.4-focal1_amd64.ddeb
+ b494bc141b29268156cfdb8459dd27a1dffa073188cfea0c97b6bc502595d5e5 54732 libsgx-aesm-epid-plugin_2.16.100.4-focal1_amd64.deb
+ 9b925b8a9f10e619d802ac046d84410d25647b8caf273e8dc2c685504e4ef871 6200 libsgx-aesm-launch-plugin-dbgsym_2.16.100.4-focal1_amd64.ddeb
+ e9e96981286480b18e60978f701222e18c83d0e2032d1eb68d894b071f8b0b31 38848 libsgx-aesm-launch-plugin_2.16.100.4-focal1_amd64.deb
+ c177ba9f5eee9c98435ebebb11fb59dd2d2e3389278606fd00e61d8cc78b0a2b 4604 libsgx-aesm-pce-plugin-dbgsym_2.16.100.4-focal1_amd64.ddeb
+ 98359622e0365d5b348371b8a644e6b879905c6ed4d77291ee544c73866b98b9 29480 libsgx-aesm-pce-plugin_2.16.100.4-focal1_amd64.deb
+ 3a28a88c500ce7ce7f13611a98e0094c5ea6273555f416f3cb7c14a1f14cc96d 5832 libsgx-aesm-quote-ex-plugin-dbgsym_2.16.100.4-focal1_amd64.ddeb
+ f8f49b9f73f611a6c19f1d5f839f7e57295e47bf5b5501e869292625bef857d4 40640 libsgx-aesm-quote-ex-plugin_2.16.100.4-focal1_amd64.deb
+ 99e30c361a1de66c48eaa12f49d53c3e9e0da0e0939a4584140058110e91ebfc 8722088 sgx-aesm-service-dbgsym_2.16.100.4-focal1_amd64.ddeb
+ 670e5560dc39c8517c08f0a5ee6f10c077a5896e9ba341ab5202a0ec92a212bf 10504 sgx-aesm-service_2.16.100.4-focal1_amd64.buildinfo
+ 07245f83d87e234a07d8378f2e4a1ce3941674ce8d3b358b8b7d081bafca29ea 541708 sgx-aesm-service_2.16.100.4-focal1_amd64.deb
 Files:
- 51b927e1deea069fc1a5baee88bc7d2b 1552 utils optional sgx-aesm-service_2.16.100.4-focal1.dsc
- 9e658344076ae40f1dcc2e5be8fa0718 10797962 utils optional sgx-aesm-service_2.16.100.4.orig.tar.gz
- 6e4508b9a84c5ac4e6f851e4ae4d9924 21660 utils optional sgx-aesm-service_2.16.100.4-focal1.debian.tar.xz
- 90840b8974b60afeacab2e77dbb72e6a 297728 utils optional libsgx-ae-epid_2.16.100.4-focal1_amd64.deb
- d3dab74f6a50a43365afad0270dc3807 131508 utils optional libsgx-ae-le_2.16.100.4-focal1_amd64.deb
- 6d1064d12a3809fee3c4b2ee3fb39118 220896 utils optional libsgx-ae-pce_2.16.100.4-focal1_amd64.deb
- 4bd20d23a20fd8abfd5623fc6cd08b0b 5272 debug optional libsgx-aesm-ecdsa-plugin-dbgsym_2.16.100.4-focal1_amd64.ddeb
- 07853626aa0c6a3e1e2a724ab2ec31ee 32252 utils optional libsgx-aesm-ecdsa-plugin_2.16.100.4-focal1_amd64.deb
- b10e9a75c4943dac2374f206262b3127 9384 debug optional libsgx-aesm-epid-plugin-dbgsym_2.16.100.4-focal1_amd64.ddeb
- e74cb9e742a3716959409dee439bf7bb 54640 utils optional libsgx-aesm-epid-plugin_2.16.100.4-focal1_amd64.deb
- e64d49b71e1102e166b168fc365c2d85 6204 debug optional libsgx-aesm-launch-plugin-dbgsym_2.16.100.4-focal1_amd64.ddeb
- cb37ed0de42c3141c6ef2138a3c36d8f 38860 utils optional libsgx-aesm-launch-plugin_2.16.100.4-focal1_amd64.deb
- b84ba3f6cc18f1af689d3e1843ca5781 4604 debug optional libsgx-aesm-pce-plugin-dbgsym_2.16.100.4-focal1_amd64.ddeb
- 041bb813666154eb539d2c8e54eb6f59 29468 utils optional libsgx-aesm-pce-plugin_2.16.100.4-focal1_amd64.deb
- d21d71159fdeb8d6278d1f3e412559ee 5840 debug optional libsgx-aesm-quote-ex-plugin-dbgsym_2.16.100.4-focal1_amd64.ddeb
- 45bc38bce7992185bbfa2d179d483f3d 40624 utils optional libsgx-aesm-quote-ex-plugin_2.16.100.4-focal1_amd64.deb
- 4593e7078591a0ed0491cada9089307f 8713320 debug optional sgx-aesm-service-dbgsym_2.16.100.4-focal1_amd64.ddeb
- 28b2a0a0facd8606ea363885ae20938f 10546 utils optional sgx-aesm-service_2.16.100.4-focal1_amd64.buildinfo
- 173c70482a10b14210620b2e816e1a56 549852 utils optional sgx-aesm-service_2.16.100.4-focal1_amd64.deb
+ 4e48602d7d187e63c4f1bb486075f46b 1552 utils optional sgx-aesm-service_2.16.100.4-focal1.dsc
+ b7d711256430e2c38f271aa9b9bac7fb 10794204 utils optional sgx-aesm-service_2.16.100.4.orig.tar.gz
+ 1a70c28eaf7bdd64bafb421ffa7aea95 21684 utils optional sgx-aesm-service_2.16.100.4-focal1.debian.tar.xz
+ 1d2811ef49b9060572f6062017a1463c 297408 utils optional libsgx-ae-epid_2.16.100.4-focal1_amd64.deb
+ 36b73cb9a1f140e49ec82e6a980efaf1 131508 utils optional libsgx-ae-le_2.16.100.4-focal1_amd64.deb
+ 8400cbbda4011b3062edfa2e9506a223 220948 utils optional libsgx-ae-pce_2.16.100.4-focal1_amd64.deb
+ 2b79253ee947b77b451f7d14bfe34da2 5284 debug optional libsgx-aesm-ecdsa-plugin-dbgsym_2.16.100.4-focal1_amd64.ddeb
+ d317698852e6f606e8817f0852efc368 32248 utils optional libsgx-aesm-ecdsa-plugin_2.16.100.4-focal1_amd64.deb
+ 602f7fb132f021db9ca7152f8a3b7d9a 9384 debug optional libsgx-aesm-epid-plugin-dbgsym_2.16.100.4-focal1_amd64.ddeb
+ 9a9d83136b87e022c8a47ed91ee8600f 54732 utils optional libsgx-aesm-epid-plugin_2.16.100.4-focal1_amd64.deb
+ aef03c804b82aedf2e189392781c497b 6200 debug optional libsgx-aesm-launch-plugin-dbgsym_2.16.100.4-focal1_amd64.ddeb
+ 4f3d6ec39f94a6e69db8ee6698010e8a 38848 utils optional libsgx-aesm-launch-plugin_2.16.100.4-focal1_amd64.deb
+ e925d638f1598e00d088a823637eb927 4604 debug optional libsgx-aesm-pce-plugin-dbgsym_2.16.100.4-focal1_amd64.ddeb
+ b7fa84e96fdc19ea5f8be40f5291a5bf 29480 utils optional libsgx-aesm-pce-plugin_2.16.100.4-focal1_amd64.deb
+ e6a9ab7cecf130eb89896b51292cf0bf 5832 debug optional libsgx-aesm-quote-ex-plugin-dbgsym_2.16.100.4-focal1_amd64.ddeb
+ 1b8f22b3d4e38c745cef18986153ad2c 40640 utils optional libsgx-aesm-quote-ex-plugin_2.16.100.4-focal1_amd64.deb
+ 0975dfe560aa09c0e74ca248311ea950 8722088 debug optional sgx-aesm-service-dbgsym_2.16.100.4-focal1_amd64.ddeb
+ 1cc4236e975251a882c577c01b17dfd8 10504 utils optional sgx-aesm-service_2.16.100.4-focal1_amd64.buildinfo
+ 71a4bb1350f4af687aac61fc4ad8ff2e 541708 utils optional sgx-aesm-service_2.16.100.4-focal1_amd64.deb

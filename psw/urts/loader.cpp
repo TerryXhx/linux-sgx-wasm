@@ -357,7 +357,7 @@ int CLoader::build_wasm_pages()
     while(offset < size)
     {
         //call driver to add page;
-        if(SGX_SUCCESS != (ret = get_enclave_creator()->add_enclave_page(ENCLAVE_ID_IOCTL, GET_PTR(void, source, 0), rva, sinfo, attr)))
+        if(SGX_SUCCESS != (ret = get_enclave_creator()->add_enclave_page(ENCLAVE_ID_IOCTL, GET_PTR(void, source, offset), rva, sinfo, attr)))
         {
             //if add page failed , we should remove enclave somewhere;
             return ret;

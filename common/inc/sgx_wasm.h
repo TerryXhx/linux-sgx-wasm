@@ -6,6 +6,7 @@ extern "C" {
 #endif
 
 #include <stdint.h>
+#include "sgx_urts.h"
 
 #define SGX_WASM_SEC_NAME ".sgx_wasm"
 #define SGX_WASM_SEC_SIZE 20480
@@ -32,6 +33,8 @@ typedef struct _sgx_wasm_vm_mr_t
 uint8_t* sgx_get_wasm_sec_buf_addr();
 
 uint8_t* sgx_get_wasm_vm_mr_sec_buf_addr();
+
+sgx_status_t sgx_wasm_derive_measurement(uint8_t *wasm_blob, uint64_t wasm_blob_size, sgx_measurement_t *mr);
 
 #ifdef __cplusplus
 }
