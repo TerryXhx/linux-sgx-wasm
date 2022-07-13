@@ -35,18 +35,6 @@
 #include <stdio.h> /* vsnprintf */
 #include <string.h>
 #include "sgx_wasm.h"
-#include "sgx_tcrypto.h"
-#include "sgx_utils.h"
-#include <unordered_map>
-#include <vector>
-
-#define DATA_BLOCK_SIZE 64
-#define SIZE_NAMED_VALUE 8
-#define SE_PAGE_SIZE 0x1000
-
-#define HANDLE_SIZE_OFFSET 152
-#define HANDLE_HASH_OFFSET 168
-#define SHA256_DIGEST_SIZE 32
 
 /* 
  * printf: 
@@ -59,58 +47,22 @@ int printf(const char* fmt, ...)
     va_start(ap, fmt);
     vsnprintf(buf, BUFSIZ, fmt, ap);
     va_end(ap);
-    ocall_print_string(buf);
+    ocall_print(buf);
     return (int)strnlen(buf, BUFSIZ - 1) + 1;
 }
 
-struct VectorHasher {
-    int operator()(const std::vector<uint8_t> V) const {
-        int hash = SGX_HASH_SIZE;
-        for (int i = 0; i < SGX_HASH_SIZE; ++i)
-            hash ^= V[i] + 0x9e3779b9 + (hash << 6) + (hash >> 2);
-        return hash;
-    }
-};
-
-
-
-void ecall_test_wasm(uint8_t *wasm_blob, uint64_t wasm_blob_size)
+void ecall_compiler_main(uint8_t *wasm_blob, uint64_t wasm_blob_size)
 {
+    /* TODO: compile wasm to AOT and hardcode AOT to wasm-vm-enclave.signed.so*/
+
     sgx_measurement_t mr;
     
     if (SGX_SUCCESS != sgx_wasm_derive_measurement(wasm_blob, wasm_blob_size, &mr))
         printf("fail\n");
-    
     else {
         printf("derived measurement:\n");
         for (uint64_t j = 0; j < sizeof(mr.m); j++)
             printf("%02x ", mr.m[j]);
         printf("\n");
     }
-
-    std::unordered_map<std::vector<uint8_t>, std::vector<uint8_t>, VectorHasher> mr_to_hash_map;
-
-    // get wasm sha-256
-    uint8_t *wasm_hash_raw = (uint8_t*)malloc(SGX_HASH_SIZE);
-    sgx_wasm_get_hash(wasm_blob, wasm_blob_size, wasm_hash_raw);
-    std::vector<uint8_t> wasm_hash(SGX_HASH_SIZE);
-    printf("wasm sha-256 hash:\n");
-    memcpy(wasm_hash.data(), wasm_hash_raw, SGX_HASH_SIZE);
-    free(wasm_hash_raw);
-    for (uint64_t j = 0; j < SGX_HASH_SIZE; j++)
-        printf("%02x ", wasm_hash[j]);
-    printf("\n");
-
-    // get wasm vm enclave measurement
-    std::vector<uint8_t> derived_measurement(SGX_HASH_SIZE);
-    memcpy(derived_measurement.data(), mr.m, SGX_HASH_SIZE);
-
-    // update mapping
-    mr_to_hash_map[derived_measurement] = wasm_hash;
-
-    // check
-    printf("get wasm hash from mapping\n");
-    for (int i = 0; i < SGX_HASH_SIZE; ++i)
-        printf("%02x ", mr_to_hash_map[derived_measurement][i]);
-    printf("\n");
 }
