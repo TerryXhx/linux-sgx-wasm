@@ -113,3 +113,46 @@ CLEANUP:
     free(wasm_sec_buf);
     return ret;
 }
+
+sgx_status_t sgx_wasm_get_hash(uint8_t *wasm_blob, uint64_t wasm_blob_size, uint8_t *hash)
+{  
+    sgx_status_t ret = SGX_SUCCESS;
+    sgx_sha_state_handle_t sha_handle;
+    if(sgx_sha256_init(&sha_handle) != SGX_SUCCESS)
+    {
+        return SGX_ERROR_UNEXPECTED;
+    }
+
+    uint64_t wasm_blob_size_aligned = (wasm_blob_size + DATA_BLOCK_SIZE - 1) & ~(DATA_BLOCK_SIZE - 1);
+    uint8_t *wasm_blob_aligned = (uint8_t*)malloc(wasm_blob_size_aligned);
+    memset(wasm_blob_aligned, 0, wasm_blob_size_aligned);
+    memcpy(wasm_blob_aligned, wasm_blob, wasm_blob_size);
+
+    uint8_t* source = reinterpret_cast<uint8_t*>(reinterpret_cast<uint64_t>(wasm_blob_aligned));
+    uint8_t* wasm_blob_end_addr = source + wasm_blob_size_aligned;
+
+    while (source < wasm_blob_end_addr)
+    {
+        uint8_t data_block[DATA_BLOCK_SIZE];
+        memset(data_block, 0, DATA_BLOCK_SIZE);
+        memcpy(data_block, source, DATA_BLOCK_SIZE);
+        if(sgx_sha256_update(data_block, DATA_BLOCK_SIZE, sha_handle) != SGX_SUCCESS)
+        {
+            ret = SGX_ERROR_UNEXPECTED;
+            goto CLEANUP;
+        }
+        source += DATA_BLOCK_SIZE;
+    }
+    sgx_measurement_t mr;
+    if(sgx_sha256_get_hash(sha_handle, &mr.m) != SGX_SUCCESS)
+    {
+        ret = SGX_ERROR_UNEXPECTED;
+        goto CLEANUP;
+    }
+    memcpy(hash, mr.m, SGX_HASH_SIZE);
+
+CLEANUP:
+    sgx_sha256_close(sha_handle);
+    free(wasm_blob_aligned);
+    return ret;  
+}

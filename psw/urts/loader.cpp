@@ -303,6 +303,10 @@ int CLoader::build_pages(const uint64_t start_rva, const uint64_t size, const vo
     uint64_t offset = 0;
     uint64_t rva = start_rva;
 
+    if (size > SE_PAGE_SIZE && source != 0)
+    {
+        se_trace(SE_TRACE_DEBUG, "size: %lu source: %p start rva: %lx\n", size, source, start_rva);
+    }
     assert(IS_PAGE_ALIGNED(start_rva) && IS_PAGE_ALIGNED(size));
 
     uint64_t skip_rva = 0;
@@ -469,6 +473,7 @@ int CLoader::build_context(const uint64_t start_rva, layout_entry_t *layout)
                     m_tcs_list.push_back(std::make_pair(GET_PTR(tcs_t, m_start_addr, rva), false));
                 }
                 sinfo.flags = layout->si_flags;
+                se_trace(SE_TRACE_DEBUG, "111 build contexting\n");
                 if(SGX_SUCCESS != (ret = build_pages(rva, ((uint64_t)layout->page_count) << SE_PAGE_SHIFT, added_page, sinfo, attributes)))
                 {
                     return ret;
@@ -498,6 +503,7 @@ int CLoader::build_context(const uint64_t start_rva, layout_entry_t *layout)
                 source = added_page;
             }
             
+            se_trace(SE_TRACE_DEBUG, "222 build contexting\n");
             if(SGX_SUCCESS != (ret = build_pages(rva, ((uint64_t)layout->page_count) << SE_PAGE_SHIFT, source, sinfo, layout->attributes)))
             {
                 return ret;

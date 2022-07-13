@@ -36,6 +36,7 @@ uint8_t* sgx_get_wasm_vm_mr_sec_buf_addr();
 
 sgx_status_t sgx_wasm_derive_measurement(uint8_t *wasm_blob, uint64_t wasm_blob_size, sgx_measurement_t *mr);
 
+sgx_status_t sgx_wasm_get_hash(uint8_t *wasm_blob, uint64_t wasm_blob_size, uint8_t *hash);
 #ifdef __cplusplus
 }
 #endif

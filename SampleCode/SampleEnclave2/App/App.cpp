@@ -226,17 +226,6 @@ int SGX_CDECL main(int argc, char *argv[])
         getchar();
         return -1; 
     }
- 
-    /* Utilize edger8r attributes */
-    edger8r_array_attributes();
-    edger8r_pointer_attributes();
-    edger8r_type_attributes();
-    edger8r_function_attributes();
-    
-    /* Utilize trusted libraries */
-    ecall_libc_functions();
-    ecall_libcxx_functions();
-    ecall_thread_functions();
 
     const char *filename = "main.wasm";
     uint64_t size = get_file_size(filename);
@@ -247,13 +236,6 @@ int SGX_CDECL main(int argc, char *argv[])
     if (read_file_to_buf(filename, wasm_sec->wasm_blob, size, 0) != 0)
         return -1;
     wasm_sec->size = size;
-    printf("wasm_sec->size: %lu\n", wasm_sec_size);
-    for (int i = 0; i < 10; ++i)
-        printf("%02x ", reinterpret_cast<uint8_t*>(wasm_sec)[i]);
-    
-    uint8_t *wasm_sec2 = (uint8_t*)malloc(wasm_sec_size);
-    memset(wasm_sec2, 0, wasm_sec_size);
-    
 
     ecall_test_wasm(global_eid, reinterpret_cast<uint8_t*>(wasm_sec), wasm_sec_size);
 
