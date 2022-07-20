@@ -36,6 +36,7 @@
 #include <string.h>
 #include "sgx_wasm.h"
 #include "sgx_tcrypto.h"
+#include "sgx_tseal.h"
 #include "sgx_utils.h"
 #include <unordered_map>
 #include <vector>
@@ -47,6 +48,8 @@
 #define HANDLE_SIZE_OFFSET 152
 #define HANDLE_HASH_OFFSET 168
 #define SHA256_DIGEST_SIZE 32
+
+#define WASM_HASH_SIZE 32
 
 /* 
  * printf: 
@@ -63,18 +66,12 @@ int printf(const char* fmt, ...)
     return (int)strnlen(buf, BUFSIZ - 1) + 1;
 }
 
-struct VectorHasher {
-    int operator()(const std::vector<uint8_t> V) const {
-        int hash = SGX_HASH_SIZE;
-        for (int i = 0; i < SGX_HASH_SIZE; ++i)
-            hash ^= V[i] + 0x9e3779b9 + (hash << 6) + (hash >> 2);
-        return hash;
-    }
-};
+uint32_t get_sealed_data_size()
+{
+    return sgx_calc_sealed_data_size(0, WASM_HASH_SIZE + SGX_HASH_SIZE);
+}
 
-
-
-void ecall_test_wasm(uint8_t *wasm_blob, uint64_t wasm_blob_size)
+void ecall_test_wasm(uint8_t *wasm_blob, uint64_t wasm_blob_size, uint8_t* sealed_mapping, uint32_t data_size)
 {
     sgx_measurement_t mr;
     
@@ -88,29 +85,80 @@ void ecall_test_wasm(uint8_t *wasm_blob, uint64_t wasm_blob_size)
         printf("\n");
     }
 
-    std::unordered_map<std::vector<uint8_t>, std::vector<uint8_t>, VectorHasher> mr_to_hash_map;
-
     // get wasm sha-256
-    uint8_t *wasm_hash_raw = (uint8_t*)malloc(SGX_HASH_SIZE);
-    sgx_wasm_get_hash(wasm_blob, wasm_blob_size, wasm_hash_raw);
-    std::vector<uint8_t> wasm_hash(SGX_HASH_SIZE);
-    printf("wasm sha-256 hash:\n");
-    memcpy(wasm_hash.data(), wasm_hash_raw, SGX_HASH_SIZE);
-    free(wasm_hash_raw);
-    for (uint64_t j = 0; j < SGX_HASH_SIZE; j++)
-        printf("%02x ", wasm_hash[j]);
-    printf("\n");
+    uint8_t *wasm_hash = (uint8_t*)malloc(WASM_HASH_SIZE);
+    sgx_wasm_get_hash(wasm_blob, wasm_blob_size, wasm_hash);
 
     // get wasm vm enclave measurement
-    std::vector<uint8_t> derived_measurement(SGX_HASH_SIZE);
-    memcpy(derived_measurement.data(), mr.m, SGX_HASH_SIZE);
+    uint8_t* derived_measurement = (uint8_t*)malloc(SGX_HASH_SIZE);
+    memcpy(derived_measurement, mr.m, SGX_HASH_SIZE);
 
-    // update mapping
-    mr_to_hash_map[derived_measurement] = wasm_hash;
+    uint8_t* mapping = (uint8_t*)malloc(WASM_HASH_SIZE + SGX_HASH_SIZE);
+    memcpy(mapping, wasm_hash, WASM_HASH_SIZE);
+    memcpy(mapping + WASM_HASH_SIZE, derived_measurement, SGX_HASH_SIZE);
 
-    // check
-    printf("get wasm hash from mapping\n");
-    for (int i = 0; i < SGX_HASH_SIZE; ++i)
-        printf("%02x ", mr_to_hash_map[derived_measurement][i]);
+    /* Seal the mapping begin */
+    uint32_t sealed_data_size = sgx_calc_sealed_data_size(0, WASM_HASH_SIZE + SGX_HASH_SIZE);
+    if (sealed_data_size == UINT32_MAX)
+        printf("Error: Out of memory\n");
+    if (sealed_data_size > data_size)
+        printf("Error: Invalid parameter\n");
+    
+    uint8_t *temp_sealed_buf = (uint8_t*)malloc(sealed_data_size);
+    if (temp_sealed_buf == NULL)
+        printf("Error: Out of memory\n");
+    sgx_status_t err = sgx_seal_data(0, NULL, (uint32_t)WASM_HASH_SIZE + SGX_HASH_SIZE, mapping, sealed_data_size, (sgx_sealed_data_t *)temp_sealed_buf);
+    if (err == SGX_SUCCESS)
+        memcpy(sealed_mapping, temp_sealed_buf, sealed_data_size);
+    else
+        printf("seal failed\n");
+    /* Seal the mapping end */
+
+    free(wasm_hash);
+    free(derived_measurement);
+    free(mapping);
+    free(temp_sealed_buf);
+}
+
+void unseal_mapping(const uint8_t *sealed_mapping, uint32_t data_size)
+{
+    uint32_t mac_text_len = sgx_get_add_mac_txt_len((const sgx_sealed_data_t*)sealed_mapping);
+    uint32_t decrypt_data_len = sgx_get_encrypt_txt_len((const sgx_sealed_data_t*)sealed_mapping);
+    if (mac_text_len == UINT32_MAX || decrypt_data_len == UINT32_MAX)
+        printf("Error: Unexpected\n");
+    if (mac_text_len > data_size || decrypt_data_len > data_size)
+        printf("Error: Invalid parameter\n");
+    printf("mac_text_len: %d\n", mac_text_len);
+    printf("decrypt_data_len: %d\n", decrypt_data_len);
+    
+    uint8_t *de_mac_text = (uint8_t*)malloc(mac_text_len);
+    if (de_mac_text == NULL)
+        printf("Error: Out of memory\n");
+    uint8_t *decrypt_mapping = (uint8_t*)malloc(decrypt_data_len);
+    if (decrypt_mapping == NULL)
+    {
+        free(de_mac_text);
+        printf("Error: Out of memory\n");
+    }
+
+    sgx_status_t ret = sgx_unseal_data((const sgx_sealed_data_t*)sealed_mapping, de_mac_text, &mac_text_len, decrypt_mapping, &decrypt_data_len);
+    if (ret != SGX_SUCCESS)
+    {
+        printf("unseal failed\n");
+        free(de_mac_text);
+        free(decrypt_mapping);
+        return;
+    }
+
+    printf("unseal success\n");
+    for (uint64_t j = 0; j < mac_text_len; j++)
+        printf("%02x ", de_mac_text[j]);
     printf("\n");
+    printf("decrypt mapping\n");
+    for (uint64_t j = 0; j < decrypt_data_len; j++)
+        printf("%02x ", decrypt_mapping[j]);
+    printf("\n");
+
+    free(de_mac_text);
+    free(decrypt_mapping);
 }

@@ -103,9 +103,7 @@ int main()
     for (int i = 0; i < wasm_sec_size; i++)
         printf("%d: %02x\n", i, reinterpret_cast<uint8_t*>(wasm_sec)[i]);
     write_data_to_file(enclave_file, (uint8_t*)wasm_sec, wasm_sec_size, 0x26000);
-    printf("begin check\n");
-    uint8_t* check_buf = (uint8_t*)malloc(wasm_sec_size);
-    read_file_to_buf(enclave_file, check_buf, wasm_sec_size, 0x26000);
-    for (int i = 0; i < wasm_sec_size; i++)
-        printf("%d: %02x\n", i, check_buf[i]);
+    const char* sign_cmd = "/home/nsec-sgx/SGXENVWASM/sgxsdk/bin/x64/sgx_sign sign -key Enclave/Enclave_private_test.pem -enclave enclave.so -out enclave.signed.so -config Enclave/Enclave.config.xml";
+    system(sign_cmd);
+    return 0;
 }

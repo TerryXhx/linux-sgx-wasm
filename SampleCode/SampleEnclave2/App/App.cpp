@@ -48,6 +48,8 @@
 
 #include "sgx_wasm.h"
 
+#define SEALED_MAPPING_FILE "sealed_mapping.bin"
+
 /* Global EID shared by multiple threads */
 sgx_enclave_id_t global_eid = 0;
 
@@ -213,6 +215,27 @@ int read_file_to_buf(const char *filename, uint8_t *buf, uint64_t bsize, long of
     return 0;
 }
 
+static bool write_buf_to_file(const char *filename, const uint8_t *buf, size_t bsize, long offset)
+{
+    if (filename == NULL || buf == NULL || bsize == 0)
+        return false;
+    std::ofstream ofs(filename, std::ios::binary | std::ios::out);
+    if (!ofs.good())
+    {
+        printf("Failed to open the file\n");
+        return false;
+    }
+    ofs.seekp(offset, std::ios::beg);
+    ofs.write(reinterpret_cast<const char*>(buf), bsize);
+    if (ofs.fail())
+    {
+        printf("Failed to write to the file\n");
+        return false;
+    }
+
+    return true;
+}
+
 /* Application entry */
 int SGX_CDECL main(int argc, char *argv[])
 {
@@ -237,7 +260,27 @@ int SGX_CDECL main(int argc, char *argv[])
         return -1;
     wasm_sec->size = size;
 
-    ecall_test_wasm(global_eid, reinterpret_cast<uint8_t*>(wasm_sec), wasm_sec_size);
+    sgx_status_t ret;
+    uint32_t sealed_data_size = 0;
+    ret = get_sealed_data_size(global_eid, &sealed_data_size);
+    uint8_t *temp_sealed_buf = (uint8_t *)malloc(sealed_data_size);
+
+    ecall_test_wasm(global_eid, reinterpret_cast<uint8_t*>(wasm_sec), wasm_sec_size, temp_sealed_buf, sealed_data_size);
+    /* Save the sealed mapping to file */
+    if (write_buf_to_file(SEALED_MAPPING_FILE, temp_sealed_buf, sealed_data_size, 0) == false) {
+        printf("Failed to write the file\n");
+        free(temp_sealed_buf);
+        return -1;    
+    }
+    free(temp_sealed_buf);
+
+    /* Unseal the mapping */
+    uint32_t fsize = static_cast<uint32_t>(get_file_size(SEALED_MAPPING_FILE));
+    uint8_t *temp_buf = (uint8_t *)malloc(fsize);
+    if (read_file_to_buf(SEALED_MAPPING_FILE, temp_buf, fsize, 0) != 0)
+        return -1;
+    unseal_mapping(global_eid, temp_buf, fsize);
+    free(temp_buf);
 
     /* Destroy the enclave */
     sgx_destroy_enclave(global_eid);
