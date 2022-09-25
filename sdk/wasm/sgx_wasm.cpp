@@ -395,6 +395,11 @@ void sm3_final(struct sm3_context *ctx, unsigned char output[32])
   PUT_ULONG_BE( ctx->state[7], output, 28 );
 }
 
+uint8_t* penglai_get_wasm_vm_mr_sec_buf_addr()
+{
+    return reinterpret_cast<uint8_t*>(reinterpret_cast<uint64_t>(sgx_wasm_vm_mr_buf) + sizeof(sgx_wasm_vm_mr_t));
+}
+
 void measure_sim(uint8_t *wasm_blob, uint64_t wasm_blob_size, struct sm3_context *hash_ctx, uint8_t* hash, unsigned long nonce)
 {
     unsigned long start_va = PENGLAI_WASM_SEC_ADDR;
@@ -420,7 +425,7 @@ void measure_sim(uint8_t *wasm_blob, uint64_t wasm_blob_size, struct sm3_context
 
 void penglai_wasm_derive_measurement(uint8_t *wasm_blob, uint64_t wasm_blob_size, uint8_t *hash, unsigned long nonce)
 {
-    penglai_wasm_vm_mr_t* wasm_vm_mr = (penglai_wasm_vm_mr_t*)sgx_get_wasm_vm_mr_sec_buf_addr();
+    penglai_wasm_vm_mr_t* wasm_vm_mr = (penglai_wasm_vm_mr_t*)penglai_get_wasm_vm_mr_sec_buf_addr();
     struct sm3_context hash_ctx;
 
     memcpy(&hash_ctx, (void*)(wasm_vm_mr->total), PENGLAI_SM3_SIZE);

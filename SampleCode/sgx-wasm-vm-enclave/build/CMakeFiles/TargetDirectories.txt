@@ -1,0 +1,4 @@
+/home/nsec-sgx/Penglai-WAMR/WAMR-wasm/product-mini/platforms/linux-sgx/build/CMakeFiles/rebuild_cache.dir
+/home/nsec-sgx/Penglai-WAMR/WAMR-wasm/product-mini/platforms/linux-sgx/build/CMakeFiles/edit_cache.dir
+/home/nsec-sgx/Penglai-WAMR/WAMR-wasm/product-mini/platforms/linux-sgx/build/CMakeFiles/vmlib_untrusted.dir
+/home/nsec-sgx/Penglai-WAMR/WAMR-wasm/product-mini/platforms/linux-sgx/build/CMakeFiles/vmlib.dir
