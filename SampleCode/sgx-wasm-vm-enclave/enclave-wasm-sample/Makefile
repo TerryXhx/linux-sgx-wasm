@@ -174,10 +174,6 @@ $(App_Name): App/Enclave_u.o $(App_Cpp_Objects) libvmlib_untrusted.a
 	@$(CXX) $^ -o $@ $(App_Link_Flags)
 	@echo "LINK =>  $@"
 
-######## Utils Objects ########
-Utils/load_wasm: Utils/load_wasm.cpp
-	@$(CXX) -o $@ $<
-
 ######## Enclave Objects ########
 
 Enclave/Enclave_t.c: $(SGX_EDGER8R) Enclave/Enclave.edl
@@ -204,7 +200,7 @@ $(Enclave_Name): Enclave/Enclave_t.o $(Enclave_Cpp_Objects) libvmlib.a
 	@echo "LINK =>  $@"
 
 MRFILE := sgx_wasm_vm_mr.bin
-$(Signed_Enclave_Name): $(Enclave_Name) Utils/load_wasm
+$(Signed_Enclave_Name): $(Enclave_Name)
 	@$(SGX_ENCLAVE_SIGNER) gen_wasm_vm_mr -key Enclave/Enclave_private.pem -enclave $(Enclave_Name) -out $@ -config $(Enclave_Config_File) -wasm_vm_mr_out $(MRFILE)
 	@$(SGX_ENCLAVE_SIGNER) signwasm -key Enclave/Enclave_private.pem -enclave $(Enclave_Name) -out $@ -config $(Enclave_Config_File) -wasmfile wasm_mr.wasm
 	@echo "SIGN =>  $@"
