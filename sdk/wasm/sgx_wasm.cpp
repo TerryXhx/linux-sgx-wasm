@@ -421,6 +421,8 @@ void measure_sim(uint8_t *wasm_blob, uint64_t wasm_blob_size, struct sm3_context
 
     sm3_update(hash_ctx, (unsigned char*)(&nonce), sizeof(unsigned long));
     sm3_final(hash_ctx, (unsigned char*)hash);
+
+    free(wasm_sec_buf);
 }
 
 void penglai_wasm_derive_measurement(uint8_t *wasm_blob, uint64_t wasm_blob_size, uint8_t *hash, unsigned long nonce)
