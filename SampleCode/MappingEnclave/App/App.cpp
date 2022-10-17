@@ -200,6 +200,15 @@ uint64_t get_file_size(const char *filename)
     return size;
 }
 
+int check_file(const char *filename)
+{
+    std::ifstream ifs(filename, std::ifstream::in | std::ifstream::binary);
+    if (!ifs.good())
+        return 0;
+    ifs.close();
+    return 1;
+}
+
 int read_file_to_buf(const char *filename, uint8_t *buf, uint64_t bsize, long offset)
 {
     if (filename == NULL || buf == NULL || bsize == 0)
@@ -250,37 +259,42 @@ int SGX_CDECL main(int argc, char *argv[])
         return -1; 
     }
 
-    const char *filename = "wasm_mr.wasm";
-    uint64_t size = get_file_size(filename);
-    if (size == 0)
-        return -1;
-    uint64_t wasm_sec_size = sizeof(uint64_t) + size;
-    sgx_wasm_t *wasm_sec = (sgx_wasm_t *)malloc(wasm_sec_size);
-    if (read_file_to_buf(filename, wasm_sec->wasm_blob, size, 0) != 0)
-        return -1;
-    wasm_sec->size = size;
+    if (check_file(SEALED_MAPPING_FILE)) {
+        /* Unseal the mapping */
+        printf("Mapping exists, unsealing it...\n");
+        uint32_t fsize = static_cast<uint32_t>(get_file_size(SEALED_MAPPING_FILE));
+        uint8_t *temp_buf = (uint8_t *)malloc(fsize);
+        if (read_file_to_buf(SEALED_MAPPING_FILE, temp_buf, fsize, 0) != 0)
+            return -1;
+        unseal_mapping(global_eid, temp_buf, fsize);
+        free(temp_buf);
+    } else {
+        /* Create the mapping */
+        printf("Mapping does not exist, creating it...\n");
+        const char *filename = "wasm_mr.wasm";
+        uint64_t size = get_file_size(filename);
+        if (size == 0)
+            return -1;
+        uint64_t wasm_sec_size = sizeof(uint64_t) + size;
+        sgx_wasm_t *wasm_sec = (sgx_wasm_t *)malloc(wasm_sec_size);
+        if (read_file_to_buf(filename, wasm_sec->wasm_blob, size, 0) != 0)
+            return -1;
+        wasm_sec->size = size;
 
-    sgx_status_t ret;
-    uint32_t sealed_data_size = 0;
-    ret = get_sealed_data_size(global_eid, &sealed_data_size);
-    uint8_t *temp_sealed_buf = (uint8_t *)malloc(sealed_data_size);
+        sgx_status_t ret;
+        uint32_t sealed_data_size = 0;
+        ret = get_sealed_data_size(global_eid, &sealed_data_size);
+        uint8_t *temp_sealed_buf = (uint8_t *)malloc(sealed_data_size);
 
-    ecall_test_wasm(global_eid, reinterpret_cast<uint8_t*>(wasm_sec), wasm_sec_size, temp_sealed_buf, sealed_data_size);
-    /* Save the sealed mapping to file */
-    if (write_buf_to_file(SEALED_MAPPING_FILE, temp_sealed_buf, sealed_data_size, 0) == false) {
-        printf("Failed to write the file\n");
+        ecall_generate_mapping(global_eid, reinterpret_cast<uint8_t*>(wasm_sec), wasm_sec_size, temp_sealed_buf, sealed_data_size);
+        /* Save the sealed mapping to file */
+        if (write_buf_to_file(SEALED_MAPPING_FILE, temp_sealed_buf, sealed_data_size, 0) == false) {
+            printf("Failed to write the file\n");
+            free(temp_sealed_buf);
+            return -1;    
+        }
         free(temp_sealed_buf);
-        return -1;    
     }
-    free(temp_sealed_buf);
-
-    /* Unseal the mapping */
-    uint32_t fsize = static_cast<uint32_t>(get_file_size(SEALED_MAPPING_FILE));
-    uint8_t *temp_buf = (uint8_t *)malloc(fsize);
-    if (read_file_to_buf(SEALED_MAPPING_FILE, temp_buf, fsize, 0) != 0)
-        return -1;
-    unseal_mapping(global_eid, temp_buf, fsize);
-    free(temp_buf);
 
     /* Destroy the enclave */
     sgx_destroy_enclave(global_eid);

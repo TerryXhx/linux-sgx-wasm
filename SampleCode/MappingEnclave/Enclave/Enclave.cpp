@@ -70,7 +70,7 @@ int printf(const char* fmt, ...)
 
 uint32_t get_sealed_data_size()
 {
-    return sgx_calc_sealed_data_size(0, WASM_HASH_SIZE + SGX_HASH_SIZE);
+    return sgx_calc_sealed_data_size(0, WASM_HASH_SIZE + SGX_HASH_SIZE + PENGLAI_HASH_SIZE);
 }
 
 void printHash(unsigned char *hash)
@@ -88,17 +88,21 @@ void printHash(unsigned char *hash)
 void printHashCtx(unsigned long *hash)
 {
 	int i;
-  printf("intermediate hash ctx:\n");
+    printf("intermediate hash ctx:\n");
 	for (i = 0; i < 18; i++) {
-    printf("0x%016lx,\n", (*hash));
-    ++hash;
+        printf("0x%016lx,\n", (*hash));
+        ++hash;
 	}
 }
 
-void ecall_test_wasm(uint8_t *wasm_blob, uint64_t wasm_blob_size, uint8_t* sealed_mapping, uint32_t data_size)
+void ecall_generate_mapping(uint8_t *wasm_blob, uint64_t wasm_blob_size, uint8_t* sealed_mapping, uint32_t data_size)
 {
     sgx_measurement_t mr;
+    uint8_t *penglai_hash = (uint8_t*)malloc(PENGLAI_HASH_SIZE);
+    uint8_t *wasm_hash = (uint8_t*)malloc(WASM_HASH_SIZE);
+    uint8_t* mapping = (uint8_t*)malloc(WASM_HASH_SIZE + SGX_HASH_SIZE + PENGLAI_HASH_SIZE);
 
+    // get sgx measurement
     if (SGX_SUCCESS != sgx_wasm_derive_measurement(wasm_blob, wasm_blob_size, &mr))
         printf("fail to derive sgx measurement\n");
     else {
@@ -108,19 +112,36 @@ void ecall_test_wasm(uint8_t *wasm_blob, uint64_t wasm_blob_size, uint8_t* seale
         printf("\n");
     }
 
-
-    uint8_t *penglai_hash = (uint8_t*)malloc(PENGLAI_HASH_SIZE);
+    // get penglai measurement
     penglai_wasm_derive_measurement(wasm_blob, wasm_blob_size, penglai_hash, 0);
-    
     printf("penglai derived measurement:\n");
     printHash(penglai_hash);
 
     // get wasm sha-256
-    uint8_t *wasm_hash = (uint8_t*)malloc(WASM_HASH_SIZE);
     sgx_wasm_get_hash(wasm_blob, wasm_blob_size, wasm_hash);
+    printf("wasm sha-256:\n");
+    for (uint64_t j = 0; j < WASM_HASH_SIZE; j++)
+        printf("%02x ", wasm_hash[j]);
+    printf("\n");
 
-    free(penglai_hash);
+    // get mapping
+    memcpy(mapping, wasm_hash, WASM_HASH_SIZE);
+    memcpy(mapping + WASM_HASH_SIZE, mr.m, SGX_HASH_SIZE);
+    memcpy(mapping + WASM_HASH_SIZE + SGX_HASH_SIZE, penglai_hash, PENGLAI_HASH_SIZE);
+
+    // seal mapping
+    uint32_t sealed_data_size = sgx_calc_sealed_data_size(0, WASM_HASH_SIZE + SGX_HASH_SIZE + PENGLAI_HASH_SIZE);
+    uint8_t *temp_sealed_buf = (uint8_t*)malloc(sealed_data_size);
+    sgx_status_t err = sgx_seal_data(0, NULL, (uint32_t)WASM_HASH_SIZE + SGX_HASH_SIZE + PENGLAI_HASH_SIZE, mapping, sealed_data_size, (sgx_sealed_data_t *)temp_sealed_buf);
+    if (err == SGX_SUCCESS) {
+        printf("selaed success\n");
+        memcpy(sealed_mapping, temp_sealed_buf, sealed_data_size);
+    } else
+        printf("seal failed\n");
+
+    free(mapping);
     free(wasm_hash);
+    free(penglai_hash);
 }
 
 void unseal_mapping(const uint8_t *sealed_mapping, uint32_t data_size)
