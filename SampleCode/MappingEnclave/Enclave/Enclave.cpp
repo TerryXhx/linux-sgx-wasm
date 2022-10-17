@@ -134,7 +134,7 @@ void ecall_generate_mapping(uint8_t *wasm_blob, uint64_t wasm_blob_size, uint8_t
     uint8_t *temp_sealed_buf = (uint8_t*)malloc(sealed_data_size);
     sgx_status_t err = sgx_seal_data(0, NULL, (uint32_t)WASM_HASH_SIZE + SGX_HASH_SIZE + PENGLAI_HASH_SIZE, mapping, sealed_data_size, (sgx_sealed_data_t *)temp_sealed_buf);
     if (err == SGX_SUCCESS) {
-        printf("selaed success\n");
+        printf("seal success\n");
         memcpy(sealed_mapping, temp_sealed_buf, sealed_data_size);
     } else
         printf("seal failed\n");
