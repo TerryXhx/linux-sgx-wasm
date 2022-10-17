@@ -46,12 +46,15 @@ enclave {
     from "Edger8rSyntax/Arrays.edl" import *;
     from "Edger8rSyntax/Functions.edl" import *;
 
-    from "TrustedLibrary/Libc.edl" import *;
-    from "TrustedLibrary/Libcxx.edl" import ecall_exception, ecall_map;
-    from "TrustedLibrary/Thread.edl" import *;
+    // from "TrustedLibrary/Libc.edl" import *;
+    // from "TrustedLibrary/Libcxx.edl" import ecall_exception, ecall_map;
+    // from "TrustedLibrary/Thread.edl" import *;
+
+    from "sgx_tsgxssl.edl" import *;
+    from "sgx_pthread.edl" import *;
 
     trusted {
-        public void ecall_test_wasm([in, size=wasm_blob_size]uint8_t *wasm_blob, uint64_t wasm_blob_size, [out, size=data_size]uint8_t *sealed_mapping, uint32_t data_size);
+        public void ecall_generate_mapping([in, size=wasm_blob_size]uint8_t *wasm_blob, uint64_t wasm_blob_size, [out, size=data_size]uint8_t *sealed_mapping, uint32_t data_size);
         public uint32_t get_sealed_data_size();
         public void unseal_mapping([in, size=data_size]const uint8_t *sealed_mapping, uint32_t data_size);
     };

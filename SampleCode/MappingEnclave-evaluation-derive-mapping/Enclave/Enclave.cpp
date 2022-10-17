@@ -40,6 +40,7 @@
 #include "sgx_utils.h"
 #include <unordered_map>
 #include <vector>
+#include "tsgxsslio.h"
 
 #define DATA_BLOCK_SIZE 64
 #define SIZE_NAMED_VALUE 8
@@ -70,7 +71,7 @@ int printf(const char* fmt, ...)
 
 uint32_t get_sealed_data_size()
 {
-    return sgx_calc_sealed_data_size(0, WASM_HASH_SIZE + SGX_HASH_SIZE);
+    return sgx_calc_sealed_data_size(0, WASM_HASH_SIZE + SGX_HASH_SIZE + PENGLAI_HASH_SIZE);
 }
 
 void printHash(unsigned char *hash)
@@ -88,68 +89,141 @@ void printHash(unsigned char *hash)
 void printHashCtx(unsigned long *hash)
 {
 	int i;
-  printf("intermediate hash ctx:\n");
+    printf("intermediate hash ctx:\n");
 	for (i = 0; i < 18; i++) {
-    printf("0x%016lx,\n", (*hash));
-    ++hash;
+        printf("0x%016lx,\n", (*hash));
+        ++hash;
 	}
 }
 
-void ecall_test_wasm(uint8_t *wasm_blob, uint64_t wasm_blob_size, uint8_t* sealed_mapping, uint32_t data_size)
+struct sgx_timeb {
+    long time;
+    unsigned short millitm;
+    short timezone;
+    short dstflag;
+};
+
+void ecall_generate_mapping(uint8_t *wasm_blob, uint64_t wasm_blob_size, uint8_t* sealed_mapping, uint32_t data_size)
 {
     sgx_measurement_t mr;
     uint8_t *penglai_hash = (uint8_t*)malloc(PENGLAI_HASH_SIZE);
     uint8_t *wasm_hash = (uint8_t*)malloc(WASM_HASH_SIZE);
+    uint8_t* mapping = (uint8_t*)malloc(WASM_HASH_SIZE + SGX_HASH_SIZE + PENGLAI_HASH_SIZE);
+    uint32_t sealed_data_size = sgx_calc_sealed_data_size(0, WASM_HASH_SIZE + SGX_HASH_SIZE + PENGLAI_HASH_SIZE);
+    uint8_t *temp_sealed_buf = (uint8_t*)malloc(sealed_data_size);
+    sgx_timeb t_begin, t_sgx, t_penglai, t_wasm, t_copy_mapping, t_seal;
+
+    u_sgxssl_ftime(&t_begin, sizeof(sgx_timeb));
+    for (int i = 0; i < 10000; ++i) {
+        // get sgx measurement
+        if (SGX_SUCCESS != sgx_wasm_derive_measurement(wasm_blob, wasm_blob_size, &mr))
+            printf("fail to derive sgx measurement\n");
+        // else {
+        //     printf("sgx derived measurement:\n");
+        //     for (uint64_t j = 0; j < sizeof(mr.m); j++)
+        //         printf("%02x ", mr.m[j]);
+        //     printf("\n");
+        // }
+    }
+    u_sgxssl_ftime(&t_sgx, sizeof(sgx_timeb));
 
     for (int i = 0; i < 10000; ++i) {
-        sgx_wasm_derive_measurement(wasm_blob, wasm_blob_size, &mr);
+        // get penglai measurement
         penglai_wasm_derive_measurement(wasm_blob, wasm_blob_size, penglai_hash, 0);
-        sgx_wasm_get_hash(wasm_blob, wasm_blob_size, wasm_hash);
+        // printf("penglai derived measurement:\n");
+        // printHash(penglai_hash);
     }
+    u_sgxssl_ftime(&t_penglai, sizeof(sgx_timeb));
 
-    free(penglai_hash);
+    for (int i = 0; i < 10000; ++i) {
+        // get wasm sha-256
+        sgx_wasm_get_hash(wasm_blob, wasm_blob_size, wasm_hash);
+        // printf("wasm sha-256:\n");
+        // for (uint64_t j = 0; j < WASM_HASH_SIZE; j++)
+        //     printf("%02x ", wasm_hash[j]);
+        // printf("\n");
+    }
+    u_sgxssl_ftime(&t_wasm, sizeof(sgx_timeb));
+
+    for (int i = 0; i < 10000; ++i) {
+        // get mapping
+        memcpy(mapping, wasm_hash, WASM_HASH_SIZE);
+        memcpy(mapping + WASM_HASH_SIZE, mr.m, SGX_HASH_SIZE);
+        memcpy(mapping + WASM_HASH_SIZE + SGX_HASH_SIZE, penglai_hash, PENGLAI_HASH_SIZE);
+    }
+    u_sgxssl_ftime(&t_copy_mapping, sizeof(sgx_timeb));
+
+    for (int i = 0; i < 10000; ++i) {
+        // // // seal mapping
+        sgx_status_t err = sgx_seal_data(0, NULL, (uint32_t)WASM_HASH_SIZE + SGX_HASH_SIZE + PENGLAI_HASH_SIZE, mapping, sealed_data_size, (sgx_sealed_data_t *)temp_sealed_buf);
+        if (err == SGX_SUCCESS) {
+            // printf("sealed success\n");
+            memcpy(sealed_mapping, temp_sealed_buf, sealed_data_size);
+        } else
+            printf("seal failed\n");
+    }
+    u_sgxssl_ftime(&t_seal, sizeof(sgx_timeb));
+
+    printf("derive sgx measurement: %ld ms\n", 1000 * (t_sgx.time - t_begin.time) + (t_sgx.millitm - t_begin.millitm));
+    printf("derive penglai measurement: %ld ms\n", 1000 * (t_penglai.time - t_sgx.time) + (t_penglai.millitm - t_sgx.millitm));
+    printf("get wasm sha-256: %ld ms\n", 1000 * (t_wasm.time - t_penglai.time) + (t_wasm.millitm - t_penglai.millitm));
+    printf("copy mapping: %ld ms\n", 1000 * (t_copy_mapping.time - t_wasm.time) + (t_copy_mapping.millitm - t_wasm.millitm));
+    printf("seal mapping: %ld ms\n", 1000 * (t_seal.time - t_copy_mapping.time) + (t_seal.millitm - t_copy_mapping.millitm));
+    printf("total: %ld ms\n", 1000 * (t_seal.time - t_begin.time) + (t_seal.millitm - t_begin.millitm));
+
+    free(mapping);
     free(wasm_hash);
+    free(penglai_hash);
 }
 
 void unseal_mapping(const uint8_t *sealed_mapping, uint32_t data_size)
-{
-    uint32_t mac_text_len = sgx_get_add_mac_txt_len((const sgx_sealed_data_t*)sealed_mapping);
-    uint32_t decrypt_data_len = sgx_get_encrypt_txt_len((const sgx_sealed_data_t*)sealed_mapping);
-    if (mac_text_len == UINT32_MAX || decrypt_data_len == UINT32_MAX)
-        printf("Error: Unexpected\n");
-    if (mac_text_len > data_size || decrypt_data_len > data_size)
-        printf("Error: Invalid parameter\n");
-    printf("mac_text_len: %d\n", mac_text_len);
-    printf("decrypt_data_len: %d\n", decrypt_data_len);
-    
-    uint8_t *de_mac_text = (uint8_t*)malloc(mac_text_len);
-    if (de_mac_text == NULL)
-        printf("Error: Out of memory\n");
-    uint8_t *decrypt_mapping = (uint8_t*)malloc(decrypt_data_len);
-    if (decrypt_mapping == NULL)
-    {
-        free(de_mac_text);
-        printf("Error: Out of memory\n");
-    }
+{   
+    sgx_timeb t_begin, t_unseal;
 
-    sgx_status_t ret = sgx_unseal_data((const sgx_sealed_data_t*)sealed_mapping, de_mac_text, &mac_text_len, decrypt_mapping, &decrypt_data_len);
-    if (ret != SGX_SUCCESS)
-    {
-        printf("unseal failed\n");
+    u_sgxssl_ftime(&t_begin, sizeof(sgx_timeb));
+    for (int i = 0; i < 10000; ++i) {
+        uint32_t mac_text_len = sgx_get_add_mac_txt_len((const sgx_sealed_data_t*)sealed_mapping);
+        uint32_t decrypt_data_len = sgx_get_encrypt_txt_len((const sgx_sealed_data_t*)sealed_mapping);
+        if (mac_text_len == UINT32_MAX || decrypt_data_len == UINT32_MAX)
+            printf("Error: Unexpected\n");
+        if (mac_text_len > data_size || decrypt_data_len > data_size)
+            printf("Error: Invalid parameter\n");
+        // printf("mac_text_len: %d\n", mac_text_len);
+        // printf("decrypt_data_len: %d\n", decrypt_data_len);
+        
+        uint8_t *de_mac_text = (uint8_t*)malloc(mac_text_len);
+        if (de_mac_text == NULL)
+            printf("Error: Out of memory\n");
+        uint8_t *decrypt_mapping = (uint8_t*)malloc(decrypt_data_len);
+        if (decrypt_mapping == NULL)
+        {
+            free(de_mac_text);
+            printf("Error: Out of memory\n");
+        }
+
+        sgx_status_t ret = sgx_unseal_data((const sgx_sealed_data_t*)sealed_mapping, de_mac_text, &mac_text_len, decrypt_mapping, &decrypt_data_len);
+        if (ret != SGX_SUCCESS)
+        {
+            printf("unseal failed\n");
+            free(de_mac_text);
+            free(decrypt_mapping);
+            return;
+        }
         free(de_mac_text);
         free(decrypt_mapping);
-        return;
     }
+    u_sgxssl_ftime(&t_unseal, sizeof(sgx_timeb));
+    printf("unseal mapping: %ld ms\n", 1000 * (t_unseal.time - t_begin.time) + (t_unseal.millitm - t_begin.millitm));
 
-    printf("unseal success\n");
-    for (uint64_t j = 0; j < mac_text_len; j++)
-        printf("%02x ", de_mac_text[j]);
-    printf("\n");
-    printf("decrypt mapping\n");
-    for (uint64_t j = 0; j < decrypt_data_len; j++)
-        printf("%02x ", decrypt_mapping[j]);
-    printf("\n");
+    // printf("unseal success\n");
+    // for (uint64_t j = 0; j < mac_text_len; j++)
+    //     printf("%02x ", de_mac_text[j]);
+    // printf("\n");
+    // printf("decrypt mapping\n");
+    // for (uint64_t j = 0; j < decrypt_data_len; j++)
+    //     printf("%02x ", decrypt_mapping[j]);
+    // printf("\n");
 
-    free(de_mac_text);
-    free(decrypt_mapping);
+    // free(de_mac_text);
+    // free(decrypt_mapping);
 }
